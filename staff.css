@@ -1175,3 +1175,7 @@
 
 .staff-header .brand img{width:134px;height:69px;object-fit:cover}
 @media(max-width:600px){.staff-header .brand img{width:110px;height:57px}}
+
+/* Original official artwork, preserved at its natural aspect ratio. */
+.staff-header .brand img{width:134px;height:auto;aspect-ratio:2048/1127;object-fit:contain}
+@media(max-width:600px){.staff-header .brand img{width:110px;height:auto}}
