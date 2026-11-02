@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Weinberger’s Deli | Pickup orders</title>
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="staff.css">
+  <script src="demo-menu.js" defer></script>
+  <script src="data.js" defer></script>
+  <script src="staff.js" defer></script>
+</head>
+<body class="staff-body">
+  <a class="skip" href="#queue">Skip to pickup tickets</a>
+
+  <div class="demo-bar">
+    <span>WEINBERGER’S DELI <b>· STAFF OPERATIONS</b></span>
+    <nav aria-label="Staff navigation">
+      <a href="index.html">Order view ↗</a>
+      <a href="iphone.html">iPhone app</a>
+      <a href="staff.html" aria-current="page">Pickup orders</a>
+    </nav>
+  </div>
+
+  <header class="staff-header">
+    <a class="brand" href="index.html">
+      <img src="assets/weinbergers-mark.png" alt="Weinberger’s Deli">
+      <span>STAFF</span>
+    </a>
+
+    <nav aria-label="Staff sections">
+      <button id="queue-tab" class="selected" type="button">Pickup orders</button>
+      <button id="menu-tab" type="button">Menu availability</button>
+      <button id="activity-tab" type="button">Activity log</button>
+    </nav>
+
+    <label class="role-select">Working as
+      <select id="staff-role">
+        <option value="manager">Manager</option>
+        <option value="kitchen">Kitchen</option>
+      </select>
+    </label>
+  </header>
+
+  <main class="staff-main">
+    <div class="board-heading">
+      <div class="board-intro">
+        <p class="eyebrow">601 S MAIN · GRAPEVINE</p>
+        <h1 id="staff-title">PICKUP ORDERS</h1>
+        <p class="staff-subtitle">Track each pickup order, its status, and any special requests.</p>
+        <p class="board-flow" aria-hidden="true">01 NEW <span>→</span> 02 PREPARING <span>→</span> 03 READY</p>
+      </div>
+
+      <div class="service-control">
+        <span class="control-label">ORDERING STATUS</span>
+        <span id="service-status" class="service-status">● Accepting orders</span>
+        <div class="service-inputs">
+          <label>Pickup time
+            <select id="prep-time">
+              <option value="10">10 minutes</option>
+              <option value="15">15 minutes</option>
+              <option value="20" selected>20 minutes</option>
+              <option value="25">25 minutes</option>
+              <option value="30">30 minutes</option>
+              <option value="35">35 minutes</option>
+              <option value="45">45 minutes</option>
+              <option value="60">60 minutes</option>
+            </select>
+          </label>
+          <button class="secondary" id="pause-orders" type="button">Pause new orders</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="staff-notice" id="staff-mode" hidden aria-hidden="true"></div>
+
+    <section id="queue" aria-labelledby="staff-title">
+      <div class="board-toolbar">
+        <div class="queue-stats" aria-label="Ticket totals">
+          <span><strong id="active-count">0</strong> open tickets</span>
+          <span><strong id="ready-count">0</strong> ready now</span>
+          <span><strong id="done-count">0</strong> completed</span>
+        </div>
+        <div class="board-tools">
+          <button class="text-link" id="load-samples" type="button" hidden aria-hidden="true" tabindex="-1"></button>
+          <button class="text-link" id="show-history" type="button">Order history</button>
+          <button class="text-link" id="refresh-queue" type="button">Refresh ↻</button>
+        </div>
+      </div>
+      <div class="board" id="board"></div>
+    </section>
+
+    <section id="availability" aria-labelledby="availability-title" hidden>
+      <div class="availability-heading">
+        <div>
+          <p class="section-number">02 · MENU</p>
+          <h2 id="availability-title">MENU AVAILABILITY</h2>
+          <p>Update which items are available for new orders. Existing orders stay unchanged.</p>
+        </div>
+        <label class="search">
+          <span aria-hidden="true">⌕</span>
+          <input type="search" id="stock-search" aria-label="Search menu availability" placeholder="Search sandwiches and sides">
+        </label>
+      </div>
+      <div id="stock-list"></div>
+    </section>
+
+    <section id="audit-view" aria-labelledby="audit-title" hidden>
+      <p class="section-number">03 · ACTIVITY</p>
+      <h2 id="audit-title">ACTIVITY LOG</h2>
+      <p class="staff-subtitle">Changes to orders, menu availability, and ordering status.</p>
+      <div id="audit-list"></div>
+    </section>
+  </main>
+
+  <dialog id="staff-dialog" aria-labelledby="staff-dialog-title">
+    <div id="staff-dialog-content"></div>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

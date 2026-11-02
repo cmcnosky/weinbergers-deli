@@ -1,0 +1,185 @@
+WEINBERGER'S DELI PROTOTYPE — ASSET SOURCES
+Retrieved 2026-11-01
+
+STATUS AND RIGHTS NOTICE
+
+This package is a private, unsolicited design concept. Weinberger's Deli names,
+marks, menu information, and food photography remain associated with their
+respective owner(s). The food images below were obtained from the restaurant's
+official online menu for prototype reference. No license or permission for
+commercial publication, advertising, redistribution, or production deployment
+of the restaurant imagery is asserted. Obtain the business's approval and clear
+all image and brand rights before any public or commercial use.
+
+The SIL Open Font License files in assets/fonts apply only to the corresponding
+font software. They do not grant rights to restaurant names, marks, photography,
+menu content, or other brand material.
+
+
+FOOD PHOTOGRAPHY
+
+Official menu catalog:
+https://weinbergersdeli.com/menu
+
+Each entry maps the local prototype file to the official menu item identifier,
+official item page, and official catalog image URL recorded when retrieved.
+
+food-01.jpg
+  Item: Jaybird's Sandwich
+  Menu ID: jaybirds-sandwich-EZMW
+  Item page: https://weinbergersdeli.com/menu?item=jaybirds-sandwich-EZMW
+  Image: https://static-content.owner.com/funnel/images/d16229ca-3c98-4648-972b-28bd6defe114.jpg?v=8541852647
+
+food-02.jpg
+  Item: Dagwood Sub
+  Menu ID: dagwood-sub-5ozC
+  Item page: https://weinbergersdeli.com/menu?item=dagwood-sub-5ozC
+  Image: https://static-content.owner.com/funnel/images/44b3eb41-7d43-4062-888c-b48c29662689.jpg?v=3898525960
+
+food-03.jpg
+  Item: Gayle's Super Reuben
+  Menu ID: gayles-super-reuben-8U3W
+  Item page: https://weinbergersdeli.com/menu?item=gayles-super-reuben-8U3W
+  Image: https://static-content.owner.com/funnel/images/c18ffe53-7eab-4c82-8e47-b968f8eedf09.jpg?v=7006274770
+
+food-04.jpg
+  Item: California Pastrami
+  Menu ID: california-pastrami-AAn4
+  Item page: https://weinbergersdeli.com/menu?item=california-pastrami-AAn4
+  Image: https://static-content.owner.com/funnel/images/2284ca0a-1ef1-4856-9f8f-7985f298ba42.jpg?v=1900224526
+
+food-05.jpg
+  Item: Bourdain Sandwich
+  Menu ID: bourdain-sandwich-DAns
+  Item page: https://weinbergersdeli.com/menu?item=bourdain-sandwich-DAns
+  Image: https://static-content.owner.com/funnel/images/c981b91a-72cc-4a3b-8661-f8cc8bcfaf3c.jpg?v=2103439191
+
+food-06.jpg
+  Item: Ciabatta Bomb Sandwich
+  Menu ID: ciabatta-bomb-sandwich-bJ8O
+  Item page: https://weinbergersdeli.com/menu?item=ciabatta-bomb-sandwich-bJ8O
+  Image: https://static-content.owner.com/funnel/images/8aab0152-dec8-4d3f-a112-de570c03179e.jpg?v=5344191168
+
+food-07.jpg
+  Item: Mark Cuban
+  Menu ID: mark-cuban-BHDG
+  Item page: https://weinbergersdeli.com/menu?item=mark-cuban-BHDG
+  Image: https://static-content.owner.com/funnel/images/29fa9df1-143e-43c0-99cb-55eee4ac84d5.jpg?v=2652038950
+
+food-08.jpg
+  Item: Vera Cuban
+  Menu ID: vera-cuban-AFjy
+  Item page: https://weinbergersdeli.com/menu?item=vera-cuban-AFjy
+  Image: https://static-content.owner.com/funnel/images/af131bfa-8ff2-40fc-a037-dc7e85a63b1d.jpg?v=0387639604
+
+food-09.jpg
+  Item: Cheesesteak
+  Menu ID: cheesesteak-NB0j
+  Item page: https://weinbergersdeli.com/menu?item=cheesesteak-NB0j
+  Image: https://static-content.owner.com/funnel/images/86e9b6ca-6b7d-431d-944d-319d5cd848fd.jpg?v=5114273003
+
+food-10.jpg
+  Item: Best Damn Buffalo Chicken Sandwich Ever
+  Menu ID: best-damn-buffalo-chicken-sandwich-ever-7dQ5
+  Item page: https://weinbergersdeli.com/menu?item=best-damn-buffalo-chicken-sandwich-ever-7dQ5
+  Image: https://static-content.owner.com/funnel/images/b7eed73a-d8b0-4b13-bfa3-fe78b0087706.jpg?v=7726052375
+
+food-11.jpg
+  Item: Greek Gyro
+  Menu ID: greek-gyro-PhiY
+  Item page: https://weinbergersdeli.com/menu?item=greek-gyro-PhiY
+  Image: https://static-content.owner.com/funnel/images/37569825-fe7c-4005-877b-31c1f689ae94.jpg?v=8005514693
+
+food-12.jpg
+  Item: California Club
+  Menu ID: california-club-fFJD
+  Item page: https://weinbergersdeli.com/menu?item=california-club-fFJD
+  Image: https://static-content.owner.com/funnel/images/1e8be9ea-e802-49bf-b2d5-a65f9408d835.jpg?v=4441139560
+
+food-13.jpg
+  Item: The Settler
+  Menu ID: the-settler-6tby
+  Item page: https://weinbergersdeli.com/menu?item=the-settler-6tby
+  Image: https://static-content.owner.com/funnel/images/a362aee3-c22a-4faa-a180-2794773565c4?v=6729316983
+
+food-14.jpg
+  Item: Italian Beef
+  Menu ID: italian-beef-a3od
+  Item page: https://weinbergersdeli.com/menu?item=italian-beef-a3od
+  Image: https://static-content.owner.com/funnel/images/08f9ec4c-75a8-4035-a0d0-c9b2ff26cd22.jpg?v=7218256136
+
+food-15.jpg
+  Item: Wrigley Field
+  Menu ID: wrigley-field-kokh
+  Item page: https://weinbergersdeli.com/menu?item=wrigley-field-kokh
+  Image: https://static-content.owner.com/funnel/images/ed7ab3b8-ba7d-4d4d-a327-c80dec26ab47.jpg?v=8413105993
+
+food-16.jpg
+  Item: Vegan Banh Mi
+  Menu ID: vegan-banh-mi-0oXf
+  Item page: https://weinbergersdeli.com/menu?item=vegan-banh-mi-0oXf
+  Image: https://static-content.owner.com/funnel/images/65663211-381c-4ef9-9a33-a8842946b34a.jpg?v=2691230223
+
+food-17.jpg
+  Item: Greek Salad
+  Menu ID: greek-salad-d5JZ
+  Item page: https://weinbergersdeli.com/menu?item=greek-salad-d5JZ
+  Image: https://static-content.owner.com/funnel/images/059669f8-ee12-47b3-ad7d-64d9d3fea6ea.jpg?v=0909547610
+
+food-18.jpg
+  Item: Frito Pie
+  Menu ID: frito-pie-hsx4
+  Item page: https://weinbergersdeli.com/menu?item=frito-pie-hsx4
+  Image: https://static-content.owner.com/funnel/images/2541f9ec-32df-414e-a5d2-475800917bf3.jpg?v=0953813400
+
+food-19.jpg
+  Item: Creamy Coleslaw
+  Menu ID: creamy-coleslaw-5Vbr
+  Item page: https://weinbergersdeli.com/menu?item=creamy-coleslaw-5Vbr
+  Image: https://static-content.owner.com/funnel/images/9273eff6-e598-44c9-b09f-cb49351af4d4.jpg?v=3299321846
+
+food-20.jpg
+  Item: Meatball Sub
+  Menu ID: meatball-sub-OxPm
+  Item page: https://weinbergersdeli.com/menu?item=meatball-sub-OxPm
+  Image: https://static-content.owner.com/funnel/images/07c78909-1126-4ee6-a851-75f81f2c53aa.jpg?v=1787479284
+
+
+FONTS
+
+The prototype uses Latin-subset WOFF2 files served through the official Google
+Fonts stylesheet below. The DM Sans stylesheet declarations for weights 400,
+500, 600, and 700 resolve to the same bundled WOFF2 resource.
+
+Official stylesheet:
+https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap
+
+assets/fonts/dm-sans-latin.woff2
+  Family: DM Sans
+  Styles used: normal 400, 500, 600, 700
+  File source: https://fonts.gstatic.com/l/font?kit=rP2-p2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopwDRUUHvP-6oMc49xLtf0DPCjGtNio&skey=cd068b3e1b767e51&v=v17
+  License: assets/fonts/OFL-DM-Sans.txt
+  Official license source: https://github.com/google/fonts/blob/main/ofl/dmsans/OFL.txt
+  Family metadata: https://github.com/google/fonts/blob/main/ofl/dmsans/METADATA.pb
+
+assets/fonts/dm-serif-display-regular-latin.woff2
+  Family: DM Serif Display
+  Style used: normal 400
+  File source: https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2
+  License: assets/fonts/OFL-DM-Serif-Display.txt
+  Official license source: https://github.com/google/fonts/blob/main/ofl/dmserifdisplay/OFL.txt
+  Family metadata: https://github.com/google/fonts/blob/main/ofl/dmserifdisplay/METADATA.pb
+
+assets/fonts/dm-serif-display-italic-latin.woff2
+  Family: DM Serif Display
+  Style used: italic 400
+  File source: https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2
+  License: assets/fonts/OFL-DM-Serif-Display.txt
+  Official license source: https://github.com/google/fonts/blob/main/ofl/dmserifdisplay/OFL.txt
+  Family metadata: https://github.com/google/fonts/blob/main/ofl/dmserifdisplay/METADATA.pb
+
+SANDWICH INDEX REDESIGN — NOVEMBER 2, 2026
+
+The unchanged public iPhone listing mark is reused locally as assets/weinbergers-mark.png. Original file: work/app-audit/app-icon.png, source Apple public lookup for https://apps.apple.com/us/app/weinbergers-deli/id6766672366. Private proposal use only; production brand approval remains required.
+
+Display type: Barlow Condensed, weights 700/800/900. Source stylesheet: https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&display=swap. Source font URLs retained in assets/fonts/barlow-source.css. SIL OFL: assets/OFL-Barlow-Condensed.txt. Body type remains DM Sans. DM Serif assets are retained for archival compatibility but no longer used by the interface.
