@@ -120,3 +120,5 @@ footer button{font:10px var(--mono);text-decoration:underline}
 @media(min-width:601px){dialog[data-view=compare] .modal-pad{padding:20px 26px}.comparison-image img{height:112px}.comparison-card h3{min-height:44px;font-size:29px}.comparison-price{margin:9px 0 12px;font-size:17px}.comparison-card>.primary{margin-top:16px}.comparison-footer{margin-top:18px;padding-top:13px}.comparison-intro{margin-bottom:18px}.comparison-description>p{font-size:12px}}
 
 .cart-edit-actions{display:flex;gap:10px}.cart-edit-actions button{padding:0;font-size:11px;text-decoration:underline}
+
+.comparison-share{margin-top:16px;padding:15px;background:#f3f0e4;border:1px solid var(--line)}.comparison-share[hidden]{display:none}.comparison-share label{display:block;font-weight:700;font-size:12px;margin-bottom:7px}.comparison-share input{width:100%;min-width:0;min-height:44px;background:white;border:1px solid var(--ink);padding:10px;font-size:13px}.comparison-share p{font-size:12px;line-height:1.5;margin-top:8px}
