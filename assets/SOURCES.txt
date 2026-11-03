@@ -187,3 +187,13 @@ Display type: Barlow Condensed, weights 700/800/900. Source stylesheet: https://
 Official website logo (exact original artwork, no alterations)
 https://static-content.owner.com/funnel/images/b8a6ced2-8993-4fb9-8ba2-b7b13aefb93d
 Retrieved 2026-11-02; 2048x1127 PNG; SHA256 cd15cc9c0af3fa3269ebe6855aa29d455e3ed794cd656448675aaf86d1e479fa
+
+CHICAGO VISUAL REFRESH — NOVEMBER 3, 2026
+
+History line: CHICAGO, 1952 / GRAPEVINE, 2002.
+Source: https://weinbergersdeli.com/story (checked 2026-11-03).
+Dan's official story states the brand was founded in Chicago in 1952 and opened
+its Grapevine deli in 2002. The 1928 Italian Beef recipe date is not a founding date.
+The original logo and food photography remain unaltered. The three Chicago
+shortcuts reference canonical existing items: italian-beef-a3od,
+chicago-dog-JTAI, and maxwell-street-polish-dog-kxOH.

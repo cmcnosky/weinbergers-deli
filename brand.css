@@ -1,0 +1,79 @@
+/* Weinberger's: the original mark, Chicago roots, and a clear deli counter menu. */
+:root{--cream:#f5f1e8;--paper:#fffcf5;--line:#d8d1c5}
+body{background:var(--cream)}
+.header{background:var(--paper);border-bottom:1px solid var(--ink)}
+.brand img{width:162px}
+.brand>span{font-size:9px;letter-spacing:.4px}
+.bag-pill{background:var(--red);color:var(--paper);border-color:var(--red)}
+.menu-cover{grid-template-columns:52% 48%;background:var(--cream);border-bottom:1px solid var(--ink)}
+.cover-intro{padding:32px 7% 30px;min-height:430px;justify-content:flex-start}
+.heritage-line{font:10px/1.6 var(--mono);letter-spacing:.9px;border-bottom:1px solid #b5ab9a;padding-bottom:15px;margin-bottom:22px;color:var(--ink)}
+.heritage-line span{padding:0 10px;color:var(--red)}
+.cover-intro h1{font-size:clamp(82px,9.7vw,150px);line-height:.79;letter-spacing:-1.5px;color:var(--red)}
+.cover-place{font:800 clamp(21px,2.4vw,34px)/1.1 var(--display);letter-spacing:1.2px;margin-top:17px}
+.cover-intro-bottom{align-items:center;margin-top:auto;padding-top:27px;gap:18px}
+.cover-intro-bottom p{font-size:12px;line-height:1.65}
+.cover-intro-bottom .primary{background:var(--red);color:var(--paper);font-size:11px;min-height:48px;padding:12px 18px}
+.cover-intro-bottom .primary span{margin-left:12px}
+.menu-cover-photo{border-left:1px solid var(--ink);min-height:430px}
+.menu-cover-photo>img{object-position:48% center}
+.menu-cover-photo>span{display:block;padding:68px 25px 24px;font-size:30px;background:linear-gradient(transparent,#160f0be6)}
+.menu-cover-photo small{display:block;font:9px/1.4 var(--mono);color:#fff;letter-spacing:1.4px;margin-bottom:6px}
+.menu-cover-photo b{float:right;font-size:9px;max-width:72px;margin-left:18px}
+.chicago-classics{grid-column:1/-1;display:grid;grid-template-columns:160px repeat(3,minmax(0,1fr));background:var(--red);color:var(--paper);padding:0 3.6%;border-top:1px solid var(--red-dark)}
+.chicago-classics>p{font:700 13px/1.2 var(--display);letter-spacing:1.8px;align-self:center;padding:16px 20px 16px 0}
+.chicago-classics>p strong{font-size:23px;letter-spacing:.4px}
+.chicago-classics button{text-align:left;padding:20px 25px;border-left:1px solid #ffffff35;transition:background .15s}
+.chicago-classics button:hover{background:#ffffff10}
+.chicago-classics button:focus-visible{outline-color:var(--paper);outline-offset:-4px}
+.chicago-classics button>span{display:flex;justify-content:space-between;gap:12px;font:700 23px/1.15 var(--display)}
+.chicago-classics button b{font-size:17px;font-weight:400;color:#ecd5ac}
+.chicago-classics small{display:block;font:11px/1.4 var(--sans);color:#f1e7d5;margin-top:5px}
+.order-strip{background:#e9e3d8;border-bottom:1px solid var(--line)}
+.menu-section{padding-top:32px}
+.section-heading h2{color:var(--red)}
+.search,.discovery-filters,.bag-panel,.quick-ingredients button{background:var(--paper)}
+.category-row button.active,.category-row button.selected{background:var(--red);color:var(--paper)}
+.category-row button.active span,.category-row button.selected span{color:var(--paper)}
+.product:hover{background:#eee8dd}
+.product .tag{background:#e8e0cf}
+.phone-page{background:var(--cream)}
+.phone-page .demo-bar{background:var(--red)}
+.phone-editorial .eyebrow{color:var(--red);font-size:10px;letter-spacing:.7px}
+.phone-editorial h1{font-size:clamp(62px,6.4vw,94px);line-height:.9;color:var(--red)}
+.phone-editorial h1 span{color:var(--ink)}
+.phone-deck{line-height:1.7}
+.phone-features{border-top-color:var(--ink)}
+.phone-features li{border-color:var(--line)}
+.phone-features li>span{color:var(--red)}
+.phone-editorial .primary{background:var(--red);color:var(--paper)}
+.phone-shell{box-shadow:12px 12px 0 #d7cdbb}
+@media(min-width:1500px){.cover-intro{padding-left:9%;padding-right:9%}.menu-cover-photo{max-height:530px}.cover-intro{min-height:530px}}
+@media(max-width:1000px){.cover-intro{padding:26px 7%;min-height:390px}.menu-cover-photo{min-height:390px}.cover-intro-bottom{display:block;padding-top:20px}.cover-intro-bottom .primary{margin-top:15px}.chicago-classics{grid-template-columns:110px repeat(3,minmax(0,1fr));padding:0 3%}.chicago-classics button{padding:18px 14px}.chicago-classics button>span{font-size:20px}.chicago-classics small{font-size:10px}}
+@media(max-width:600px){
+ .header{min-height:77px}.brand img{width:120px}
+ .menu-cover,.embedded .menu-cover{display:grid;grid-template-columns:minmax(0,1fr) 36%;border-bottom:0}
+ .cover-intro{min-height:0;padding:18px 16px 19px}
+ .heritage-line{font-size:7px;letter-spacing:.3px;padding-bottom:8px;margin-bottom:13px;white-space:nowrap}
+ .heritage-line span{padding:0 3px}
+ .cover-intro h1{font-size:54px;line-height:.82;letter-spacing:-.4px}
+ .cover-place{font-size:16px;letter-spacing:.5px;margin-top:12px}
+ .cover-intro-bottom{display:none}
+ .menu-cover-photo{min-height:0}
+ .menu-cover-photo>img{object-position:58% center}
+ .menu-cover-photo>span{padding:32px 9px 12px;font-size:15px;line-height:1.05}
+ .menu-cover-photo small,.menu-cover-photo b{display:none}
+ .chicago-classics{grid-template-columns:repeat(3,minmax(0,1fr));padding:0 5px}
+ .chicago-classics>p{display:none}
+ .chicago-classics button{padding:12px 10px;min-height:58px;border-left:1px solid #ffffff35}
+ .chicago-classics button:first-of-type{border-left:0}
+ .chicago-classics button>span{display:block;font-size:16px;line-height:1.1}
+ .chicago-classics button b{display:none}
+ .chicago-classics small{display:none}
+ .order-strip{font-size:10px}
+ .menu-section{padding-top:23px}
+ .section-heading h2{font-size:34px}
+ .phone-editorial h1{font-size:62px}
+ .phone-showcase{padding-top:35px}
+}
+@media(prefers-reduced-motion:reduce){.chicago-classics button{transition:none}}
