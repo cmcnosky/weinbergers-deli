@@ -2,7 +2,7 @@
 :root{--cream:#f5f1e8;--paper:#fffcf5;--line:#d8d1c5}
 body{background:var(--yellow)}
 .header{background:var(--yellow);border-bottom:1px solid var(--ink)}
-.brand img{width:162px}
+.brand img{width:176px}
 .brand>span{font-size:9px;letter-spacing:.4px}
 .bag-pill{background:var(--red);color:var(--paper);border-color:var(--red)}
 .menu-cover{grid-template-columns:52% 48%;background:var(--yellow);border-bottom:1px solid var(--ink)}
@@ -51,7 +51,7 @@ body{background:var(--yellow)}
 @media(min-width:1500px){.cover-intro{padding-left:9%;padding-right:9%}.menu-cover-photo{max-height:530px}.cover-intro{min-height:530px}}
 @media(max-width:1000px){.cover-intro{padding:26px 7%;min-height:390px}.menu-cover-photo{min-height:390px}.cover-intro-bottom{display:block;padding-top:20px}.cover-intro-bottom .primary{margin-top:15px}.chicago-classics{grid-template-columns:110px repeat(3,minmax(0,1fr));padding:0 3%}.chicago-classics button{padding:18px 14px}.chicago-classics button>span{font-size:20px}.chicago-classics small{font-size:10px}}
 @media(max-width:600px){
- .header{min-height:77px}.brand img{width:120px}
+ .header{min-height:77px}.brand img,.embedded .brand img{width:128px}
  .menu-cover,.embedded .menu-cover{display:grid;grid-template-columns:minmax(0,1fr) 36%;border-bottom:0}
  .cover-intro{min-height:0;padding:18px 16px 19px}
  .heritage-line{font-size:7px;letter-spacing:.3px;padding-bottom:8px;margin-bottom:13px;white-space:nowrap}
