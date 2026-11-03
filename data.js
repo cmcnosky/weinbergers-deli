@@ -3,13 +3,16 @@
 window.Deli = (() => {
   const clone = value => JSON.parse(JSON.stringify(value));
   const configuredRoot = String(window.WEINBERGERS_RUNTIME?.apiBaseUrl || '').trim().replace(/\/$/, '');
-  const staticMenu = () => ({
+  const sharedReviewOrigin = /(^|\.)github\.io$/i.test(String(window.location?.hostname || ''));
+  let bundledMenu;
+  const staticMenu = () => bundledMenu || (bundledMenu = {
     restaurant: {name: 'Weinberger’s Deli', location: '601 S Main St, Grapevine, TX 76051'},
     ordering: {accepting_orders: false, checkout_enabled: false, prep_minutes: 20},
     categories: [...new Set((window.DEMO_MENU || []).map(item => item.category))],
     items: clone(window.DEMO_MENU || []).map(item => ({...item, sold_out: false})),
-    source: 'bundled'
+    source: 'bundled', revision: 'bundled-20261103'
   });
+  let cachedMenu, menuETag = '', menuFlight;
   let mode = configuredRoot ? 'connecting' : 'catalogue';
   let config = {
     payment_provider: 'unconfigured', checkout_enabled: false, ordering_approved: false,
@@ -39,11 +42,13 @@ window.Deli = (() => {
     return payload;
   }
 
-  async function fetchAPI(path, {method = 'GET', body, token, raw = false} = {}) {
+  async function fetchAPI(path, {method = 'GET', body, token, raw = false, menuConditional = false} = {}) {
     if (!configuredRoot) fail('Online checkout is not connected yet.', 'service_not_configured');
+    if (sharedReviewOrigin) fail('Ordering and staff access require the restaurant’s dedicated secure address.', 'dedicated_origin_required');
     const headers = {Accept: raw ? 'text/csv, application/json' : 'application/json'};
     if (body !== undefined) headers['Content-Type'] = 'application/json';
     if (token) headers.Authorization = 'Bearer ' + token;
+    if (menuConditional && menuETag && cachedMenu) headers['If-None-Match'] = menuETag;
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     let response;
@@ -59,12 +64,18 @@ window.Deli = (() => {
     } finally {
       clearTimeout(timeout);
     }
+    if (menuConditional && response.status === 304 && cachedMenu) return cachedMenu;
     if (!response.ok && raw) {
       let payload;
       try { payload = await response.json(); } catch { payload = null; }
       fail(payload?.error?.message || 'Unable to download this file.', payload?.error?.code, response.status);
     }
-    return decode(response, raw);
+    const payload = await decode(response, raw);
+    if (menuConditional) {
+      menuETag = response.headers?.get?.('ETag') || '';
+      cachedMenu = payload;
+    }
+    return payload;
   }
 
   async function init() {
@@ -122,6 +133,10 @@ window.Deli = (() => {
       }
     }
     if (breadSubstitutions.size > 1) fail('Choose only one bread.', 'conflicting_options');
+    for (const ingredient of product.unavailable_ingredient_ids || []) {
+      const omission = allowed.find(option => option.ingredient_id === ingredient && option.action === 'omit');
+      if (!omission || !counts.get(omission.id)) fail(omission ? 'This ingredient is sold out. Select “' + omission.name + '” to continue.' : 'An ingredient in this item is sold out.', 'ingredient_unavailable');
+    }
     return true;
   }
 
@@ -143,14 +158,23 @@ window.Deli = (() => {
 
   async function menu() {
     if (!configuredRoot) return staticMenu();
-    try { await init(); return await fetchAPI('/menu'); }
+    if (menuFlight) return menuFlight;
+    menuFlight = (async () => {
+    try {
+      await init();
+      config = await fetchAPI('/config');
+      mode = 'connected';
+      if (config.menu_revision && cachedMenu?.revision === config.menu_revision) return cachedMenu;
+      return await fetchAPI('/menu', {menuConditional: true});
+    }
     catch (error) {
       mode = 'unavailable';
       initPromise = null;
-      const fallback = staticMenu();
-      fallback.connection_error = error.message;
-      return fallback;
+      return {...staticMenu(), connection_error: error.message};
     }
+    finally { menuFlight = null; }
+    })();
+    return menuFlight;
   }
 
   const request = (path, method = 'GET', body, token) => fetchAPI(path, {method, body, token});

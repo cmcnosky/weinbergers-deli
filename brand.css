@@ -77,3 +77,8 @@ body{background:var(--yellow)}
  .phone-showcase{padding-top:35px}
 }
 @media(prefers-reduced-motion:reduce){.chicago-classics button{transition:none}}
+
+:root{--muted:#50544d}
+/* Keep the phone presentation within narrow viewports, including its iframe. */
+.phone-showcase>*{min-width:0}.phone-shell{min-width:0}.phone-display{max-width:100%}
+@media(max-width:600px){.phone-showcase{grid-template-columns:minmax(0,1fr)}.phone-page .demo-bar{flex-wrap:wrap}.phone-page .demo-bar nav a{font-size:12px;min-height:36px}.phone-shell{width:100%;box-shadow:6px 6px 0 #d7cdbb}}
