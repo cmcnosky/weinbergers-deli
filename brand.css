@@ -1,11 +1,11 @@
 /* Weinberger's: the original mark, Chicago roots, and a clear deli counter menu. */
 :root{--cream:#f5f1e8;--paper:#fffcf5;--line:#d8d1c5}
-body{background:var(--cream)}
-.header{background:var(--paper);border-bottom:1px solid var(--ink)}
+body{background:var(--yellow)}
+.header{background:var(--yellow);border-bottom:1px solid var(--ink)}
 .brand img{width:162px}
 .brand>span{font-size:9px;letter-spacing:.4px}
 .bag-pill{background:var(--red);color:var(--paper);border-color:var(--red)}
-.menu-cover{grid-template-columns:52% 48%;background:var(--cream);border-bottom:1px solid var(--ink)}
+.menu-cover{grid-template-columns:52% 48%;background:var(--yellow);border-bottom:1px solid var(--ink)}
 .cover-intro{padding:32px 7% 30px;min-height:430px;justify-content:flex-start}
 .heritage-line{font:10px/1.6 var(--mono);letter-spacing:.9px;border-bottom:1px solid #b5ab9a;padding-bottom:15px;margin-bottom:22px;color:var(--ink)}
 .heritage-line span{padding:0 10px;color:var(--red)}
@@ -29,7 +29,7 @@ body{background:var(--cream)}
 .chicago-classics button>span{display:flex;justify-content:space-between;gap:12px;font:700 23px/1.15 var(--display)}
 .chicago-classics button b{font-size:17px;font-weight:400;color:#ecd5ac}
 .chicago-classics small{display:block;font:11px/1.4 var(--sans);color:#f1e7d5;margin-top:5px}
-.order-strip{background:#e9e3d8;border-bottom:1px solid var(--line)}
+.order-strip{background:var(--yellow);border-bottom:1px solid var(--line)}
 .menu-section{padding-top:32px}
 .section-heading h2{color:var(--red)}
 .search,.discovery-filters,.bag-panel,.quick-ingredients button{background:var(--paper)}
@@ -37,7 +37,7 @@ body{background:var(--cream)}
 .category-row button.active span,.category-row button.selected span{color:var(--paper)}
 .product:hover{background:#eee8dd}
 .product .tag{background:#e8e0cf}
-.phone-page{background:var(--cream)}
+.phone-page{background:var(--yellow)}
 .phone-page .demo-bar{background:var(--red)}
 .phone-editorial .eyebrow{color:var(--red);font-size:10px;letter-spacing:.7px}
 .phone-editorial h1{font-size:clamp(62px,6.4vw,94px);line-height:.9;color:var(--red)}
