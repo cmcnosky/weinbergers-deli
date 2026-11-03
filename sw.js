@@ -1,9 +1,9 @@
 'use strict';
 // Cache public browsing assets only. Payments, private order lookups, runtime
 // configuration prefers the network; staff operations never enter this cache.
-const CACHE='weinbergers-public-v20261103-18';
+const CACHE='weinbergers-public-v20261103-19';
 const ROOT=new URL('./',self.location).pathname;
-const SHELL=['index.html','mobile.html','style.css?v=20261103-18','discovery.css?v=20261103-18','brand.css?v=20261103-18','experience.css?v=20261103-18','runtime-config.js?v=20261103-18','demo-menu.js?v=20261103-18','data.js?v=20261103-18','discovery.js?v=20261103-18','customer.js?v=20261103-18','media.js?v=20261103-18','offline.js?v=20261103-18','fonts.css','barlow.css','assets/weinbergers-logo-original.png','assets/weinbergers-logo-small.svg','assets/food-03.jpg'];
+const SHELL=['index.html','mobile.html','style.css?v=20261103-19','discovery.css?v=20261103-19','brand.css?v=20261103-19','experience.css?v=20261103-19','runtime-config.js?v=20261103-19','demo-menu.js?v=20261103-19','data.js?v=20261103-19','discovery.js?v=20261103-19','customer.js?v=20261103-19','media.js?v=20261103-19','offline.js?v=20261103-19','fonts.css','barlow.css','assets/weinbergers-logo-original.png','assets/weinbergers-logo-smooth.svg','assets/food-03.jpg'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('weinbergers-public-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',event=>{
