@@ -91,17 +91,44 @@ window.Deli = (() => {
     const counts = new Map();
     if (ids.some(id => !allowed.some(option => option.id === id))) fail('An option is no longer available. Please review your choices.', 'invalid_options');
     ids.forEach(id => counts.set(id, (counts.get(id) || 0) + 1));
+    const ingredientChoices = new Map();
+    const breadSubstitutions = new Set();
     for (const group of groups) {
       let groupCount = 0;
       for (const option of group.options) {
         const count = counts.get(option.id) || 0;
+        if (count && option.ui_selectable === false) fail(option.name + ' is not available to select.', 'option_unavailable');
         if (count > 1 && group.display_type !== 'quantity-select') fail('The same option cannot be selected twice.', 'invalid_options');
         if (count < (option.selection_min || 0) || (option.selection_max != null && count > option.selection_max)) fail('Please review the quantity for ' + option.name + '.', 'options_required');
         groupCount += count;
+        if (count && option.ingredient_id) {
+          const prior = ingredientChoices.get(option.ingredient_id);
+          const action = option.action || 'add';
+          if (prior && prior.id !== option.id && (
+            prior.action === 'omit' || action === 'omit' ||
+            ['add', 'substitute'].includes(prior.action) && ['add', 'substitute'].includes(action)
+          )) fail('Choose one instruction for ' + option.name.toLowerCase() + '.', 'conflicting_options');
+          ingredientChoices.set(option.ingredient_id, {id: option.id, action});
+        }
+        if (count && option.ingredient_kind === 'bread' && option.action === 'substitute') breadSubstitutions.add(option.id);
       }
       if (groupCount < (group.selection_min || 0) || (group.selection_max != null && groupCount > group.selection_max)) fail('Please choose ' + group.name.toLowerCase() + '.', 'options_required');
     }
+    if (breadSubstitutions.size > 1) fail('Choose only one bread.', 'conflicting_options');
     return true;
+  }
+
+  function selectionState(product, ids) {
+    const selected = [];
+    const options = (product.option_groups || []).flatMap(group => group.options || []);
+    for (const id of ids || []) {
+      const option = options.find(value => value.id === id);
+      if (option) selected.push(option);
+    }
+    const pendingPrice = product.base_price_cents == null || product.price_status === 'unknown' || product.requires_price_approval === true || selected.some(option => option.price_delta_cents == null || option.price_status === 'unknown' || option.requires_price_approval === true);
+    const pendingAvailability = product.availability_status === 'needs_confirmation' || product.requires_availability_approval === true || selected.some(option => option.availability_status === 'needs_confirmation' || option.requires_availability_approval === true || option.requires_confirmation === true);
+    const unitCents = pendingPrice ? null : Number(product.base_price_cents || 0) + selected.reduce((sum, option) => sum + Number(option.price_delta_cents || 0), 0);
+    return {pendingPrice, pendingAvailability, requiresConfirmation: pendingPrice || pendingAvailability, unitCents, selected};
   }
 
   async function menu() {
@@ -121,7 +148,7 @@ window.Deli = (() => {
   const uid = prefix => prefix + (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2));
 
   return {
-    init, menu, request, download, validateOptions, uid,
+    init, menu, request, download, validateOptions, selectionState, uid,
     get mode() { return mode; },
     get config() { return {...config}; },
     get connected() { return mode === 'connected'; },

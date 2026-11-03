@@ -7,11 +7,14 @@
     const text = normalize(product.name + ' ' + product.description);
     return terms(filters.include).every(term => text.includes(term))
       && terms(filters.exclude).every(term => !text.includes(term))
-      && (!filters.max || product.base_price_cents <= Number(filters.max));
+      && (!filters.max || product.base_price_cents != null && product.base_price_cents <= Number(filters.max));
   }
   function sort(products, mode, query) {
     return [...products].sort((a, b) => {
-      if (mode === 'price') return a.base_price_cents - b.base_price_cents || a.name.localeCompare(b.name);
+      if (mode === 'price') {
+        const aPrice=a.base_price_cents==null?Number.POSITIVE_INFINITY:a.base_price_cents,bPrice=b.base_price_cents==null?Number.POSITIVE_INFINITY:b.base_price_cents;
+        return aPrice-bPrice||a.name.localeCompare(b.name);
+      }
       if (mode === 'name') return a.name.localeCompare(b.name);
       if (query) {
         const q = normalize(query), rank = p => normalize(p.name) === q ? 0 : normalize(p.name).startsWith(q) ? 1 : normalize(p.name).includes(q) ? 2 : 3;

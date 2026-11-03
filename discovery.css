@@ -123,3 +123,45 @@ footer button{font:10px var(--mono);text-decoration:underline}
 
 .comparison-share{margin-top:16px;padding:15px;background:#f3f0e4;border:1px solid var(--line)}.comparison-share[hidden]{display:none}.comparison-share label{display:block;font-weight:700;font-size:12px;margin-bottom:7px}.comparison-share input{width:100%;min-width:0;min-height:44px;background:white;border:1px solid var(--ink);padding:10px;font-size:13px}.comparison-share p{font-size:12px;line-height:1.5;margin-top:8px}
 .checkout-customer{border-top:2px solid var(--ink);margin-top:22px;padding-top:4px}.checkout-customer input{display:block;width:100%;min-height:46px;border:1px solid var(--ink);border-radius:0;background:#fff;padding:10px 12px;margin-top:7px;font:14px var(--sans)}.checkout-contact{display:grid;grid-template-columns:1fr 1fr;gap:14px}.checkout-customer .field{margin-top:14px}@media(max-width:600px){.checkout-contact{grid-template-columns:1fr}}
+
+/* Complete customization stays compact until a customer opens a section. */
+.quick-ingredients .build-own-shortcut{margin-left:auto;background:var(--ink);border-color:var(--ink);color:var(--yellow);font-weight:800}
+.quick-ingredients .build-own-shortcut:hover{background:var(--red);border-color:var(--red);color:#fff}
+.build-own-product{border:2px solid var(--ink);background:var(--yellow);padding:0 14px;margin:10px -14px 18px}
+.build-own-product:hover{background:#f5c337}
+.build-own-product .tag{background:var(--ink);color:var(--yellow)}
+dialog[data-view=product]{width:720px}
+.customization-control{margin:24px 0 12px;padding:18px;background:var(--yellow);border:2px solid var(--ink)}
+.customization-control>div{display:flex;align-items:start;justify-content:space-between;gap:20px}
+.customization-control .eyebrow{margin-bottom:5px}
+.customization-control h3{font:800 29px/1 var(--display);text-transform:uppercase}
+.customization-control label{display:block;font-size:12px;font-weight:800;margin-top:15px}
+.customization-control input{display:block;width:100%;min-height:46px;margin-top:7px;padding:10px 12px;border:1px solid var(--ink);border-radius:0;background:#fff;font:14px var(--sans)}
+.customization-control>.fine{margin-top:8px;color:var(--ink)}
+.customization-group{border:1px solid var(--ink);padding:0;margin:10px 0;background:#fff}
+.customization-group>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;min-height:65px;padding:11px 14px;font-size:14px;font-weight:800}
+.customization-group>summary::-webkit-details-marker{display:none}
+.customization-group>summary::before{content:'+';font:27px/1 var(--sans);width:22px;flex:0 0 22px}
+.customization-group[open]>summary::before{content:'−'}
+.customization-group>summary>span{flex:1}
+.customization-group>summary small{display:block;margin-top:4px;font:10px var(--mono);font-weight:400;color:var(--muted)}
+.customization-group>summary strong{font:10px var(--mono);font-weight:400;white-space:nowrap}
+.customization-options{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;max-height:350px;overflow:auto;border-top:1px solid var(--ink);padding:8px 14px 13px;overscroll-behavior:contain}
+.customization-options .option-label{margin:0;padding:9px 0;min-height:48px}
+.customization-choice[hidden],.option-group[hidden]{display:none!important}
+.option-label .price-pending{color:var(--red);font-weight:800;text-align:right;max-width:88px}
+.selection-confirmation{margin-top:10px;padding-top:10px;border-top:1px solid #9daa89;color:#702016;font-weight:700}
+.confirmation-needed{color:var(--red);font-weight:800}
+.allergy-note{margin-top:10px}
+@media(max-width:600px){
+ .quick-ingredients .build-own-shortcut{margin-left:0}
+ .build-own-product{margin-inline:-7px;padding-inline:7px}
+ .customization-control{padding:14px;margin-top:20px}
+ .customization-control>div{display:block}
+ .customization-control .text-link{margin-top:11px}
+ .customization-control h3{font-size:25px}
+ .customization-group>summary{padding:10px;gap:8px}
+ .customization-group>summary strong{white-space:normal;text-align:right;max-width:75px}
+ .customization-options{grid-template-columns:1fr;max-height:410px;padding-inline:10px}
+ .option-label .price-pending{max-width:105px}
+}
