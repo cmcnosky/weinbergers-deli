@@ -113,6 +113,13 @@ window.Deli = (() => {
         if (count && option.ingredient_kind === 'bread' && option.action === 'substitute') breadSubstitutions.add(option.id);
       }
       if (groupCount < (group.selection_min || 0) || (group.selection_max != null && groupCount > group.selection_max)) fail('Please choose ' + group.name.toLowerCase() + '.', 'options_required');
+      for (const exclusive of group.exclusive_option_sets || []) {
+        const chosen = exclusive.filter(id => (counts.get(id) || 0) > 0);
+        if (chosen.length > 1) {
+          const names = chosen.map(id => group.options.find(option => option.id === id)?.name).filter(Boolean);
+          fail('Choose either ' + names.join(' or ') + ', not both.', 'conflicting_options');
+        }
+      }
     }
     if (breadSubstitutions.size > 1) fail('Choose only one bread.', 'conflicting_options');
     return true;
@@ -125,10 +132,13 @@ window.Deli = (() => {
       const option = options.find(value => value.id === id);
       if (option) selected.push(option);
     }
-    const pendingPrice = product.base_price_cents == null || product.price_status === 'unknown' || product.requires_price_approval === true || selected.some(option => option.price_delta_cents == null || option.price_status === 'unknown' || option.requires_price_approval === true);
-    const pendingAvailability = product.availability_status === 'needs_confirmation' || product.requires_availability_approval === true || selected.some(option => option.availability_status === 'needs_confirmation' || option.requires_availability_approval === true || option.requires_confirmation === true);
+    const selectedCounts = new Map();
+    for (const id of ids || []) selectedCounts.set(id, (selectedCounts.get(id) || 0) + 1);
+    const expandedSelectionPending = (product.option_groups || []).some(group => group.expanded_selection === true && group.expanded_selection_approved !== true && group.source_selection_max != null && (group.options || []).reduce((sum, option) => sum + (selectedCounts.get(option.id) || 0), 0) > group.source_selection_max);
+    const pendingPrice = expandedSelectionPending || product.base_price_cents == null || product.price_status === 'unknown' || product.requires_price_approval === true || selected.some(option => option.price_delta_cents == null || option.price_status === 'unknown' || option.requires_price_approval === true);
+    const pendingAvailability = expandedSelectionPending || product.availability_status === 'needs_confirmation' || product.requires_availability_approval === true || selected.some(option => option.availability_status === 'needs_confirmation' || option.requires_availability_approval === true || option.requires_confirmation === true);
     const unitCents = pendingPrice ? null : Number(product.base_price_cents || 0) + selected.reduce((sum, option) => sum + Number(option.price_delta_cents || 0), 0);
-    return {pendingPrice, pendingAvailability, requiresConfirmation: pendingPrice || pendingAvailability, unitCents, selected};
+    return {pendingPrice, pendingAvailability, pricingResolved: !pendingPrice, expandedSelectionPending, requiresConfirmation: pendingPrice || pendingAvailability, unitCents, selected};
   }
 
   async function menu() {

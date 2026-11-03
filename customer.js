@@ -105,7 +105,7 @@ function updateProductPrice(){
  const missing=(activeProduct.option_groups||[]).filter(g=>ids.filter(id=>g.options.some(o=>o.id===id)).length<(g.selection_min||0));
  const chosenNames=state.selected.map(option=>option.name),chosen=chosenNames.slice(0,12).join(', ')+(chosenNames.length>12?` and ${chosenNames.length-12} more`:''),confirmation=$('#selection-confirmation');
  $('#selection-summary').textContent=(chosen||(!missing.length?'As listed on the menu.':''))+(missing.length?' Still needed: '+missing.map(g=>g.name).join(', ')+'.':'');
- if(confirmation){confirmation.hidden=!state.requiresConfirmation;confirmation.textContent=state.requiresConfirmation?confirmationReason(state)+'. You can save these choices now; the deli must confirm them before checkout.':''}
+ if(confirmation){confirmation.hidden=!state.requiresConfirmation;confirmation.textContent=state.expandedSelectionPending?'This combination uses more choices than the current published limit. You can save it now; the deli must confirm availability and the total before checkout.':state.requiresConfirmation?confirmationReason(state)+'. You can save these choices now; the deli must confirm them before checkout.':''}
  let validationError='';try{Deli.validateOptions(activeProduct,ids)}catch(error){validationError=error.message}
  const submit=dialog.querySelector('[data-action="add"]');
  submit.disabled=activeProduct.sold_out||missing.length>0||Boolean(validationError);
@@ -237,6 +237,7 @@ function optionByID(id){return(activeProduct?.option_groups||[]).flatMap(group=>
 
 function choicesConflict(first,second){
  if(!first||!second||first.id===second.id)return false;
+ if((activeProduct?.option_groups||[]).some(group=>(group.exclusive_option_sets||[]).some(set=>set.includes(first.id)&&set.includes(second.id))))return true;
  if(first.ingredient_kind==='bread'&&second.ingredient_kind==='bread'&&first.action==='substitute'&&second.action==='substitute')return true;
  if(!first.ingredient_id||first.ingredient_id!==second.ingredient_id)return false;
  return first.action==='omit'||second.action==='omit'||(['add','substitute'].includes(first.action||'add')&&['add','substitute'].includes(second.action||'add'));
