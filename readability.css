@@ -89,6 +89,8 @@
   font-size: 16px; font-weight: 600; line-height: 1.65;
 }
 .hero-actions .button, .decision-actions .button, .header-action { font-size: 14px; }
+.proposal-footer p { font-size: 16px; font-weight: 600; line-height: 1.65; }
+.back-to-top { font-size: 14px; }
 
 @media (max-width: 1000px) {
   .guest-header nav { gap: 18px; }
