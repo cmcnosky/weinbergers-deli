@@ -30,3 +30,29 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .build-own-product .tag{background:var(--red);color:var(--paper)}
 .menu-cover-photo>span{background:#32161c}
 @media(max-width:600px){.text-product .product-main{grid-template-columns:minmax(0,1fr)}.text-product .product-main .price{grid-column:1;max-width:100%;white-space:normal}.product .price{max-width:100%}}
+/* Consistent finishing across the menu, detail sheets and phone presentations. */
+body:has(dialog[open]){overflow:hidden}
+body:has(dialog[open]) .bottom-nav,body:has(dialog[open]) .mobile-bag,body:has(dialog[open]) #compare-tray{visibility:hidden}
+.menu-back{display:inline-flex;align-items:center;min-height:44px;margin:10px 3% 0;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.menu-page .order-strip{padding-top:12px;padding-bottom:12px}.menu-page .menu-section{padding-top:24px}
+.menu-intro{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:16px;font-size:14px;line-height:1.6}
+.menu-intro a,.menu-fallback a{text-decoration:underline;text-underline-offset:4px;font-weight:700}
+.menu-fallback{font-size:15px;line-height:1.7;margin-bottom:24px}
+.desktop-nav a.link{display:flex;align-items:center;min-height:44px}
+.product-share{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 24px}
+.product-share>button{font-size:14px;text-decoration:underline;text-underline-offset:4px;min-height:44px}
+.product-share .comparison-share{width:100%;margin-top:0}
+#toast:has(.toast-action){pointer-events:auto;display:flex;align-items:center;gap:14px}
+#toast .toast-action,.undo-removal{min-height:44px;padding:8px 14px;background:var(--yellow);color:var(--ink);border:2px solid var(--yellow);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.detail-image{height:auto;max-height:360px;object-fit:contain;background:var(--paper);width:100%}
+.detail-meta{font-size:14px}.detail-copy{font-size:16px;line-height:1.75}
+.option-group legend{font-size:14px}.category-grid .secondary{font-size:14px;min-height:48px}
+.bag-meta{font-size:12px}.cart-row p{font-size:14px;line-height:1.65}.empty-state p{line-height:1.7}
+.phone-features li{font-size:16px;line-height:1.65;align-items:baseline}.phone-features li>span{font-size:12px}
+.phone-page .demo-bar{font-size:12px;line-height:1.6;padding-block:10px}.phone-page .demo-bar nav a{font-size:13px;min-height:44px}
+@media(min-width:601px) and (max-width:1050px){.header{gap:15px}.desktop-nav{gap:15px}.desktop-nav .link{font-size:12px}.brand>span{display:none}}
+@media(max-width:600px){.menu-back{margin-left:5%;margin-top:4px}.menu-page .order-strip{font-size:11px}.menu-intro{font-size:14px;gap:6px}.menu-intro a{min-height:44px;display:flex;align-items:center}.detail-copy{font-size:15px}.detail-image{max-height:280px}.product-share{margin-bottom:16px}.phone-features li{font-size:15px}.phone-deck{font-size:17px}.modal-head{gap:12px}.modal-head h2{overflow-wrap:anywhere}.guest-footer{margin-bottom:10px}.embedded .guest-footer{display:none}}
+
+.section-heading .menu-title{font-size:44px;color:var(--red)}
+@media(max-width:600px){.section-heading .menu-title{font-size:34px}}
+#dialog-feedback .toast-action{padding:8px 14px;min-height:44px;background:var(--yellow);color:var(--ink);border:2px solid var(--line);font-weight:800;margin-left:10px}

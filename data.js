@@ -1,7 +1,6 @@
 'use strict';
 
 window.Deli = (() => {
-  const clone = value => JSON.parse(JSON.stringify(value));
   const configuredRoot = String(window.WEINBERGERS_RUNTIME?.apiBaseUrl || '').trim().replace(/\/$/, '');
   const sharedReviewOrigin = /(^|\.)github\.io$/i.test(String(window.location?.hostname || ''));
   let bundledMenu;
@@ -9,8 +8,12 @@ window.Deli = (() => {
     restaurant: {name: 'Weinberger’s Deli', location: '601 S Main St, Grapevine, TX 76051'},
     ordering: {accepting_orders: false, checkout_enabled: false, prep_minutes: 20},
     categories: [...new Set((window.DEMO_MENU || []).map(item => item.category))],
-    items: clone(window.DEMO_MENU || []).map(item => ({...item, sold_out: false})),
-    source: 'bundled', revision: 'bundled-20261103'
+    // The catalogue bundle deliberately shares repeated option-group objects to
+    // reduce parse and memory cost. Customer code treats menu data as immutable,
+    // so copy only each item shell to add local availability state and preserve
+    // those shared groups instead of expanding the full catalogue through JSON.
+    items: (window.DEMO_MENU || []).map(item => ({...item, sold_out: false})),
+    source: 'bundled', revision: 'bundled-20261105'
   });
   let cachedMenu, menuETag = '', menuFlight;
   let mode = configuredRoot ? 'connecting' : 'catalogue';
