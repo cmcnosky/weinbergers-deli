@@ -1,0 +1,102 @@
+/* Structural rules stay visible on both sides of every section transition. */
+:root {
+  --boundary-maroon: #631723;
+  --boundary-gold: var(--yellow, #f8cc46);
+  --section-rule: 9px solid var(--boundary-maroon);
+  --panel-rule: 6px solid var(--boundary-maroon);
+}
+
+.guest-header { border-bottom: var(--panel-rule); }
+.guest-page main > :is(section, aside, nav, div) { border-bottom: var(--section-rule); }
+.guest-page main > :is(.recognition-strip, .guest-story, .deli-craft) {
+  border-block: 9px solid var(--boundary-gold);
+  outline: 3px solid var(--boundary-maroon);
+  outline-offset: -3px;
+}
+.guest-footer {
+  border-top: 9px solid var(--boundary-gold);
+  outline: 3px solid var(--boundary-maroon);
+  outline-offset: -3px;
+}
+.hero-sandwich { border-left: var(--section-rule); }
+.hero-sandwich figcaption { border-top: var(--panel-rule); }
+.guest-essentials, .deli-order-paths { padding-inline: 0; }
+.recognition-strip > a,
+.guest-essentials > a,
+.guest-essentials > a:first-child,
+.guest-essentials > a:last-child,
+.deli-order-paths > a,
+.deli-order-paths > a:first-child,
+.deli-order-paths > a:last-child {
+  padding: 28px clamp(20px, 4vw, 54px);
+  border-right: var(--panel-rule);
+}
+.recognition-strip > a { border-right-color: var(--boundary-gold); }
+.recognition-strip > a:last-child,
+.guest-essentials > a:last-child,
+.deli-order-paths > a:last-child { border-right: 0; }
+.signature-grid article { border: var(--panel-rule); padding: 20px; }
+.visit-sections > section + section { border-left: var(--panel-rule); }
+.guest-questions details, .award-row, .recognition-quote { border-bottom: var(--panel-rule); }
+.film-frame { border: var(--panel-rule); }
+
+/* Shared mobile ordering, request pages, and owner workspace. */
+.chicago-classics {
+  border-block: 9px solid var(--boundary-gold);
+  outline: 3px solid var(--boundary-maroon);
+  outline-offset: -3px;
+}
+.expansion-footer {
+  border-top: 9px solid var(--boundary-gold);
+  outline: 3px solid var(--boundary-maroon);
+  outline-offset: -3px;
+}
+.staff-body #queue { border-inline: var(--panel-rule); }
+.owner-timing-live { border: 3px solid var(--boundary-maroon); border-left-width: 6px; }
+
+/* Proposal panels follow the same light/dark boundary treatment. */
+.proof-statement, .ownership-callout { border-top: var(--panel-rule); }
+.offer-strip {
+  border-block: 9px solid var(--boundary-gold);
+  outline: 3px solid var(--boundary-maroon);
+  outline-offset: -3px;
+}
+.comparison-section, .pay-section, .decision-section {
+  border-inline-color: var(--boundary-gold);
+  border-bottom-color: var(--boundary-gold);
+}
+.limit-line, .no-fee-line { border-top: 6px solid var(--boundary-gold); }
+.expansion-proposal .scope-grid { border: var(--panel-rule); }
+.expansion-proposal .scope-grid > article { border-bottom: var(--panel-rule); }
+.expansion-proposal .scope-grid > article:nth-child(odd) { border-right: var(--panel-rule); }
+.expansion-proposal .scope-grid > article:nth-last-child(-n+2) { border-bottom: 0; }
+
+@media (max-width: 800px) {
+  .deli-craft > div + div { border-top: 6px solid var(--boundary-gold); }
+  .expansion-proposal .scope-grid > article,
+  .expansion-proposal .scope-grid > article:nth-child(odd),
+  .expansion-proposal .scope-grid > article:nth-last-child(-n+2) {
+    border-right: 0;
+    border-bottom: var(--panel-rule);
+  }
+  .expansion-proposal .scope-grid > article:last-child { border-bottom: 0; }
+}
+@media (max-width: 700px) {
+  .hero-sandwich { border-left: 0; border-top: var(--section-rule); }
+  .guest-essentials > a,
+  .guest-essentials > a:first-child,
+  .guest-essentials > a:last-child,
+  .deli-order-paths > a,
+  .deli-order-paths > a:first-child,
+  .deli-order-paths > a:last-child {
+    padding: 24px 5%;
+    border-right: 0;
+    border-bottom: var(--panel-rule);
+  }
+  .guest-essentials > a:last-child, .deli-order-paths > a:last-child { border-bottom: 0; }
+  .visit-sections > section + section { border-left: 0; border-top: var(--panel-rule); }
+}
+@media (max-width: 480px) {
+  .recognition-strip > a { padding: 24px 5%; border-right: 0; border-bottom: 6px solid var(--boundary-gold); }
+  .recognition-strip > a:last-child { border-bottom: 0; }
+}

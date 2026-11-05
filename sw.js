@@ -1,10 +1,10 @@
 'use strict';
 // Cache public browsing assets only. Payments, private order lookups, runtime
 // configuration prefers the network; staff operations never enter this cache.
-const CACHE='weinbergers-public-v20261105-27';
+const CACHE='weinbergers-public-v20261105-29';
 const ROOT=new URL('./',self.location).pathname;
 const PUBLIC_PAGES=['','index.html','menu.html','mobile.html','visit.html','readable-menu.html','story.html','group.html','catering.html'];
-const SHELL=['story.html','group.html','catering.html','story.css?v=20261105-27','story.js?v=20261105-27','expansion.css?v=20261105-27','customer-usuals.js?v=20261105-27','group-order.js?v=20261105-27','catering.js?v=20261105-27','guest.css?v=20261105-27','home.js?v=20261105-27','index.html','menu.html','mobile.html','visit.html','readable-menu.html','readable-menu.css?v=20261105-27','style.css?v=20261105-27','discovery.css?v=20261105-27','brand.css?v=20261105-27','experience.css?v=20261105-27','runtime-config.js?v=20261105-27','demo-menu.js?v=20261105-27','data.js?v=20261105-27','discovery.js?v=20261105-27','customer.js?v=20261105-27','media.js?v=20261105-27','offline.js?v=20261105-27','fonts.css','barlow.css','assets/weinbergers-logo-original.png','assets/weinbergers-logo-smooth.svg','assets/optimized/gayles-super-reuben-8U3W-800.webp'];
+const SHELL=['boundaries.css?v=20261105-29','story.html','group.html','catering.html','story.css?v=20261105-29','story.js?v=20261105-29','expansion.css?v=20261105-29','customer-usuals.js?v=20261105-29','group-order.js?v=20261105-29','catering.js?v=20261105-29','guest.css?v=20261105-29','home.js?v=20261105-29','index.html','menu.html','mobile.html','visit.html','readable-menu.html','readable-menu.css?v=20261105-29','style.css?v=20261105-29','discovery.css?v=20261105-29','brand.css?v=20261105-29','experience.css?v=20261105-29','runtime-config.js?v=20261105-29','demo-menu.js?v=20261105-29','data.js?v=20261105-29','discovery.js?v=20261105-29','customer.js?v=20261105-29','media.js?v=20261105-29','offline.js?v=20261105-29','fonts.css','barlow.css','assets/weinbergers-logo-original.png','assets/weinbergers-logo-smooth.svg','assets/optimized/gayles-super-reuben-8U3W-800.webp'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('weinbergers-public-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',event=>{
