@@ -12,7 +12,7 @@
   <link rel="icon" href="assets/weinbergers-logo-original.png">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="barlow.css">
-  <link rel="stylesheet" href="dan.css">
+  <link rel="stylesheet" href="dan.css?v=20261105-27">
   <link rel="canonical" href="https://cmcnosky.github.io/weinbergers-deli/dan.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Weinberger’s Deli">
@@ -212,17 +212,17 @@
           <article>
             <span>WEB</span>
             <strong>CUSTOMER WEBSITE</strong>
-            <p>Discovery, comparison, full customization, bag, quote review, checkout handoff, and private order recovery.</p>
+            <p>Discovery, comparison, full customization, My Usuals, pickup windows, group lunch, catering requests, quote review, checkout handoff, and private order recovery.</p>
           </article>
           <article>
             <span>iOS</span>
             <strong>NATIVE IPHONE APP</strong>
-            <p>SwiftUI source for menu discovery, customization, favorites, history, hosted checkout, recovery, and status.</p>
+            <p>SwiftUI source for discovery, exact saved sandwiches, pickup selection, checkout, recovery, ready alerts, and the deli story. Group and catering requests open the connected web flow.</p>
           </article>
           <article>
             <span>AND</span>
             <strong>NATIVE ANDROID APP</strong>
-            <p>Kotlin Compose project with test builds, the shared catalogue workflow, hosted checkout, recovery, and status.</p>
+            <p>Kotlin Compose project with test builds, exact saved sandwiches, pickup selection, checkout, recovery, ready alerts, and the deli story. Group and catering requests open the connected web flow.</p>
           </article>
         </div>
         <div class="map-connector" aria-hidden="true"><span></span><b>THE SHARED CONTRACT</b><span></span></div>
@@ -235,12 +235,12 @@
           <article>
             <span>BUILT NOW</span>
             <h3>MANAGER + KITCHEN</h3>
-            <p>Paid-order queue, preparation states, stock controls, hours controls, searchable history, refunds, menu publishing, version restore, and payment-exception review.</p>
+            <p>Paid-order queue, preparation states, stock and hours controls, refunds, menu publishing, timing automation, catering quotes, owner insights, and payment-exception review.</p>
           </article>
           <article class="connection-gate">
             <span>CONNECTION GATE</span>
             <h3>PAYMENT + KITCHEN ROUTE</h3>
-            <p>Stripe Checkout, receipt, PrintNode, and signed-webhook adapter code exists. The selected merchant service, actual POS or kitchen destination, and restaurant equipment still must be identified, connected, and accepted.</p>
+            <p>Stripe Checkout, email, APNs, Firebase push, optional Twilio SMS, PrintNode, and signed-webhook adapter code exists. The selected merchant service, actual POS or kitchen destination, and restaurant equipment still must be identified, connected, and accepted.</p>
           </article>
         </div>
       </div>
@@ -266,6 +266,20 @@
             <li>Physical-device and assistive-technology checks, signing, store testing, submissions, and listing continuity for both native apps.</li>
           </ul>
         </article>
+      </div>
+
+      <div class="expansion-proposal" aria-labelledby="daily-work-heading">
+        <p class="eyebrow">ADDED TO THE CUSTOMER AND OWNER WORKFLOW</p>
+        <h3 id="daily-work-heading">MAKE REPEAT VISITS AND BUSY LUNCHES EASIER.</h3>
+        <div class="scope-grid">
+          <article><h4>THE EXACT USUAL</h4><p>A named sandwich keeps its bread, meat, cheese, toppings, removals, toasting, and instructions. It is checked against current prices and availability when ordered again.</p><a href="menu.html?saved=1">Open My Usuals ↗</a></article>
+          <article><h4>PICKUP TIMES DAN CONTROLS</h4><p>Off uses the staff-set time. Suggest shows a recommendation. Automatic adjusts new promises using configured capacity and queued work. Advanced settings stay tucked away; a temporary rush delay is easy to reach.</p><p>Walk-in and outside-service demand needs an agreed allowance until it is connected. Staff still decide when food is ready.</p></article>
+          <article><h4>ONE GROUP ORDER</h4><p>An organizer shares a private invitation. Each person names and customizes their order; the organizer reviews and pays once. Names carry into the kitchen information.</p><a href="group.html">Open group lunch ↗</a></article>
+          <article><h4>A REVIEWED CATERING QUOTE</h4><p>Collect the date, headcount, budget, requested food, and fulfillment details. A manager sets the quote and deposit or full payment. A paid deposit is kept separate from an immediate pickup ticket.</p><a href="catering.html">Open catering requests ↗</a></article>
+          <article><h4>READY ALERTS AND USEFUL NUMBERS</h4><p>Customers can opt into configured email, app, or SMS alerts after the kitchen marks an order ready. The owner overview shows paid sales after refunds, order value, popular items, recorded preparation times, and problems needing attention.</p><p>Figures cover this service, not unseen sales in the current POS.</p></article>
+          <article><h4>THE ACTUAL WEINBERGER’S STORY</h4><p>Dan’s portrait, family history, approach to making sandwiches, dated recognition with sources, and the restaurant’s own video are incorporated into the existing yellow and maroon design.</p><a href="story.html">Read the story and recognition ↗</a></article>
+        </div>
+        <p class="limit-line">These connected workflows are implemented and exercised locally. Public transactions remain closed until the approved restaurant service is deployed. Push and SMS delivery still require authorized service configuration and actual-device acceptance.</p>
       </div>
 
       <p class="limit-line"><strong>Boundary:</strong> recorded connected tests used isolated payment and kitchen fixtures. No card was charged, no restaurant ticket was printed, and no claim of production readiness or customer preference follows from those local checks.</p>
@@ -441,14 +455,15 @@
             <li>Separate native iPhone and Android projects and release work</li>
             <li>Shared order backend, supported payment route, manager tools, and browser kitchen screen</li>
             <li>Production connection, supported-device testing, staff pilot, training, controlled release, and handoff</li>
-            <li>Ingredient and item availability for online ordering</li>
+            <li>Ingredient and item availability, My Usuals, group ordering, and reviewed catering quotes and deposits</li>
+            <li>Owner-controlled pickup automation, ready-alert adapters, and service insights</li>
           </ul>
         </article>
         <article>
           <h3>NOT A DELIVERED FEATURE OF THIS BUILD</h3>
           <ul>
             <li>Loyalty balances and rules or automated marketing</li>
-            <li>Delivery, catering, or historical-data repair</li>
+            <li>Delivery dispatch, historical-data repair, or catering logistics beyond the reviewed request and payment flow</li>
             <li>Full purchasing, accounting inventory, or accounting</li>
             <li>A new or unsupported POS adapter</li>
           </ul>

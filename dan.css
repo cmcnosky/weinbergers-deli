@@ -1563,3 +1563,7 @@ h1 {
     transition: none;
   }
 }
+
+.expansion-proposal{margin-top:48px;border-top:3px solid var(--maroon,#631723);padding-top:36px}.expansion-proposal>h3{font:800 clamp(30px,4vw,48px)/1.1 "Barlow Condensed",sans-serif;margin:14px 0 25px}.expansion-proposal h4{font:800 25px/1.1 "Barlow Condensed",sans-serif;margin:0 0 16px}.expansion-proposal a{font-weight:700;text-underline-offset:4px}.expansion-proposal article p+p{margin-top:15px}
+
+.expansion-proposal>.eyebrow,.expansion-proposal>h3{margin-left:clamp(18px,4vw,64px);margin-right:clamp(18px,4vw,64px)}.expansion-proposal article p{font-size:15px;line-height:1.6}

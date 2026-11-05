@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; font-src 'self'; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; object-src 'none'; base-uri 'self'; form-action 'self'">
+ <meta name="referrer" content="strict-origin-when-cross-origin">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#67162a">
+ <meta name="robots" content="noindex,nofollow">
+ <title>Group lunch | Weinberger’s Deli</title>
+ <meta name="description" content="Build one Weinberger’s group lunch without one person transcribing everyone’s sandwich.">
+ <link rel="canonical" href="https://cmcnosky.github.io/weinbergers-deli/group.html">
+ <link rel="icon" href="assets/weinbergers-logo-original.png">
+ <meta property="og:type" content="website"><meta property="og:title" content="Group lunch | Weinberger’s Deli"><meta property="og:description" content="Give each person a private invitation to add and name their sandwich, then review and pay once."><meta property="og:url" content="https://cmcnosky.github.io/weinbergers-deli/group.html"><meta property="og:image" content="https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="Weinberger’s Deli original logo, Gayle’s Super Reuben, and Chicago Deli lettering in yellow and maroon."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105.png"><meta name="twitter:image:alt" content="Weinberger’s Deli original logo, Gayle’s Super Reuben, and Chicago Deli lettering in yellow and maroon.">
+ <link rel="stylesheet" href="style.css?v=20261105-27"><link rel="stylesheet" href="brand.css?v=20261105-27"><link rel="stylesheet" href="expansion.css?v=20261105-27">
+ <script src="runtime-config.js?v=20261105-27" defer></script><script src="demo-menu.js?v=20261105-27" defer></script><script src="data.js?v=20261105-27" defer></script><script src="group-order.js?v=20261105-27" defer></script>
+</head>
+<body class="expansion-page">
+ <a class="skip" href="#main">Skip to content</a>
+ <header class="expansion-header"><a href="index.html" aria-label="Weinberger’s Deli home"><img src="assets/weinbergers-logo-original.png" alt="Weinberger’s Deli"></a><nav aria-label="Main navigation"><a href="menu.html">Menu</a><a href="catering.html">Catering</a><a href="visit.html">Visit</a></nav></header>
+ <main id="main">
+  <section class="expansion-hero"><p class="expansion-kicker">ONE LUNCH / EVERYONE’S OWN ORDER</p><h1>LUNCH FOR<br>EVERYONE.</h1><p>Send one private invitation. Everyone names and builds their own sandwich. You review the combined order and pay once.</p></section>
+  <p id="group-notice" class="expansion-notice" role="status" aria-live="polite" hidden></p>
+  <section id="create-panel" class="expansion-panel">
+   <p class="expansion-kicker">START A GROUP</p><h2>SET THE DEADLINE.</h2>
+   <form id="create-group-form" class="expansion-form">
+    <label>Group name<input name="name" maxlength="120" required placeholder="Friday office lunch"></label>
+    <label>Your name<input name="organizer_name" maxlength="100" autocomplete="name" required></label>
+    <div class="form-grid"><label>Contributions close<input name="deadline_at" type="datetime-local" required></label><label>Requested pickup <span>Optional</span><input name="requested_pickup_at" type="datetime-local"></label></div>
+    <button class="expansion-primary" type="submit">Create private invitation</button>
+   </form>
+   <p id="connection-note" class="connection-note" hidden>Group ordering is not accepting requests here yet. Your plan can be saved on this device. For an order today, use <a href="https://weinbergersdeli.com/menu" target="_blank" rel="noopener">Weinberger’s current ordering site ↗</a> or <a href="tel:+18176705729">call the deli</a>.</p>
+  </section>
+  <section id="join-panel" class="expansion-panel" hidden>
+   <p class="expansion-kicker">YOU’VE BEEN INVITED</p><h2>NAME YOUR SANDWICH.</h2><p>Enter the name the organizer should see. You will build your order from the full menu next.</p>
+   <form id="join-group-form" class="expansion-form"><label>Your name<input name="display_name" maxlength="80" autocomplete="name" required></label><button class="expansion-primary" type="submit">Join and open the menu</button></form>
+  </section>
+  <div id="dashboard" class="expansion-dashboard" hidden></div>
+ </main>
+ <footer class="expansion-footer"><strong>WEINBERGER’S DELI</strong><span>601 S Main Street · Grapevine, Texas</span><a href="tel:+18176705729">(817) 670-5729</a></footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; font-src 'self'; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; object-src 'none'; base-uri 'self'; form-action 'self'">
+ <meta name="referrer" content="strict-origin-when-cross-origin">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#67162a">
+ <meta name="robots" content="noindex,nofollow">
+ <title>Catering | Weinberger’s Deli</title>
+ <meta name="description" content="Tell Weinberger’s Deli what your group needs. The deli reviews the event, menu, timing, and price before asking for payment.">
+ <link rel="canonical" href="https://cmcnosky.github.io/weinbergers-deli/catering.html">
+ <link rel="icon" href="assets/weinbergers-logo-original.png">
+ <meta property="og:type" content="website"><meta property="og:title" content="Catering | Weinberger’s Deli"><meta property="og:description" content="Send the event details once, receive a reviewed quote, and pay a deposit only after approval."><meta property="og:url" content="https://cmcnosky.github.io/weinbergers-deli/catering.html"><meta property="og:image" content="https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="Weinberger’s Deli original logo, Gayle’s Super Reuben, and Chicago Deli lettering in yellow and maroon."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105.png"><meta name="twitter:image:alt" content="Weinberger’s Deli original logo, Gayle’s Super Reuben, and Chicago Deli lettering in yellow and maroon.">
+ <link rel="stylesheet" href="style.css?v=20261105-27"><link rel="stylesheet" href="brand.css?v=20261105-27"><link rel="stylesheet" href="expansion.css?v=20261105-27">
+ <script src="runtime-config.js?v=20261105-27" defer></script><script src="demo-menu.js?v=20261105-27" defer></script><script src="data.js?v=20261105-27" defer></script><script src="catering.js?v=20261105-27" defer></script>
+</head>
+<body class="expansion-page">
+ <a class="skip" href="#main">Skip to content</a>
+ <header class="expansion-header"><a href="index.html" aria-label="Weinberger’s Deli home"><img src="assets/weinbergers-logo-original.png" alt="Weinberger’s Deli"></a><nav aria-label="Main navigation"><a href="menu.html">Menu</a><a href="group.html">Group lunch</a><a href="visit.html">Visit</a></nav></header>
+ <main id="main">
+  <section class="expansion-hero"><p class="expansion-kicker">OFFICES / PARTIES / EVENTS</p><h1>CATERING FROM<br>THE DELI.</h1><p>Give the deli the useful details once. Staff review the date, headcount, food, timing, and fulfillment before sending a price or asking for a deposit.</p></section>
+  <p id="catering-notice" class="expansion-notice" role="status" aria-live="polite" hidden></p>
+  <section id="request-panel" class="expansion-panel">
+   <p class="expansion-kicker">REQUEST A REVIEWED QUOTE</p><h2>PLAN YOUR ORDER.</h2>
+   <form id="catering-form" class="expansion-form">
+    <div class="form-grid"><label>Contact name<input name="contact_name" maxlength="100" autocomplete="name" required></label><label>Email<input name="email" type="email" maxlength="254" autocomplete="email" required></label></div>
+    <div class="form-grid"><label>Phone <span>Optional</span><input name="phone" type="tel" maxlength="32" autocomplete="tel"></label><label>Event date and time<input name="event_at" type="datetime-local" required></label></div>
+    <div class="form-grid"><label>Number of people<input name="headcount" type="number" min="1" max="1000" inputmode="numeric" required></label><label>Budget <span>Optional, total dollars</span><input name="budget" type="number" min="0" max="1000000" step="0.01" inputmode="decimal"></label></div>
+    <div class="form-grid"><label>Fulfillment<select name="fulfillment" required><option value="pickup">Pickup</option><option value="delivery">Delivery request</option></select></label><label>Delivery address <span>Required if requesting delivery</span><input name="address" maxlength="300" autocomplete="street-address"></label></div>
+    <label>What food do you need?<textarea name="details" maxlength="2000" required placeholder="Sandwich trays, individual lunches, sides, drinks, serving needs…"></textarea></label>
+    <label>Dietary or accessibility notes <span>Optional</span><textarea name="dietary_notes" maxlength="1000" placeholder="Allergy questions should also be discussed directly with the deli."></textarea></label>
+    <button class="expansion-primary" type="submit">Send request for review</button>
+   </form>
+   <p class="form-help">This sends a request, not an order. Nothing is charged until staff approve a quote and you deliberately continue to secure payment.</p>
+   <p id="connection-note" class="connection-note" hidden>Catering requests are not accepting submissions here yet. Your form can be saved on this device, but it will not be sent. For an event now, <a href="mailto:weinbergersdeli@aol.com?subject=Catering%20request">email the deli</a> or call <a href="tel:+18176705729">(817) 670-5729</a>.</p>
+  </section>
+  <div id="catering-status" class="expansion-dashboard" hidden></div>
+ </main>
+ <footer class="expansion-footer"><strong>WEINBERGER’S DELI</strong><span>601 S Main Street · Grapevine, Texas</span><a href="tel:+18176705729">(817) 670-5729</a></footer>
+</body>
+</html>
