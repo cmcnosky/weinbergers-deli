@@ -1,0 +1,125 @@
+/* Readable counter typography: retain the deli's typefaces, increase the small print. */
+.guest-page { font-size: 18px; }
+.guest-kicker { font-size: 16px; font-weight: 800; line-height: 1.55; letter-spacing: .05em; }
+.guest-utility { font-size: 14px; font-weight: 700; }
+.guest-header nav { font-size: 16px; font-weight: 800; }
+.guest-primary, .guest-text-link, .home-search button { font-size: 17px; font-weight: 800; }
+.guest-page .hero-deck, .signature-grid p, .guest-story > div,
+.visit-intro p, .visit-sections p, .guest-list,
+.guest-questions details > p, .story-opening p:not(.guest-kicker),
+.deli-family p:not(.guest-kicker), .deli-craft p:not(.guest-kicker),
+.deli-order-paths p { font-size: 18px; font-weight: 600; line-height: 1.7; }
+.home-search label { font-size: 16px; font-weight: 700; }
+.home-search input { font-size: 18px; font-weight: 600; }
+.hero-sandwich figcaption > span,
+.guest-essentials span { font-size: 15px; font-weight: 800; line-height: 1.5; }
+.guest-essentials small, .recognition-strip span {
+  font-size: 16px; font-weight: 650; line-height: 1.6;
+}
+.guest-last-stop > div > p:last-child {
+  font-size: clamp(23px, 2.3vw, 29px); font-weight: 750; line-height: 1.45;
+}
+.guest-footer, .guest-footer nav { font-size: 16px; font-weight: 650; line-height: 1.7; }
+.visit-intro .visit-address { font-size: 26px; font-weight: 800; line-height: 1.4; }
+.visit-sections .guest-note, .recognition-quote figcaption,
+.deli-family figcaption, .deli-craft a, .recognition-note {
+  font-size: 16px; font-weight: 650; line-height: 1.7;
+}
+.award-row p { font-size: 17px; font-weight: 600; }
+.path-action { font-size: 17px; font-weight: 800; }
+.guest-contact address { font-size: 19px; font-weight: 650; }
+.guest-questions summary { font-size: 20px; font-weight: 800; }
+
+/* A direct hero link and an early, wide film feature make the original video easy to find. */
+.guest-film-link {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-size: 17px; font-weight: 800; min-height: 48px;
+  text-decoration: underline; text-underline-offset: 5px;
+}
+.guest-film-link > span {
+  display: grid; place-items: center; flex: 0 0 35px; width: 35px; height: 35px;
+  border: 3px solid var(--red); color: var(--red); font-size: 16px;
+}
+.story-opening .guest-film-link { display: flex; margin-top: 16px; }
+.deli-film {
+  background: var(--yellow); grid-template-columns: 1fr;
+  padding: 45px 4% 40px; gap: 30px; scroll-margin-top: 25px;
+}
+.deli-film > div:first-child {
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: 12px 50px; align-items: center;
+}
+.deli-film .guest-kicker { grid-column: 1 / -1; font-size: 16px; font-weight: 800; }
+.deli-film h2 { grid-column: 1; grid-row: 2 / 4; margin: 0; font-size: clamp(48px, 6vw, 80px); }
+.deli-film p:not(.guest-kicker) { font-size: 20px; font-weight: 650; line-height: 1.6; }
+.deli-film .guest-text-link { margin-top: 0; font-size: 17px; }
+.deli-film [data-deli-film] { width: 100%; max-width: 1120px; justify-self: center; }
+.film-launch > span { font-size: clamp(26px, 4vw, 48px); gap: 22px; }
+.film-play { width: 88px; height: 88px; border-width: 4px; font-size: 36px; }
+.film-controls { font-size: 16px; font-weight: 700; gap: 10px 24px; }
+.film-controls button { border-width: 3px; padding: 9px 15px; }
+
+/* Supporting text in ordering, request forms and the phone presentations. */
+.product p, .detail-copy, .menu-intro, .cart-row p { font-size: 16px; font-weight: 600; line-height: 1.65; }
+.menu-back, .menu-note, .fine, .allergy-note, .filter-note,
+.directory-note, .detail-meta, .bag-meta { font-size: 14px; font-weight: 650; }
+.product-index, .product .tag, .results-line { font-size: 13px; font-weight: 700; }
+.product-tools button, .quick-ingredients button, .chip, .category-picker,
+.filter-fields label, .discovery-filters summary, .sort-control,
+.option-group legend, .customization-control label { font-size: 15px; font-weight: 750; }
+.option-label span, .option-quantity-row > label { font-size: 16px; font-weight: 650; }
+.option-label small, .option-quantity-row small, .customization-group summary small,
+.selection-review > p, .option-group legend > span { font-size: 14px; font-weight: 600; }
+.filter-fields input, .filter-fields select, .sort-control select { font-size: 16px; }
+.phone-features li, .phone-deck { font-size: 18px; font-weight: 600; }
+.phone-features li > span { font-size: 14px; font-weight: 750; }
+.expansion-kicker { font-size: 15px; line-height: 1.6; }
+.expansion-header nav { font-size: 14px; }
+.expansion-form label, .expansion-panel > label,
+.expansion-primary, .expansion-secondary { font-size: 16px; }
+.form-help, .connection-note, .participant li span, .quote-lines small,
+.usual-card p, .group-bag-action > p, .pickup-choice span { font-size: 15px; font-weight: 600; }
+.group-summary dt, .expansion-panel dt, .quote-note strong,
+.usuals-heading > span { font-size: 14px; font-weight: 700; }
+.notification-settings label, .expansion-footer { font-size: 16px; font-weight: 650; }
+.document-line, .journey-index, .section-number,
+.proposal-hero .eyebrow, .section > .eyebrow,
+.hero-caption > span, .system-map small { font-size: 13px; font-weight: 800; line-height: 1.6; }
+.scope-grid p, .switch-list p, .milestones p, .care-grid p,
+.pay-grid p, .comparison-list p, .system-map p, .source-note {
+  font-size: 16px; font-weight: 600; line-height: 1.65;
+}
+.hero-actions .button, .decision-actions .button, .header-action { font-size: 14px; }
+
+@media (max-width: 1000px) {
+  .guest-header nav { gap: 18px; }
+}
+@media (max-width: 700px) {
+  .guest-utility { flex-wrap: wrap; gap: 3px 14px; font-size: 13px; }
+  .guest-header { gap: 12px; }
+  .guest-header nav { font-size: 14px; gap: 3px 14px; justify-content: flex-end; }
+  .guest-header nav > a { min-height: 36px; }
+  .guest-essentials > a { display: flex; align-items: flex-start; }
+  .guest-essentials small { max-width: none; }
+  .recognition-strip a { grid-template-columns: 1fr; gap: 10px; }
+  .guest-primary, .guest-text-link { font-size: 16px; }
+  .guest-footer { grid-template-columns: 1fr; }
+  .guest-footer > div { grid-column: auto; }
+  .deli-film { padding: 32px 5%; gap: 24px; }
+  .deli-film > div:first-child { grid-template-columns: 1fr; gap: 18px; }
+  .deli-film h2 { grid-column: auto; grid-row: auto; font-size: clamp(44px, 10vw, 64px); }
+  .deli-film p:not(.guest-kicker) { font-size: 18px; }
+  .film-launch > span { gap: 12px; }
+  .film-play { width: 58px; height: 58px; font-size: 25px; }
+  .film-controls { font-size: 15px; }
+  .product p { -webkit-line-clamp: 4; }
+  .results-line { gap: 12px; }
+  .sort-control { flex-wrap: wrap; }
+  .expansion-header nav { gap: 10px; }
+  .expansion-hero > p:last-child { font-size: 18px; }
+}
+@media (max-width: 360px) {
+  .guest-brand img { width: 108px; }
+  .guest-kicker { font-size: 15px; }
+  .film-launch > span { font-size: 24px; }
+  .film-play { width: 48px; height: 48px; font-size: 22px; }
+}
