@@ -26,7 +26,7 @@
  function finishConfirmation(accepted){const resolve=confirmationResolve;confirmationResolve=null;const dialog=$('#studio-dialog');if(dialog.open)dialog.close();$('#studio-dialog-body').innerHTML='';if(resolve)resolve(accepted)}
  function heading(title,description,actions=''){return `<div class="studio-view-head"><div><p class="studio-kicker">OWNER SITE STUDIO</p><h2>${esc(title)}</h2><p>${esc(description)}</p></div>${actions?`<div class="studio-view-actions">${actions}</div>`:''}</div>`}
  function updateRelease(){
-  const publishedRevision=revisionOf(state.published),draftLabel=state.scratch?'Browser review':state.draft?`Draft ${versionOf(state.draft)}`:'No draft',publishedLabel=state.scratch?'Current website':publishedRevision==='default'?'Original website':publishedRevision;
+  const publishedRevision=revisionOf(state.published),publishedNumber=Number(state.published?.revision_number),draftLabel=state.scratch?'Browser review':state.draft?`Draft ${versionOf(state.draft)}`:'No draft',publishedLabel=state.scratch?'Current website':publishedRevision==='default'?'Original website':Number.isInteger(publishedNumber)&&publishedNumber>0?`Published version ${publishedNumber}`:'Current published site';
   $('#studio-release').innerHTML=`<div><span>CUSTOMERS SEE</span><strong>${esc(publishedLabel)}</strong><small>Published site revision</small></div><div><span>YOU ARE EDITING</span><strong>${esc(draftLabel)}</strong><small>${state.scratch?'Saved on this device only':state.draft?'Private until published':'Start a draft when ready'}</small></div>`;
  }
  function updateSavebar(){
