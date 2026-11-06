@@ -2,7 +2,7 @@
 (() => {
  const core=window.DeliContentCore;if(!core)return;
  const preview=new URLSearchParams(location.search).get('cms-preview')==='1';
- const root=String(window.WEINBERGERS_RUNTIME?.apiBaseUrl||'').replace(/\/$/,'');
+ const root=String(window.WEINBERGERS_RUNTIME?.contentApiBaseUrl||window.WEINBERGERS_RUNTIME?.ownerApiBaseUrl||window.WEINBERGERS_RUNTIME?.apiBaseUrl||'').replace(/\/$/,'');
  const previewKey='wd-site-studio-preview-v1',cacheKey='wd-published-content-v1:'+root;
  let current=null,etag='',loading=false;
  const contactDefaults={name:'Weinberger’s Deli',phone:'(817) 670-5729',address:'601 S Main Street',city:'Grapevine, Texas 76051'};

@@ -1,7 +1,11 @@
 'use strict';
 
-// Browser-safe configuration only. Live service requires a dedicated restaurant origin.
-// Shared github.io review origins cannot call private APIs. A connected deployment replaces apiBaseUrl
-// with its HTTPS API root including /api. Payment keys, webhook secrets, staff credentials,
-// and database URLs belong only in the backend secret store.
-window.WEINBERGERS_RUNTIME = Object.freeze({apiBaseUrl: ''});
+// Browser-safe service addresses only. A static public site may point owner and
+// published-content traffic at a separate HTTPS API without enabling checkout.
+// Payment keys, password hashes, webhook secrets, staff credentials, and
+// database URLs belong only in the backend secret store.
+window.WEINBERGERS_RUNTIME = Object.freeze({
+  apiBaseUrl: '',
+  ownerApiBaseUrl: 'https://weinbergers-deli.cmcnosky.chatgpt.site/api',
+  contentApiBaseUrl: 'https://weinbergers-deli.cmcnosky.chatgpt.site/api'
+});

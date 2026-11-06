@@ -2,7 +2,7 @@
 // The original HTML remains a complete, script-free fallback. A connected site
 // refreshes it from the exact published menu used for ordering.
 (() => {
- const root=String(window.WEINBERGERS_RUNTIME?.apiBaseUrl||'').replace(/\/$/,'');if(!root)return;
+ const root=String(window.WEINBERGERS_RUNTIME?.contentApiBaseUrl||window.WEINBERGERS_RUNTIME?.ownerApiBaseUrl||window.WEINBERGERS_RUNTIME?.apiBaseUrl||'').replace(/\/$/,'');if(!root)return;
  const main=document.querySelector('main');if(!main)return;
  const node=(tag,text,cls)=>{const el=document.createElement(tag);if(text!=null)el.textContent=text;if(cls)el.className=cls;return el;};
  async function refresh(){try{const response=await fetch(root+'/menu',{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(10000)});if(!response.ok)return;const menu=await response.json();if(!Array.isArray(menu.items))return;const fragment=document.createDocumentFragment();const nav=node('nav',null,'categories');nav.id='categories';nav.setAttribute('aria-label','Menu categories');const categories=[...new Set(menu.items.map(i=>i.category))];

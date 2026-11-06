@@ -176,6 +176,15 @@
   padding: clamp(30px, 4vw, 62px) clamp(18px, 3vw, 52px) 72px;
 }
 
+.content-management-only .service-control,
+.content-management-only .board-flow {
+  display: none;
+}
+
+.content-management-only .board-heading {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .board-heading {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(340px, 420px);

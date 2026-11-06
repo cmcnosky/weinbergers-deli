@@ -1,8 +1,14 @@
 'use strict';
 
 window.Deli = (() => {
-  const configuredRoot = String(window.WEINBERGERS_RUNTIME?.apiBaseUrl || '').trim().replace(/\/$/, '');
   const sharedReviewOrigin = /(^|\.)github\.io$/i.test(String(window.location?.hostname || ''));
+  const cleanRoot = value => String(value || '').trim().replace(/\/$/, '');
+  const configuredRoot = cleanRoot(window.WEINBERGERS_RUNTIME?.apiBaseUrl);
+  // A static public site may use a narrowly scoped owner/content service without
+  // enabling checkout on the shared host. On github.io these roots must be
+  // explicitly configured; they never inherit the ordering API implicitly.
+  const ownerRoot = cleanRoot(window.WEINBERGERS_RUNTIME?.ownerApiBaseUrl) || (sharedReviewOrigin ? '' : configuredRoot);
+  const contentRoot = cleanRoot(window.WEINBERGERS_RUNTIME?.contentApiBaseUrl) || ownerRoot || (sharedReviewOrigin ? '' : configuredRoot);
   let bundledMenu;
   const staticMenu = () => bundledMenu || (bundledMenu = {
     restaurant: {name: 'Weinberger’s Deli', location: '601 S Main St, Grapevine, TX 76051'},
@@ -30,9 +36,17 @@ window.Deli = (() => {
     throw error;
   }
 
+  function requestKind(path) {
+    if (/^\/(?:auth|staff)(?:\/|$)/.test(path)) return 'owner';
+    if (/^\/(?:menu|site-content)(?:\/|$)/.test(path) || /^\/site-assets\//.test(path)) return 'content';
+    return 'ordering';
+  }
+
   function rootURL(path) {
-    if (!configuredRoot) fail('Online checkout is not connected yet.', 'service_not_configured');
-    return configuredRoot + (path.startsWith('/') ? path : '/' + path);
+    const kind = requestKind(path);
+    const root = kind === 'owner' ? ownerRoot : kind === 'content' ? contentRoot : configuredRoot;
+    if (!root) fail(kind === 'owner' ? 'Online account access is not connected yet.' : kind === 'content' ? 'Published content is not connected yet.' : 'Online checkout is not connected yet.', 'service_not_configured');
+    return root + (path.startsWith('/') ? path : '/' + path);
   }
 
   async function decode(response, raw = false) {
@@ -46,8 +60,12 @@ window.Deli = (() => {
   }
 
   async function fetchAPI(path, {method = 'GET', body, token, raw = false, menuConditional = false} = {}) {
-    if (!configuredRoot) fail('Online checkout is not connected yet.', 'service_not_configured');
-    if (sharedReviewOrigin) fail('Ordering and staff access require the restaurant’s dedicated secure address.', 'dedicated_origin_required');
+    const kind = requestKind(path);
+    if (sharedReviewOrigin && kind === 'ordering') fail('Online ordering requires the restaurant’s dedicated secure address.', 'dedicated_origin_required');
+    if (sharedReviewOrigin && kind === 'owner' && !ownerRoot) fail('Account access requires the configured secure owner service.', 'dedicated_origin_required');
+    // Resolve the destination before building headers so a missing owner/content
+    // service cannot receive a credential or private payload by accident.
+    const destination = rootURL(path);
     const headers = {Accept: raw ? 'text/csv, application/json' : 'application/json'};
     if (body !== undefined) headers['Content-Type'] = 'application/json';
     if (token) headers.Authorization = 'Bearer ' + token;
@@ -56,7 +74,7 @@ window.Deli = (() => {
     const timeout = setTimeout(() => controller.abort(), 15000);
     let response;
     try {
-      response = await fetch(rootURL(path), {
+      response = await fetch(destination, {
         method, headers, credentials: 'omit',
         cache: method === 'GET' ? 'no-store' : 'default',
         signal: controller.signal,
@@ -160,13 +178,15 @@ window.Deli = (() => {
   }
 
   async function menu() {
-    if (!configuredRoot) return staticMenu();
+    if (!contentRoot) return staticMenu();
     if (menuFlight) return menuFlight;
     menuFlight = (async () => {
     try {
-      await init();
-      config = await fetchAPI('/config');
-      mode = 'connected';
+      if (configuredRoot && !sharedReviewOrigin) {
+        await init();
+        config = await fetchAPI('/config');
+        mode = 'connected';
+      }
       if (config.menu_revision && cachedMenu?.revision === config.menu_revision) return cachedMenu;
       return await fetchAPI('/menu', {menuConditional: true});
     }
@@ -190,6 +210,8 @@ window.Deli = (() => {
     get config() { return {...config}; },
     get connected() { return mode === 'connected'; },
     get checkoutAvailable() { return mode === 'connected' && config.checkout_enabled === true; },
-    get apiRoot() { return configuredRoot; }
+    get apiRoot() { return configuredRoot; },
+    get ownerApiRoot() { return ownerRoot; },
+    get contentApiRoot() { return contentRoot; }
   };
 })();

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#631723">
+  <title>Log in | Weinberger’s Deli</title>
+  <meta name="description" content="Log in to a Weinberger’s Deli account.">
+  <link rel="icon" href="assets/weinbergers-logo-original.png">
+  <link rel="stylesheet" href="style.css?v=20261106-35">
+  <link rel="stylesheet" href="login.css?v=20261106-35">
+  <link rel="stylesheet" href="account-menu.css?v=20261106-35">
+  <script src="runtime-config.js?v=20261106-35" defer></script>
+  <script src="data.js?v=20261106-35" defer></script>
+  <script src="account-menu.js?v=20261106-35" defer></script>
+  <script src="login.js?v=20261106-35" defer></script>
+</head>
+<body class="login-page">
+  <a class="skip" href="#login">Skip to log in</a>
+  <header class="login-header">
+    <a href="index.html" aria-label="Weinberger’s Deli home"><img src="assets/weinbergers-logo-smooth.svg" alt="Weinberger’s Deli"></a>
+    <span>601 S MAIN STREET · GRAPEVINE, TEXAS</span>
+  </header>
+  <main id="login" class="login-main">
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="login-card__heading">
+        <p>ACCOUNT ACCESS</p>
+        <h1 id="login-title">LOG IN</h1>
+        <span>Enter your username or email and password.</span>
+      </div>
+      <form id="account-login-form" novalidate>
+        <label for="account-identifier">Username or email</label>
+        <input id="account-identifier" name="identifier" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required>
+        <label for="account-password">Password</label>
+        <div class="login-password">
+          <input id="account-password" name="password" type="password" autocomplete="current-password" required>
+          <button id="password-toggle" type="button" aria-pressed="false">Show</button>
+        </div>
+        <p class="login-error" id="account-login-status" role="alert" aria-live="polite"></p>
+        <button class="login-submit" type="submit">Log in</button>
+      </form>
+      <a class="login-back" href="index.html">← Back to the deli</a>
+    </section>
+  </main>
+</body>
+</html>

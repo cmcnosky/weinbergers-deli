@@ -1,0 +1,184 @@
+.account-menu {
+  --account-yellow: var(--yellow, #f8cc46);
+  --account-maroon: var(--red, #631723);
+  --account-ink: var(--ink, #171914);
+  position: fixed;
+  z-index: 1000;
+  top: 10px;
+  right: 12px;
+  color: var(--account-ink);
+  font-family: var(--sans, system-ui, sans-serif);
+}
+
+/* The menu occupies the upper-right corner. Preserve that small corner in the
+   existing header bars so phone numbers and navigation remain readable. */
+.guest-utility,
+.guest-header,
+.expansion-header,
+.header,
+.site-header,
+.proposal-header,
+.demo-bar,
+.studio-utility,
+.studio-header {
+  padding-right: max(145px, 4%) !important;
+}
+
+.account-menu__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 106px;
+  min-height: 46px;
+  padding: 9px 13px;
+  border: 3px solid var(--account-maroon);
+  border-radius: 0;
+  background: var(--account-yellow);
+  color: var(--account-ink);
+  box-shadow: 4px 4px 0 var(--account-maroon);
+  font: 900 13px/1 var(--sans, system-ui, sans-serif);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.account-menu__toggle:hover,
+.account-menu__toggle:focus-visible,
+.account-menu__toggle[aria-expanded="true"] {
+  background: #fff8dd;
+}
+
+.account-menu__icon,
+.account-menu__icon::before,
+.account-menu__icon::after {
+  display: block;
+  width: 19px;
+  height: 3px;
+  background: var(--account-maroon);
+  content: "";
+}
+
+.account-menu__icon {
+  position: relative;
+}
+
+.account-menu__icon::before {
+  position: absolute;
+  top: -6px;
+}
+
+.account-menu__icon::after {
+  position: absolute;
+  top: 6px;
+}
+
+.account-menu__panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(290px, calc(100vw - 24px));
+  border: 4px solid var(--account-maroon);
+  background: #fffdf4;
+  box-shadow: 8px 8px 0 rgba(23, 25, 20, .28);
+}
+
+.account-menu__panel[hidden] {
+  display: none;
+}
+
+.account-menu__heading {
+  display: block;
+  padding: 12px 15px;
+  border-bottom: 3px solid var(--account-maroon);
+  background: var(--account-maroon);
+  color: #fff8dd;
+  font: 900 12px/1.2 var(--sans, system-ui, sans-serif);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.account-menu__panel a,
+.account-menu__panel button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 49px;
+  padding: 11px 15px;
+  border: 0;
+  border-bottom: 2px solid var(--account-maroon);
+  border-radius: 0;
+  background: #fffdf4;
+  color: var(--account-ink);
+  font: 800 15px/1.25 var(--sans, system-ui, sans-serif);
+  text-align: left;
+  text-decoration: none;
+}
+
+.account-menu__panel a::after {
+  content: "→";
+  color: var(--account-maroon);
+  font-size: 20px;
+}
+
+.account-menu__panel a:hover,
+.account-menu__panel a:focus-visible,
+.account-menu__panel button:hover,
+.account-menu__panel button:focus-visible {
+  background: var(--account-yellow);
+}
+
+.account-menu__panel > :last-child {
+  border-bottom: 0;
+}
+
+.account-menu__account {
+  padding: 11px 15px;
+  border-bottom: 3px solid var(--account-maroon);
+  background: var(--account-yellow);
+  font-size: 13px;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .account-menu {
+    top: 8px;
+    right: 8px;
+  }
+
+  .account-menu__toggle {
+    min-width: 48px;
+    min-height: 44px;
+    padding: 8px 10px;
+    box-shadow: 3px 3px 0 var(--account-maroon);
+  }
+
+  .account-menu__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .guest-utility,
+  .guest-header,
+  .expansion-header,
+  .header,
+  .site-header,
+  .proposal-header,
+  .demo-bar,
+  .studio-utility,
+  .studio-header {
+    padding-right: 68px !important;
+  }
+}
+
+@media print {
+  .account-menu {
+    display: none !important;
+  }
+}
