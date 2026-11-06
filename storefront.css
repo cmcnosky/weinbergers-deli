@@ -1,0 +1,15 @@
+/* The real storefront helps first-time visitors recognize the deli. */
+.deli-storefront { grid-column: 1 / -1; margin: 14px 0 0; min-width: 0; border: var(--panel-rule); background: var(--red); }
+.deli-storefront img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 62%; }
+.deli-storefront figcaption { padding: 18px 22px; border-top: 6px solid var(--yellow); color: var(--yellow); font: 800 clamp(16px, 1.7vw, 22px)/1.5 var(--mono); letter-spacing: .035em; }
+.guest-last-stop.has-storefront { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px 40px; }
+.has-storefront > div { min-width: 0; }
+.has-storefront > .guest-actions { grid-column: 1; margin-top: 0; align-self: start; }
+.home-storefront { grid-column: 2; grid-row: 1 / 3; display: block; border: var(--panel-rule); background: var(--red); }
+.home-storefront img { display: block; width: 100%; height: auto; }
+@media (max-width: 700px) {
+  .guest-last-stop.has-storefront { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .home-storefront { grid-column: 1; grid-row: auto; }
+  .deli-storefront img { aspect-ratio: 4 / 3; object-fit: contain; }
+  .deli-storefront figcaption { padding: 14px; }
+}
