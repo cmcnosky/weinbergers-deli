@@ -5,7 +5,7 @@ function retainedHistory(entries){const seen=new Set();return (Array.isArray(ent
 const storedFavorites=read('wd-platform-favorites',[]);
 let items=[],settings={accepting_orders:false,checkout_enabled:false,prep_minutes:20},category='All',query='',savedOnly=false,cart=read('wd-platform-bag',[]),favorites=new Set(Array.isArray(storedFavorites)?storedFavorites:[]),usuals=window.DeliUsuals?.load?.()||[],groupContext=read('wd-group-context-v1',null),history=read('wd-connected-orders-v1',[]),pending=read('wd-pending-checkout-v1',null),checkoutAttempt=read('wd-checkout-attempt-v1',null),quote=null,checkoutKey=null,selectedPickupAt=undefined,activeProduct=null,activeQuantity=1,editIndex=null,toastTimer,lastFocus,trackedOrder=null,trackedOrderSignature='',statusRequestGeneration=0,statusInFlight=null,viewRequestGeneration=0,menuSignature='',removedLine=null;
 if(!Array.isArray(cart))cart=[];history=retainedHistory(history);save('wd-connected-orders-v1',history);if(!pending||typeof pending!=='object'||recordTime(pending)<recoveryCutoff()){pending=null;save('wd-pending-checkout-v1',null)}if(!checkoutAttempt||typeof checkoutAttempt!=='object'||recordTime(checkoutAttempt)<recoveryCutoff()){checkoutAttempt=null;save('wd-checkout-attempt-v1',null)}
-const menuImage=(path,size=320)=>window.DELI_MEDIA?.[path]?.[String(size)]||path;
+const menuImage=(path,size=320)=>{const image=window.DELI_MEDIA?.[path]?.[String(size)]||path;if(image?.startsWith('/api/site-assets/')&&window.WEINBERGERS_RUNTIME?.apiBaseUrl){try{return new URL(image,new URL(window.WEINBERGERS_RUNTIME.apiBaseUrl,location.href)).href}catch{}}return image};
 const officialOrderURL='https://weinbergersdeli.com/menu';
 const discoveryParams=new URLSearchParams(location.search),initialState=DeliDiscovery.readURLState(location.search),checkoutReturnRequested=['checkout','payment','session_id'].some(key=>discoveryParams.has(key)),specificOrderRequested=discoveryParams.has('order'),requestedOrderValue=discoveryParams.get('order')||'',requestedOrderID=/^WD-[0-9A-F]{20}$/.test(requestedOrderValue)?requestedOrderValue:'';
 if(specificOrderRequested){discoveryParams.delete('order');const remaining=discoveryParams.toString();window.history.replaceState(null,'',location.pathname+(remaining?'?'+remaining:'')+location.hash)}
@@ -69,7 +69,7 @@ function renderMenu(historyMode='replace'){
  $('#section-title').textContent=savedOnly?'SAVED ITEMS':'FIND YOUR SANDWICH';
  $('#catalogue-count').textContent=`${items.length} ITEMS / ${new Set(items.map(p=>p.category)).size} CATEGORIES`;
  $('#category-label').textContent=category==='All'?'All items':category==='Popular'?'Popular':category;
- $('#result-count').textContent=`${visible.length} ${visible.length===1?'ITEM':'ITEMS'}`+(query?` / “${query}”`:savedOnly?' / SAVED':` / ${category==='All'?'ALL ITEMS':category.toUpperCase()}`);
+ $('#result-count').textContent=savedOnly?`${usuals.length} ${usuals.length===1?'USUAL':'USUALS'} / ${visible.length} SAVED MENU ${visible.length===1?'ITEM':'ITEMS'}`:`${visible.length} ${visible.length===1?'ITEM':'ITEMS'}`+(query?` / “${query}”`:` / ${category==='All'?'ALL ITEMS':category.toUpperCase()}`);
  $('#clear-search').hidden=!query;
  const active=[];
  if(discoveryFilters.include)active.push('Includes '+discoveryFilters.include);

@@ -762,6 +762,55 @@ h1 {
   min-height: 390px;
 }
 
+.owner-control-callout {
+  display: grid;
+  grid-template-columns: minmax(300px, .8fr) minmax(0, 1.2fr);
+  border-top: 6px solid var(--yellow);
+  border-bottom: 3px solid var(--maroon);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.owner-control-lead,
+.owner-control-copy {
+  padding: clamp(38px, 4.8vw, 72px) clamp(24px, 4vw, 64px);
+}
+
+.owner-control-lead {
+  border-right: 3px solid var(--maroon);
+  background: var(--yellow);
+  color: var(--maroon);
+}
+
+.owner-control-lead h3 {
+  margin: 0;
+  font-size: clamp(40px, 5vw, 74px);
+  line-height: .9;
+}
+
+.owner-control-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 18px;
+}
+
+.owner-control-copy p {
+  margin: 0;
+  max-width: 770px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.owner-control-copy small {
+  display: block;
+  max-width: 700px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
 .ownership-callout {
   display: grid;
   grid-template-columns: minmax(0, 1.7fr) minmax(300px, .8fr);
@@ -1217,8 +1266,14 @@ h1 {
   }
 
   .proof-statement,
+  .owner-control-callout,
   .ownership-callout {
     grid-template-columns: 1fr;
+  }
+
+  .owner-control-lead {
+    border-right: 0;
+    border-bottom: 3px solid var(--maroon);
   }
 
   .system-surfaces,
@@ -1474,6 +1529,11 @@ h1 {
   .proof-statement,
   .ownership-callout {
     gap: 18px;
+    padding: 34px 18px;
+  }
+
+  .owner-control-lead,
+  .owner-control-copy {
     padding: 34px 18px;
   }
 

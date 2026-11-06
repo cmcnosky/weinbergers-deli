@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data: blob:; font-src 'self'; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Weinberger’s Deli | Site Studio</title>
+  <link rel="icon" href="assets/weinbergers-logo-original.png">
+  <link rel="stylesheet" href="style.css?v=20261106-34">
+  <link rel="stylesheet" href="owner-studio.css?v=20261106-34">
+  <script src="runtime-config.js?v=20261106-34" defer></script>
+  <script src="demo-menu.js?v=20261106-34" defer></script>
+  <script src="data.js?v=20261106-34" defer></script>
+  <script src="site-content-core.js?v=20261106-34" defer></script>
+  <script src="site-studio-core.js?v=20261106-34" defer></script>
+  <script src="owner-studio.js?v=20261106-34" defer></script>
+</head>
+<body class="studio-body">
+  <a class="skip" href="#studio-workspace">Skip to editing</a>
+  <div class="studio-utility">
+    <span>WEINBERGER’S DELI <b>· OWNER SITE STUDIO</b></span>
+    <nav aria-label="Workspace links"><a href="index.html" target="_blank" rel="noopener">View site ↗</a><a href="staff.html">Operations</a><a href="menu.html" target="_blank" rel="noopener">Customer menu ↗</a></nav>
+  </div>
+  <header class="studio-header">
+    <a class="studio-brand" href="index.html" target="_blank" rel="noopener"><img src="assets/weinbergers-logo-smooth.svg" alt="Weinberger’s Deli"><span>SITE STUDIO</span></a>
+    <div class="studio-header-copy"><p class="eyebrow">OWNER CONTROL</p><strong>Change it here. See it before customers do.</strong></div>
+    <div class="studio-account"><span id="studio-identity">Checking access…</span><a href="staff.html" class="studio-small-link">Account & staff access</a></div>
+  </header>
+
+  <main id="studio-workspace" class="studio-shell">
+    <section id="studio-gate" class="studio-gate" aria-labelledby="studio-gate-title">
+      <img src="assets/weinbergers-logo-smooth.svg" alt="">
+      <p class="eyebrow">PRIVATE OWNER WORKSPACE</p>
+      <h1 id="studio-gate-title">OPENING SITE STUDIO</h1>
+      <p id="studio-gate-copy">Checking the restaurant connection and your manager access.</p>
+      <a id="studio-signin" class="primary" href="staff.html" hidden>Sign in through Operations</a>
+    </section>
+
+    <div id="studio-app" hidden>
+      <section class="studio-command" aria-labelledby="studio-title">
+        <div><p class="eyebrow">WEBSITE, APPS & MENU</p><h1 id="studio-title">SITE STUDIO</h1><p>Change the words, pictures, links, page sections and visual system. Work stays private until you publish it.</p></div>
+        <div class="studio-release" id="studio-release" aria-live="polite"></div>
+      </section>
+
+      <div class="studio-status" id="studio-status" role="status" aria-live="polite"></div>
+
+      <div class="studio-layout">
+        <aside class="studio-sidebar" aria-label="Site Studio sections">
+          <div class="studio-sidebar-head"><span class="studio-kicker">EDIT</span><strong>WHAT DO YOU WANT TO CHANGE?</strong></div>
+          <nav id="studio-nav">
+            <button type="button" class="selected" data-studio-view="overview"><span>01</span>Overview</button>
+            <button type="button" data-studio-view="site"><span>02</span>Business details</button>
+            <button type="button" data-studio-view="pages"><span>03</span>Pages & pictures</button>
+            <button type="button" data-studio-view="navigation"><span>04</span>Navigation</button>
+            <button type="button" data-studio-view="theme"><span>05</span>Colors & type</button>
+            <button type="button" data-studio-view="media"><span>06</span>Photo library</button>
+            <button type="button" data-studio-view="menu"><span>07</span>Menu & prices</button>
+            <button type="button" data-studio-view="history"><span>08</span>Version history</button>
+          </nav>
+          <div class="studio-safety"><strong>DRAFT FIRST</strong><p>Customers keep seeing the published version while you edit. Publish only when the preview looks right.</p></div>
+        </aside>
+
+        <section class="studio-editor" id="studio-editor" aria-live="polite"></section>
+
+        <aside class="studio-preview" aria-labelledby="preview-title">
+          <div class="preview-head"><div><p class="studio-kicker">LIVE DRAFT</p><h2 id="preview-title">PREVIEW</h2></div><a id="open-preview" href="index.html?cms-preview=1" target="_blank" rel="noopener" class="studio-small-link">Open full size ↗</a></div>
+          <div class="preview-tools" role="group" aria-label="Preview size"><button type="button" class="selected" data-preview-size="phone">Phone</button><button type="button" data-preview-size="desktop">Desktop</button></div>
+          <p class="preview-mobile-hint" id="preview-mobile-hint">Open the draft preview in a separate tab.</p>
+          <div class="preview-frame phone" id="preview-frame-wrap"><iframe id="site-preview" title="Draft website preview" src="index.html?cms-preview=1"></iframe></div>
+          <div id="preview-fallback" class="preview-fallback" hidden></div>
+          <p class="preview-note">This is your private draft. It does not change the customer site until you publish.</p>
+        </aside>
+      </div>
+
+      <footer class="studio-savebar" id="studio-savebar">
+        <div><strong id="save-state">No unsaved changes</strong><span id="save-detail">Draft edits are separate from the customer site.</span></div>
+        <div class="studio-actions"><button type="button" class="secondary" id="discard-local" hidden>Undo unsaved changes</button><button type="button" class="primary" id="save-draft" disabled>Save to draft</button></div>
+      </footer>
+    </div>
+  </main>
+
+  <dialog id="studio-dialog" aria-labelledby="studio-dialog-title"><div class="studio-dialog-pad"><header><h2 id="studio-dialog-title"></h2><button type="button" class="studio-dialog-close" aria-label="Close">×</button></header><div id="studio-dialog-body"></div></div></dialog>
+  <div id="studio-toast" role="status" aria-live="polite"></div>
+</body>
+</html>

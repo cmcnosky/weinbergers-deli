@@ -1,0 +1,4380 @@
+{
+  "site": {
+    "name": "Weinberger’s Deli",
+    "phone": "(817) 670-5729",
+    "address": "601 S Main Street",
+    "city": "Grapevine, Texas 76051",
+    "logo": "assets/weinbergers-logo-smooth.svg",
+    "video_url": "https://www.youtube.com/watch?v=PW00HmRJZfg"
+  },
+  "theme": {
+    "background": "#f8cc46",
+    "foreground": "#191d18",
+    "accent": "#631723",
+    "on_accent": "#f8cc46",
+    "border": "#631723",
+    "border_width": 9,
+    "font_scale": 1,
+    "heading_font": "deli",
+    "body_font": "sans",
+    "spacing": 1,
+    "corner_radius": 0
+  },
+  "navigation": [
+    {
+      "id": "menu",
+      "label": "The menu",
+      "url": "menu.html",
+      "visible": true
+    },
+    {
+      "id": "story",
+      "label": "Our story",
+      "url": "story.html",
+      "visible": true
+    },
+    {
+      "id": "visit",
+      "label": "Visit the deli",
+      "url": "visit.html",
+      "visible": true
+    },
+    {
+      "id": "saved",
+      "label": "Saved",
+      "url": "menu.html?saved=1",
+      "visible": true
+    },
+    {
+      "id": "orders",
+      "label": "Orders",
+      "url": "menu.html#orders",
+      "visible": true
+    }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "seo": {
+        "title": "Weinberger’s Deli — Chicago deli. Grapevine, Texas.",
+        "description": "Chicago deli roots, Main Street Grapevine. Explore the sandwiches, make one your own, and plan your visit to Weinberger’s Deli.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
+        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+      },
+      "sections": [
+        {
+          "id": "guest-utility",
+          "title": "Address & phone strip",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-guest-utility-1",
+              "label": "Link · 601 S Main St. · Grapevine, Texas ↗",
+              "type": "link",
+              "value": "https://www.google.com/maps/search/?api=1&query=Weinbergers+Deli+601+S+Main+St+Grapevine+TX"
+            },
+            {
+              "id": "home-guest-utility-2",
+              "label": "601 S Main St. · Grapevine, Texas ↗",
+              "type": "text",
+              "value": "601 S Main St. · Grapevine, Texas ↗"
+            }
+          ]
+        },
+        {
+          "id": "guest-header",
+          "title": "Header & main navigation",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-guest-header-1",
+              "label": "Link · Weinberger’s Deli home",
+              "type": "link",
+              "value": "index.html"
+            },
+            {
+              "id": "home-guest-header-9",
+              "label": "Link · Choose your sandwich ↗",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "home-guest-header-10",
+              "label": "Choose your sandwich",
+              "type": "text",
+              "value": "Choose your sandwich"
+            }
+          ]
+        },
+        {
+          "id": "guest-hero",
+          "title": "Opening feature",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-guest-hero-1",
+              "label": "CHICAGO, 1952 / GRAPEVINE, 2002",
+              "type": "text",
+              "value": "CHICAGO, 1952 / GRAPEVINE, 2002"
+            },
+            {
+              "id": "home-guest-hero-2",
+              "label": "Heading · CHICAGO DELI.",
+              "type": "multiline",
+              "value": "CHICAGO\nDELI."
+            },
+            {
+              "id": "home-guest-hero-3",
+              "label": "MAIN STREET. GRAPEVINE, TEXAS.",
+              "type": "text",
+              "value": "MAIN STREET. GRAPEVINE, TEXAS."
+            },
+            {
+              "id": "home-guest-hero-4",
+              "label": "Italian beef. Reubens. Chicago dogs. A sandwich shop with a very long menu.",
+              "type": "multiline",
+              "value": "Italian beef. Reubens. Chicago dogs.\nA sandwich shop with a very long menu."
+            },
+            {
+              "id": "home-guest-hero-5",
+              "label": "Link · See the full menu ↗",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "home-guest-hero-6",
+              "label": "See the full menu",
+              "type": "text",
+              "value": "See the full menu"
+            },
+            {
+              "id": "home-guest-hero-7",
+              "label": "Link · Build your own",
+              "type": "link",
+              "value": "menu.html?item=custom-build-your-own"
+            },
+            {
+              "id": "home-guest-hero-8",
+              "label": "Build your own",
+              "type": "text",
+              "value": "Build your own"
+            },
+            {
+              "id": "home-guest-hero-9",
+              "label": "Link · ▶ Watch the deli film",
+              "type": "link",
+              "value": "#film"
+            },
+            {
+              "id": "home-guest-hero-10",
+              "label": "Watch the deli film",
+              "type": "text",
+              "value": "Watch the deli film"
+            },
+            {
+              "id": "home-guest-hero-11",
+              "label": "Already know what you want?",
+              "type": "text",
+              "value": "Already know what you want?"
+            },
+            {
+              "id": "home-guest-hero-12",
+              "label": "Input hint · Sandwich or ingredient",
+              "type": "text",
+              "value": "Sandwich or ingredient"
+            },
+            {
+              "id": "home-guest-hero-13",
+              "label": "Find it",
+              "type": "text",
+              "value": "Find it"
+            },
+            {
+              "id": "home-guest-hero-14",
+              "label": "Link · Image link",
+              "type": "link",
+              "value": "menu.html?item=gayles-super-reuben-8U3W"
+            },
+            {
+              "id": "home-guest-hero-15",
+              "label": "Photo · Gayle’s Super Reuben with corned beef, pastrami and sauerkraut on gril",
+              "type": "image",
+              "value": "assets/optimized/gayles-super-reuben-8U3W-800.webp",
+              "alt": "Gayle’s Super Reuben with corned beef, pastrami and sauerkraut on grilled rye"
+            },
+            {
+              "id": "home-guest-hero-16",
+              "label": "FROM THE COUNTER",
+              "type": "text",
+              "value": "FROM THE COUNTER"
+            },
+            {
+              "id": "home-guest-hero-17",
+              "label": "Link · Gayle’s Super Reuben ↗",
+              "type": "link",
+              "value": "menu.html?item=gayles-super-reuben-8U3W"
+            },
+            {
+              "id": "home-guest-hero-18",
+              "label": "Gayle’s Super Reuben",
+              "type": "text",
+              "value": "Gayle’s Super Reuben"
+            }
+          ]
+        },
+        {
+          "id": "recognition-strip",
+          "title": "Selected awards",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-recognition-strip-1",
+              "label": "Link · Best Deli D Magazine Best of Big D · 2024 ↗",
+              "type": "link",
+              "value": "story.html#recognition"
+            },
+            {
+              "id": "home-recognition-strip-2",
+              "label": "Best Deli",
+              "type": "text",
+              "value": "Best Deli"
+            },
+            {
+              "id": "home-recognition-strip-3",
+              "label": "D Magazine Best of Big D · 2024 ↗",
+              "type": "multiline",
+              "value": "D Magazine\nBest of Big D · 2024 ↗"
+            },
+            {
+              "id": "home-recognition-strip-4",
+              "label": "Link · Readers’ Choice Living Magazine · Deli Northeast Tarrant County · 2026",
+              "type": "link",
+              "value": "story.html#recognition"
+            },
+            {
+              "id": "home-recognition-strip-5",
+              "label": "Readers’ Choice",
+              "type": "text",
+              "value": "Readers’ Choice"
+            },
+            {
+              "id": "home-recognition-strip-6",
+              "label": "Living Magazine · Deli Northeast Tarrant County · 2026 ↗",
+              "type": "multiline",
+              "value": "Living Magazine · Deli\nNortheast Tarrant County · 2026 ↗"
+            },
+            {
+              "id": "home-recognition-strip-7",
+              "label": "Link · Hall of Fame Vienna Beef Inducted 2023 ↗",
+              "type": "link",
+              "value": "story.html#recognition"
+            },
+            {
+              "id": "home-recognition-strip-8",
+              "label": "Hall of Fame",
+              "type": "text",
+              "value": "Hall of Fame"
+            },
+            {
+              "id": "home-recognition-strip-9",
+              "label": "Vienna Beef Inducted 2023 ↗",
+              "type": "multiline",
+              "value": "Vienna Beef\nInducted 2023 ↗"
+            }
+          ]
+        },
+        {
+          "id": "guest-essentials",
+          "title": "Visit shortcuts",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-guest-essentials-1",
+              "label": "Link · FIND US 601 S Main Street Directions & contact ↗",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "home-guest-essentials-2",
+              "label": "FIND US",
+              "type": "text",
+              "value": "FIND US"
+            },
+            {
+              "id": "home-guest-essentials-3",
+              "label": "601 S Main Street",
+              "type": "text",
+              "value": "601 S Main Street"
+            },
+            {
+              "id": "home-guest-essentials-4",
+              "label": "Directions & contact ↗",
+              "type": "text",
+              "value": "Directions & contact ↗"
+            },
+            {
+              "id": "home-guest-essentials-5",
+              "label": "Link · BEFORE YOU COME Check today’s hours Opening hours & pickup information",
+              "type": "link",
+              "value": "visit.html#hours"
+            },
+            {
+              "id": "home-guest-essentials-6",
+              "label": "BEFORE YOU COME",
+              "type": "text",
+              "value": "BEFORE YOU COME"
+            },
+            {
+              "id": "home-guest-essentials-7",
+              "label": "Check today’s hours",
+              "type": "text",
+              "value": "Check today’s hours"
+            },
+            {
+              "id": "home-guest-essentials-8",
+              "label": "Opening hours & pickup information ↗",
+              "type": "text",
+              "value": "Opening hours & pickup information ↗"
+            },
+            {
+              "id": "home-guest-essentials-9",
+              "label": "Link · FEEDING A FEW? Group orders Pickup, delivery & catering ↗",
+              "type": "link",
+              "value": "visit.html#groups"
+            },
+            {
+              "id": "home-guest-essentials-10",
+              "label": "FEEDING A FEW?",
+              "type": "text",
+              "value": "FEEDING A FEW?"
+            },
+            {
+              "id": "home-guest-essentials-11",
+              "label": "Group orders",
+              "type": "text",
+              "value": "Group orders"
+            },
+            {
+              "id": "home-guest-essentials-12",
+              "label": "Pickup, delivery & catering ↗",
+              "type": "text",
+              "value": "Pickup, delivery & catering ↗"
+            }
+          ]
+        },
+        {
+          "id": "film",
+          "title": "Featured deli film",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-film-1",
+              "label": "FROM THE DELI",
+              "type": "text",
+              "value": "FROM THE DELI"
+            },
+            {
+              "id": "home-film-2",
+              "label": "Heading · INSIDE WEINBERGER’S.",
+              "type": "multiline",
+              "value": "INSIDE\nWEINBERGER’S."
+            },
+            {
+              "id": "home-film-3",
+              "label": "Watch Weinberger’s own film: Italian beef, Chicago roots, and the deli on Main Street.",
+              "type": "text",
+              "value": "Watch Weinberger’s own film: Italian beef, Chicago roots, and the deli on Main Street."
+            },
+            {
+              "id": "home-film-4",
+              "label": "Link · Find your Italian beef ↗",
+              "type": "link",
+              "value": "menu.html?item=italian-beef-a3od"
+            },
+            {
+              "id": "home-film-5",
+              "label": "Find your Italian beef ↗",
+              "type": "text",
+              "value": "Find your Italian beef ↗"
+            },
+            {
+              "id": "home-film-6",
+              "label": "Photo · Deli photograph",
+              "type": "image",
+              "value": "https://img.youtube.com/vi/PW00HmRJZfg/hqdefault.jpg",
+              "alt": "Deli photograph"
+            },
+            {
+              "id": "home-film-7",
+              "label": "Watch the film",
+              "type": "text",
+              "value": "Watch the film"
+            },
+            {
+              "id": "home-film-8",
+              "label": "Weinberger’s Deli · About 3 minutes",
+              "type": "text",
+              "value": "Weinberger’s Deli · About 3 minutes"
+            },
+            {
+              "id": "home-film-9",
+              "label": "Link · Watch on YouTube ↗",
+              "type": "link",
+              "value": "https://www.youtube.com/watch?v=PW00HmRJZfg"
+            },
+            {
+              "id": "home-film-10",
+              "label": "Watch on YouTube ↗",
+              "type": "text",
+              "value": "Watch on YouTube ↗"
+            },
+            {
+              "id": "home-film-11",
+              "label": "Close video",
+              "type": "text",
+              "value": "Close video"
+            }
+          ]
+        },
+        {
+          "id": "guest-section",
+          "title": "FROM THE COUNTER.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-guest-section-1",
+              "label": "A FEW PLACES TO START",
+              "type": "text",
+              "value": "A FEW PLACES TO START"
+            },
+            {
+              "id": "home-guest-section-2",
+              "label": "Heading · FROM THE COUNTER.",
+              "type": "text",
+              "value": "FROM THE COUNTER."
+            },
+            {
+              "id": "home-guest-section-3",
+              "label": "Link · All sandwiches, sides & more ↗",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "home-guest-section-4",
+              "label": "All sandwiches, sides & more ↗",
+              "type": "text",
+              "value": "All sandwiches, sides & more ↗"
+            },
+            {
+              "id": "home-guest-section-5",
+              "label": "Link · 01 / CHICAGO CLASSIC ITALIAN BEEF",
+              "type": "link",
+              "value": "menu.html?item=italian-beef-a3od"
+            },
+            {
+              "id": "home-guest-section-6",
+              "label": "Photo · Italian beef sandwich",
+              "type": "image",
+              "value": "assets/optimized/italian-beef-a3od-800.webp",
+              "alt": "Italian beef sandwich"
+            },
+            {
+              "id": "home-guest-section-7",
+              "label": "01 / CHICAGO CLASSIC",
+              "type": "text",
+              "value": "01 / CHICAGO CLASSIC"
+            },
+            {
+              "id": "home-guest-section-8",
+              "label": "Heading · ITALIAN BEEF",
+              "type": "text",
+              "value": "ITALIAN BEEF"
+            },
+            {
+              "id": "home-guest-section-9",
+              "label": "Wet or dry. Sweet, hot or mild peppers. Choose it the way you like it.",
+              "type": "text",
+              "value": "Wet or dry. Sweet, hot or mild peppers. Choose it the way you like it."
+            },
+            {
+              "id": "home-guest-section-10",
+              "label": "Link · Choose your options ↗",
+              "type": "link",
+              "value": "menu.html?item=italian-beef-a3od"
+            },
+            {
+              "id": "home-guest-section-11",
+              "label": "Choose your options ↗",
+              "type": "text",
+              "value": "Choose your options ↗"
+            },
+            {
+              "id": "home-guest-section-12",
+              "label": "Link · 02 / DELI COUNTER WEINBERGER REUBEN",
+              "type": "link",
+              "value": "menu.html?item=weinberger-reuben-Rb4A"
+            },
+            {
+              "id": "home-guest-section-13",
+              "label": "Photo · Weinberger Reuben sandwich",
+              "type": "image",
+              "value": "assets/optimized/weinberger-reuben-Rb4A-800.webp",
+              "alt": "Weinberger Reuben sandwich"
+            },
+            {
+              "id": "home-guest-section-14",
+              "label": "02 / DELI COUNTER",
+              "type": "text",
+              "value": "02 / DELI COUNTER"
+            },
+            {
+              "id": "home-guest-section-15",
+              "label": "Heading · WEINBERGER REUBEN",
+              "type": "text",
+              "value": "WEINBERGER REUBEN"
+            },
+            {
+              "id": "home-guest-section-16",
+              "label": "Corned beef and pastrami, Swiss, sauerkraut and Russian dressing on grilled marble rye.",
+              "type": "text",
+              "value": "Corned beef and pastrami, Swiss, sauerkraut and Russian dressing on grilled marble rye."
+            },
+            {
+              "id": "home-guest-section-17",
+              "label": "Link · Take a closer look ↗",
+              "type": "link",
+              "value": "menu.html?item=weinberger-reuben-Rb4A"
+            },
+            {
+              "id": "home-guest-section-18",
+              "label": "Take a closer look ↗",
+              "type": "text",
+              "value": "Take a closer look ↗"
+            },
+            {
+              "id": "home-guest-section-19",
+              "label": "Link · 03 / SOMETHING DIFFERENT JAYBIRD’S SANDWICH",
+              "type": "link",
+              "value": "menu.html?item=jaybirds-sandwich-EZMW"
+            },
+            {
+              "id": "home-guest-section-20",
+              "label": "Photo · Jaybird’s Sandwich",
+              "type": "image",
+              "value": "assets/optimized/jaybirds-sandwich-EZMW-800.webp",
+              "alt": "Jaybird’s Sandwich"
+            },
+            {
+              "id": "home-guest-section-21",
+              "label": "03 / SOMETHING DIFFERENT",
+              "type": "text",
+              "value": "03 / SOMETHING DIFFERENT"
+            },
+            {
+              "id": "home-guest-section-22",
+              "label": "Heading · JAYBIRD’S SANDWICH",
+              "type": "text",
+              "value": "JAYBIRD’S SANDWICH"
+            },
+            {
+              "id": "home-guest-section-23",
+              "label": "Prosciutto, sopressata, buffalo mozzarella and peach habanero jam on Italian herbed focacc",
+              "type": "text",
+              "value": "Prosciutto, sopressata, buffalo mozzarella and peach habanero jam on Italian herbed focaccia."
+            },
+            {
+              "id": "home-guest-section-24",
+              "label": "Link · See every ingredient ↗",
+              "type": "link",
+              "value": "menu.html?item=jaybirds-sandwich-EZMW"
+            },
+            {
+              "id": "home-guest-section-25",
+              "label": "See every ingredient ↗",
+              "type": "text",
+              "value": "See every ingredient ↗"
+            }
+          ]
+        },
+        {
+          "id": "deli-order-paths",
+          "title": "Usuals, group lunch & catering",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-deli-order-paths-1",
+              "label": "Link · YOUR NEXT VISIT MY USUALS Save your exact sandwich. Bring back the bre",
+              "type": "link",
+              "value": "menu.html?saved=1"
+            },
+            {
+              "id": "home-deli-order-paths-2",
+              "label": "YOUR NEXT VISIT",
+              "type": "text",
+              "value": "YOUR NEXT VISIT"
+            },
+            {
+              "id": "home-deli-order-paths-3",
+              "label": "Heading · MY USUALS",
+              "type": "text",
+              "value": "MY USUALS"
+            },
+            {
+              "id": "home-deli-order-paths-4",
+              "label": "Save your exact sandwich. Bring back the bread, toppings, toasting, and all.",
+              "type": "text",
+              "value": "Save your exact sandwich. Bring back the bread, toppings, toasting, and all."
+            },
+            {
+              "id": "home-deli-order-paths-5",
+              "label": "Open saved orders ↗",
+              "type": "text",
+              "value": "Open saved orders ↗"
+            },
+            {
+              "id": "home-deli-order-paths-6",
+              "label": "Link · ONE ORGANIZER / ONE PAYMENT GROUP LUNCH Everyone chooses a sandwich. Y",
+              "type": "link",
+              "value": "group.html"
+            },
+            {
+              "id": "home-deli-order-paths-7",
+              "label": "ONE ORGANIZER / ONE PAYMENT",
+              "type": "text",
+              "value": "ONE ORGANIZER / ONE PAYMENT"
+            },
+            {
+              "id": "home-deli-order-paths-8",
+              "label": "Heading · GROUP LUNCH",
+              "type": "text",
+              "value": "GROUP LUNCH"
+            },
+            {
+              "id": "home-deli-order-paths-9",
+              "label": "Everyone chooses a sandwich. You review the named orders and pay once.",
+              "type": "text",
+              "value": "Everyone chooses a sandwich. You review the named orders and pay once."
+            },
+            {
+              "id": "home-deli-order-paths-10",
+              "label": "Start a group ↗",
+              "type": "text",
+              "value": "Start a group ↗"
+            },
+            {
+              "id": "home-deli-order-paths-11",
+              "label": "Link · OFFICES / PARTIES / EVENTS CATERING Tell the deli the date, headcount,",
+              "type": "link",
+              "value": "catering.html"
+            },
+            {
+              "id": "home-deli-order-paths-12",
+              "label": "OFFICES / PARTIES / EVENTS",
+              "type": "text",
+              "value": "OFFICES / PARTIES / EVENTS"
+            },
+            {
+              "id": "home-deli-order-paths-13",
+              "label": "Heading · CATERING",
+              "type": "text",
+              "value": "CATERING"
+            },
+            {
+              "id": "home-deli-order-paths-14",
+              "label": "Tell the deli the date, headcount, and food you need. Review a quote before paying.",
+              "type": "text",
+              "value": "Tell the deli the date, headcount, and food you need. Review a quote before paying."
+            },
+            {
+              "id": "home-deli-order-paths-15",
+              "label": "Plan your order ↗",
+              "type": "text",
+              "value": "Plan your order ↗"
+            }
+          ]
+        },
+        {
+          "id": "guest-story",
+          "title": "Chicago roots",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-guest-story-1",
+              "label": "1952 → 2002 → MAIN STREET",
+              "type": "text",
+              "value": "1952 → 2002 → MAIN STREET"
+            },
+            {
+              "id": "home-guest-story-2",
+              "label": "Heading · CHICAGO ROOTS. GRAPEVINE COUNTER.",
+              "type": "multiline",
+              "value": "CHICAGO ROOTS.\nGRAPEVINE COUNTER."
+            },
+            {
+              "id": "home-guest-story-3",
+              "label": "The Weinberger family started in Chicago in 1952. Dan opened the Grapevine deli in 2002. T",
+              "type": "multiline",
+              "value": "The Weinberger family started in Chicago in 1952. Dan opened the Grapevine deli in 2002. The menu grew with it: deli standards, Chicago staples, and sandwiches you won’t find on a short list."
+            },
+            {
+              "id": "home-guest-story-4",
+              "label": "Start with a sandwich, then make it yours. Bread, meats, cheese, toppings and toasted or n",
+              "type": "multiline",
+              "value": "Start with a sandwich, then make it yours. Bread, meats, cheese, toppings and toasted or not toasted—all together in one place."
+            },
+            {
+              "id": "home-guest-story-5",
+              "label": "Link · Build your sandwich ↗",
+              "type": "link",
+              "value": "menu.html?item=custom-build-your-own"
+            },
+            {
+              "id": "home-guest-story-6",
+              "label": "Build your sandwich ↗",
+              "type": "text",
+              "value": "Build your sandwich ↗"
+            },
+            {
+              "id": "home-guest-story-7",
+              "label": "Link · Our story & recognition ↗",
+              "type": "link",
+              "value": "story.html"
+            },
+            {
+              "id": "home-guest-story-8",
+              "label": "Our story & recognition ↗",
+              "type": "text",
+              "value": "Our story & recognition ↗"
+            }
+          ]
+        },
+        {
+          "id": "guest-section-guest-last-stop-has-storefront",
+          "title": "Visit & storefront photograph",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-guest-section-guest-last-stop-has-storefront-1",
+              "label": "COME BY THE DELI",
+              "type": "text",
+              "value": "COME BY THE DELI"
+            },
+            {
+              "id": "home-guest-section-guest-last-stop-has-storefront-2",
+              "label": "Heading · 601 S MAIN STREET.",
+              "type": "text",
+              "value": "601 S MAIN STREET."
+            },
+            {
+              "id": "home-guest-section-guest-last-stop-has-storefront-3",
+              "label": "Grapevine, Texas 76051",
+              "type": "text",
+              "value": "Grapevine, Texas 76051"
+            },
+            {
+              "id": "home-guest-section-guest-last-stop-has-storefront-4",
+              "label": "Link · Plan your visit ↗",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "home-guest-section-guest-last-stop-has-storefront-5",
+              "label": "Plan your visit ↗",
+              "type": "text",
+              "value": "Plan your visit ↗"
+            },
+            {
+              "id": "home-guest-section-guest-last-stop-has-storefront-8",
+              "label": "Link · Plan your visit to the deli at 601 S Main Street",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "home-guest-section-guest-last-stop-has-storefront-9",
+              "label": "Photo · Weinberger’s yellow sign and lit storefront on Main Street",
+              "type": "image",
+              "value": "assets/optimized/weinbergers-main-street-20261105-800.webp",
+              "alt": "Weinberger’s yellow sign and lit storefront on Main Street"
+            }
+          ]
+        },
+        {
+          "id": "guest-footer",
+          "title": "Footer",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-guest-footer-1",
+              "label": "WEINBERGER’S DELI",
+              "type": "text",
+              "value": "WEINBERGER’S DELI"
+            },
+            {
+              "id": "home-guest-footer-2",
+              "label": "601 S Main Street Grapevine, Texas 76051",
+              "type": "multiline",
+              "value": "601 S Main Street\nGrapevine, Texas 76051"
+            },
+            {
+              "id": "home-guest-footer-5",
+              "label": "Link · Browse & customize",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "home-guest-footer-6",
+              "label": "Browse & customize",
+              "type": "text",
+              "value": "Browse & customize"
+            },
+            {
+              "id": "home-guest-footer-7",
+              "label": "Link · Readable & printable menu",
+              "type": "link",
+              "value": "readable-menu.html"
+            },
+            {
+              "id": "home-guest-footer-8",
+              "label": "Readable & printable menu",
+              "type": "text",
+              "value": "Readable & printable menu"
+            },
+            {
+              "id": "home-guest-footer-9",
+              "label": "Link · Hours, directions & contact",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "home-guest-footer-10",
+              "label": "Hours, directions & contact",
+              "type": "text",
+              "value": "Hours, directions & contact"
+            },
+            {
+              "id": "home-guest-footer-11",
+              "label": "Link · Group lunch",
+              "type": "link",
+              "value": "group.html"
+            },
+            {
+              "id": "home-guest-footer-12",
+              "label": "Group lunch",
+              "type": "text",
+              "value": "Group lunch"
+            },
+            {
+              "id": "home-guest-footer-13",
+              "label": "Link · Catering requests",
+              "type": "link",
+              "value": "catering.html"
+            },
+            {
+              "id": "home-guest-footer-14",
+              "label": "Catering requests",
+              "type": "text",
+              "value": "Catering requests"
+            },
+            {
+              "id": "home-guest-footer-15",
+              "label": "Link · Awards & recognition",
+              "type": "link",
+              "value": "story.html#recognition"
+            },
+            {
+              "id": "home-guest-footer-16",
+              "label": "Awards & recognition",
+              "type": "text",
+              "value": "Awards & recognition"
+            },
+            {
+              "id": "home-guest-footer-17",
+              "label": "Link · Current online ordering ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/menu"
+            },
+            {
+              "id": "home-guest-footer-18",
+              "label": "Current online ordering ↗",
+              "type": "text",
+              "value": "Current online ordering ↗"
+            },
+            {
+              "id": "home-guest-footer-19",
+              "label": "Link · Gift cards ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/gift-cards"
+            },
+            {
+              "id": "home-guest-footer-20",
+              "label": "Gift cards ↗",
+              "type": "text",
+              "value": "Gift cards ↗"
+            },
+            {
+              "id": "home-guest-footer-21",
+              "label": "Link · Existing rewards account ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/login"
+            },
+            {
+              "id": "home-guest-footer-22",
+              "label": "Existing rewards account ↗",
+              "type": "text",
+              "value": "Existing rewards account ↗"
+            },
+            {
+              "id": "home-guest-footer-23",
+              "label": "Link · iPhone",
+              "type": "link",
+              "value": "iphone.html"
+            },
+            {
+              "id": "home-guest-footer-24",
+              "label": "iPhone",
+              "type": "text",
+              "value": "iPhone"
+            },
+            {
+              "id": "home-guest-footer-25",
+              "label": "Link · Android",
+              "type": "link",
+              "value": "android.html"
+            },
+            {
+              "id": "home-guest-footer-26",
+              "label": "Android",
+              "type": "text",
+              "value": "Android"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story",
+      "title": "Family story & recognition",
+      "seo": {
+        "title": "Our story, awards & film | Weinberger’s Deli",
+        "description": "Chicago roots since 1952. Weinberger’s Deli awards, Texas recognition, and the original deli film.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
+        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+      },
+      "sections": [
+        {
+          "id": "guest-utility",
+          "title": "Address & phone strip",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "story-guest-utility-1",
+              "label": "Link · 601 S Main St. · Grapevine, Texas ↗",
+              "type": "link",
+              "value": "https://www.google.com/maps/search/?api=1&query=Weinbergers+Deli+601+S+Main+St+Grapevine+TX"
+            },
+            {
+              "id": "story-guest-utility-2",
+              "label": "601 S Main St. · Grapevine, Texas ↗",
+              "type": "text",
+              "value": "601 S Main St. · Grapevine, Texas ↗"
+            }
+          ]
+        },
+        {
+          "id": "guest-header",
+          "title": "Header & main navigation",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "story-guest-header-1",
+              "label": "Link · Weinberger’s Deli home",
+              "type": "link",
+              "value": "index.html"
+            },
+            {
+              "id": "story-guest-header-9",
+              "label": "Link · Choose your sandwich ↗",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "story-guest-header-10",
+              "label": "Choose your sandwich",
+              "type": "text",
+              "value": "Choose your sandwich"
+            }
+          ]
+        },
+        {
+          "id": "story-opening",
+          "title": "Opening story",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "story-story-opening-1",
+              "label": "A FAMILY DELI / SINCE 1952",
+              "type": "text",
+              "value": "A FAMILY DELI / SINCE 1952"
+            },
+            {
+              "id": "story-story-opening-2",
+              "label": "Heading · CHICAGO ROOTS. MAIN STREET REPUTATION.",
+              "type": "multiline",
+              "value": "CHICAGO ROOTS.\nMAIN STREET\nREPUTATION."
+            },
+            {
+              "id": "story-story-opening-3",
+              "label": "The Weinberger family’s deli story began in the Chicago area in 1952. Dan opened the Grape",
+              "type": "text",
+              "value": "The Weinberger family’s deli story began in the Chicago area in 1952. Dan opened the Grapevine deli in 2002."
+            },
+            {
+              "id": "story-story-opening-4",
+              "label": "The sandwiches carry that history forward: Italian beef, Reubens, Chicago dogs, and a long",
+              "type": "text",
+              "value": "The sandwiches carry that history forward: Italian beef, Reubens, Chicago dogs, and a long list of originals."
+            },
+            {
+              "id": "story-story-opening-5",
+              "label": "Link · Find your sandwich ↗",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "story-story-opening-6",
+              "label": "Find your sandwich ↗",
+              "type": "text",
+              "value": "Find your sandwich ↗"
+            },
+            {
+              "id": "story-story-opening-7",
+              "label": "Link · ▶ Watch the deli film",
+              "type": "link",
+              "value": "#film"
+            },
+            {
+              "id": "story-story-opening-8",
+              "label": "Watch the deli film",
+              "type": "text",
+              "value": "Watch the deli film"
+            }
+          ]
+        },
+        {
+          "id": "film",
+          "title": "Featured deli film",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "story-film-1",
+              "label": "FROM THE DELI",
+              "type": "text",
+              "value": "FROM THE DELI"
+            },
+            {
+              "id": "story-film-2",
+              "label": "Heading · INSIDE WEINBERGER’S.",
+              "type": "multiline",
+              "value": "INSIDE\nWEINBERGER’S."
+            },
+            {
+              "id": "story-film-3",
+              "label": "Watch Weinberger’s own film: Italian beef, Chicago roots, and the deli on Main Street.",
+              "type": "text",
+              "value": "Watch Weinberger’s own film: Italian beef, Chicago roots, and the deli on Main Street."
+            },
+            {
+              "id": "story-film-4",
+              "label": "Link · Find your Italian beef ↗",
+              "type": "link",
+              "value": "menu.html?item=italian-beef-a3od"
+            },
+            {
+              "id": "story-film-5",
+              "label": "Find your Italian beef ↗",
+              "type": "text",
+              "value": "Find your Italian beef ↗"
+            },
+            {
+              "id": "story-film-6",
+              "label": "Photo · Deli photograph",
+              "type": "image",
+              "value": "https://img.youtube.com/vi/PW00HmRJZfg/hqdefault.jpg",
+              "alt": "Deli photograph"
+            },
+            {
+              "id": "story-film-7",
+              "label": "Watch the film",
+              "type": "text",
+              "value": "Watch the film"
+            },
+            {
+              "id": "story-film-8",
+              "label": "Weinberger’s Deli · About 3 minutes",
+              "type": "text",
+              "value": "Weinberger’s Deli · About 3 minutes"
+            },
+            {
+              "id": "story-film-9",
+              "label": "Link · Watch on YouTube ↗",
+              "type": "link",
+              "value": "https://www.youtube.com/watch?v=PW00HmRJZfg"
+            },
+            {
+              "id": "story-film-10",
+              "label": "Watch on YouTube ↗",
+              "type": "text",
+              "value": "Watch on YouTube ↗"
+            },
+            {
+              "id": "story-film-11",
+              "label": "Close video",
+              "type": "text",
+              "value": "Close video"
+            }
+          ]
+        },
+        {
+          "id": "deli-family",
+          "title": "Family history",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "story-deli-family-1",
+              "label": "Photo · Dan Weinberger at the deli",
+              "type": "image",
+              "value": "https://weinbergersdeli.com/pluto-images/funnel/images/21b39d33-3c5d-4b9f-8812-0cb19f54eb5b?w=768&h=768&fit=cover",
+              "alt": "Dan Weinberger at the deli"
+            },
+            {
+              "id": "story-deli-family-2",
+              "label": "Dan Weinberger · From the family’s own story",
+              "type": "text",
+              "value": "Dan Weinberger · From the family’s own story"
+            },
+            {
+              "id": "story-deli-family-3",
+              "label": "TOM’S DELIS TO MAIN STREET",
+              "type": "text",
+              "value": "TOM’S DELIS TO MAIN STREET"
+            },
+            {
+              "id": "story-deli-family-4",
+              "label": "Heading · A FAMILY TRADE. A LIFETIME AT IT.",
+              "type": "multiline",
+              "value": "A FAMILY TRADE.\nA LIFETIME AT IT."
+            },
+            {
+              "id": "story-deli-family-5",
+              "label": "In 1952, Tom Weinberger opened a small shop in Homewood, Illinois. Listening to his custom",
+              "type": "multiline",
+              "value": "In 1952, Tom Weinberger opened a small shop in Homewood, Illinois. Listening to his customers and learning at Ray Markon’s Seaway deli helped turn it into a deli of his own. Tom’s Delis eventually grew to five shops across Chicagoland."
+            },
+            {
+              "id": "story-deli-family-6",
+              "label": "Dan grew up working weekends and summers in those delis. Later, he studied cooking and san",
+              "type": "multiline",
+              "value": "Dan grew up working weekends and summers in those delis. Later, he studied cooking and sandwiches from coast to coast: the bread, the cheeses, the sauces, the way a sandwich is built and served."
+            },
+            {
+              "id": "story-deli-family-7",
+              "label": "That experience came to Grapevine in 2002. The menu keeps moving, with a spring contest he",
+              "type": "multiline",
+              "value": "That experience came to Grapevine in 2002. The menu keeps moving, with a spring contest helping decide which sandwiches earn their place."
+            },
+            {
+              "id": "story-deli-family-8",
+              "label": "Link · Read Dan’s full story ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/story"
+            },
+            {
+              "id": "story-deli-family-9",
+              "label": "Read Dan’s full story ↗",
+              "type": "text",
+              "value": "Read Dan’s full story ↗"
+            }
+          ]
+        },
+        {
+          "id": "deli-craft",
+          "title": "Dan’s approach",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "story-deli-craft-1",
+              "label": "DAN, IN HIS OWN WORDS",
+              "type": "text",
+              "value": "DAN, IN HIS OWN WORDS"
+            },
+            {
+              "id": "story-deli-craft-2",
+              "label": "“All Chefs have passion for some part of the Culinary experience. Mine just happens to be ",
+              "type": "text",
+              "value": "“All Chefs have passion for some part of the Culinary experience. Mine just happens to be the sandwich.”"
+            },
+            {
+              "id": "story-deli-craft-3",
+              "label": "Link · Dan Weinberger · Read the full account (PDF) ↗",
+              "type": "link",
+              "value": "https://static-content.owner.com/document/e5e4b356-8afc-4224-a64b-9c880a44d353.pdf"
+            },
+            {
+              "id": "story-deli-craft-4",
+              "label": "Dan Weinberger · Read the full account (PDF) ↗",
+              "type": "text",
+              "value": "Dan Weinberger · Read the full account (PDF) ↗"
+            },
+            {
+              "id": "story-deli-craft-5",
+              "label": "Heading · MAKE IT YOURS.",
+              "type": "text",
+              "value": "MAKE IT YOURS."
+            },
+            {
+              "id": "story-deli-craft-6",
+              "label": "Pick a favorite or work with the sandwich maker to build your own. If something isn’t righ",
+              "type": "multiline",
+              "value": "Pick a favorite or work with the sandwich maker to build your own. If something isn’t right, tell the team what would make it right. That’s part of Dan’s welcome."
+            },
+            {
+              "id": "story-deli-craft-7",
+              "label": "Link · Build your sandwich ↗",
+              "type": "link",
+              "value": "menu.html?item=custom-build-your-own"
+            },
+            {
+              "id": "story-deli-craft-8",
+              "label": "Build your sandwich ↗",
+              "type": "text",
+              "value": "Build your sandwich ↗"
+            }
+          ]
+        },
+        {
+          "id": "recognition",
+          "title": "Awards & recognition",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "story-recognition-1",
+              "label": "AWARDS & RECOGNITION",
+              "type": "text",
+              "value": "AWARDS & RECOGNITION"
+            },
+            {
+              "id": "story-recognition-2",
+              "label": "“The Best Chicago Deli in Texas”",
+              "type": "text",
+              "value": "“The Best Chicago Deli in Texas”"
+            },
+            {
+              "id": "story-recognition-3",
+              "label": "Link · Grapevine Economic Development · June 2022 ↗",
+              "type": "link",
+              "value": "https://www.choosegrapevinetx.com/news-center/p/item/43854/why-small-businesses-succeed-on-main-street-in-grapevine-texas"
+            },
+            {
+              "id": "story-recognition-4",
+              "label": "Grapevine Economic Development · June 2022 ↗",
+              "type": "text",
+              "value": "Grapevine Economic Development · June 2022 ↗"
+            },
+            {
+              "id": "story-recognition-5",
+              "label": "Heading · RECOGNIZED AT THE COUNTER.",
+              "type": "multiline",
+              "value": "RECOGNIZED AT\nTHE COUNTER."
+            },
+            {
+              "id": "story-recognition-6",
+              "label": "2026",
+              "type": "text",
+              "value": "2026"
+            },
+            {
+              "id": "story-recognition-7",
+              "label": "Heading · Readers’ Choice: Deli",
+              "type": "text",
+              "value": "Readers’ Choice: Deli"
+            },
+            {
+              "id": "story-recognition-8",
+              "label": "Link · Living Magazine ↗",
+              "type": "link",
+              "value": "https://livingmagazine.net/2026-best-of-northeast-tarrant-county"
+            },
+            {
+              "id": "story-recognition-9",
+              "label": "Living Magazine ↗",
+              "type": "text",
+              "value": "Living Magazine ↗"
+            },
+            {
+              "id": "story-recognition-10",
+              "label": "Northeast Tarrant County readers’ choice winner in the deli category.",
+              "type": "text",
+              "value": "Northeast Tarrant County readers’ choice winner in the deli category."
+            },
+            {
+              "id": "story-recognition-11",
+              "label": "2024",
+              "type": "text",
+              "value": "2024"
+            },
+            {
+              "id": "story-recognition-12",
+              "label": "Heading · Best Deli",
+              "type": "text",
+              "value": "Best Deli"
+            },
+            {
+              "id": "story-recognition-13",
+              "label": "Link · D Magazine · Best of Big D ↗",
+              "type": "link",
+              "value": "https://www.dmagazine.com/guides/best-of-big-d-2024/category/food-and-dining/"
+            },
+            {
+              "id": "story-recognition-14",
+              "label": "D Magazine · Best of Big D ↗",
+              "type": "text",
+              "value": "D Magazine · Best of Big D ↗"
+            },
+            {
+              "id": "story-recognition-15",
+              "label": "Selected as Best Deli in D Magazine’s 2024 Best of Big D.",
+              "type": "text",
+              "value": "Selected as Best Deli in D Magazine’s 2024 Best of Big D."
+            },
+            {
+              "id": "story-recognition-16",
+              "label": "2023",
+              "type": "text",
+              "value": "2023"
+            },
+            {
+              "id": "story-recognition-17",
+              "label": "Heading · Hot Dog Hall of Fame",
+              "type": "text",
+              "value": "Hot Dog Hall of Fame"
+            },
+            {
+              "id": "story-recognition-18",
+              "label": "Link · Vienna Beef ↗",
+              "type": "link",
+              "value": "https://www.viennabeef.com/news-recipes/weinbergers-deli/"
+            },
+            {
+              "id": "story-recognition-19",
+              "label": "Vienna Beef ↗",
+              "type": "text",
+              "value": "Vienna Beef ↗"
+            },
+            {
+              "id": "story-recognition-20",
+              "label": "Inducted September 29, 2023. Weinberger’s became the 148th recipient of Vienna Beef’s Hall",
+              "type": "text",
+              "value": "Inducted September 29, 2023. Weinberger’s became the 148th recipient of Vienna Beef’s Hall of Fame honor."
+            },
+            {
+              "id": "story-recognition-21",
+              "label": "2023",
+              "type": "text",
+              "value": "2023"
+            },
+            {
+              "id": "story-recognition-22",
+              "label": "Heading · The Best Deli in Every State",
+              "type": "text",
+              "value": "The Best Deli in Every State"
+            },
+            {
+              "id": "story-recognition-23",
+              "label": "Link · 24/7 Wall St. · Texas selection ↗",
+              "type": "link",
+              "value": "https://247wallst.com/special-report/2023/09/05/the-best-deli-in-every-state/3/"
+            },
+            {
+              "id": "story-recognition-24",
+              "label": "24/7 Wall St. · Texas selection ↗",
+              "type": "text",
+              "value": "24/7 Wall St. · Texas selection ↗"
+            },
+            {
+              "id": "story-recognition-25",
+              "label": "Weinberger’s represented Texas in the publication’s September 5, 2023 state-by-state deli ",
+              "type": "text",
+              "value": "Weinberger’s represented Texas in the publication’s September 5, 2023 state-by-state deli selection."
+            },
+            {
+              "id": "story-recognition-26",
+              "label": "In its 2023 Hall of Fame announcement,",
+              "type": "text",
+              "value": "In its 2023 Hall of Fame announcement,"
+            },
+            {
+              "id": "story-recognition-27",
+              "label": ", including Best of Grapevine, People’s Choice, and Best of Texas honors. The selections a",
+              "type": "multiline",
+              "value": ", including Best of Grapevine, People’s Choice, and Best of Texas honors. The selections above link to the organizations and publications behind them."
+            },
+            {
+              "id": "story-recognition-28",
+              "label": "Link · Vienna Beef credited Weinberger’s with more than 20 foodservice awards",
+              "type": "link",
+              "value": "https://www.viennabeef.com/news-recipes/weinbergers-deli/"
+            },
+            {
+              "id": "story-recognition-29",
+              "label": "Vienna Beef credited Weinberger’s with more than 20 foodservice awards",
+              "type": "text",
+              "value": "Vienna Beef credited Weinberger’s with more than 20 foodservice awards"
+            }
+          ]
+        },
+        {
+          "id": "guest-section-guest-last-stop",
+          "title": "COME HUNGRY.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "story-guest-section-guest-last-stop-1",
+              "label": "THE NEXT SANDWICH IS YOURS",
+              "type": "text",
+              "value": "THE NEXT SANDWICH IS YOURS"
+            },
+            {
+              "id": "story-guest-section-guest-last-stop-2",
+              "label": "Heading · COME HUNGRY.",
+              "type": "text",
+              "value": "COME HUNGRY."
+            },
+            {
+              "id": "story-guest-section-guest-last-stop-3",
+              "label": "601 S Main Street · Grapevine, Texas",
+              "type": "text",
+              "value": "601 S Main Street · Grapevine, Texas"
+            },
+            {
+              "id": "story-guest-section-guest-last-stop-4",
+              "label": "Link · See the menu ↗",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "story-guest-section-guest-last-stop-5",
+              "label": "See the menu ↗",
+              "type": "text",
+              "value": "See the menu ↗"
+            },
+            {
+              "id": "story-guest-section-guest-last-stop-6",
+              "label": "Link · Plan your visit ↗",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "story-guest-section-guest-last-stop-7",
+              "label": "Plan your visit ↗",
+              "type": "text",
+              "value": "Plan your visit ↗"
+            }
+          ]
+        },
+        {
+          "id": "guest-footer",
+          "title": "Footer",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "story-guest-footer-1",
+              "label": "WEINBERGER’S DELI",
+              "type": "text",
+              "value": "WEINBERGER’S DELI"
+            },
+            {
+              "id": "story-guest-footer-2",
+              "label": "601 S Main Street Grapevine, Texas 76051",
+              "type": "multiline",
+              "value": "601 S Main Street\nGrapevine, Texas 76051"
+            },
+            {
+              "id": "story-guest-footer-5",
+              "label": "Link · Browse & customize",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "story-guest-footer-6",
+              "label": "Browse & customize",
+              "type": "text",
+              "value": "Browse & customize"
+            },
+            {
+              "id": "story-guest-footer-7",
+              "label": "Link · Readable & printable menu",
+              "type": "link",
+              "value": "readable-menu.html"
+            },
+            {
+              "id": "story-guest-footer-8",
+              "label": "Readable & printable menu",
+              "type": "text",
+              "value": "Readable & printable menu"
+            },
+            {
+              "id": "story-guest-footer-9",
+              "label": "Link · Hours, directions & contact",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "story-guest-footer-10",
+              "label": "Hours, directions & contact",
+              "type": "text",
+              "value": "Hours, directions & contact"
+            },
+            {
+              "id": "story-guest-footer-11",
+              "label": "Link · Group lunch",
+              "type": "link",
+              "value": "group.html"
+            },
+            {
+              "id": "story-guest-footer-12",
+              "label": "Group lunch",
+              "type": "text",
+              "value": "Group lunch"
+            },
+            {
+              "id": "story-guest-footer-13",
+              "label": "Link · Catering requests",
+              "type": "link",
+              "value": "catering.html"
+            },
+            {
+              "id": "story-guest-footer-14",
+              "label": "Catering requests",
+              "type": "text",
+              "value": "Catering requests"
+            },
+            {
+              "id": "story-guest-footer-15",
+              "label": "Link · Awards & recognition",
+              "type": "link",
+              "value": "story.html#recognition"
+            },
+            {
+              "id": "story-guest-footer-16",
+              "label": "Awards & recognition",
+              "type": "text",
+              "value": "Awards & recognition"
+            },
+            {
+              "id": "story-guest-footer-17",
+              "label": "Link · Current online ordering ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/menu"
+            },
+            {
+              "id": "story-guest-footer-18",
+              "label": "Current online ordering ↗",
+              "type": "text",
+              "value": "Current online ordering ↗"
+            },
+            {
+              "id": "story-guest-footer-19",
+              "label": "Link · Gift cards ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/gift-cards"
+            },
+            {
+              "id": "story-guest-footer-20",
+              "label": "Gift cards ↗",
+              "type": "text",
+              "value": "Gift cards ↗"
+            },
+            {
+              "id": "story-guest-footer-21",
+              "label": "Link · Existing rewards account ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/login"
+            },
+            {
+              "id": "story-guest-footer-22",
+              "label": "Existing rewards account ↗",
+              "type": "text",
+              "value": "Existing rewards account ↗"
+            },
+            {
+              "id": "story-guest-footer-23",
+              "label": "Link · iPhone",
+              "type": "link",
+              "value": "iphone.html"
+            },
+            {
+              "id": "story-guest-footer-24",
+              "label": "iPhone",
+              "type": "text",
+              "value": "iPhone"
+            },
+            {
+              "id": "story-guest-footer-25",
+              "label": "Link · Android",
+              "type": "link",
+              "value": "android.html"
+            },
+            {
+              "id": "story-guest-footer-26",
+              "label": "Android",
+              "type": "text",
+              "value": "Android"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visit",
+      "title": "Visit the deli",
+      "seo": {
+        "title": "Visit the deli | Weinberger’s Deli",
+        "description": "Directions, contact, current hours, group orders and practical information for Weinberger’s Deli at 601 S Main Street in Grapevine.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
+        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+      },
+      "sections": [
+        {
+          "id": "guest-utility",
+          "title": "Address & phone strip",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "visit-guest-utility-1",
+              "label": "Link · 601 S Main St. · Grapevine, Texas ↗",
+              "type": "link",
+              "value": "https://www.google.com/maps/search/?api=1&query=Weinbergers+Deli+601+S+Main+St+Grapevine+TX"
+            },
+            {
+              "id": "visit-guest-utility-2",
+              "label": "601 S Main St. · Grapevine, Texas ↗",
+              "type": "text",
+              "value": "601 S Main St. · Grapevine, Texas ↗"
+            }
+          ]
+        },
+        {
+          "id": "guest-header",
+          "title": "Header & main navigation",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "visit-guest-header-1",
+              "label": "Link · Weinberger’s Deli home",
+              "type": "link",
+              "value": "index.html"
+            },
+            {
+              "id": "visit-guest-header-9",
+              "label": "Link · Choose your sandwich ↗",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "visit-guest-header-10",
+              "label": "Choose your sandwich",
+              "type": "text",
+              "value": "Choose your sandwich"
+            }
+          ]
+        },
+        {
+          "id": "visit-intro",
+          "title": "COME BY THE DELI.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "visit-visit-intro-1",
+              "label": "WEINBERGER’S DELI / GRAPEVINE",
+              "type": "text",
+              "value": "WEINBERGER’S DELI / GRAPEVINE"
+            },
+            {
+              "id": "visit-visit-intro-2",
+              "label": "Heading · COME BY THE DELI.",
+              "type": "multiline",
+              "value": "COME BY\nTHE DELI."
+            },
+            {
+              "id": "visit-visit-intro-3",
+              "label": "601 S Main Street Grapevine, Texas 76051",
+              "type": "multiline",
+              "value": "601 S Main Street\nGrapevine, Texas 76051"
+            },
+            {
+              "id": "visit-visit-intro-4",
+              "label": "Dine in, pick up, or arrange delivery through the current ordering site.",
+              "type": "text",
+              "value": "Dine in, pick up, or arrange delivery through the current ordering site."
+            },
+            {
+              "id": "visit-visit-intro-5",
+              "label": "Link · Get directions ↗",
+              "type": "link",
+              "value": "https://www.google.com/maps/search/?api=1&query=Weinbergers+Deli+601+S+Main+St+Grapevine+TX"
+            },
+            {
+              "id": "visit-visit-intro-6",
+              "label": "Get directions ↗",
+              "type": "text",
+              "value": "Get directions ↗"
+            },
+            {
+              "id": "visit-visit-intro-9",
+              "label": "Photo · Weinberger’s brick storefront at night, with its yellow family-traditi",
+              "type": "image",
+              "value": "assets/optimized/weinbergers-main-street-20261105-1600.webp",
+              "alt": "Weinberger’s brick storefront at night, with its yellow family-tradition sign, lit deli windows and outdoor tables"
+            },
+            {
+              "id": "visit-visit-intro-10",
+              "label": "601 S MAIN STREET · GRAPEVINE",
+              "type": "text",
+              "value": "601 S MAIN STREET · GRAPEVINE"
+            }
+          ]
+        },
+        {
+          "id": "visit-sections",
+          "title": "Hours, pickup & group orders",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "visit-visit-sections-1",
+              "label": "01 / HOURS & PICKUP",
+              "type": "text",
+              "value": "01 / HOURS & PICKUP"
+            },
+            {
+              "id": "visit-visit-sections-2",
+              "label": "Heading · BEFORE YOU HEAD OVER.",
+              "type": "text",
+              "value": "BEFORE YOU HEAD OVER."
+            },
+            {
+              "id": "visit-visit-sections-3",
+              "label": "Check today’s opening hours and pickup availability with the deli, especially around holid",
+              "type": "text",
+              "value": "Check today’s opening hours and pickup availability with the deli, especially around holidays."
+            },
+            {
+              "id": "visit-visit-sections-4",
+              "label": "Link · Check current hours ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/"
+            },
+            {
+              "id": "visit-visit-sections-5",
+              "label": "Check current hours ↗",
+              "type": "text",
+              "value": "Check current hours ↗"
+            },
+            {
+              "id": "visit-visit-sections-6",
+              "label": "Link · Current online ordering ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/menu"
+            },
+            {
+              "id": "visit-visit-sections-7",
+              "label": "Current online ordering ↗",
+              "type": "text",
+              "value": "Current online ordering ↗"
+            },
+            {
+              "id": "visit-visit-sections-8",
+              "label": "Have an order already in progress? Follow the pickup information in your confirmation.",
+              "type": "text",
+              "value": "Have an order already in progress? Follow the pickup information in your confirmation."
+            },
+            {
+              "id": "visit-visit-sections-9",
+              "label": "02 / GROUP ORDERS",
+              "type": "text",
+              "value": "02 / GROUP ORDERS"
+            },
+            {
+              "id": "visit-visit-sections-10",
+              "label": "Heading · MORE THAN ONE LUNCH.",
+              "type": "text",
+              "value": "MORE THAN ONE LUNCH."
+            },
+            {
+              "id": "visit-visit-sections-11",
+              "label": "For a meeting, gathering or a larger order, start with the deli’s group-order and catering",
+              "type": "text",
+              "value": "For a meeting, gathering or a larger order, start with the deli’s group-order and catering options."
+            },
+            {
+              "id": "visit-visit-sections-12",
+              "label": "Have the date, time and number of people ready.",
+              "type": "text",
+              "value": "Have the date, time and number of people ready."
+            },
+            {
+              "id": "visit-visit-sections-13",
+              "label": "Ask about pickup or delivery, lead time and any dietary needs.",
+              "type": "text",
+              "value": "Ask about pickup or delivery, lead time and any dietary needs."
+            },
+            {
+              "id": "visit-visit-sections-14",
+              "label": "Confirm the menu, price and timing with the deli before making plans.",
+              "type": "text",
+              "value": "Confirm the menu, price and timing with the deli before making plans."
+            },
+            {
+              "id": "visit-visit-sections-15",
+              "label": "Link · Plan a group lunch ↗",
+              "type": "link",
+              "value": "group.html"
+            },
+            {
+              "id": "visit-visit-sections-16",
+              "label": "Plan a group lunch ↗",
+              "type": "text",
+              "value": "Plan a group lunch ↗"
+            },
+            {
+              "id": "visit-visit-sections-17",
+              "label": "Link · Request catering ↗",
+              "type": "link",
+              "value": "catering.html"
+            },
+            {
+              "id": "visit-visit-sections-18",
+              "label": "Request catering ↗",
+              "type": "text",
+              "value": "Request catering ↗"
+            }
+          ]
+        },
+        {
+          "id": "guest-section-guest-questions",
+          "title": "GOOD TO KNOW.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "visit-guest-section-guest-questions-1",
+              "label": "A FEW PRACTICAL DETAILS",
+              "type": "text",
+              "value": "A FEW PRACTICAL DETAILS"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-2",
+              "label": "Heading · GOOD TO KNOW.",
+              "type": "text",
+              "value": "GOOD TO KNOW."
+            },
+            {
+              "id": "visit-guest-section-guest-questions-3",
+              "label": "Can I customize a sandwich?",
+              "type": "text",
+              "value": "Can I customize a sandwich?"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-4",
+              "label": "Open any sandwich to choose bread, preparation and extras, or start with Build Your Own. P",
+              "type": "multiline",
+              "value": "Open any sandwich to choose bread, preparation and extras, or start with Build Your Own. Prices and availability that need the deli’s confirmation are identified before an order can be charged."
+            },
+            {
+              "id": "visit-guest-section-guest-questions-5",
+              "label": "Link · Build your own sandwich ↗",
+              "type": "link",
+              "value": "menu.html?item=custom-build-your-own"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-6",
+              "label": "Build your own sandwich ↗",
+              "type": "text",
+              "value": "Build your own sandwich ↗"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-7",
+              "label": "What if I have a food allergy?",
+              "type": "text",
+              "value": "What if I have a food allergy?"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-8",
+              "label": "Speak with the deli before ordering. Menu descriptions and ingredient filters do not estab",
+              "type": "multiline",
+              "value": "Speak with the deli before ordering. Menu descriptions and ingredient filters do not establish that a sandwich is free of an allergen or cross-contact."
+            },
+            {
+              "id": "visit-guest-section-guest-questions-11",
+              "label": "Where do I use my rewards or gift card?",
+              "type": "text",
+              "value": "Where do I use my rewards or gift card?"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-12",
+              "label": "Use the existing Weinberger’s ordering account for current rewards. Gift cards and existin",
+              "type": "multiline",
+              "value": "Use the existing Weinberger’s ordering account for current rewards. Gift cards and existing orders stay with their current service."
+            },
+            {
+              "id": "visit-guest-section-guest-questions-13",
+              "label": "Link · Existing rewards account ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/login"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-14",
+              "label": "Existing rewards account ↗",
+              "type": "text",
+              "value": "Existing rewards account ↗"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-15",
+              "label": "Link · Gift cards ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/gift-cards"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-16",
+              "label": "Gift cards ↗",
+              "type": "text",
+              "value": "Gift cards ↗"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-17",
+              "label": "Can I read or print the full menu?",
+              "type": "text",
+              "value": "Can I read or print the full menu?"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-18",
+              "label": "Yes. The readable menu includes item names, descriptions and listed starting prices, group",
+              "type": "multiline",
+              "value": "Yes. The readable menu includes item names, descriptions and listed starting prices, grouped by category. It also works without JavaScript."
+            },
+            {
+              "id": "visit-guest-section-guest-questions-19",
+              "label": "Link · Open the readable menu ↗",
+              "type": "link",
+              "value": "readable-menu.html"
+            },
+            {
+              "id": "visit-guest-section-guest-questions-20",
+              "label": "Open the readable menu ↗",
+              "type": "text",
+              "value": "Open the readable menu ↗"
+            }
+          ]
+        },
+        {
+          "id": "guest-contact",
+          "title": "WE’RE AT MAIN STREET.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "visit-guest-contact-1",
+              "label": "ASK THE COUNTER",
+              "type": "text",
+              "value": "ASK THE COUNTER"
+            },
+            {
+              "id": "visit-guest-contact-2",
+              "label": "Heading · WE’RE AT MAIN STREET.",
+              "type": "multiline",
+              "value": "WE’RE AT\nMAIN STREET."
+            },
+            {
+              "id": "visit-guest-contact-5",
+              "label": "Link · weinbergersdeli@aol.com",
+              "type": "link",
+              "value": "mailto:weinbergersdeli@aol.com"
+            },
+            {
+              "id": "visit-guest-contact-6",
+              "label": "weinbergersdeli@aol.com",
+              "type": "text",
+              "value": "weinbergersdeli@aol.com"
+            },
+            {
+              "id": "visit-guest-contact-7",
+              "label": "601 S Main Street Grapevine, Texas 76051",
+              "type": "multiline",
+              "value": "601 S Main Street\nGrapevine, Texas 76051"
+            }
+          ]
+        },
+        {
+          "id": "guest-footer",
+          "title": "Footer",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "visit-guest-footer-1",
+              "label": "WEINBERGER’S DELI",
+              "type": "text",
+              "value": "WEINBERGER’S DELI"
+            },
+            {
+              "id": "visit-guest-footer-2",
+              "label": "601 S Main Street Grapevine, Texas 76051",
+              "type": "multiline",
+              "value": "601 S Main Street\nGrapevine, Texas 76051"
+            },
+            {
+              "id": "visit-guest-footer-5",
+              "label": "Link · Browse & customize",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "visit-guest-footer-6",
+              "label": "Browse & customize",
+              "type": "text",
+              "value": "Browse & customize"
+            },
+            {
+              "id": "visit-guest-footer-7",
+              "label": "Link · Readable & printable menu",
+              "type": "link",
+              "value": "readable-menu.html"
+            },
+            {
+              "id": "visit-guest-footer-8",
+              "label": "Readable & printable menu",
+              "type": "text",
+              "value": "Readable & printable menu"
+            },
+            {
+              "id": "visit-guest-footer-9",
+              "label": "Link · Hours, directions & contact",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "visit-guest-footer-10",
+              "label": "Hours, directions & contact",
+              "type": "text",
+              "value": "Hours, directions & contact"
+            },
+            {
+              "id": "visit-guest-footer-11",
+              "label": "Link · Group lunch",
+              "type": "link",
+              "value": "group.html"
+            },
+            {
+              "id": "visit-guest-footer-12",
+              "label": "Group lunch",
+              "type": "text",
+              "value": "Group lunch"
+            },
+            {
+              "id": "visit-guest-footer-13",
+              "label": "Link · Catering requests",
+              "type": "link",
+              "value": "catering.html"
+            },
+            {
+              "id": "visit-guest-footer-14",
+              "label": "Catering requests",
+              "type": "text",
+              "value": "Catering requests"
+            },
+            {
+              "id": "visit-guest-footer-15",
+              "label": "Link · Awards & recognition",
+              "type": "link",
+              "value": "story.html#recognition"
+            },
+            {
+              "id": "visit-guest-footer-16",
+              "label": "Awards & recognition",
+              "type": "text",
+              "value": "Awards & recognition"
+            },
+            {
+              "id": "visit-guest-footer-17",
+              "label": "Link · Current online ordering ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/menu"
+            },
+            {
+              "id": "visit-guest-footer-18",
+              "label": "Current online ordering ↗",
+              "type": "text",
+              "value": "Current online ordering ↗"
+            },
+            {
+              "id": "visit-guest-footer-19",
+              "label": "Link · Gift cards ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/gift-cards"
+            },
+            {
+              "id": "visit-guest-footer-20",
+              "label": "Gift cards ↗",
+              "type": "text",
+              "value": "Gift cards ↗"
+            },
+            {
+              "id": "visit-guest-footer-21",
+              "label": "Link · Existing rewards account ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/login"
+            },
+            {
+              "id": "visit-guest-footer-22",
+              "label": "Existing rewards account ↗",
+              "type": "text",
+              "value": "Existing rewards account ↗"
+            },
+            {
+              "id": "visit-guest-footer-23",
+              "label": "Link · iPhone",
+              "type": "link",
+              "value": "iphone.html"
+            },
+            {
+              "id": "visit-guest-footer-24",
+              "label": "iPhone",
+              "type": "text",
+              "value": "iPhone"
+            },
+            {
+              "id": "visit-guest-footer-25",
+              "label": "Link · Android",
+              "type": "link",
+              "value": "android.html"
+            },
+            {
+              "id": "visit-guest-footer-26",
+              "label": "Android",
+              "type": "text",
+              "value": "Android"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu",
+      "title": "Menu introduction",
+      "seo": {
+        "title": "The menu | Weinberger’s Deli",
+        "description": "Weinberger’s Deli in Grapevine, Texas. Italian beef, Chicago dogs, Reubens, and a full deli menu. Find your sandwich and make it yours.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
+        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+      },
+      "sections": [
+        {
+          "id": "header",
+          "title": "Header",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "menu-header-1",
+              "label": "Link · 601 S MAIN ST. GRAPEVINE, TX",
+              "type": "link",
+              "value": "index.html"
+            },
+            {
+              "id": "menu-header-3",
+              "label": "601 S MAIN ST. GRAPEVINE, TX",
+              "type": "multiline",
+              "value": "601 S MAIN ST.\nGRAPEVINE, TX"
+            },
+            {
+              "id": "menu-header-4",
+              "label": "THE MENU",
+              "type": "text",
+              "value": "THE MENU"
+            },
+            {
+              "id": "menu-header-5",
+              "label": "COMPARE",
+              "type": "text",
+              "value": "COMPARE"
+            },
+            {
+              "id": "menu-header-6",
+              "label": "0",
+              "type": "text",
+              "value": "0"
+            },
+            {
+              "id": "menu-header-7",
+              "label": "SAVED",
+              "type": "text",
+              "value": "SAVED"
+            },
+            {
+              "id": "menu-header-8",
+              "label": "Link · VISIT",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "menu-header-9",
+              "label": "VISIT",
+              "type": "text",
+              "value": "VISIT"
+            },
+            {
+              "id": "menu-header-10",
+              "label": "YOUR ORDER",
+              "type": "text",
+              "value": "YOUR ORDER"
+            }
+          ]
+        },
+        {
+          "id": "menu-back",
+          "title": "← Back to the deli",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "menu-menu-back-1",
+              "label": "Link · ← Back to the deli",
+              "type": "link",
+              "value": "index.html"
+            },
+            {
+              "id": "menu-menu-back-2",
+              "label": "← Back to the deli",
+              "type": "text",
+              "value": "← Back to the deli"
+            }
+          ]
+        },
+        {
+          "id": "start-order",
+          "title": "See the menu",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "menu-start-order-1",
+              "label": "See the menu",
+              "type": "text",
+              "value": "See the menu"
+            }
+          ]
+        },
+        {
+          "id": "order-strip",
+          "title": "Pickup strip",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "menu-order-strip-1",
+              "label": "PICKUP",
+              "type": "text",
+              "value": "PICKUP"
+            },
+            {
+              "id": "menu-order-strip-2",
+              "label": "601 S MAIN ST.",
+              "type": "text",
+              "value": "601 S MAIN ST."
+            },
+            {
+              "id": "menu-order-strip-3",
+              "label": "Grapevine, TX",
+              "type": "text",
+              "value": "Grapevine, TX"
+            },
+            {
+              "id": "menu-order-strip-4",
+              "label": "Directions ↗",
+              "type": "text",
+              "value": "Directions ↗"
+            }
+          ]
+        },
+        {
+          "id": "menu",
+          "title": "FIND YOUR SANDWICH",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "menu-menu-1",
+              "label": "Input hint · Search a sandwich or ingredient",
+              "type": "text",
+              "value": "Search a sandwich or ingredient"
+            },
+            {
+              "id": "menu-menu-2",
+              "label": "×",
+              "type": "text",
+              "value": "×"
+            },
+            {
+              "id": "menu-menu-3",
+              "label": "Find a favorite, compare a few, or build your own.",
+              "type": "text",
+              "value": "Find a favorite, compare a few, or build your own."
+            },
+            {
+              "id": "menu-menu-4",
+              "label": "Link · Readable & printable menu ↗",
+              "type": "link",
+              "value": "readable-menu.html"
+            },
+            {
+              "id": "menu-menu-5",
+              "label": "Readable & printable menu ↗",
+              "type": "text",
+              "value": "Readable & printable menu ↗"
+            },
+            {
+              "id": "menu-menu-6",
+              "label": "START WITH",
+              "type": "text",
+              "value": "START WITH"
+            },
+            {
+              "id": "menu-menu-7",
+              "label": "Pastrami",
+              "type": "text",
+              "value": "Pastrami"
+            },
+            {
+              "id": "menu-menu-8",
+              "label": "Chicken",
+              "type": "text",
+              "value": "Chicken"
+            },
+            {
+              "id": "menu-menu-9",
+              "label": "Corned beef",
+              "type": "text",
+              "value": "Corned beef"
+            },
+            {
+              "id": "menu-menu-10",
+              "label": "Turkey",
+              "type": "text",
+              "value": "Turkey"
+            },
+            {
+              "id": "menu-menu-11",
+              "label": "Veggie menu",
+              "type": "text",
+              "value": "Veggie menu"
+            },
+            {
+              "id": "menu-menu-12",
+              "label": "Ingredients & price",
+              "type": "text",
+              "value": "Ingredients & price"
+            },
+            {
+              "id": "menu-menu-13",
+              "label": "Narrow the menu +",
+              "type": "text",
+              "value": "Narrow the menu +"
+            },
+            {
+              "id": "menu-menu-14",
+              "label": "Include all",
+              "type": "text",
+              "value": "Include all"
+            },
+            {
+              "id": "menu-menu-15",
+              "label": "Input hint · e.g. pastrami, Swiss",
+              "type": "text",
+              "value": "e.g. pastrami, Swiss"
+            },
+            {
+              "id": "menu-menu-16",
+              "label": "Exclude",
+              "type": "text",
+              "value": "Exclude"
+            },
+            {
+              "id": "menu-menu-17",
+              "label": "Input hint · e.g. mustard",
+              "type": "text",
+              "value": "e.g. mustard"
+            },
+            {
+              "id": "menu-menu-18",
+              "label": "Starting price",
+              "type": "text",
+              "value": "Starting price"
+            },
+            {
+              "id": "menu-menu-19",
+              "label": "Clear filters",
+              "type": "text",
+              "value": "Clear filters"
+            },
+            {
+              "id": "menu-menu-20",
+              "label": "Separate ingredients with commas. Filters use the menu descriptions, which may be incomple",
+              "type": "multiline",
+              "value": "Separate ingredients with commas. Filters use the menu descriptions, which may be incomplete. For allergies, speak with the deli."
+            },
+            {
+              "id": "menu-menu-21",
+              "label": "CATEGORIES",
+              "type": "text",
+              "value": "CATEGORIES"
+            },
+            {
+              "id": "menu-menu-22",
+              "label": "All items",
+              "type": "text",
+              "value": "All items"
+            },
+            {
+              "id": "menu-menu-23",
+              "label": "All categories ⌄",
+              "type": "text",
+              "value": "All categories ⌄"
+            },
+            {
+              "id": "menu-menu-24",
+              "label": "NARROW IT DOWN",
+              "type": "text",
+              "value": "NARROW IT DOWN"
+            },
+            {
+              "id": "menu-menu-25",
+              "label": "Ingredients & price ↗",
+              "type": "text",
+              "value": "Ingredients & price ↗"
+            },
+            {
+              "id": "menu-menu-26",
+              "label": "Can’t decide between a few? Select Compare beneath an item.",
+              "type": "multiline",
+              "value": "Can’t decide between a few?\nSelect Compare beneath an item."
+            },
+            {
+              "id": "menu-menu-27",
+              "label": "Sort",
+              "type": "text",
+              "value": "Sort"
+            }
+          ]
+        },
+        {
+          "id": "guest-footer",
+          "title": "Footer",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "menu-guest-footer-1",
+              "label": "WEINBERGER’S DELI",
+              "type": "text",
+              "value": "WEINBERGER’S DELI"
+            },
+            {
+              "id": "menu-guest-footer-2",
+              "label": "601 S Main Street Grapevine, Texas 76051",
+              "type": "multiline",
+              "value": "601 S Main Street\nGrapevine, Texas 76051"
+            },
+            {
+              "id": "menu-guest-footer-5",
+              "label": "Link · Browse & customize",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "menu-guest-footer-6",
+              "label": "Browse & customize",
+              "type": "text",
+              "value": "Browse & customize"
+            },
+            {
+              "id": "menu-guest-footer-7",
+              "label": "Link · Readable & printable menu",
+              "type": "link",
+              "value": "readable-menu.html"
+            },
+            {
+              "id": "menu-guest-footer-8",
+              "label": "Readable & printable menu",
+              "type": "text",
+              "value": "Readable & printable menu"
+            },
+            {
+              "id": "menu-guest-footer-9",
+              "label": "Link · Group lunch",
+              "type": "link",
+              "value": "group.html"
+            },
+            {
+              "id": "menu-guest-footer-10",
+              "label": "Group lunch",
+              "type": "text",
+              "value": "Group lunch"
+            },
+            {
+              "id": "menu-guest-footer-11",
+              "label": "Link · Catering",
+              "type": "link",
+              "value": "catering.html"
+            },
+            {
+              "id": "menu-guest-footer-12",
+              "label": "Catering",
+              "type": "text",
+              "value": "Catering"
+            },
+            {
+              "id": "menu-guest-footer-13",
+              "label": "Link · Our story",
+              "type": "link",
+              "value": "story.html"
+            },
+            {
+              "id": "menu-guest-footer-14",
+              "label": "Our story",
+              "type": "text",
+              "value": "Our story"
+            },
+            {
+              "id": "menu-guest-footer-15",
+              "label": "Link · Hours, directions & contact",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "menu-guest-footer-16",
+              "label": "Hours, directions & contact",
+              "type": "text",
+              "value": "Hours, directions & contact"
+            },
+            {
+              "id": "menu-guest-footer-17",
+              "label": "Link · Group orders",
+              "type": "link",
+              "value": "visit.html#groups"
+            },
+            {
+              "id": "menu-guest-footer-18",
+              "label": "Group orders",
+              "type": "text",
+              "value": "Group orders"
+            },
+            {
+              "id": "menu-guest-footer-19",
+              "label": "Link · Current online ordering ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/menu"
+            },
+            {
+              "id": "menu-guest-footer-20",
+              "label": "Current online ordering ↗",
+              "type": "text",
+              "value": "Current online ordering ↗"
+            },
+            {
+              "id": "menu-guest-footer-21",
+              "label": "Link · Gift cards ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/gift-cards"
+            },
+            {
+              "id": "menu-guest-footer-22",
+              "label": "Gift cards ↗",
+              "type": "text",
+              "value": "Gift cards ↗"
+            },
+            {
+              "id": "menu-guest-footer-23",
+              "label": "Link · Existing rewards account ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/login"
+            },
+            {
+              "id": "menu-guest-footer-24",
+              "label": "Existing rewards account ↗",
+              "type": "text",
+              "value": "Existing rewards account ↗"
+            },
+            {
+              "id": "menu-guest-footer-25",
+              "label": "Link · iPhone",
+              "type": "link",
+              "value": "iphone.html"
+            },
+            {
+              "id": "menu-guest-footer-26",
+              "label": "iPhone",
+              "type": "text",
+              "value": "iPhone"
+            },
+            {
+              "id": "menu-guest-footer-27",
+              "label": "Link · Android",
+              "type": "link",
+              "value": "android.html"
+            },
+            {
+              "id": "menu-guest-footer-28",
+              "label": "Android",
+              "type": "text",
+              "value": "Android"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "title": "Mobile menu introduction",
+      "seo": {
+        "title": "Weinberger’s Deli — Chicago deli. Grapevine, Texas.",
+        "description": "Weinberger’s Deli in Grapevine, Texas. Italian beef, Chicago dogs, Reubens, and a full deli menu. Find your sandwich and make it yours.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
+        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+      },
+      "sections": [
+        {
+          "id": "header",
+          "title": "Header",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "mobile-header-1",
+              "label": "Link · 601 S MAIN ST. GRAPEVINE, TX",
+              "type": "link",
+              "value": "index.html"
+            },
+            {
+              "id": "mobile-header-3",
+              "label": "601 S MAIN ST. GRAPEVINE, TX",
+              "type": "multiline",
+              "value": "601 S MAIN ST.\nGRAPEVINE, TX"
+            },
+            {
+              "id": "mobile-header-4",
+              "label": "THE MENU",
+              "type": "text",
+              "value": "THE MENU"
+            },
+            {
+              "id": "mobile-header-5",
+              "label": "COMPARE",
+              "type": "text",
+              "value": "COMPARE"
+            },
+            {
+              "id": "mobile-header-6",
+              "label": "0",
+              "type": "text",
+              "value": "0"
+            },
+            {
+              "id": "mobile-header-7",
+              "label": "SAVED",
+              "type": "text",
+              "value": "SAVED"
+            },
+            {
+              "id": "mobile-header-8",
+              "label": "VISIT",
+              "type": "text",
+              "value": "VISIT"
+            },
+            {
+              "id": "mobile-header-9",
+              "label": "YOUR ORDER",
+              "type": "text",
+              "value": "YOUR ORDER"
+            }
+          ]
+        },
+        {
+          "id": "menu-cover",
+          "title": "CHICAGO DELI.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "mobile-menu-cover-1",
+              "label": "CHICAGO, 1952",
+              "type": "text",
+              "value": "CHICAGO, 1952"
+            },
+            {
+              "id": "mobile-menu-cover-2",
+              "label": "GRAPEVINE, 2002",
+              "type": "text",
+              "value": "GRAPEVINE, 2002"
+            },
+            {
+              "id": "mobile-menu-cover-3",
+              "label": "Heading · CHICAGO DELI.",
+              "type": "multiline",
+              "value": "CHICAGO\nDELI."
+            },
+            {
+              "id": "mobile-menu-cover-4",
+              "label": "GRAPEVINE, TEXAS.",
+              "type": "text",
+              "value": "GRAPEVINE, TEXAS."
+            },
+            {
+              "id": "mobile-menu-cover-5",
+              "label": "Italian beef. Chicago dogs. Reubens. A full deli menu, made your way.",
+              "type": "multiline",
+              "value": "Italian beef. Chicago dogs. Reubens.\nA full deli menu, made your way."
+            },
+            {
+              "id": "mobile-menu-cover-6",
+              "label": "SEE THE MENU",
+              "type": "text",
+              "value": "SEE THE MENU"
+            },
+            {
+              "id": "mobile-menu-cover-7",
+              "label": "Photo · Gayle’s Super Reuben, stacked with corned beef on rye",
+              "type": "image",
+              "value": "assets/food-03.jpg",
+              "alt": "Gayle’s Super Reuben, stacked with corned beef on rye"
+            },
+            {
+              "id": "mobile-menu-cover-8",
+              "label": "GAYLE’S SUPER REUBEN",
+              "type": "text",
+              "value": "GAYLE’S SUPER REUBEN"
+            },
+            {
+              "id": "mobile-menu-cover-9",
+              "label": "FROM THE DELI",
+              "type": "text",
+              "value": "FROM THE DELI"
+            },
+            {
+              "id": "mobile-menu-cover-10",
+              "label": "VIEW SANDWICH ↗",
+              "type": "text",
+              "value": "VIEW SANDWICH ↗"
+            },
+            {
+              "id": "mobile-menu-cover-11",
+              "label": "CHICAGO",
+              "type": "text",
+              "value": "CHICAGO"
+            },
+            {
+              "id": "mobile-menu-cover-12",
+              "label": "CLASSICS",
+              "type": "text",
+              "value": "CLASSICS"
+            },
+            {
+              "id": "mobile-menu-cover-13",
+              "label": "ITALIAN BEEF",
+              "type": "text",
+              "value": "ITALIAN BEEF"
+            },
+            {
+              "id": "mobile-menu-cover-14",
+              "label": "Wet or dry. Sweet or hot peppers.",
+              "type": "text",
+              "value": "Wet or dry. Sweet or hot peppers."
+            },
+            {
+              "id": "mobile-menu-cover-15",
+              "label": "CHICAGO DOG",
+              "type": "text",
+              "value": "CHICAGO DOG"
+            },
+            {
+              "id": "mobile-menu-cover-16",
+              "label": "Vienna Beef. Poppy seed bun.",
+              "type": "text",
+              "value": "Vienna Beef. Poppy seed bun."
+            },
+            {
+              "id": "mobile-menu-cover-17",
+              "label": "MAXWELL STREET POLISH",
+              "type": "text",
+              "value": "MAXWELL STREET POLISH"
+            },
+            {
+              "id": "mobile-menu-cover-18",
+              "label": "Grilled onions. Yellow mustard.",
+              "type": "text",
+              "value": "Grilled onions. Yellow mustard."
+            }
+          ]
+        },
+        {
+          "id": "order-strip",
+          "title": "Pickup strip",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "mobile-order-strip-1",
+              "label": "PICKUP",
+              "type": "text",
+              "value": "PICKUP"
+            },
+            {
+              "id": "mobile-order-strip-2",
+              "label": "601 S MAIN ST.",
+              "type": "text",
+              "value": "601 S MAIN ST."
+            },
+            {
+              "id": "mobile-order-strip-3",
+              "label": "Grapevine, TX",
+              "type": "text",
+              "value": "Grapevine, TX"
+            },
+            {
+              "id": "mobile-order-strip-4",
+              "label": "Directions ↗",
+              "type": "text",
+              "value": "Directions ↗"
+            }
+          ]
+        },
+        {
+          "id": "menu",
+          "title": "FIND YOUR SANDWICH",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "mobile-menu-1",
+              "label": "Input hint · Search a sandwich or ingredient",
+              "type": "text",
+              "value": "Search a sandwich or ingredient"
+            },
+            {
+              "id": "mobile-menu-2",
+              "label": "×",
+              "type": "text",
+              "value": "×"
+            },
+            {
+              "id": "mobile-menu-3",
+              "label": "START WITH",
+              "type": "text",
+              "value": "START WITH"
+            },
+            {
+              "id": "mobile-menu-4",
+              "label": "Pastrami",
+              "type": "text",
+              "value": "Pastrami"
+            },
+            {
+              "id": "mobile-menu-5",
+              "label": "Chicken",
+              "type": "text",
+              "value": "Chicken"
+            },
+            {
+              "id": "mobile-menu-6",
+              "label": "Corned beef",
+              "type": "text",
+              "value": "Corned beef"
+            },
+            {
+              "id": "mobile-menu-7",
+              "label": "Turkey",
+              "type": "text",
+              "value": "Turkey"
+            },
+            {
+              "id": "mobile-menu-8",
+              "label": "Veggie menu",
+              "type": "text",
+              "value": "Veggie menu"
+            },
+            {
+              "id": "mobile-menu-9",
+              "label": "Ingredients & price",
+              "type": "text",
+              "value": "Ingredients & price"
+            },
+            {
+              "id": "mobile-menu-10",
+              "label": "Narrow the menu +",
+              "type": "text",
+              "value": "Narrow the menu +"
+            },
+            {
+              "id": "mobile-menu-11",
+              "label": "Include all",
+              "type": "text",
+              "value": "Include all"
+            },
+            {
+              "id": "mobile-menu-12",
+              "label": "Input hint · e.g. pastrami, Swiss",
+              "type": "text",
+              "value": "e.g. pastrami, Swiss"
+            },
+            {
+              "id": "mobile-menu-13",
+              "label": "Exclude",
+              "type": "text",
+              "value": "Exclude"
+            },
+            {
+              "id": "mobile-menu-14",
+              "label": "Input hint · e.g. mustard",
+              "type": "text",
+              "value": "e.g. mustard"
+            },
+            {
+              "id": "mobile-menu-15",
+              "label": "Starting price",
+              "type": "text",
+              "value": "Starting price"
+            },
+            {
+              "id": "mobile-menu-16",
+              "label": "Clear filters",
+              "type": "text",
+              "value": "Clear filters"
+            },
+            {
+              "id": "mobile-menu-17",
+              "label": "Separate ingredients with commas. Filters use the menu descriptions, which may be incomple",
+              "type": "multiline",
+              "value": "Separate ingredients with commas. Filters use the menu descriptions, which may be incomplete. For allergies, speak with the deli."
+            },
+            {
+              "id": "mobile-menu-18",
+              "label": "CATEGORIES",
+              "type": "text",
+              "value": "CATEGORIES"
+            },
+            {
+              "id": "mobile-menu-19",
+              "label": "All items",
+              "type": "text",
+              "value": "All items"
+            },
+            {
+              "id": "mobile-menu-20",
+              "label": "All categories ⌄",
+              "type": "text",
+              "value": "All categories ⌄"
+            },
+            {
+              "id": "mobile-menu-21",
+              "label": "NARROW IT DOWN",
+              "type": "text",
+              "value": "NARROW IT DOWN"
+            },
+            {
+              "id": "mobile-menu-22",
+              "label": "Ingredients & price ↗",
+              "type": "text",
+              "value": "Ingredients & price ↗"
+            },
+            {
+              "id": "mobile-menu-23",
+              "label": "Can’t decide between a few? Select Compare beneath an item.",
+              "type": "multiline",
+              "value": "Can’t decide between a few?\nSelect Compare beneath an item."
+            },
+            {
+              "id": "mobile-menu-24",
+              "label": "Sort",
+              "type": "text",
+              "value": "Sort"
+            }
+          ]
+        },
+        {
+          "id": "guest-footer",
+          "title": "Footer",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "mobile-guest-footer-1",
+              "label": "WEINBERGER’S DELI",
+              "type": "text",
+              "value": "WEINBERGER’S DELI"
+            },
+            {
+              "id": "mobile-guest-footer-2",
+              "label": "601 S Main Street Grapevine, Texas 76051",
+              "type": "multiline",
+              "value": "601 S Main Street\nGrapevine, Texas 76051"
+            },
+            {
+              "id": "mobile-guest-footer-5",
+              "label": "Link · Browse & customize",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "mobile-guest-footer-6",
+              "label": "Browse & customize",
+              "type": "text",
+              "value": "Browse & customize"
+            },
+            {
+              "id": "mobile-guest-footer-7",
+              "label": "Link · Readable & printable menu",
+              "type": "link",
+              "value": "readable-menu.html"
+            },
+            {
+              "id": "mobile-guest-footer-8",
+              "label": "Readable & printable menu",
+              "type": "text",
+              "value": "Readable & printable menu"
+            },
+            {
+              "id": "mobile-guest-footer-9",
+              "label": "Link · Group lunch",
+              "type": "link",
+              "value": "group.html"
+            },
+            {
+              "id": "mobile-guest-footer-10",
+              "label": "Group lunch",
+              "type": "text",
+              "value": "Group lunch"
+            },
+            {
+              "id": "mobile-guest-footer-11",
+              "label": "Link · Catering",
+              "type": "link",
+              "value": "catering.html"
+            },
+            {
+              "id": "mobile-guest-footer-12",
+              "label": "Catering",
+              "type": "text",
+              "value": "Catering"
+            },
+            {
+              "id": "mobile-guest-footer-13",
+              "label": "Link · Our story",
+              "type": "link",
+              "value": "story.html"
+            },
+            {
+              "id": "mobile-guest-footer-14",
+              "label": "Our story",
+              "type": "text",
+              "value": "Our story"
+            },
+            {
+              "id": "mobile-guest-footer-15",
+              "label": "Link · Hours, directions & contact",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "mobile-guest-footer-16",
+              "label": "Hours, directions & contact",
+              "type": "text",
+              "value": "Hours, directions & contact"
+            },
+            {
+              "id": "mobile-guest-footer-17",
+              "label": "Link · Group orders",
+              "type": "link",
+              "value": "visit.html#groups"
+            },
+            {
+              "id": "mobile-guest-footer-18",
+              "label": "Group orders",
+              "type": "text",
+              "value": "Group orders"
+            },
+            {
+              "id": "mobile-guest-footer-19",
+              "label": "Link · Current online ordering ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/menu"
+            },
+            {
+              "id": "mobile-guest-footer-20",
+              "label": "Current online ordering ↗",
+              "type": "text",
+              "value": "Current online ordering ↗"
+            },
+            {
+              "id": "mobile-guest-footer-21",
+              "label": "Link · Gift cards ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/gift-cards"
+            },
+            {
+              "id": "mobile-guest-footer-22",
+              "label": "Gift cards ↗",
+              "type": "text",
+              "value": "Gift cards ↗"
+            },
+            {
+              "id": "mobile-guest-footer-23",
+              "label": "Link · Existing rewards account ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/login"
+            },
+            {
+              "id": "mobile-guest-footer-24",
+              "label": "Existing rewards account ↗",
+              "type": "text",
+              "value": "Existing rewards account ↗"
+            },
+            {
+              "id": "mobile-guest-footer-25",
+              "label": "Link · iPhone",
+              "type": "link",
+              "value": "iphone.html"
+            },
+            {
+              "id": "mobile-guest-footer-26",
+              "label": "iPhone",
+              "type": "text",
+              "value": "iPhone"
+            },
+            {
+              "id": "mobile-guest-footer-27",
+              "label": "Link · Android",
+              "type": "link",
+              "value": "android.html"
+            },
+            {
+              "id": "mobile-guest-footer-28",
+              "label": "Android",
+              "type": "text",
+              "value": "Android"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "group",
+      "title": "Group lunch",
+      "seo": {
+        "title": "Group lunch | Weinberger’s Deli",
+        "description": "Build one Weinberger’s group lunch without one person transcribing everyone’s sandwich.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
+        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+      },
+      "sections": [
+        {
+          "id": "expansion-header",
+          "title": "Navigation",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "group-expansion-header-1",
+              "label": "Link · Weinberger’s Deli home",
+              "type": "link",
+              "value": "index.html"
+            },
+            {
+              "id": "group-expansion-header-3",
+              "label": "Link · Menu",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "group-expansion-header-4",
+              "label": "Menu",
+              "type": "text",
+              "value": "Menu"
+            },
+            {
+              "id": "group-expansion-header-5",
+              "label": "Link · Catering",
+              "type": "link",
+              "value": "catering.html"
+            },
+            {
+              "id": "group-expansion-header-6",
+              "label": "Catering",
+              "type": "text",
+              "value": "Catering"
+            },
+            {
+              "id": "group-expansion-header-7",
+              "label": "Link · Visit",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "group-expansion-header-8",
+              "label": "Visit",
+              "type": "text",
+              "value": "Visit"
+            }
+          ]
+        },
+        {
+          "id": "expansion-hero",
+          "title": "LUNCH FOR EVERYONE.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "group-expansion-hero-1",
+              "label": "ONE LUNCH / EVERYONE’S OWN ORDER",
+              "type": "text",
+              "value": "ONE LUNCH / EVERYONE’S OWN ORDER"
+            },
+            {
+              "id": "group-expansion-hero-2",
+              "label": "Heading · LUNCH FOR EVERYONE.",
+              "type": "multiline",
+              "value": "LUNCH FOR\nEVERYONE."
+            },
+            {
+              "id": "group-expansion-hero-3",
+              "label": "Send one private invitation. Everyone names and builds their own sandwich. You review the ",
+              "type": "text",
+              "value": "Send one private invitation. Everyone names and builds their own sandwich. You review the combined order and pay once."
+            }
+          ]
+        },
+        {
+          "id": "create-panel",
+          "title": "SET THE DEADLINE.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "group-create-panel-1",
+              "label": "START A GROUP",
+              "type": "text",
+              "value": "START A GROUP"
+            },
+            {
+              "id": "group-create-panel-2",
+              "label": "Heading · SET THE DEADLINE.",
+              "type": "text",
+              "value": "SET THE DEADLINE."
+            },
+            {
+              "id": "group-create-panel-3",
+              "label": "Group name",
+              "type": "text",
+              "value": "Group name"
+            },
+            {
+              "id": "group-create-panel-4",
+              "label": "Input hint · Friday office lunch",
+              "type": "text",
+              "value": "Friday office lunch"
+            },
+            {
+              "id": "group-create-panel-5",
+              "label": "Your name",
+              "type": "text",
+              "value": "Your name"
+            },
+            {
+              "id": "group-create-panel-6",
+              "label": "Contributions close",
+              "type": "text",
+              "value": "Contributions close"
+            },
+            {
+              "id": "group-create-panel-7",
+              "label": "Requested pickup",
+              "type": "text",
+              "value": "Requested pickup"
+            },
+            {
+              "id": "group-create-panel-8",
+              "label": "Optional",
+              "type": "text",
+              "value": "Optional"
+            },
+            {
+              "id": "group-create-panel-9",
+              "label": "Create private invitation",
+              "type": "text",
+              "value": "Create private invitation"
+            },
+            {
+              "id": "group-create-panel-10",
+              "label": "Group ordering is not accepting requests here yet. Your plan can be saved on this device. ",
+              "type": "text",
+              "value": "Group ordering is not accepting requests here yet. Your plan can be saved on this device. For an order today, use"
+            },
+            {
+              "id": "group-create-panel-11",
+              "label": "or",
+              "type": "text",
+              "value": "or"
+            },
+            {
+              "id": "group-create-panel-12",
+              "label": ".",
+              "type": "text",
+              "value": "."
+            },
+            {
+              "id": "group-create-panel-13",
+              "label": "Link · Weinberger’s current ordering site ↗",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/menu"
+            },
+            {
+              "id": "group-create-panel-14",
+              "label": "Weinberger’s current ordering site ↗",
+              "type": "text",
+              "value": "Weinberger’s current ordering site ↗"
+            }
+          ]
+        },
+        {
+          "id": "expansion-footer",
+          "title": "Footer",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "group-expansion-footer-1",
+              "label": "WEINBERGER’S DELI",
+              "type": "text",
+              "value": "WEINBERGER’S DELI"
+            },
+            {
+              "id": "group-expansion-footer-2",
+              "label": "601 S Main Street · Grapevine, Texas",
+              "type": "text",
+              "value": "601 S Main Street · Grapevine, Texas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "catering",
+      "title": "Catering",
+      "seo": {
+        "title": "Catering | Weinberger’s Deli",
+        "description": "Tell Weinberger’s Deli what your group needs. The deli reviews the event, menu, timing, and price before asking for payment.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
+        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+      },
+      "sections": [
+        {
+          "id": "expansion-header",
+          "title": "Navigation",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "catering-expansion-header-1",
+              "label": "Link · Weinberger’s Deli home",
+              "type": "link",
+              "value": "index.html"
+            },
+            {
+              "id": "catering-expansion-header-3",
+              "label": "Link · Menu",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "catering-expansion-header-4",
+              "label": "Menu",
+              "type": "text",
+              "value": "Menu"
+            },
+            {
+              "id": "catering-expansion-header-5",
+              "label": "Link · Group lunch",
+              "type": "link",
+              "value": "group.html"
+            },
+            {
+              "id": "catering-expansion-header-6",
+              "label": "Group lunch",
+              "type": "text",
+              "value": "Group lunch"
+            },
+            {
+              "id": "catering-expansion-header-7",
+              "label": "Link · Visit",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "catering-expansion-header-8",
+              "label": "Visit",
+              "type": "text",
+              "value": "Visit"
+            }
+          ]
+        },
+        {
+          "id": "expansion-hero",
+          "title": "CATERING FROM THE DELI.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "catering-expansion-hero-1",
+              "label": "OFFICES / PARTIES / EVENTS",
+              "type": "text",
+              "value": "OFFICES / PARTIES / EVENTS"
+            },
+            {
+              "id": "catering-expansion-hero-2",
+              "label": "Heading · CATERING FROM THE DELI.",
+              "type": "multiline",
+              "value": "CATERING FROM\nTHE DELI."
+            },
+            {
+              "id": "catering-expansion-hero-3",
+              "label": "Give the deli the useful details once. Staff review the date, headcount, food, timing, and",
+              "type": "multiline",
+              "value": "Give the deli the useful details once. Staff review the date, headcount, food, timing, and fulfillment before sending a price or asking for a deposit."
+            }
+          ]
+        },
+        {
+          "id": "request-panel",
+          "title": "PLAN YOUR ORDER.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "catering-request-panel-1",
+              "label": "REQUEST A REVIEWED QUOTE",
+              "type": "text",
+              "value": "REQUEST A REVIEWED QUOTE"
+            },
+            {
+              "id": "catering-request-panel-2",
+              "label": "Heading · PLAN YOUR ORDER.",
+              "type": "text",
+              "value": "PLAN YOUR ORDER."
+            },
+            {
+              "id": "catering-request-panel-3",
+              "label": "Contact name",
+              "type": "text",
+              "value": "Contact name"
+            },
+            {
+              "id": "catering-request-panel-4",
+              "label": "Email",
+              "type": "text",
+              "value": "Email"
+            },
+            {
+              "id": "catering-request-panel-5",
+              "label": "Phone",
+              "type": "text",
+              "value": "Phone"
+            },
+            {
+              "id": "catering-request-panel-6",
+              "label": "Optional",
+              "type": "text",
+              "value": "Optional"
+            },
+            {
+              "id": "catering-request-panel-7",
+              "label": "Event date and time",
+              "type": "text",
+              "value": "Event date and time"
+            },
+            {
+              "id": "catering-request-panel-8",
+              "label": "Number of people",
+              "type": "text",
+              "value": "Number of people"
+            },
+            {
+              "id": "catering-request-panel-9",
+              "label": "Budget",
+              "type": "text",
+              "value": "Budget"
+            },
+            {
+              "id": "catering-request-panel-10",
+              "label": "Optional, total dollars",
+              "type": "text",
+              "value": "Optional, total dollars"
+            },
+            {
+              "id": "catering-request-panel-11",
+              "label": "Fulfillment",
+              "type": "text",
+              "value": "Fulfillment"
+            },
+            {
+              "id": "catering-request-panel-12",
+              "label": "Delivery address",
+              "type": "text",
+              "value": "Delivery address"
+            },
+            {
+              "id": "catering-request-panel-13",
+              "label": "Required if requesting delivery",
+              "type": "text",
+              "value": "Required if requesting delivery"
+            },
+            {
+              "id": "catering-request-panel-14",
+              "label": "What food do you need?",
+              "type": "text",
+              "value": "What food do you need?"
+            },
+            {
+              "id": "catering-request-panel-15",
+              "label": "Dietary or accessibility notes",
+              "type": "text",
+              "value": "Dietary or accessibility notes"
+            },
+            {
+              "id": "catering-request-panel-16",
+              "label": "Optional",
+              "type": "text",
+              "value": "Optional"
+            },
+            {
+              "id": "catering-request-panel-17",
+              "label": "Send request for review",
+              "type": "text",
+              "value": "Send request for review"
+            },
+            {
+              "id": "catering-request-panel-18",
+              "label": "This sends a request, not an order. Nothing is charged until staff approve a quote and you",
+              "type": "multiline",
+              "value": "This sends a request, not an order. Nothing is charged until staff approve a quote and you deliberately continue to secure payment."
+            },
+            {
+              "id": "catering-request-panel-19",
+              "label": "Catering requests are not accepting submissions here yet. Your form can be saved on this d",
+              "type": "multiline",
+              "value": "Catering requests are not accepting submissions here yet. Your form can be saved on this device, but it will not be sent. For an event now,"
+            },
+            {
+              "id": "catering-request-panel-20",
+              "label": "or call",
+              "type": "text",
+              "value": "or call"
+            },
+            {
+              "id": "catering-request-panel-21",
+              "label": ".",
+              "type": "text",
+              "value": "."
+            },
+            {
+              "id": "catering-request-panel-22",
+              "label": "Link · email the deli",
+              "type": "link",
+              "value": "mailto:weinbergersdeli@aol.com?subject=Catering%20request"
+            },
+            {
+              "id": "catering-request-panel-23",
+              "label": "email the deli",
+              "type": "text",
+              "value": "email the deli"
+            }
+          ]
+        },
+        {
+          "id": "expansion-footer",
+          "title": "Footer",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "catering-expansion-footer-1",
+              "label": "WEINBERGER’S DELI",
+              "type": "text",
+              "value": "WEINBERGER’S DELI"
+            },
+            {
+              "id": "catering-expansion-footer-2",
+              "label": "601 S Main Street · Grapevine, Texas",
+              "type": "text",
+              "value": "601 S Main Street · Grapevine, Texas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iphone",
+      "title": "iPhone presentation",
+      "seo": {
+        "title": "Weinberger’s Deli — iPhone",
+        "description": "The Weinberger’s Deli iPhone ordering experience for the full menu, sandwich customization, comparison, favorites, and pickup status.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-iphone-card-20261103.png",
+        "image_alt": "Weinberger’s Deli for iPhone, with the original logo, yellow and maroon artwork, and a phone showing sandwich customization."
+      },
+      "sections": [
+        {
+          "id": "phone-editorial",
+          "title": "Phone introduction",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "iphone-phone-editorial-1",
+              "label": "CHICAGO, 1952 / GRAPEVINE, 2002",
+              "type": "text",
+              "value": "CHICAGO, 1952 / GRAPEVINE, 2002"
+            },
+            {
+              "id": "iphone-phone-editorial-2",
+              "label": "CHICAGO DELI.",
+              "type": "text",
+              "value": "CHICAGO DELI."
+            },
+            {
+              "id": "iphone-phone-editorial-3",
+              "label": "ON YOUR IPHONE.",
+              "type": "multiline",
+              "value": "ON YOUR\nIPHONE."
+            },
+            {
+              "id": "iphone-phone-editorial-4",
+              "label": "The full menu. Every sandwich detail. Your regular order, close at hand.",
+              "type": "multiline",
+              "value": "The full menu. Every sandwich detail.\nYour regular order, close at hand."
+            },
+            {
+              "id": "iphone-phone-editorial-5",
+              "label": "Filter the full menu by ingredients and price.",
+              "type": "text",
+              "value": "Filter the full menu by ingredients and price."
+            },
+            {
+              "id": "iphone-phone-editorial-6",
+              "label": "01",
+              "type": "text",
+              "value": "01"
+            },
+            {
+              "id": "iphone-phone-editorial-7",
+              "label": "Compare up to three sandwiches.",
+              "type": "text",
+              "value": "Compare up to three sandwiches."
+            },
+            {
+              "id": "iphone-phone-editorial-8",
+              "label": "02",
+              "type": "text",
+              "value": "02"
+            },
+            {
+              "id": "iphone-phone-editorial-9",
+              "label": "Choose your options and review every change.",
+              "type": "text",
+              "value": "Choose your options and review every change."
+            },
+            {
+              "id": "iphone-phone-editorial-10",
+              "label": "03",
+              "type": "text",
+              "value": "03"
+            },
+            {
+              "id": "iphone-phone-editorial-11",
+              "label": "Keep favorites and your bag close at hand.",
+              "type": "text",
+              "value": "Keep favorites and your bag close at hand."
+            },
+            {
+              "id": "iphone-phone-editorial-12",
+              "label": "04",
+              "type": "text",
+              "value": "04"
+            },
+            {
+              "id": "iphone-phone-editorial-13",
+              "label": "Link · OPEN THE MENU ↗",
+              "type": "link",
+              "value": "mobile.html"
+            },
+            {
+              "id": "iphone-phone-editorial-14",
+              "label": "OPEN THE MENU ↗",
+              "type": "text",
+              "value": "OPEN THE MENU ↗"
+            }
+          ]
+        },
+        {
+          "id": "phone-display",
+          "title": "Phone presentation",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "iphone-phone-display-1",
+              "label": "WEINBERGER’S DELI / GRAPEVINE, TEXAS",
+              "type": "text",
+              "value": "WEINBERGER’S DELI / GRAPEVINE, TEXAS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "android",
+      "title": "Android presentation",
+      "seo": {
+        "title": "Weinberger’s Deli — Android",
+        "description": "The Weinberger’s Deli Android ordering experience for the full menu, sandwich customization, comparison, favorites, and pickup status.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
+        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+      },
+      "sections": [
+        {
+          "id": "phone-editorial",
+          "title": "Phone introduction",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "android-phone-editorial-1",
+              "label": "CHICAGO, 1952 / GRAPEVINE, 2002",
+              "type": "text",
+              "value": "CHICAGO, 1952 / GRAPEVINE, 2002"
+            },
+            {
+              "id": "android-phone-editorial-2",
+              "label": "CHICAGO DELI.",
+              "type": "text",
+              "value": "CHICAGO DELI."
+            },
+            {
+              "id": "android-phone-editorial-3",
+              "label": "ON YOUR ANDROID.",
+              "type": "multiline",
+              "value": "ON YOUR\nANDROID."
+            },
+            {
+              "id": "android-phone-editorial-4",
+              "label": "The full menu. Every sandwich detail. Your regular order, close at hand.",
+              "type": "multiline",
+              "value": "The full menu. Every sandwich detail.\nYour regular order, close at hand."
+            },
+            {
+              "id": "android-phone-editorial-5",
+              "label": "Filter the full menu by ingredients and price.",
+              "type": "text",
+              "value": "Filter the full menu by ingredients and price."
+            },
+            {
+              "id": "android-phone-editorial-6",
+              "label": "01",
+              "type": "text",
+              "value": "01"
+            },
+            {
+              "id": "android-phone-editorial-7",
+              "label": "Find your sandwich and keep your favorites.",
+              "type": "text",
+              "value": "Find your sandwich and keep your favorites."
+            },
+            {
+              "id": "android-phone-editorial-8",
+              "label": "02",
+              "type": "text",
+              "value": "02"
+            },
+            {
+              "id": "android-phone-editorial-9",
+              "label": "Choose your options and review every change.",
+              "type": "text",
+              "value": "Choose your options and review every change."
+            },
+            {
+              "id": "android-phone-editorial-10",
+              "label": "03",
+              "type": "text",
+              "value": "03"
+            },
+            {
+              "id": "android-phone-editorial-11",
+              "label": "Keep favorites and your bag close at hand.",
+              "type": "text",
+              "value": "Keep favorites and your bag close at hand."
+            },
+            {
+              "id": "android-phone-editorial-12",
+              "label": "04",
+              "type": "text",
+              "value": "04"
+            },
+            {
+              "id": "android-phone-editorial-13",
+              "label": "Link · OPEN THE MENU ↗",
+              "type": "link",
+              "value": "mobile.html"
+            },
+            {
+              "id": "android-phone-editorial-14",
+              "label": "OPEN THE MENU ↗",
+              "type": "text",
+              "value": "OPEN THE MENU ↗"
+            }
+          ]
+        },
+        {
+          "id": "phone-display",
+          "title": "Phone presentation",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "android-phone-display-1",
+              "label": "WEINBERGER’S DELI / GRAPEVINE, TEXAS",
+              "type": "text",
+              "value": "WEINBERGER’S DELI / GRAPEVINE, TEXAS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "readable-menu",
+      "title": "Printable menu introduction",
+      "seo": {
+        "title": "Full Menu — Weinberger’s Deli",
+        "description": "A readable and printable Weinberger’s Deli menu with item descriptions and starting prices.",
+        "image": "",
+        "image_alt": ""
+      },
+      "sections": [
+        {
+          "id": "site-header",
+          "title": "Navigation",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "readable-menu-site-header-1",
+              "label": "Link · Weinberger’s Deli home",
+              "type": "link",
+              "value": "index.html"
+            },
+            {
+              "id": "readable-menu-site-header-3",
+              "label": "601 S MAIN ST.",
+              "type": "text",
+              "value": "601 S MAIN ST."
+            },
+            {
+              "id": "readable-menu-site-header-4",
+              "label": "GRAPEVINE, TEXAS",
+              "type": "text",
+              "value": "GRAPEVINE, TEXAS"
+            },
+            {
+              "id": "readable-menu-site-header-5",
+              "label": "Link · Interactive menu",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "readable-menu-site-header-6",
+              "label": "Interactive menu",
+              "type": "text",
+              "value": "Interactive menu"
+            },
+            {
+              "id": "readable-menu-site-header-7",
+              "label": "PRINT-READY",
+              "type": "text",
+              "value": "PRINT-READY"
+            }
+          ]
+        },
+        {
+          "id": "intro",
+          "title": "THE WHOLE DELI MENU.",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "readable-menu-intro-1",
+              "label": "137 ITEMS / 20 CATEGORIES",
+              "type": "text",
+              "value": "137 ITEMS / 20 CATEGORIES"
+            },
+            {
+              "id": "readable-menu-intro-2",
+              "label": "Heading · THE WHOLE DELI MENU.",
+              "type": "multiline",
+              "value": "THE WHOLE\nDELI MENU."
+            },
+            {
+              "id": "readable-menu-intro-3",
+              "label": "Every listed sandwich, side, dessert, and drink in one readable place. Open an item to see",
+              "type": "text",
+              "value": "Every listed sandwich, side, dessert, and drink in one readable place. Open an item to see all of its choices."
+            },
+            {
+              "id": "readable-menu-intro-4",
+              "label": "Before you order",
+              "type": "text",
+              "value": "Before you order"
+            },
+            {
+              "id": "readable-menu-intro-5",
+              "label": "Prices marked + depend on options. Custom choices are checked for current price and availa",
+              "type": "multiline",
+              "value": "Prices marked + depend on options. Custom choices are checked for current price and availability before checkout. For allergies, speak directly with the deli. Use your browser’s Print command for a clean paper or PDF copy."
+            }
+          ]
+        },
+        {
+          "id": "footer",
+          "title": "Footer",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "readable-menu-footer-1",
+              "label": "WEINBERGER’S DELI",
+              "type": "text",
+              "value": "WEINBERGER’S DELI"
+            },
+            {
+              "id": "readable-menu-footer-2",
+              "label": "601 S Main Street · Grapevine, TX 76051",
+              "type": "text",
+              "value": "601 S Main Street · Grapevine, TX 76051"
+            },
+            {
+              "id": "readable-menu-footer-3",
+              "label": "Link · Return to the interactive menu",
+              "type": "link",
+              "value": "menu.html"
+            },
+            {
+              "id": "readable-menu-footer-4",
+              "label": "Return to the interactive menu",
+              "type": "text",
+              "value": "Return to the interactive menu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app-home",
+      "title": "Phone apps · Home",
+      "seo": {
+        "title": "Weinberger's Deli phone app home",
+        "description": "Owner-editable home copy for the Weinberger's Deli phone apps."
+      },
+      "sections": [
+        {
+          "id": "hero",
+          "title": "Home heading",
+          "visible": true,
+          "layout": "featured",
+          "fields": [
+            {
+              "id": "eyebrow",
+              "label": "Location line",
+              "type": "text",
+              "value": "GRAPEVINE, TEXAS."
+            },
+            {
+              "id": "headline",
+              "label": "Main heading",
+              "type": "text",
+              "value": "CHICAGO DELI."
+            },
+            {
+              "id": "subhead",
+              "label": "Address line",
+              "type": "text",
+              "value": "601 S MAIN STREET"
+            },
+            {
+              "id": "search-placeholder",
+              "label": "Menu search prompt",
+              "type": "text",
+              "value": "Search menu or ingredient"
+            }
+          ]
+        },
+        {
+          "id": "featured",
+          "title": "Featured food",
+          "visible": true,
+          "layout": "featured",
+          "fields": [
+            {
+              "id": "title",
+              "label": "Feature label",
+              "type": "text",
+              "value": "CHICAGO MENU"
+            },
+            {
+              "id": "item-ids",
+              "label": "Featured menu item IDs",
+              "type": "text",
+              "value": "italian-beef-a3od,chicago-dog-JTAI"
+            },
+            {
+              "id": "body",
+              "label": "Feature instruction",
+              "type": "text",
+              "value": "View it, change it, or order it as listed."
+            }
+          ]
+        },
+        {
+          "id": "film",
+          "title": "Home film link",
+          "visible": true,
+          "layout": "compact",
+          "fields": [
+            {
+              "id": "title",
+              "label": "Film link title",
+              "type": "text",
+              "value": "INSIDE WEINBERGER'S"
+            },
+            {
+              "id": "body",
+              "label": "Film link description",
+              "type": "text",
+              "value": "Watch the deli's own three-minute film"
+            }
+          ]
+        },
+        {
+          "id": "builder",
+          "title": "Build your own link",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "title",
+              "label": "Builder title",
+              "type": "text",
+              "value": "BUILD YOUR OWN SANDWICH"
+            },
+            {
+              "id": "body",
+              "label": "Builder description",
+              "type": "text",
+              "value": "Every listed bread, meat, cheese, topping, sauce, and toast choice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app-visit",
+      "title": "Phone apps · Visit",
+      "seo": {
+        "title": "Weinberger's Deli phone app visit",
+        "description": "Owner-editable visit, film, story, and recognition copy for the Weinberger's Deli phone apps."
+      },
+      "sections": [
+        {
+          "id": "film",
+          "title": "Deli film",
+          "visible": true,
+          "layout": "featured",
+          "fields": [
+            {
+              "id": "eyebrow",
+              "label": "Film label",
+              "type": "text",
+              "value": "FROM THE DELI / ABOUT 3 MINUTES"
+            },
+            {
+              "id": "headline",
+              "label": "Film heading",
+              "type": "text",
+              "value": "INSIDE WEINBERGER'S"
+            },
+            {
+              "id": "body",
+              "label": "Film description",
+              "type": "multiline",
+              "value": "Italian beef, Chicago roots, and the people behind the Main Street counter."
+            },
+            {
+              "id": "poster",
+              "label": "Film poster",
+              "type": "image",
+              "value": "https://img.youtube.com/vi/PW00HmRJZfg/hqdefault.jpg",
+              "alt": "Weinberger's Deli film"
+            }
+          ]
+        },
+        {
+          "id": "identity",
+          "title": "Visit heading",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "eyebrow",
+              "label": "Address heading",
+              "type": "text",
+              "value": "601 S MAIN STREET / GRAPEVINE, TEXAS"
+            },
+            {
+              "id": "headline",
+              "label": "Deli name",
+              "type": "text",
+              "value": "WEINBERGER'S DELI"
+            },
+            {
+              "id": "intro",
+              "label": "Short introduction",
+              "type": "multiline",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "id": "location",
+          "title": "Location",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "title",
+              "label": "Section heading",
+              "type": "text",
+              "value": "Location"
+            },
+            {
+              "id": "directions-label",
+              "label": "Directions button",
+              "type": "text",
+              "value": "GET DIRECTIONS"
+            },
+            {
+              "id": "call-label",
+              "label": "Call button",
+              "type": "text",
+              "value": "CALL (817) 670-5729"
+            }
+          ]
+        },
+        {
+          "id": "hours",
+          "title": "Hours",
+          "visible": true,
+          "layout": "compact",
+          "fields": [
+            {
+              "id": "title",
+              "label": "Section heading",
+              "type": "text",
+              "value": "Hours"
+            },
+            {
+              "id": "body",
+              "label": "Hours note",
+              "type": "multiline",
+              "value": "Hours may change. Check the official website or call before visiting."
+            },
+            {
+              "id": "official-site-url",
+              "label": "Official website",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/"
+            }
+          ]
+        },
+        {
+          "id": "large-orders",
+          "title": "Lunches & events",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "title",
+              "label": "Section heading",
+              "type": "text",
+              "value": "Lunches & events"
+            },
+            {
+              "id": "body",
+              "label": "Introduction",
+              "type": "multiline",
+              "value": "Build one office lunch together, or send the deli the information needed to review and quote an event."
+            },
+            {
+              "id": "group-title",
+              "label": "Group lunch action",
+              "type": "text",
+              "value": "START OR JOIN A GROUP LUNCH"
+            },
+            {
+              "id": "group-body",
+              "label": "Group lunch description",
+              "type": "multiline",
+              "value": "Everyone names a sandwich; the organizer reviews and pays once."
+            },
+            {
+              "id": "catering-title",
+              "label": "Catering action",
+              "type": "text",
+              "value": "REQUEST A CATERING QUOTE"
+            },
+            {
+              "id": "catering-body",
+              "label": "Catering description",
+              "type": "multiline",
+              "value": "Send the date, headcount, food, and pickup or delivery details for review."
+            }
+          ]
+        },
+        {
+          "id": "story",
+          "title": "Family story",
+          "visible": true,
+          "layout": "featured",
+          "fields": [
+            {
+              "id": "title",
+              "label": "Section heading",
+              "type": "text",
+              "value": "A Chicago deli family, in Grapevine"
+            },
+            {
+              "id": "paragraph-1",
+              "label": "Story opening",
+              "type": "multiline",
+              "value": "Tom Weinberger opened a chicken-parts shop in Homewood, Illinois, in 1952. After learning the deli trade at Ray Markon’s Seaway Deli, he grew Tom’s Delis to five Chicagoland shops. Dan worked weekends and summers as a kid, studied sandwich making around the country, and opened Weinberger’s Deli in Grapevine in 2002."
+            },
+            {
+              "id": "quote",
+              "label": "Dan’s quote",
+              "type": "multiline",
+              "value": "“All Chefs have passion for some part of the Culinary experience. Mine just happens to be the sandwich.”"
+            },
+            {
+              "id": "paragraph-2",
+              "label": "Story closing",
+              "type": "multiline",
+              "value": "The menu keeps moving, including a spring sandwich contest built around customer ideas. Want a change? Ask the sandwich maker. If something is not right, tell the team so they can address it."
+            },
+            {
+              "id": "official-story-url",
+              "label": "Official story link",
+              "type": "link",
+              "value": "https://weinbergersdeli.com/story"
+            }
+          ]
+        },
+        {
+          "id": "recognition",
+          "title": "Recognition",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "title",
+              "label": "Section heading",
+              "type": "text",
+              "value": "Recognition, with receipts"
+            },
+            {
+              "id": "recognition-1-source",
+              "label": "Recognition 1 source",
+              "type": "text",
+              "value": "D MAGAZINE"
+            },
+            {
+              "id": "recognition-1-title",
+              "label": "Recognition 1 title",
+              "type": "text",
+              "value": "Best Deli / Best of Big D 2024"
+            },
+            {
+              "id": "recognition-2-source",
+              "label": "Recognition 2 source",
+              "type": "text",
+              "value": "LIVING MAGAZINE"
+            },
+            {
+              "id": "recognition-2-title",
+              "label": "Recognition 2 title",
+              "type": "text",
+              "value": "Best Deli / Readers’ Choice 2026"
+            },
+            {
+              "id": "recognition-3-source",
+              "label": "Recognition 3 source",
+              "type": "text",
+              "value": "VIENNA BEEF"
+            },
+            {
+              "id": "recognition-3-title",
+              "label": "Recognition 3 title",
+              "type": "text",
+              "value": "Hot Dog Hall of Fame / Inducted 2023"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

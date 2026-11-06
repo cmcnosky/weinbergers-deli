@@ -1,42 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
- <meta charset="utf-8">
- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; font-src 'self'; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; object-src 'none'; base-uri 'self'; form-action 'self'">
- <meta name="referrer" content="strict-origin-when-cross-origin">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="theme-color" content="#67162a">
- <meta name="robots" content="noindex,nofollow">
- <title>Group lunch | Weinberger’s Deli</title>
- <meta name="description" content="Build one Weinberger’s group lunch without one person transcribing everyone’s sandwich.">
- <link rel="canonical" href="https://cmcnosky.github.io/weinbergers-deli/group.html">
- <link rel="icon" href="assets/weinbergers-logo-original.png">
- <meta property="og:type" content="website"><meta property="og:title" content="Group lunch | Weinberger’s Deli"><meta property="og:description" content="Give each person a private invitation to add and name their sandwich, then review and pay once."><meta property="og:url" content="https://cmcnosky.github.io/weinbergers-deli/group.html"><meta property="og:image" content="https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png"><meta name="twitter:image:alt" content="Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing.">
- <link rel="stylesheet" href="style.css?v=20261105-31"><link rel="stylesheet" href="brand.css?v=20261105-31"><link rel="stylesheet" href="expansion.css?v=20261105-31">
- <script src="runtime-config.js?v=20261105-31" defer></script><script src="demo-menu.js?v=20261105-31" defer></script><script src="data.js?v=20261105-31" defer></script><script src="group-order.js?v=20261105-31" defer></script>
-<link rel="stylesheet" href="boundaries.css?v=20261105-31"><link rel="stylesheet" href="readability.css?v=20261105-31"></head>
-<body class="expansion-page">
- <a class="skip" href="#main">Skip to content</a>
- <header class="expansion-header"><a href="index.html" aria-label="Weinberger’s Deli home"><img src="assets/weinbergers-logo-original.png" alt="Weinberger’s Deli"></a><nav aria-label="Main navigation"><a href="menu.html">Menu</a><a href="catering.html">Catering</a><a href="visit.html">Visit</a></nav></header>
- <main id="main">
-  <section class="expansion-hero"><p class="expansion-kicker">ONE LUNCH / EVERYONE’S OWN ORDER</p><h1>LUNCH FOR<br>EVERYONE.</h1><p>Send one private invitation. Everyone names and builds their own sandwich. You review the combined order and pay once.</p></section>
-  <p id="group-notice" class="expansion-notice" role="status" aria-live="polite" hidden></p>
-  <section id="create-panel" class="expansion-panel">
-   <p class="expansion-kicker">START A GROUP</p><h2>SET THE DEADLINE.</h2>
-   <form id="create-group-form" class="expansion-form">
-    <label>Group name<input name="name" maxlength="120" required placeholder="Friday office lunch"></label>
-    <label>Your name<input name="organizer_name" maxlength="100" autocomplete="name" required></label>
-    <div class="form-grid"><label>Contributions close<input name="deadline_at" type="datetime-local" required></label><label>Requested pickup <span>Optional</span><input name="requested_pickup_at" type="datetime-local"></label></div>
-    <button class="expansion-primary" type="submit">Create private invitation</button>
-   </form>
-   <p id="connection-note" class="connection-note" hidden>Group ordering is not accepting requests here yet. Your plan can be saved on this device. For an order today, use <a href="https://weinbergersdeli.com/menu" target="_blank" rel="noopener">Weinberger’s current ordering site ↗</a> or <a href="tel:+18176705729">call the deli</a>.</p>
-  </section>
-  <section id="join-panel" class="expansion-panel" hidden>
-   <p class="expansion-kicker">YOU’VE BEEN INVITED</p><h2>NAME YOUR SANDWICH.</h2><p>Enter the name the organizer should see. You will build your order from the full menu next.</p>
-   <form id="join-group-form" class="expansion-form"><label>Your name<input name="display_name" maxlength="80" autocomplete="name" required></label><button class="expansion-primary" type="submit">Join and open the menu</button></form>
-  </section>
-  <div id="dashboard" class="expansion-dashboard" hidden></div>
- </main>
- <footer class="expansion-footer"><strong>WEINBERGER’S DELI</strong><span>601 S Main Street · Grapevine, Texas</span><a href="tel:+18176705729">(817) 670-5729</a></footer>
+<meta charset="utf-8"/>
+<meta content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; font-src 'self'; connect-src 'self' https: http://127.0.0.1:* http://localhost:*; object-src 'none'; base-uri 'self'; form-action 'self'" http-equiv="Content-Security-Policy"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#67162a" name="theme-color"/>
+<meta content="noindex,nofollow" name="robots"/>
+<title>Group lunch | Weinberger’s Deli</title>
+<meta content="Build one Weinberger’s group lunch without one person transcribing everyone’s sandwich." name="description"/>
+<link href="https://cmcnosky.github.io/weinbergers-deli/group.html" rel="canonical"/>
+<link href="assets/weinbergers-logo-original.png" rel="icon"/>
+<meta content="website" property="og:type"/><meta content="Group lunch | Weinberger’s Deli" property="og:title"/><meta content="Give each person a private invitation to add and name their sandwich, then review and pay once." property="og:description"/><meta content="https://cmcnosky.github.io/weinbergers-deli/group.html" property="og:url"/><meta content="https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/png" property="og:image:type"/><meta content="Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing." property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png" name="twitter:image"/><meta content="Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing." name="twitter:image:alt"/>
+<link href="style.css?v=20261106-34" rel="stylesheet"/><link href="brand.css?v=20261106-34" rel="stylesheet"/><link href="expansion.css?v=20261106-34" rel="stylesheet"/>
+<script defer="" src="runtime-config.js?v=20261106-34"></script><script defer="" src="demo-menu.js?v=20261106-34"></script><script defer="" src="data.js?v=20261106-34"></script><script defer="" src="group-order.js?v=20261106-34"></script>
+<link href="boundaries.css?v=20261106-34" rel="stylesheet"/><link href="readability.css?v=20261106-34" rel="stylesheet"/><script defer="True" src="site-content-core.js?v=20261106-34"></script><script defer="True" src="site-content.js?v=20261106-34"></script><link href="site-content.css?v=20261106-34" rel="stylesheet"/></head>
+<body class="expansion-page" data-cms-page="group">
+<a class="skip" href="#main">Skip to content</a>
+<header class="expansion-header" data-cms-section="expansion-header"><a aria-label="Weinberger’s Deli home" data-cms-link="group-expansion-header-1" href="index.html"><img alt="Weinberger’s Deli" data-cms-site="logo" src="assets/weinbergers-logo-original.png"/></a><nav aria-label="Main navigation"><a data-cms-field="group-expansion-header-4" data-cms-link="group-expansion-header-3" href="menu.html">Menu</a><a data-cms-field="group-expansion-header-6" data-cms-link="group-expansion-header-5" href="catering.html">Catering</a><a data-cms-field="group-expansion-header-8" data-cms-link="group-expansion-header-7" href="visit.html">Visit</a></nav></header>
+<main data-cms-container="true" id="main">
+<section class="expansion-hero" data-cms-section="expansion-hero"><p class="expansion-kicker" data-cms-field="group-expansion-hero-1">ONE LUNCH / EVERYONE’S OWN ORDER</p><h1 data-cms-field="group-expansion-hero-2">LUNCH FOR<br/>EVERYONE.</h1><p data-cms-field="group-expansion-hero-3">Send one private invitation. Everyone names and builds their own sandwich. You review the combined order and pay once.</p></section>
+<p aria-live="polite" class="expansion-notice" hidden="" id="group-notice" role="status"></p>
+<section class="expansion-panel" data-cms-section="create-panel" id="create-panel">
+<p class="expansion-kicker" data-cms-field="group-create-panel-1">START A GROUP</p><h2 data-cms-field="group-create-panel-2">SET THE DEADLINE.</h2>
+<form class="expansion-form" id="create-group-form">
+<label data-cms-text-nodes='[[0,"group-create-panel-3"]]'>Group name<input data-cms-placeholder="group-create-panel-4" maxlength="120" name="name" placeholder="Friday office lunch" required=""/></label>
+<label data-cms-text-nodes='[[0,"group-create-panel-5"]]'>Your name<input autocomplete="name" maxlength="100" name="organizer_name" required=""/></label>
+<div class="form-grid"><label data-cms-text-nodes='[[0,"group-create-panel-6"]]'>Contributions close<input name="deadline_at" required="" type="datetime-local"/></label><label data-cms-text-nodes='[[0,"group-create-panel-7"]]'>Requested pickup <span data-cms-field="group-create-panel-8">Optional</span><input name="requested_pickup_at" type="datetime-local"/></label></div>
+<button class="expansion-primary" data-cms-field="group-create-panel-9" type="submit">Create private invitation</button>
+</form>
+<p class="connection-note" data-cms-text-nodes='[[0,"group-create-panel-10"],[2,"group-create-panel-11"],[4,"group-create-panel-12"]]' hidden="" id="connection-note">Group ordering is not accepting requests here yet. Your plan can be saved on this device. For an order today, use <a data-cms-field="group-create-panel-14" data-cms-link="group-create-panel-13" href="https://weinbergersdeli.com/menu" rel="noopener" target="_blank">Weinberger’s current ordering site ↗</a> or <a data-cms-site="phone" href="tel:+18176705729">call the deli</a>.</p>
+</section>
+<section class="expansion-panel" hidden="" id="join-panel">
+<p class="expansion-kicker">YOU’VE BEEN INVITED</p><h2>NAME YOUR SANDWICH.</h2><p>Enter the name the organizer should see. You will build your order from the full menu next.</p>
+<form class="expansion-form" id="join-group-form"><label>Your name<input autocomplete="name" maxlength="80" name="display_name" required=""/></label><button class="expansion-primary" type="submit">Join and open the menu</button></form>
+</section>
+<div class="expansion-dashboard" hidden="" id="dashboard"></div>
+</main>
+<footer class="expansion-footer" data-cms-section="expansion-footer"><strong data-cms-field="group-expansion-footer-1">WEINBERGER’S DELI</strong><span data-cms-field="group-expansion-footer-2">601 S Main Street · Grapevine, Texas</span><a data-cms-site="phone" href="tel:+18176705729">(817) 670-5729</a></footer>
 </body>
 </html>
