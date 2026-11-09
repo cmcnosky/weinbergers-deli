@@ -1216,7 +1216,7 @@ h1 {
   }
 
   .proposal-hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .hero-copy {
@@ -1403,7 +1403,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(66px, 21vw, 90px);
+    font-size: clamp(50px, 16.3vw, 76px);
   }
 
   .hero-deck {
@@ -1448,6 +1448,10 @@ h1 {
     grid-template-columns: 28px 1fr;
     gap: 13px;
     padding: 38px 18px 31px;
+  }
+
+  #better-heading {
+    font-size: clamp(42px, 14vw, 66px);
   }
 
   .section-heading h2,
