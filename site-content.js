@@ -9,7 +9,7 @@
  let previousContact={...contactDefaults};
  const clean=v=>String(v||'').replace(/[ \t]+/g,' ').trim();
  const base=location.href;
- function url(value,media=false){return core.safeURL(value,value.startsWith('/api/site-assets/')&&root?new URL(root,location.href).origin:base,media);}
+ function url(value,media=false){const origin=value.startsWith('/api/site-assets/')&&root?new URL(root,location.href).origin:base;return media?core.mediaURL(value,origin):core.safeURL(value,origin);}
  function setImage(el,field){const source=url(field.value,true);if(!source)return;if(el.getAttribute('src')!==field.value&&el.src!==source){el.removeAttribute('srcset');el.removeAttribute('sizes');el.src=source;}if(field.alt!=null)el.alt=field.alt;}
  function writeText(el,value){if(clean(el.innerText||el.textContent)!==clean(value)){el.textContent=value;el.style.whiteSpace='pre-line';}}
  function fields(section,element){
@@ -49,7 +49,11 @@
   if(page){document.title=page.seo?.title||document.title;for(const q of ['meta[name="description"]','meta[property="og:description"]','meta[name="twitter:description"]']){const m=document.querySelector(q);if(m&&page.seo)m.content=page.seo.description;}for(const q of ['meta[property="og:title"]','meta[name="twitter:title"]']){const m=document.querySelector(q);if(m&&page.seo)m.content=page.seo.title;}
    if(page.seo?.image){const shareImage=url(page.seo.image,true);if(shareImage)for(const q of ['meta[property="og:image"]','meta[property="og:image:secure_url"]','meta[name="twitter:image"]']){const m=document.querySelector(q);if(m)m.content=shareImage;}for(const q of ['meta[property="og:image:alt"]','meta[name="twitter:image:alt"]']){const m=document.querySelector(q);if(m)m.content=page.seo.image_alt||'';}}
    const container=document.querySelector('[data-cms-container]');const existing=new Map([...document.querySelectorAll('[data-cms-section]')].map(el=>[el.dataset.cmsSection,el]));
-   for(const section of page.sections){let el=existing.get(section.id);if(el?.dataset.cmsGenerated){const replacement=genericSection(section);el.replaceWith(replacement);el=replacement;}if(!el&&container){el=genericSection(section);container.append(el);}if(!el)continue;el.toggleAttribute('data-cms-section-hidden',!section.visible);el.dataset.cmsLayout=section.layout;fields(section,el);if(el.parentElement===container)container.append(el);existing.delete(section.id);}
+   const ordered=[];
+   for(const section of page.sections){let el=existing.get(section.id);if(el?.dataset.cmsGenerated){const replacement=genericSection(section);el.replaceWith(replacement);el=replacement;}if(!el&&container){el=genericSection(section);container.append(el);}if(!el)continue;el.toggleAttribute('data-cms-section-hidden',!section.visible);el.dataset.cmsLayout=section.layout;fields(section,el);if(el.parentElement===container)ordered.push(el);existing.delete(section.id);}
+   // Reparenting an unchanged section restarts its iframe and loses in-progress
+   // input. Only move sections when the requested order actually changed.
+   if(container){const present=[...container.children].filter(el=>ordered.includes(el));if(ordered.some((el,index)=>present[index]!==el))for(const el of ordered)container.append(el);}
    // Removed editorial sections disappear; core order forms and menu functionality are retained in source.
    for(const el of existing.values())el.setAttribute('data-cms-section-hidden','');
   }

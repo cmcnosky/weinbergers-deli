@@ -8,6 +8,14 @@
   if(typeof value!=='string'||value.length>2000||/[\u0000-\u001f\\]/.test(value)||value.startsWith('//'))return '';
   try{const u=new URL(value,base);if(u.username||u.password)return '';if(u.protocol==='https:'||u.protocol==='http:'&&['localhost','127.0.0.1','[::1]'].includes(u.hostname))return u.href;if(!media&&['tel:','mailto:'].includes(u.protocol))return u.href;}catch{}return '';
  }
+ function mediaURL(value,base){
+  const safe=safeURL(value,base,true);if(!safe)return '';
+  const target=new URL(safe);
+  // Keep previously published portrait URLs usable with an identical packaged
+  // copy, avoiding dependence on the remote image server at viewing time.
+  if(target.origin==='https://weinbergersdeli.com'&&target.pathname==='/pluto-images/funnel/images/21b39d33-3c5d-4b9f-8812-0cb19f54eb5b')return new URL('assets/dan-weinberger-original.png',base).href;
+  return safe;
+ }
  function videoID(value){try{const u=new URL(value);if(!['https:'].includes(u.protocol))return '';const host=u.hostname.toLowerCase(),id=host==='youtu.be'?u.pathname.slice(1):['youtube.com','www.youtube.com','www.youtube-nocookie.com'].includes(host)?(u.searchParams.get('v')||u.pathname.split('/').pop()):'';return /^[\w-]{11}$/.test(id||'')?id:'';}catch{return '';}}
  function validate(content){
   if(!content||typeof content!=='object'||!content.site||!content.theme||!Array.isArray(content.pages)||!Array.isArray(content.navigation)||content.pages.length>40)return false;
@@ -20,5 +28,5 @@
   }return true;
  }
  function themeVars(theme){const t=theme||{},v={};const colors={background:'--yellow',foreground:'--ink',accent:'--red',on_accent:'--cms-on-accent',border:'--line'};for(const[k,css]of Object.entries(colors))if(/^#[0-9a-f]{6}$/i.test(t[k]||''))v[css]=t[k];if(v['--line'])v['--boundary-maroon']=v['--line'];if(v['--yellow'])v['--boundary-gold']=v['--yellow'];if(v['--red'])v['--red-dark']=v['--red'];const width=Number(t.border_width);if(Number.isInteger(width)&&width>=1&&width<=12){v['--section-rule']=width+'px solid var(--line)';v['--panel-rule']=Math.max(1,Math.round(width*2/3))+'px solid var(--line)';}if(headingFonts[t.heading_font])v['--display']=headingFonts[t.heading_font];if(bodyFonts[t.body_font])v['--sans']=bodyFonts[t.body_font];const radius=Number(t.corner_radius);if(Number.isInteger(radius)&&radius>=0&&radius<=40)v['--cms-radius']=radius+'px';return v;}
- return {safeURL,videoID,validate,themeVars,layouts:[...layouts],headingFonts,bodyFonts};
+ return {safeURL,mediaURL,videoID,validate,themeVars,layouts:[...layouts],headingFonts,bodyFonts};
 });

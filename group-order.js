@@ -44,7 +44,7 @@
 
  function showJoin(){
   $('#join-panel').hidden=false;$('#create-panel').hidden=true;$('#dashboard').hidden=true;
-  $('#join-group-id').textContent=invite.group_id;$('#participant-name').focus();
+  $('#join-group-form [name="display_name"]')?.focus();
  }
 
  function showOrganizer(group){
