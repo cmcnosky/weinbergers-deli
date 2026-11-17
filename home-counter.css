@@ -1,0 +1,24 @@
+/* Keep the owner's alternate section layouts intact. This composition is for the default opening. */
+@media (max-width: 700px) {
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) {
+    display: grid;
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1fr);
+    grid-template-areas: 'date date' 'name sandwich' 'place sandwich' 'deck deck' 'actions actions' 'search search';
+    gap: 0 12px;
+    align-items: start;
+    padding: 18px 5% 22px;
+  }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) > .hero-copy { display: contents; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-copy > .guest-kicker { grid-area: date; padding-bottom: 10px; margin: 0 0 16px; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-copy h1 { grid-area: name; font-size: clamp(43px, 12.1vw, 84px); align-self: end; line-height: .9; overflow-wrap: anywhere; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-place { grid-area: place; font-size: clamp(19px, 4.9vw, 27px); line-height: 1.05; margin: 10px 0 0; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich { grid-area: sandwich; align-self: stretch; border: 4px solid var(--boundary-maroon); }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich > a { min-height: 94px; height: clamp(94px, 25vw, 170px); max-height: none; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich img { width: 100%; height: 100%; object-fit: cover; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich figcaption { padding: 7px 8px; gap: 2px; border-top: 3px solid var(--boundary-maroon); }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich figcaption > span { font-size: 12px; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich figcaption > a { gap: 4px; font-size: clamp(22px,5.6vw,32px); }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-deck { grid-area: deck; max-width: none; margin: 17px 0 0; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .guest-actions { grid-area: actions; margin-top: 14px; row-gap: 6px; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .home-search { grid-area: search; margin-top: 14px; }
+}

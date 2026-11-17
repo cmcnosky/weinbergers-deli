@@ -1,0 +1,56 @@
+.decision-intro, .decision-offer, .decision-review, .decision-estimate, .decision-details, .decision-next { max-width: 1500px; margin: auto; border-bottom: 8px solid var(--maroon); }
+.decision-intro, .decision-offer, .decision-estimate { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+.decision-lead, .decision-review, .decision-estimate, .decision-details, .decision-next, .decision-offer { padding: clamp(26px, 4vw, 62px) clamp(18px, 5.5vw, 82px); }
+.decision-byline, .decision-label, .decision-photo figcaption { font: 700 15px/1.4 var(--mono); }
+.decision-byline { margin: 0 0 20px; color: var(--maroon); }
+.decision-lead h1 { font-size: clamp(52px, 7.2vw, 112px); line-height: .88; margin: 0 0 20px; }
+.decision-deck, .decision-offer p, .decision-review p, .decision-estimate p, .decision-details > p, .decision-next p { font: 550 clamp(17px, 1.25vw, 20px)/1.5 var(--sans); max-width: 63ch; }
+.decision-photo { margin: 0; min-width: 0; display: flex; flex-direction: column; position: relative; border-left: 6px solid var(--maroon); background: var(--maroon); color: var(--paper); }
+.decision-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.decision-photo figcaption { position: relative; margin-top: auto; align-self: start; padding: 10px 18px; background: var(--maroon); }
+.decision-links { display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: center; }
+.decision-links a, .review-choices a { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; font-weight: 780; text-decoration: underline; text-underline-offset: 4px; }
+.decision-links .decision-primary { padding: 10px 15px; background: var(--maroon); color: var(--paper); text-decoration: none; }
+.decision-review, .decision-details { background: var(--paper); }
+.decision-review h2, .decision-details > h2, .decision-estimate h2, .decision-next h2, .decision-offer h2 { margin: 0 0 12px; font-size: clamp(33px, 3.6vw, 57px); line-height: 1; color: var(--maroon); }
+.decision-offer { background: var(--maroon); color: var(--paper); gap: 32px; align-items: center; border-bottom-color: var(--yellow); }
+.decision-offer h2 { color: var(--yellow); }
+.decision-offer .decision-label { font: 700 16px/1.4 var(--mono); margin-bottom: 10px; }
+.review-choices { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); border-top: 4px solid var(--maroon); margin-top: 20px; }
+.review-choices article { border-right: 3px solid var(--maroon); padding: 20px; }
+.review-choices article:first-child { padding-left: 0; }
+.review-choices article:last-child { border: 0; }
+.review-choices h3 { margin: 0 0 8px; font-size: 32px; line-height: 1.1; }
+.review-choices p { margin: 0 0 10px; }
+.decision-estimate { gap: 40px; align-items: center; background: var(--cream); }
+.decision-estimate p:last-child { margin-bottom: 0; }
+#fee-estimator { background: var(--paper); border: 4px solid var(--maroon); padding: clamp(14px,2vw,30px); }
+#fee-estimator label { display: block; font-weight: 800; margin-bottom: 10px; }
+.amount-entry { display: flex; align-items: center; border: 2px solid var(--maroon); }
+.amount-entry span { padding-left: 10px; font-weight: 700; }
+.amount-entry input, .amount-entry button { font: inherit; min-height: 46px; }
+.amount-entry input { flex: 1; width: 1px; border: 0; background: transparent; padding-inline: 6px; }
+.amount-entry button { background: var(--maroon); color: white; border: 0; padding-inline: 11px; font-weight: 700; cursor: pointer; }
+#estimate-hint { margin: 8px 0 0; font-size: 15px; }
+.fee-results:not(:empty) { margin-top: 15px; border-top: 2px solid var(--maroon); padding-top: 10px; }
+.fee-results p { margin: 0; }
+.decision-disclosure { border-top: 3px solid var(--maroon); }
+.decision-disclosure:last-child { border-bottom: 3px solid var(--maroon); }
+.decision-disclosure summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 16px 0; font: 780 clamp(18px, 1.55vw, 24px)/1.25 var(--sans); }
+.decision-disclosure summary::-webkit-details-marker { display: none; }
+.decision-disclosure summary::after { content: '+'; color: var(--maroon); font-size: 25px; }
+.decision-disclosure[open] > summary::after { content: '−'; }
+.decision-disclosure > .section { margin: 0 0 18px; border: 3px solid var(--maroon); }
+.decision-disclosure summary:focus-visible, .amount-entry input:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+.decision-next { background: var(--yellow); }
+@media (max-width: 750px) {
+ .decision-intro, .decision-offer, .decision-estimate, .review-choices { grid-template-columns: minmax(0,1fr); }
+ .decision-lead { padding-block: 26px 22px; }
+ .decision-photo { height: clamp(150px,38vw,240px); border-left: 0; border-top: 4px solid var(--maroon); }
+ .decision-photo img { object-position: 50% 48%; }
+ .decision-offer, .decision-estimate { gap: 12px; }
+ .decision-offer p, .decision-estimate p { margin-bottom: 10px; }
+ .review-choices article, .review-choices article:first-child { padding: 16px 0; border: 0; border-bottom: 2px solid var(--maroon); }
+ .decision-disclosure > .section { margin-inline: calc(-1 * clamp(18px, 5.5vw, 82px)); border-inline: none; }
+}
+@media print { .decision-photo, #fee-estimator, .account-menu { display: none; } }

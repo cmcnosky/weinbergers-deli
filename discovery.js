@@ -33,6 +33,16 @@
       return 0;
     });
   }
+  function page(products, limit, size = 24) {
+    const pageSize = Math.max(1, Math.floor(Number(size) || 24));
+    const visibleLimit = Math.max(pageSize, Math.floor(Number(limit) || pageSize));
+    return {
+      items: products.slice(0, visibleLimit),
+      shown: Math.min(products.length, visibleLimit),
+      remaining: Math.max(0, products.length - visibleLimit),
+      next: Math.min(products.length, visibleLimit + pageSize)
+    };
+  }
   const validSort = value => ['menu','price','name'].includes(value) ? value : 'menu';
   function readURLState(search) {
     const params = new URLSearchParams(search || '');
@@ -64,7 +74,7 @@
     for (const [key, value] of Object.entries(values)) if (value) url.searchParams.set(key, value);
     return url.href;
   }
-  const api = {normalize, terms, queryTerms, queryMatches, matches, sort, readURLState, publicURL};
+  const api = {normalize, terms, queryTerms, queryMatches, matches, sort, page, readURLState, publicURL};
   if (typeof module !== 'undefined') module.exports = api;
   else root.DeliDiscovery = api;
 })(typeof window !== 'undefined' ? window : globalThis);

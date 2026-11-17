@@ -2,7 +2,12 @@
 (() => {
   if (document.querySelector('.account-menu')) return;
   const root = String(window.WEINBERGERS_RUNTIME?.ownerApiBaseUrl || '').trim().replace(/\/$/, '');
-  const token = sessionStorage.getItem('wd-staff-token') || '';
+  let token = '';
+  try {
+    token = sessionStorage.getItem('wd-staff-token') || '';
+  } catch {
+    // Navigation also runs in browsers that disallow session storage.
+  }
   const host = document.createElement('nav');
   host.className = 'account-menu';
   host.setAttribute('aria-label', 'Site and account');

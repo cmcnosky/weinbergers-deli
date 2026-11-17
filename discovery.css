@@ -60,6 +60,9 @@
 .product.text-product .product-tools{margin-left:0}
 .product:hover .product-main{background:transparent}
 .product:hover{background:#f0f1ea}
+.menu-more{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:24px 0 8px;padding:18px;border:6px solid var(--line);background:var(--yellow)}
+.menu-more p{margin:0;font:700 11px var(--mono);text-transform:uppercase}
+.menu-more .primary{min-width:180px;font-size:12px}
 .bag-panel{top:116px;box-shadow:none;clip-path:none;border-top:12px solid var(--line)}
 .empty-bag{padding:25px 0}
 .empty-bag .bag-art{display:none}
@@ -155,6 +158,8 @@ dialog[data-view=product]{width:720px}
 .allergy-note{margin-top:10px}
 @media(max-width:600px){
  .quick-ingredients .build-own-shortcut{margin-left:0}
+ .menu-more{align-items:stretch;flex-direction:column;padding:14px;gap:12px}
+ .menu-more .primary{width:100%;min-width:0}
  .build-own-product{margin-inline:-7px;padding-inline:7px}
  .customization-control{padding:14px;margin-top:20px}
  .customization-control>div{display:block}

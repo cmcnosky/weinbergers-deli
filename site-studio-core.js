@@ -12,6 +12,10 @@
   const entries=[...(patches||[])];
   return entries.filter(patch=>!entries.some(other=>other!==patch&&patch.path.startsWith(other.path+'/'))).map(patch=>patch.op==='replace'?replace(patch.path,read(document,patch.path)):clone(patch));
  }
+ function remainingPatches(patches,acknowledged){
+  const saved=[...(acknowledged||[])];
+  return [...(patches||[])].filter(patch=>!saved.some(operation=>patch.path===operation.path||patch.path.startsWith(operation.path+'/'))).map(clone);
+ }
  function move(list,index,direction){
   const next=clone(list||[]),target=index+(direction==='up'?-1:1);
   if(index<0||index>=next.length||target<0||target>=next.length)return next;
@@ -52,6 +56,6 @@
   const order=[...(draft.item_order||[])];for(const id of base.keys())if(!order.includes(id))order.push(id);const archived=new Set(draft.archived_item_ids||[]);
   return order.map(id=>base.get(id)).filter(Boolean).map(item=>({...item,archived:archived.has(item.id)}));
  }
- const api={clone,pointer,replace,add,remove,read,collapseReplacements,move,stats,fieldInputType,allowedURL,clientIssues,mergeMenu};
+ const api={clone,pointer,replace,add,remove,read,collapseReplacements,remainingPatches,move,stats,fieldInputType,allowedURL,clientIssues,mergeMenu};
  if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.WeinbergersStudioCore=api;
 })(typeof window==='undefined'?this:window);

@@ -19,7 +19,7 @@
 
  function toast(message){const element=$('#studio-toast');element.textContent=message;element.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>element.classList.remove('visible'),3200)}
  function status(message,type=''){const element=$('#studio-status');element.textContent=message;element.className='studio-status'+(type?' '+type:'')}
- function setBusy(value,message=''){state.busy=value;if(message)status(message);document.querySelectorAll('[data-studio-action],#save-draft,#discard-local').forEach(button=>button.disabled=value||(button.id==='save-draft'&&!state.patches.size));}
+ function setBusy(value,message=''){state.busy=value;if(message)status(message);editor().inert=value;$('#studio-dialog').inert=value;$('#studio-app').setAttribute('aria-busy',String(value));document.querySelectorAll('[data-studio-action],#save-draft,#discard-local').forEach(button=>button.disabled=value||(button.id==='save-draft'&&!state.patches.size));}
  function openDialog(title,html){$('#studio-dialog-title').textContent=title;$('#studio-dialog-body').innerHTML=html;const dialog=$('#studio-dialog');if(!dialog.open)dialog.showModal()}
  function closeDialog(){const dialog=$('#studio-dialog');if(dialog.open)dialog.close();$('#studio-dialog-body').innerHTML='';if(confirmationResolve){const resolve=confirmationResolve;confirmationResolve=null;resolve(false)}}
  function confirmAction(title,message,confirmLabel='Continue',tone='danger'){return new Promise(resolve=>{confirmationResolve=resolve;openDialog(title,`<p>${esc(message)}</p><div class="studio-actions"><button type="button" class="secondary" data-confirm-choice="cancel">Keep editing</button><button type="button" class="${attr(tone)}" data-confirm-choice="confirm">${esc(confirmLabel)}</button></div>`)})}
@@ -48,6 +48,7 @@
  function removeOptional(path){if(!hasAtPointer(state.content,path))return;deleteAtPointer(state.content,path);if(hasAtPointer(state.saved,path))state.patches.set(path,core.remove(path));else state.patches.delete(path);updateSavebar();sendPreview()}
  function queueWhole(path,value){state.patches.set(path,core.replace(path,value));updateSavebar();sendPreview()}
  function effectivePatches(){return core.collapseReplacements([...state.patches.values()],state.content)}
+ function acknowledgeSavedBatch(batch,draft){state.draft=draft;state.saved=copy(contentOf(draft));const remaining=core.remainingPatches([...state.patches.values()],batch);state.patches=new Map(remaining.map(patch=>[patch.path,patch]));updateSavebar()}
  function routeForPage(page){
   const routes={home:'index.html',menu:'menu.html',mobile:'mobile.html',story:'story.html',visit:'visit.html',group:'group.html',catering:'catering.html','readable-menu':'readable-menu.html',iphone:'iphone.html',android:'android.html','app-home':'mobile.html','app-visit':'visit.html'};
   return routes[page?.id]||page?.preview_path||'index.html';
@@ -146,7 +147,7 @@
  async function startDraft(){setBusy(true,'Starting a private site draft…');try{const data=await request('/staff/site-content/draft','POST',{note:'Site changes started in Site Studio'});state.draft=data.draft||data;state.content=copy(contentOf(state.draft));state.saved=copy(state.content);state.patches.clear();status('Private draft ready. Customers still see the published site.','success');render()}finally{setBusy(false)}}
  async function saveDraft(){
   const patches=effectivePatches();if(!patches.length)return;if(state.scratch){localStorage.setItem(scratchKey,JSON.stringify(state.content));state.saved=copy(state.content);state.patches.clear();status('Browser review copy saved on this device. The public site has not changed.','success');render();toast('Review copy saved in this browser.');return}setBusy(true,'Saving the private draft…');
-  try{for(let index=0;index<patches.length;index+=100){const batch=patches.slice(index,index+100),data=await request('/staff/site-content/draft','PATCH',{expected_version:versionOf(state.draft),patch:batch,change_note:'Updated site content in Site Studio'});state.draft=data.draft||data}state.content=copy(contentOf(state.draft));state.saved=copy(state.content);state.patches.clear();status('Draft saved. The public site has not changed.','success');render();toast('Draft saved privately.')}catch(error){status(error.message,'error');throw error}finally{setBusy(false);updateSavebar()}
+  try{for(let index=0;index<patches.length;index+=100){const batch=patches.slice(index,index+100),data=await request('/staff/site-content/draft','PATCH',{expected_version:versionOf(state.draft),patch:batch,change_note:'Updated site content in Site Studio'});acknowledgeSavedBatch(batch,data.draft||data)}state.content=copy(contentOf(state.draft));state.saved=copy(state.content);state.patches.clear();status('Draft saved. The public site has not changed.','success');render();toast('Draft saved privately.')}catch(error){status(error.message,'error');throw error}finally{setBusy(false);updateSavebar()}
  }
  async function reviewPublish(){
   if(state.patches.size){toast('Save the draft changes before reviewing publication.');return}
@@ -226,7 +227,7 @@
    if(action==='confirm-discard')await discardDraft();
    if(action==='add-nav'){state.content.navigation.push({id:'nav-'+Date.now().toString(36),label:'New link',url:'index.html',visible:true});queueWhole('/navigation',state.content.navigation);render()}
    if(action==='add-section')addSection();
-   if(action==='menu-start-draft'){const data=await request('/staff/menu/draft','POST',{note:'Menu changes started in Site Studio'});state.menuDraft=data.draft;renderMenuStructure();status('Private menu draft ready. Customers still see the published menu.','success')}
+   if(action==='menu-start-draft'){setBusy(true,'Starting a private menu draft…');try{const data=await request('/staff/menu/draft','POST',{note:'Menu changes started in Site Studio'});state.menuDraft=data.draft;renderMenuStructure();status('Private menu draft ready. Customers still see the published menu.','success')}finally{setBusy(false)}}
    if(action==='menu-categories')categoriesDialog();
    if(action==='menu-add-item'){const categories=state.menuDraft.categories||[];openDialog('Add a menu item',`<form id="menu-new-item-form" class="dialog-form"><label class="studio-field"><span>Item name</span><input id="menu-new-name" required maxlength="160"></label><label class="studio-field"><span>Category</span><select id="menu-new-item-category">${categories.map(category=>`<option>${esc(category)}</option>`).join('')}</select></label><label class="studio-field"><span>Description</span><textarea id="menu-new-description" maxlength="2000"></textarea></label><label class="studio-field"><span>Starting price in dollars <small>Leave blank to confirm later</small></span><input id="menu-new-price" inputmode="decimal"></label><button class="primary" type="submit">Add item to draft</button></form>`)}
    if(action==='menu-clone'){const item=selectedMenuItem();openDialog('Duplicate menu item',`<p>Copies the recipe and every customer choice into a new independently editable item.</p><form id="menu-clone-form" class="dialog-form"><label class="studio-field"><span>New item name</span><input id="menu-clone-name" required maxlength="160" value="${attr(item.name+' copy')}"></label><label class="studio-field"><span>Category</span><select id="menu-clone-category">${(state.menuDraft.categories||[]).map(category=>`<option ${category===item.category?'selected':''}>${esc(category)}</option>`).join('')}</select></label><button class="primary" type="submit">Duplicate into draft</button></form>`)}
@@ -234,7 +235,7 @@
   }catch(error){status(error.message,'error');toast(error.message)}
  });
  document.addEventListener('submit',async event=>{
-  if(!['media-upload','publish-site-form','restore-site-form','menu-category-form','menu-new-item-form','menu-clone-form','menu-group-form','menu-group-edit-form','menu-option-form','menu-option-edit-form','menu-category-add-form'].includes(event.target.id))return;event.preventDefault();try{
+  if(!['media-upload','publish-site-form','restore-site-form','menu-category-form','menu-new-item-form','menu-clone-form','menu-group-form','menu-group-edit-form','menu-option-form','menu-option-edit-form','menu-category-add-form'].includes(event.target.id))return;event.preventDefault();if(state.busy)return;try{
    if(event.target.id==='media-upload')await uploadFile(event.target,state.mediaTarget);
    if(event.target.id==='publish-site-form')await publish($('#publish-site-note').value.trim());
    if(event.target.id==='restore-site-form')await restoreVersion(event.target.dataset.id,$('#restore-site-note').value.trim());

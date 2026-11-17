@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://weinbergers-deli.cmcnosky.chatgpt.site; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#631723">
@@ -12,7 +12,9 @@
   <link rel="icon" href="assets/weinbergers-logo-original.png">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="barlow.css">
-  <link rel="stylesheet" href="dan.css?v=20261109-40">
+  <link rel="stylesheet" href="dan.css?v=20261117-41">
+  <link rel="stylesheet" href="decision.css?v=20261117-41">
+  <script src="decision.js?v=20261117-41" defer></script>
   <link rel="canonical" href="https://cmcnosky.github.io/weinbergers-deli/dan.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Weinberger’s Deli">
@@ -29,7 +31,7 @@
   <meta name="twitter:description" content="Website, native iPhone and Android apps, ordering backend, kitchen workflow, and a controlled path to launch.">
   <meta name="twitter:image" content="https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png">
   <meta name="twitter:image:alt" content="Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing.">
-<link rel="stylesheet" href="boundaries.css?v=20261109-39"><link rel="stylesheet" href="readability.css?v=20261109-39"><link rel="stylesheet" href="account-menu.css?v=20261109-39"><script src="runtime-config.js?v=20261109-39" defer></script><script src="account-menu.js?v=20261109-39" defer></script></head>
+<link rel="stylesheet" href="boundaries.css?v=20261117-41"><link rel="stylesheet" href="readability.css?v=20261117-41"><link rel="stylesheet" href="account-menu.css?v=20261117-41"><script src="runtime-config.js?v=20261117-41" defer></script><script src="account-menu.js?v=20261117-41" defer></script></head>
 <body>
   <a class="skip-link" href="#main">Skip to the proposal</a>
 
@@ -39,57 +41,44 @@
       <span>601 S MAIN ST.<br>GRAPEVINE, TEXAS</span>
     </a>
     <nav aria-label="Proposal sections">
-      <a href="#try-it">TRY THE WORK</a>
-      <a href="#why-better">WHAT IS DIFFERENT</a>
-      <a href="#switch">HOW WE SWITCH</a>
+      <a href="#review-title">Try the work</a>
+      <a href="#estimate">Price</a>
+      <a href="#detail-title">Scope</a>
     </nav>
-    <a class="header-action" href="#decision">THE DECISION <span aria-hidden="true">↓</span></a>
+    <a class="header-action" href="assets/weinbergers-deli-decision-brief-20261109-r2.pdf">2-page brief <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="main">
-    <section class="proposal-hero" aria-labelledby="proposal-title">
-      <div class="hero-copy">
-        <p class="document-line">PREPARED FOR DAN WEINBERGER <span aria-hidden="true">/</span> NOVEMBER 2026</p>
-        <h1 id="proposal-title">BUILT AROUND<br>THE WEINBERGER’S<br>MENU.</h1>
-        <p class="hero-deck">And a controlled way to connect it to payments, the kitchen, and both app stores without gambling the business on launch day.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#try-it">TRY THE CUSTOMER PATH <span aria-hidden="true">↓</span></a>
-          <a class="text-action" href="#built">See what is built and what is not <span aria-hidden="true">↘</span></a>
+    <section class="decision-intro" aria-labelledby="proposal-title">
+      <div class="decision-lead">
+        <p class="decision-byline">Chris McNosky for Dan Weinberger</p>
+        <h1 id="proposal-title">Website &amp;<br>ordering apps.</h1>
+        <p class="decision-deck">A website and two ordering apps built around how Weinberger’s makes a sandwich. Try an exact order, then see what you can change yourself.</p>
+        <div class="decision-links">
+          <a class="decision-primary" href="menu.html?item=gayles-super-reuben-8U3W">Try Gayle’s Super Reuben <span aria-hidden="true">↗</span></a>
+          <a href="login.html">Open the owner editor <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-
-      <div class="hero-visual">
-        <picture>
-          <source media="(max-width: 600px)" srcset="assets/optimized/gayles-super-reuben-8U3W-320.webp">
-          <img src="assets/optimized/gayles-super-reuben-8U3W-800.webp" width="640" height="480" alt="Gayle’s Super Reuben, stacked with corned beef on rye">
-        </picture>
-        <div class="hero-caption">
-          <span>01 / THE PRODUCT</span>
-          <strong>BUILD A DELI SYSTEM AROUND THE FOOD — NOT AROUND A TEMPLATE.</strong>
-        </div>
-      </div>
-
-      <dl class="offer-strip" aria-label="Proposal summary">
-        <div>
-          <dt>FIRST-YEAR MAXIMUM</dt>
-          <dd>$2,500 MAX</dd>
-        </div>
-        <div>
-          <dt>ANDROID DEVELOPMENT</dt>
-          <dd>INCLUDED</dd>
-        </div>
-        <div>
-          <dt>BUILD + ACTIVE CARE</dt>
-          <dd>12 MONTHS</dd>
-        </div>
-        <div>
-          <dt>OPTIONAL MONTH 13+</dt>
-          <dd>$149 / MO MAX</dd>
-        </div>
-      </dl>
+      <figure class="decision-photo"><img src="assets/optimized/weinbergers-main-street-20261105-800.webp" width="800" height="600" alt="Weinberger’s Deli storefront on Main Street in Grapevine"><figcaption>601 S Main Street · Grapevine</figcaption></figure>
     </section>
-
-    <section class="section try-section" id="try-it" aria-labelledby="try-heading">
+    <section class="decision-offer" aria-labelledby="offer-title">
+      <div><p class="decision-label">First year</p><h2 id="offer-title">Half your verified platform fees.<br>$2,500 maximum.</h2></div>
+      <div><p>Website, iPhone, Android, hosting, maintenance and agreed changes through 12 months after the approved website launch. Android carries no additional development fee.</p><div class="decision-links"><a href="#estimate">Check your numbers ↓</a><a href="assets/weinbergers-deli-decision-brief-20261109-r2.pdf">Read the 2-page brief ↗</a></div></div>
+    </section>
+    <section class="decision-review" aria-labelledby="review-title"><h2 id="review-title">What to try first</h2>
+      <div class="review-choices">
+        <article><h3>Order your usual</h3><p>Change the bread, choose the toast, remove an ingredient and name the sandwich. Open My Usuals and edit it without changing your bag.</p><a href="menu.html?item=gayles-super-reuben-8U3W">Customize the Reuben ↗</a></article>
+        <article><h3>Change the menu</h3><p>Use the owner login on your phone or computer. Open a draft, change an item or photo and preview it. You choose when to publish.</p><a href="owner-studio.html">Open Site Studio ↗</a></article>
+        <article><h3>Look at the apps</h3><p>Explore the ordering layout in your browser. The proposal includes physical-phone testing and releases in both stores.</p><div class="decision-links"><a href="iphone.html">iPhone overview ↗</a><a href="android.html">Android overview ↗</a></div></article>
+      </div>
+    </section>
+    <section class="decision-estimate" id="estimate" aria-labelledby="estimate-title">
+      <div><h2 id="estimate-title">What would it cost?</h2><p>Use 12 months of restaurant-paid Owner subscription and platform order fees, after credits. Leave out card processing, tax, couriers, hardware, store accounts, customer-paid fees and overlapping provider costs.</p><p>We agree on the invoice total before a deposit. The first year is capped at $2,500. Optional care from month 13 is capped at $149 a month.</p></div>
+      <form id="fee-estimator" hidden><label for="annual-fees">Annual platform fees in dollars</label><div class="amount-entry"><span aria-hidden="true">$</span><input id="annual-fees" inputmode="decimal" type="text" maxlength="22" autocomplete="off" placeholder="Enter invoice total" aria-describedby="estimate-hint"><button type="submit">Calculate</button></div><p id="estimate-hint">The calculation stays on this device.</p><div class="fee-results" role="status" aria-live="polite" aria-atomic="true"></div></form>
+    </section>
+    <section class="decision-details" aria-labelledby="detail-title"><h2 id="detail-title">Scope and switch-over</h2><p>Start with a supported evaluation and one agreed review-scale change, with no deposit or deadline. Keep current ordering in service until the pilot and rollback plan are accepted.</p>
+      <details class="decision-disclosure"><summary>Ways to test the customer menu</summary>
+<section class="section try-section" id="try-it" aria-labelledby="try-heading">
       <div class="section-heading">
         <p class="section-number">01</p>
         <div>
@@ -149,8 +138,9 @@
 
       <p class="journey-note"><strong>One honest limitation:</strong> the menu’s ingredient filters use published descriptions; they do not certify allergies or dietary suitability. Customers are directed to speak with the deli about allergies.</p>
     </section>
-
-    <section class="section comparison-section" id="why-better" aria-labelledby="better-heading">
+      </details>
+      <details class="decision-disclosure"><summary>How the proposed ordering experience differs</summary>
+<section class="section comparison-section" id="why-better" aria-labelledby="better-heading">
       <div class="section-heading inverse-heading">
         <p class="section-number">02</p>
         <div>
@@ -196,8 +186,9 @@
         <h3>The claim is that it provides a structured, inspectable customer and staff workflow — and gives Dan a controlled pilot to test whether it works better.</h3>
       </aside>
     </section>
-
-    <section class="section system-section" id="built" aria-labelledby="built-heading">
+      </details>
+      <details class="decision-disclosure"><summary>What is built and what needs connecting</summary>
+<section class="section system-section" id="built" aria-labelledby="built-heading">
       <div class="section-heading">
         <p class="section-number">03</p>
         <div>
@@ -284,8 +275,9 @@
 
       <p class="limit-line"><strong>Boundary:</strong> recorded connected tests used isolated payment and kitchen fixtures. No card was charged, no restaurant ticket was printed, and no claim of production readiness or customer preference follows from those local checks.</p>
     </section>
-
-    <section class="section pay-section" id="why-pay" aria-labelledby="pay-heading">
+      </details>
+      <details class="decision-disclosure"><summary>Owner control, support and handoff</summary>
+<section class="section pay-section" id="why-pay" aria-labelledby="pay-heading">
       <div class="section-heading inverse-heading">
         <p class="section-number">04</p>
         <div>
@@ -339,8 +331,9 @@
         <p>Third-party components keep their own licenses. If monthly care ends, Weinberger’s retains the delivered custom work and accounts and assumes future operation and maintenance.</p>
       </div>
     </section>
-
-    <section class="section switch-section" id="switch" aria-labelledby="switch-heading">
+      </details>
+      <details class="decision-disclosure"><summary>Switch-over, staff training and rollback</summary>
+<section class="section switch-section" id="switch" aria-labelledby="switch-heading">
       <div class="section-heading">
         <p class="section-number">05</p>
         <div>
@@ -398,8 +391,9 @@
         <p>After account access, approved menu data, supported-device decisions, equipment and integration review, and written scope, the technical review establishes a written private-pilot and two-app release schedule. Apple and Google control public review timing, so no public app-store date is promised in advance.</p>
       </div>
     </section>
-
-    <section class="section offer-section" id="price" aria-labelledby="price-heading">
+      </details>
+      <details class="decision-disclosure"><summary>Price, payment milestones and care</summary>
+<section class="section offer-section" id="price" aria-labelledby="price-heading">
       <div class="price-lead">
         <p class="eyebrow">THE PROPOSED OFFER</p>
         <h2 id="price-heading">$2,500</h2>
@@ -456,8 +450,9 @@
 
       <p class="no-fee-line">THE BILL BASELINE IS 12 MONTHS OF RESTAURANT-PAID SUBSCRIPTION AND PLATFORM/ORDER FEES, NET OF CREDITS. PROCESSING, TAXES, COURIERS, HARDWARE, APP-STORE ACCOUNTS, CUSTOMER-PAID FEES, AND PROVIDER OVERLAP ARE SEPARATE. NO CHRIS PERCENTAGE OF ORDERS OR ADDED GUEST SUPPORT FEE.</p>
     </section>
-
-    <section class="section scope-section" aria-labelledby="scope-heading">
+      </details>
+      <details class="decision-disclosure"><summary>Included work and scope limits</summary>
+<section class="section scope-section" aria-labelledby="scope-heading">
       <div class="section-heading">
         <p class="section-number">06</p>
         <div>
@@ -491,22 +486,9 @@
         </article>
       </div>
     </section>
-
-    <section class="decision-section" id="decision" aria-labelledby="decision-heading">
-      <div>
-        <p class="eyebrow">THE NEXT DECISION</p>
-        <h2 id="decision-heading">TEN MINUTES.<br>NO DEPOSIT.<br>NO LIVE CHANGE.</h2>
-      </div>
-      <div class="decision-copy">
-        <p>Dan: try the customer paths, then let Chris show the staff order flow. If the work fits the deli, the next step is the free technical review — actual costs, accounts, equipment, continuity, scope, and passing criteria — before either side commits.</p>
-        <div class="decision-actions">
-          <a class="button button-light" href="menu.html?item=gayles-super-reuben-8U3W">START WITH THE REUBEN <span aria-hidden="true">↗</span></a>
-          <a class="button button-light" href="assets/weinbergers-deli-decision-brief-20261109-r2.pdf" download>DOWNLOAD THE 2-PAGE BRIEF <span aria-hidden="true">↓</span></a>
-          <a class="text-action light" href="visit.html">Open the visit page <span aria-hidden="true">↗</span></a>
-        </div>
-        <p class="signature">CHRIS McNOSKY</p>
-      </div>
+      </details>
     </section>
+    <section class="decision-next" id="decision" aria-labelledby="decision-heading"><h2 id="decision-heading">Before you decide</h2><p>Pick one change you want to see. Chris will make the agreed change for you to review. If it fits, the next conversation covers your invoice, menu, equipment and what the staff pilot must prove.</p><div class="decision-links"><a href="assets/weinbergers-deli-decision-brief-20261109-r2.pdf">Two-page decision brief ↗</a><a href="assets/weinbergers-deli-proposal-20261109.pdf">Full written proposal ↗</a></div></section>
   </main>
 
   <footer class="proposal-footer">
