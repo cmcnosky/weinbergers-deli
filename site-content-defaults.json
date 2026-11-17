@@ -58,9 +58,9 @@
       "title": "Home",
       "seo": {
         "title": "Weinberger’s Deli — Chicago deli. Grapevine, Texas.",
-        "description": "Chicago deli roots, Main Street Grapevine. Explore the sandwiches, make one your own, and plan your visit to Weinberger’s Deli.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
-        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+        "description": "Italian beef, Reubens and Chicago dogs on Main Street in Grapevine. Find a house sandwich, change the toppings or build your own.",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-main-street-jaybird-20261117.png",
+        "image_alt": "The Main Street storefront and Jaybird’s Sandwich flank a yellow sign with the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -135,9 +135,9 @@
             },
             {
               "id": "home-guest-hero-4",
-              "label": "Italian beef. Reubens. Chicago dogs. A sandwich shop with a very long menu.",
+              "label": "Italian beef, Reubens and Chicago dogs. Start with a house sandwich or build your own.",
               "type": "multiline",
-              "value": "Italian beef. Reubens. Chicago dogs.\nA sandwich shop with a very long menu."
+              "value": "Italian beef, Reubens and Chicago dogs.\nStart with a house sandwich or build your own."
             },
             {
               "id": "home-guest-hero-5",
@@ -177,9 +177,9 @@
             },
             {
               "id": "home-guest-hero-11",
-              "label": "Already know what you want?",
+              "label": "Know what you came for?",
               "type": "text",
-              "value": "Already know what you want?"
+              "value": "Know what you came for?"
             },
             {
               "id": "home-guest-hero-12",
@@ -376,9 +376,9 @@
           "fields": [
             {
               "id": "home-film-1",
-              "label": "FROM THE DELI",
+              "label": "WEINBERGER’S ON FILM",
               "type": "text",
-              "value": "FROM THE DELI"
+              "value": "WEINBERGER’S ON FILM"
             },
             {
               "id": "home-film-2",
@@ -388,9 +388,9 @@
             },
             {
               "id": "home-film-3",
-              "label": "Watch Weinberger’s own film: Italian beef, Chicago roots, and the deli on Main Street.",
+              "label": "The family’s short film takes you inside the deli on Main Street.",
               "type": "text",
-              "value": "Watch Weinberger’s own film: Italian beef, Chicago roots, and the deli on Main Street."
+              "value": "The family’s short film takes you inside the deli on Main Street."
             },
             {
               "id": "home-film-4",
@@ -400,9 +400,9 @@
             },
             {
               "id": "home-film-5",
-              "label": "Find your Italian beef ↗",
+              "label": "See the Italian beef ↗",
               "type": "text",
-              "value": "Find your Italian beef ↗"
+              "value": "See the Italian beef ↗"
             },
             {
               "id": "home-film-6",
@@ -451,15 +451,15 @@
           "fields": [
             {
               "id": "home-guest-section-1",
-              "label": "A FEW PLACES TO START",
+              "label": "FIRST TIME HERE?",
               "type": "text",
-              "value": "A FEW PLACES TO START"
+              "value": "FIRST TIME HERE?"
             },
             {
               "id": "home-guest-section-2",
-              "label": "Heading · FROM THE COUNTER.",
+              "label": "Heading · WHAT SOUNDS GOOD?",
               "type": "text",
-              "value": "FROM THE COUNTER."
+              "value": "WHAT SOUNDS GOOD?"
             },
             {
               "id": "home-guest-section-3",
@@ -488,9 +488,9 @@
             },
             {
               "id": "home-guest-section-7",
-              "label": "01 / CHICAGO CLASSIC",
+              "label": "BEEF & PEPPERS",
               "type": "text",
-              "value": "01 / CHICAGO CLASSIC"
+              "value": "BEEF & PEPPERS"
             },
             {
               "id": "home-guest-section-8",
@@ -500,9 +500,9 @@
             },
             {
               "id": "home-guest-section-9",
-              "label": "Wet or dry. Sweet, hot or mild peppers. Choose it the way you like it.",
+              "label": "The family recipe dates to 1928. Get the beef wet or dry and choose sweet, hot or mild pep",
               "type": "text",
-              "value": "Wet or dry. Sweet, hot or mild peppers. Choose it the way you like it."
+              "value": "The family recipe dates to 1928. Get the beef wet or dry and choose sweet, hot or mild peppers."
             },
             {
               "id": "home-guest-section-10",
@@ -512,9 +512,9 @@
             },
             {
               "id": "home-guest-section-11",
-              "label": "Choose your options ↗",
+              "label": "Choose your beef ↗",
               "type": "text",
-              "value": "Choose your options ↗"
+              "value": "Choose your beef ↗"
             },
             {
               "id": "home-guest-section-12",
@@ -531,9 +531,9 @@
             },
             {
               "id": "home-guest-section-14",
-              "label": "02 / DELI COUNTER",
+              "label": "GRILLED MARBLE RYE",
               "type": "text",
-              "value": "02 / DELI COUNTER"
+              "value": "GRILLED MARBLE RYE"
             },
             {
               "id": "home-guest-section-15",
@@ -555,9 +555,9 @@
             },
             {
               "id": "home-guest-section-18",
-              "label": "Take a closer look ↗",
+              "label": "See the Reuben ↗",
               "type": "text",
-              "value": "Take a closer look ↗"
+              "value": "See the Reuben ↗"
             },
             {
               "id": "home-guest-section-19",
@@ -574,9 +574,9 @@
             },
             {
               "id": "home-guest-section-21",
-              "label": "03 / SOMETHING DIFFERENT",
+              "label": "PEACH HABANERO JAM",
               "type": "text",
-              "value": "03 / SOMETHING DIFFERENT"
+              "value": "PEACH HABANERO JAM"
             },
             {
               "id": "home-guest-section-22",
@@ -598,9 +598,9 @@
             },
             {
               "id": "home-guest-section-25",
-              "label": "See every ingredient ↗",
+              "label": "See Jaybird’s ↗",
               "type": "text",
-              "value": "See every ingredient ↗"
+              "value": "See Jaybird’s ↗"
             }
           ]
         },
@@ -624,15 +624,15 @@
             },
             {
               "id": "home-deli-order-paths-3",
-              "label": "Heading · MY USUALS",
+              "label": "Heading · SAVE YOUR USUAL",
               "type": "text",
-              "value": "MY USUALS"
+              "value": "SAVE YOUR USUAL"
             },
             {
               "id": "home-deli-order-paths-4",
-              "label": "Save your exact sandwich. Bring back the bread, toppings, toasting, and all.",
+              "label": "Save your bread, fillings, toppings, toasting and special instructions under a name you’ll",
               "type": "text",
-              "value": "Save your exact sandwich. Bring back the bread, toppings, toasting, and all."
+              "value": "Save your bread, fillings, toppings, toasting and special instructions under a name you’ll remember."
             },
             {
               "id": "home-deli-order-paths-5",
@@ -710,39 +710,39 @@
           "fields": [
             {
               "id": "home-guest-story-1",
-              "label": "1952 → 2002 → MAIN STREET",
+              "label": "THE PEOPLE ON THE MENU",
               "type": "text",
-              "value": "1952 → 2002 → MAIN STREET"
+              "value": "THE PEOPLE ON THE MENU"
             },
             {
               "id": "home-guest-story-2",
-              "label": "Heading · CHICAGO ROOTS. GRAPEVINE COUNTER.",
+              "label": "Heading · WHO’S JOE KING?",
               "type": "multiline",
-              "value": "CHICAGO ROOTS.\nGRAPEVINE COUNTER."
+              "value": "WHO’S\nJOE KING?"
             },
             {
               "id": "home-guest-story-3",
-              "label": "The Weinberger family started in Chicago in 1952. Dan opened the Grapevine deli in 2002. T",
+              "label": "When Dan opened in Grapevine, hardly anyone in town knew him. So he started naming sandwic",
               "type": "multiline",
-              "value": "The Weinberger family started in Chicago in 1952. Dan opened the Grapevine deli in 2002. The menu grew with it: deli standards, Chicago staples, and sandwiches you won’t find on a short list."
+              "value": "When Dan opened in Grapevine, hardly anyone in town knew him. So he started naming sandwiches for his neighbors. The first was the Joe King, for a local community leader."
             },
             {
               "id": "home-guest-story-4",
-              "label": "Start with a sandwich, then make it yours. Bread, meats, cheese, toppings and toasted or n",
+              "label": "It’s hot pastrami, Swiss, creamy coleslaw, Russian dressing and red onion on grilled marbl",
               "type": "multiline",
-              "value": "Start with a sandwich, then make it yours. Bread, meats, cheese, toppings and toasted or not toasted—all together in one place."
+              "value": "It’s hot pastrami, Swiss, creamy coleslaw, Russian dressing and red onion on grilled marble rye. You can still order it by name."
             },
             {
               "id": "home-guest-story-5",
               "label": "Link · Build your sandwich ↗",
               "type": "link",
-              "value": "menu.html?item=custom-build-your-own"
+              "value": "menu.html?item=joe-king-UpbB"
             },
             {
               "id": "home-guest-story-6",
-              "label": "Build your sandwich ↗",
+              "label": "See the Joe King ↗",
               "type": "text",
-              "value": "Build your sandwich ↗"
+              "value": "See the Joe King ↗"
             },
             {
               "id": "home-guest-story-7",
@@ -752,9 +752,9 @@
             },
             {
               "id": "home-guest-story-8",
-              "label": "Our story & recognition ↗",
+              "label": "Read the family story ↗",
               "type": "text",
-              "value": "Our story & recognition ↗"
+              "value": "Read the family story ↗"
             }
           ]
         },
@@ -969,8 +969,8 @@
       "seo": {
         "title": "Our story, awards & film | Weinberger’s Deli",
         "description": "Chicago roots since 1952. Weinberger’s Deli awards, Texas recognition, and the original deli film.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
-        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-main-street-jaybird-20261117.png",
+        "image_alt": "The Main Street storefront and Jaybird’s Sandwich flank a yellow sign with the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -1027,39 +1027,39 @@
           "fields": [
             {
               "id": "story-story-opening-1",
-              "label": "A FAMILY DELI / SINCE 1952",
+              "label": "THE WEINBERGER FAMILY",
               "type": "text",
-              "value": "A FAMILY DELI / SINCE 1952"
+              "value": "THE WEINBERGER FAMILY"
             },
             {
               "id": "story-story-opening-2",
-              "label": "Heading · CHICAGO ROOTS. MAIN STREET REPUTATION.",
+              "label": "Heading · CHICAGO TO GRAPEVINE.",
               "type": "multiline",
-              "value": "CHICAGO ROOTS.\nMAIN STREET\nREPUTATION."
+              "value": "CHICAGO TO\nGRAPEVINE."
             },
             {
               "id": "story-story-opening-3",
-              "label": "The Weinberger family’s deli story began in the Chicago area in 1952. Dan opened the Grape",
+              "label": "Dan grew up behind the counter in his family’s Chicago-area delis. In 2002 he opened his o",
               "type": "text",
-              "value": "The Weinberger family’s deli story began in the Chicago area in 1952. Dan opened the Grapevine deli in 2002."
+              "value": "Dan grew up behind the counter in his family’s Chicago-area delis. In 2002 he opened his own on Main Street in Grapevine."
             },
             {
               "id": "story-story-opening-4",
-              "label": "The sandwiches carry that history forward: Italian beef, Reubens, Chicago dogs, and a long",
+              "label": "The early menu had knishes, lox and bagels. Customers kept coming back for the sandwiches.",
               "type": "text",
-              "value": "The sandwiches carry that history forward: Italian beef, Reubens, Chicago dogs, and a long list of originals."
+              "value": "The early menu had knishes, lox and bagels. Customers kept coming back for the sandwiches. Dan took the hint."
             },
             {
               "id": "story-story-opening-5",
               "label": "Link · Find your sandwich ↗",
               "type": "link",
-              "value": "menu.html"
+              "value": "menu.html?item=joe-king-UpbB"
             },
             {
               "id": "story-story-opening-6",
-              "label": "Find your sandwich ↗",
+              "label": "See the Joe King ↗",
               "type": "text",
-              "value": "Find your sandwich ↗"
+              "value": "See the Joe King ↗"
             },
             {
               "id": "story-story-opening-7",
@@ -1083,21 +1083,21 @@
           "fields": [
             {
               "id": "story-film-1",
-              "label": "FROM THE DELI",
+              "label": "WEINBERGER’S ON FILM",
               "type": "text",
-              "value": "FROM THE DELI"
+              "value": "WEINBERGER’S ON FILM"
             },
             {
               "id": "story-film-2",
-              "label": "Heading · INSIDE WEINBERGER’S.",
+              "label": "Heading · INSIDE THE DELI.",
               "type": "multiline",
-              "value": "INSIDE\nWEINBERGER’S."
+              "value": "INSIDE THE DELI."
             },
             {
               "id": "story-film-3",
-              "label": "Watch Weinberger’s own film: Italian beef, Chicago roots, and the deli on Main Street.",
+              "label": "Watch the family’s short film about the Italian beef and the shop on Main Street.",
               "type": "text",
-              "value": "Watch Weinberger’s own film: Italian beef, Chicago roots, and the deli on Main Street."
+              "value": "Watch the family’s short film about the Italian beef and the shop on Main Street."
             },
             {
               "id": "story-film-4",
@@ -1107,9 +1107,9 @@
             },
             {
               "id": "story-film-5",
-              "label": "Find your Italian beef ↗",
+              "label": "See the Italian beef ↗",
               "type": "text",
-              "value": "Find your Italian beef ↗"
+              "value": "See the Italian beef ↗"
             },
             {
               "id": "story-film-6",
@@ -1165,21 +1165,21 @@
             },
             {
               "id": "story-deli-family-2",
-              "label": "Dan Weinberger · From the family’s own story",
+              "label": "Dan Weinberger at the deli",
               "type": "text",
-              "value": "Dan Weinberger · From the family’s own story"
+              "value": "Dan Weinberger at the deli"
             },
             {
               "id": "story-deli-family-3",
-              "label": "TOM’S DELIS TO MAIN STREET",
+              "label": "THE FAMILY BUSINESS",
               "type": "text",
-              "value": "TOM’S DELIS TO MAIN STREET"
+              "value": "THE FAMILY BUSINESS"
             },
             {
               "id": "story-deli-family-4",
-              "label": "Heading · A FAMILY TRADE. A LIFETIME AT IT.",
+              "label": "Heading · FIVE DELIS AROUND CHICAGO.",
               "type": "multiline",
-              "value": "A FAMILY TRADE.\nA LIFETIME AT IT."
+              "value": "FIVE DELIS\nAROUND CHICAGO."
             },
             {
               "id": "story-deli-family-5",
@@ -1195,9 +1195,9 @@
             },
             {
               "id": "story-deli-family-7",
-              "label": "That experience came to Grapevine in 2002. The menu keeps moving, with a spring contest he",
+              "label": "In Grapevine, the menu kept changing. Customers brought Dan ideas for sandwiches they miss",
               "type": "multiline",
-              "value": "That experience came to Grapevine in 2002. The menu keeps moving, with a spring contest helping decide which sandwiches earn their place."
+              "value": "In Grapevine, the menu kept changing. Customers brought Dan ideas for sandwiches they missed from home. The shop’s spring contest gives regulars a say in which sandwiches rise to the top."
             },
             {
               "id": "story-deli-family-8",
@@ -1207,9 +1207,9 @@
             },
             {
               "id": "story-deli-family-9",
-              "label": "Read Dan’s full story ↗",
+              "label": "Read Dan’s official story ↗",
               "type": "text",
-              "value": "Read Dan’s full story ↗"
+              "value": "Read Dan’s official story ↗"
             }
           ]
         },
@@ -1227,21 +1227,21 @@
             },
             {
               "id": "story-deli-craft-2",
-              "label": "“All Chefs have passion for some part of the Culinary experience. Mine just happens to be ",
+              "label": "“I can tell you why it is made the way it is.”",
               "type": "text",
-              "value": "“All Chefs have passion for some part of the Culinary experience. Mine just happens to be the sandwich.”"
+              "value": "“I can tell you why it is made the way it is.”"
             },
             {
               "id": "story-deli-craft-3",
               "label": "Link · Dan Weinberger · Read the full account (PDF) ↗",
               "type": "link",
-              "value": "https://static-content.owner.com/document/e5e4b356-8afc-4224-a64b-9c880a44d353.pdf"
+              "value": "https://www.choosegrapevinetx.com/news-center/p/item/43854/why-small-businesses-succeed-on-main-street-in-grapevine-texas"
             },
             {
               "id": "story-deli-craft-4",
-              "label": "Dan Weinberger · Read the full account (PDF) ↗",
+              "label": "Dan on being a sandwich historian ↗",
               "type": "text",
-              "value": "Dan Weinberger · Read the full account (PDF) ↗"
+              "value": "Dan on being a sandwich historian ↗"
             },
             {
               "id": "story-deli-craft-5",
@@ -1251,9 +1251,9 @@
             },
             {
               "id": "story-deli-craft-6",
-              "label": "Pick a favorite or work with the sandwich maker to build your own. If something isn’t righ",
+              "label": "At the counter, ask the person making your sandwich for a hand. Dan’s invitation is simple",
               "type": "multiline",
-              "value": "Pick a favorite or work with the sandwich maker to build your own. If something isn’t right, tell the team what would make it right. That’s part of Dan’s welcome."
+              "value": "At the counter, ask the person making your sandwich for a hand. Dan’s invitation is simple. If a sandwich comes out wrong for you, bring it back and tell the team what you’d change."
             },
             {
               "id": "story-deli-craft-7",
@@ -1263,9 +1263,9 @@
             },
             {
               "id": "story-deli-craft-8",
-              "label": "Build your sandwich ↗",
+              "label": "Build yours ↗",
               "type": "text",
-              "value": "Build your sandwich ↗"
+              "value": "Build yours ↗"
             }
           ]
         },
@@ -1301,9 +1301,9 @@
             },
             {
               "id": "story-recognition-5",
-              "label": "Heading · RECOGNIZED AT THE COUNTER.",
+              "label": "Heading · THE DELI’S HONORS.",
               "type": "multiline",
-              "value": "RECOGNIZED AT\nTHE COUNTER."
+              "value": "THE DELI’S HONORS."
             },
             {
               "id": "story-recognition-6",
@@ -1459,21 +1459,21 @@
           "fields": [
             {
               "id": "story-guest-section-guest-last-stop-1",
-              "label": "THE NEXT SANDWICH IS YOURS",
+              "label": "VISIT THE DELI",
               "type": "text",
-              "value": "THE NEXT SANDWICH IS YOURS"
+              "value": "VISIT THE DELI"
             },
             {
               "id": "story-guest-section-guest-last-stop-2",
-              "label": "Heading · COME HUNGRY.",
+              "label": "Heading · 601 S MAIN STREET.",
               "type": "text",
-              "value": "COME HUNGRY."
+              "value": "601 S MAIN STREET."
             },
             {
               "id": "story-guest-section-guest-last-stop-3",
-              "label": "601 S Main Street · Grapevine, Texas",
+              "label": "Grapevine, Texas 76051",
               "type": "text",
-              "value": "601 S Main Street · Grapevine, Texas"
+              "value": "Grapevine, Texas 76051"
             },
             {
               "id": "story-guest-section-guest-last-stop-4",
@@ -1661,8 +1661,8 @@
       "seo": {
         "title": "Visit the deli | Weinberger’s Deli",
         "description": "Directions, contact, current hours, group orders and practical information for Weinberger’s Deli at 601 S Main Street in Grapevine.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
-        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-main-street-jaybird-20261117.png",
+        "image_alt": "The Main Street storefront and Jaybird’s Sandwich flank a yellow sign with the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -1725,9 +1725,9 @@
             },
             {
               "id": "visit-visit-intro-2",
-              "label": "Heading · COME BY THE DELI.",
+              "label": "Heading · VISIT THE DELI.",
               "type": "multiline",
-              "value": "COME BY\nTHE DELI."
+              "value": "VISIT THE DELI."
             },
             {
               "id": "visit-visit-intro-3",
@@ -1737,9 +1737,9 @@
             },
             {
               "id": "visit-visit-intro-4",
-              "label": "Dine in, pick up, or arrange delivery through the current ordering site.",
+              "label": "Order at the counter on Main Street, or check pickup and delivery before you come.",
               "type": "text",
-              "value": "Dine in, pick up, or arrange delivery through the current ordering site."
+              "value": "Order at the counter on Main Street, or check pickup and delivery before you come."
             },
             {
               "id": "visit-visit-intro-5",
@@ -1782,27 +1782,27 @@
             },
             {
               "id": "visit-visit-sections-2",
-              "label": "Heading · BEFORE YOU HEAD OVER.",
+              "label": "Heading · CHECK TODAY’S HOURS.",
               "type": "text",
-              "value": "BEFORE YOU HEAD OVER."
+              "value": "CHECK TODAY’S HOURS."
             },
             {
               "id": "visit-visit-sections-3",
-              "label": "Check today’s opening hours and pickup availability with the deli, especially around holid",
+              "label": "Hours and pickup availability can change. Check the live menu before you head over, especi",
               "type": "text",
-              "value": "Check today’s opening hours and pickup availability with the deli, especially around holidays."
+              "value": "Hours and pickup availability can change. Check the live menu before you head over, especially around holidays."
             },
             {
               "id": "visit-visit-sections-4",
               "label": "Link · Check current hours ↗",
               "type": "link",
-              "value": "https://weinbergersdeli.com/"
+              "value": "https://weinbergersdeli.com/menu"
             },
             {
               "id": "visit-visit-sections-5",
-              "label": "Check current hours ↗",
+              "label": "Check today’s hours & pickup ↗",
               "type": "text",
-              "value": "Check current hours ↗"
+              "value": "Check today’s hours & pickup ↗"
             },
             {
               "id": "visit-visit-sections-6",
@@ -1812,9 +1812,9 @@
             },
             {
               "id": "visit-visit-sections-7",
-              "label": "Current online ordering ↗",
+              "label": "Order online ↗",
               "type": "text",
-              "value": "Current online ordering ↗"
+              "value": "Order online ↗"
             },
             {
               "id": "visit-visit-sections-8",
@@ -1830,33 +1830,33 @@
             },
             {
               "id": "visit-visit-sections-10",
-              "label": "Heading · MORE THAN ONE LUNCH.",
+              "label": "Heading · LUNCH FOR A GROUP.",
               "type": "text",
-              "value": "MORE THAN ONE LUNCH."
+              "value": "LUNCH FOR A GROUP."
             },
             {
               "id": "visit-visit-sections-11",
-              "label": "For a meeting, gathering or a larger order, start with the deli’s group-order and catering",
+              "label": "If everyone wants a different sandwich, start a group lunch. For a party or a meeting with",
               "type": "text",
-              "value": "For a meeting, gathering or a larger order, start with the deli’s group-order and catering options."
+              "value": "If everyone wants a different sandwich, start a group lunch. For a party or a meeting with a food budget, ask the deli for a catering quote."
             },
             {
               "id": "visit-visit-sections-12",
-              "label": "Have the date, time and number of people ready.",
+              "label": "Have a date, headcount and time in mind.",
               "type": "text",
-              "value": "Have the date, time and number of people ready."
+              "value": "Have a date, headcount and time in mind."
             },
             {
               "id": "visit-visit-sections-13",
-              "label": "Ask about pickup or delivery, lead time and any dietary needs.",
+              "label": "For catering, include your budget and whether you need pickup or delivery.",
               "type": "text",
-              "value": "Ask about pickup or delivery, lead time and any dietary needs."
+              "value": "For catering, include your budget and whether you need pickup or delivery."
             },
             {
               "id": "visit-visit-sections-14",
-              "label": "Confirm the menu, price and timing with the deli before making plans.",
+              "label": "Tell the deli about any food allergies before ordering.",
               "type": "text",
-              "value": "Confirm the menu, price and timing with the deli before making plans."
+              "value": "Tell the deli about any food allergies before ordering."
             },
             {
               "id": "visit-visit-sections-15",
@@ -1892,27 +1892,27 @@
           "fields": [
             {
               "id": "visit-guest-section-guest-questions-1",
-              "label": "A FEW PRACTICAL DETAILS",
+              "label": "AT THE COUNTER",
               "type": "text",
-              "value": "A FEW PRACTICAL DETAILS"
+              "value": "AT THE COUNTER"
             },
             {
               "id": "visit-guest-section-guest-questions-2",
-              "label": "Heading · GOOD TO KNOW.",
+              "label": "Heading · ORDERING QUESTIONS.",
               "type": "text",
-              "value": "GOOD TO KNOW."
+              "value": "ORDERING QUESTIONS."
             },
             {
               "id": "visit-guest-section-guest-questions-3",
-              "label": "Can I customize a sandwich?",
+              "label": "Can I change a house sandwich?",
               "type": "text",
-              "value": "Can I customize a sandwich?"
+              "value": "Can I change a house sandwich?"
             },
             {
               "id": "visit-guest-section-guest-questions-4",
-              "label": "Open any sandwich to choose bread, preparation and extras, or start with Build Your Own. P",
+              "label": "Yes. Open a sandwich to see its bread, toppings and preparation choices, or build one from",
               "type": "multiline",
-              "value": "Open any sandwich to choose bread, preparation and extras, or start with Build Your Own. Prices and availability that need the deli’s confirmation are identified before an order can be charged."
+              "value": "Yes. Open a sandwich to see its bread, toppings and preparation choices, or build one from scratch. At the deli, ask the person making it if you need a hand."
             },
             {
               "id": "visit-guest-section-guest-questions-5",
@@ -1922,9 +1922,9 @@
             },
             {
               "id": "visit-guest-section-guest-questions-6",
-              "label": "Build your own sandwich ↗",
+              "label": "Build it your way ↗",
               "type": "text",
-              "value": "Build your own sandwich ↗"
+              "value": "Build it your way ↗"
             },
             {
               "id": "visit-guest-section-guest-questions-7",
@@ -1982,9 +1982,9 @@
             },
             {
               "id": "visit-guest-section-guest-questions-18",
-              "label": "Yes. The readable menu includes item names, descriptions and listed starting prices, group",
+              "label": "Yes. The printable menu lists sandwiches by category. If you already know you want pastram",
               "type": "multiline",
-              "value": "Yes. The readable menu includes item names, descriptions and listed starting prices, grouped by category. It also works without JavaScript."
+              "value": "Yes. The printable menu lists sandwiches by category. If you already know you want pastrami or a particular cheese, search for that ingredient in the interactive menu."
             },
             {
               "id": "visit-guest-section-guest-questions-19",
@@ -2008,9 +2008,9 @@
           "fields": [
             {
               "id": "visit-guest-contact-1",
-              "label": "ASK THE COUNTER",
+              "label": "CALL OR EMAIL THE DELI",
               "type": "text",
-              "value": "ASK THE COUNTER"
+              "value": "CALL OR EMAIL THE DELI"
             },
             {
               "id": "visit-guest-contact-2",
@@ -2198,8 +2198,8 @@
       "seo": {
         "title": "The menu | Weinberger’s Deli",
         "description": "Weinberger’s Deli in Grapevine, Texas. Italian beef, Chicago dogs, Reubens, and a full deli menu. Find your sandwich and make it yours.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
-        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-main-street-jaybird-20261117.png",
+        "image_alt": "The Main Street storefront and Jaybird’s Sandwich flank a yellow sign with the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -2350,9 +2350,9 @@
             },
             {
               "id": "menu-menu-3",
-              "label": "Find a favorite, compare a few, or build your own.",
+              "label": "Pick a favorite, compare a few, then change it or build your own.",
               "type": "text",
-              "value": "Find a favorite, compare a few, or build your own."
+              "value": "Pick a favorite, compare a few, then change it or build your own."
             },
             {
               "id": "menu-menu-4",
@@ -2398,9 +2398,9 @@
             },
             {
               "id": "menu-menu-11",
-              "label": "Veggie menu",
+              "label": "Veggie category",
               "type": "text",
-              "value": "Veggie menu"
+              "value": "Veggie category"
             },
             {
               "id": "menu-menu-12",
@@ -2452,9 +2452,9 @@
             },
             {
               "id": "menu-menu-20",
-              "label": "Separate ingredients with commas. Filters use the menu descriptions, which may be incomple",
+              "label": "Separate ingredients with commas. The filters use menu descriptions, which may omit ingred",
               "type": "multiline",
-              "value": "Separate ingredients with commas. Filters use the menu descriptions, which may be incomplete. For allergies, speak with the deli."
+              "value": "Separate ingredients with commas. The filters use menu descriptions, which may omit ingredients. For allergy questions, call the deli."
             },
             {
               "id": "menu-menu-21",
@@ -2672,8 +2672,8 @@
       "seo": {
         "title": "Weinberger’s Deli — Chicago deli. Grapevine, Texas.",
         "description": "Weinberger’s Deli in Grapevine, Texas. Italian beef, Chicago dogs, Reubens, and a full deli menu. Find your sandwich and make it yours.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
-        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-main-street-jaybird-20261117.png",
+        "image_alt": "The Main Street storefront and Jaybird’s Sandwich flank a yellow sign with the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -2764,9 +2764,9 @@
             },
             {
               "id": "mobile-menu-cover-5",
-              "label": "Italian beef. Chicago dogs. Reubens. A full deli menu, made your way.",
+              "label": "Italian beef. Chicago dogs. Reubens. Pick a favorite, change what you want, or build your ",
               "type": "multiline",
-              "value": "Italian beef. Chicago dogs. Reubens.\nA full deli menu, made your way."
+              "value": "Italian beef. Chicago dogs. Reubens.\nPick a favorite, change what you want, or build your own."
             },
             {
               "id": "mobile-menu-cover-6",
@@ -2819,9 +2819,9 @@
             },
             {
               "id": "mobile-menu-cover-14",
-              "label": "Wet or dry. Sweet or hot peppers.",
+              "label": "Wet or dry. Sweet, hot, or mild peppers.",
               "type": "text",
-              "value": "Wet or dry. Sweet or hot peppers."
+              "value": "Wet or dry. Sweet, hot, or mild peppers."
             },
             {
               "id": "mobile-menu-cover-15",
@@ -2931,9 +2931,9 @@
             },
             {
               "id": "mobile-menu-8",
-              "label": "Veggie menu",
+              "label": "Veggie category",
               "type": "text",
-              "value": "Veggie menu"
+              "value": "Veggie category"
             },
             {
               "id": "mobile-menu-9",
@@ -2985,9 +2985,9 @@
             },
             {
               "id": "mobile-menu-17",
-              "label": "Separate ingredients with commas. Filters use the menu descriptions, which may be incomple",
+              "label": "Separate ingredients with commas. The filters use menu descriptions, which may omit ingred",
               "type": "multiline",
-              "value": "Separate ingredients with commas. Filters use the menu descriptions, which may be incomplete. For allergies, speak with the deli."
+              "value": "Separate ingredients with commas. The filters use menu descriptions, which may omit ingredients. For allergy questions, call the deli."
             },
             {
               "id": "mobile-menu-18",
@@ -3205,8 +3205,8 @@
       "seo": {
         "title": "Group lunch | Weinberger’s Deli",
         "description": "Build one Weinberger’s group lunch without one person transcribing everyone’s sandwich.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
-        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-main-street-jaybird-20261117.png",
+        "image_alt": "The Main Street storefront and Jaybird’s Sandwich flank a yellow sign with the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -3279,9 +3279,9 @@
             },
             {
               "id": "group-expansion-hero-3",
-              "label": "Send one private invitation. Everyone names and builds their own sandwich. You review the ",
+              "label": "Share one invitation link. Everyone names and customizes their own sandwich. You review th",
               "type": "text",
-              "value": "Send one private invitation. Everyone names and builds their own sandwich. You review the combined order and pay once."
+              "value": "Share one invitation link. Everyone names and customizes their own sandwich. You review the whole lunch and pay once."
             }
           ]
         },
@@ -3341,15 +3341,15 @@
             },
             {
               "id": "group-create-panel-9",
-              "label": "Create private invitation",
+              "label": "Create invitation link",
               "type": "text",
-              "value": "Create private invitation"
+              "value": "Create invitation link"
             },
             {
               "id": "group-create-panel-10",
-              "label": "Group ordering is not accepting requests here yet. Your plan can be saved on this device. ",
+              "label": "You can save a plan on this device. To place a group order today, use",
               "type": "text",
-              "value": "Group ordering is not accepting requests here yet. Your plan can be saved on this device. For an order today, use"
+              "value": "You can save a plan on this device. To place a group order today, use"
             },
             {
               "id": "group-create-panel-11",
@@ -3405,8 +3405,8 @@
       "seo": {
         "title": "Catering | Weinberger’s Deli",
         "description": "Tell Weinberger’s Deli what your group needs. The deli reviews the event, menu, timing, and price before asking for payment.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
-        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-main-street-jaybird-20261117.png",
+        "image_alt": "The Main Street storefront and Jaybird’s Sandwich flank a yellow sign with the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -3479,9 +3479,9 @@
             },
             {
               "id": "catering-expansion-hero-3",
-              "label": "Give the deli the useful details once. Staff review the date, headcount, food, timing, and",
+              "label": "Tell the deli when, how many people, what food you want, and whether you need pickup or de",
               "type": "multiline",
-              "value": "Give the deli the useful details once. Staff review the date, headcount, food, timing, and fulfillment before sending a price or asking for a deposit."
+              "value": "Tell the deli when, how many people, what food you want, and whether you need pickup or delivery. Staff review the details and send a price before you pay."
             }
           ]
         },
@@ -3493,9 +3493,9 @@
           "fields": [
             {
               "id": "catering-request-panel-1",
-              "label": "REQUEST A REVIEWED QUOTE",
+              "label": "REQUEST A QUOTE",
               "type": "text",
-              "value": "REQUEST A REVIEWED QUOTE"
+              "value": "REQUEST A QUOTE"
             },
             {
               "id": "catering-request-panel-2",
@@ -3553,9 +3553,9 @@
             },
             {
               "id": "catering-request-panel-11",
-              "label": "Fulfillment",
+              "label": "Pickup or delivery",
               "type": "text",
-              "value": "Fulfillment"
+              "value": "Pickup or delivery"
             },
             {
               "id": "catering-request-panel-12",
@@ -3595,15 +3595,15 @@
             },
             {
               "id": "catering-request-panel-18",
-              "label": "This sends a request, not an order. Nothing is charged until staff approve a quote and you",
+              "label": "The deli reviews your request and sends a quote. You decide whether to accept and pay.",
               "type": "multiline",
-              "value": "This sends a request, not an order. Nothing is charged until staff approve a quote and you deliberately continue to secure payment."
+              "value": "The deli reviews your request and sends a quote. You decide whether to accept and pay."
             },
             {
               "id": "catering-request-panel-19",
-              "label": "Catering requests are not accepting submissions here yet. Your form can be saved on this d",
+              "label": "You can save the details on this device. To reach the deli today,",
               "type": "multiline",
-              "value": "Catering requests are not accepting submissions here yet. Your form can be saved on this device, but it will not be sent. For an event now,"
+              "value": "You can save the details on this device. To reach the deli today,"
             },
             {
               "id": "catering-request-panel-20",
@@ -3689,9 +3689,9 @@
             },
             {
               "id": "iphone-phone-editorial-4",
-              "label": "The full menu. Every sandwich detail. Your regular order, close at hand.",
+              "label": "Find a sandwich by name or ingredient. Choose the bread, change the toppings and pick how ",
               "type": "multiline",
-              "value": "The full menu. Every sandwich detail.\nYour regular order, close at hand."
+              "value": "Find a sandwich by name or ingredient.\nChoose the bread, change the toppings and pick how you want it toasted."
             },
             {
               "id": "iphone-phone-editorial-5",
@@ -3731,9 +3731,9 @@
             },
             {
               "id": "iphone-phone-editorial-11",
-              "label": "Keep favorites and your bag close at hand.",
+              "label": "Save your sandwich as a Usual, down to the special instructions.",
               "type": "text",
-              "value": "Keep favorites and your bag close at hand."
+              "value": "Save your sandwich as a Usual, down to the special instructions."
             },
             {
               "id": "iphone-phone-editorial-12",
@@ -3777,8 +3777,8 @@
       "seo": {
         "title": "Weinberger’s Deli — Android",
         "description": "The Weinberger’s Deli Android ordering experience for the full menu, sandwich customization, comparison, favorites, and pickup status.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-home-card-20261105-v30.png",
-        "image_alt": "Weinberger’s Deli original logo, Gayle’s Super Reuben, and bold Chicago Deli lettering with yellow and maroon framing."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-main-street-jaybird-20261117.png",
+        "image_alt": "The Main Street storefront and Jaybird’s Sandwich flank a yellow sign with the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -3807,9 +3807,9 @@
             },
             {
               "id": "android-phone-editorial-4",
-              "label": "The full menu. Every sandwich detail. Your regular order, close at hand.",
+              "label": "Find a sandwich by name or ingredient. Choose the bread, change the toppings and pick how ",
               "type": "multiline",
-              "value": "The full menu. Every sandwich detail.\nYour regular order, close at hand."
+              "value": "Find a sandwich by name or ingredient.\nChoose the bread, change the toppings and pick how you want it toasted."
             },
             {
               "id": "android-phone-editorial-5",
@@ -3849,9 +3849,9 @@
             },
             {
               "id": "android-phone-editorial-11",
-              "label": "Keep favorites and your bag close at hand.",
+              "label": "Save your sandwich as a Usual, down to the special instructions.",
               "type": "text",
-              "value": "Keep favorites and your bag close at hand."
+              "value": "Save your sandwich as a Usual, down to the special instructions."
             },
             {
               "id": "android-phone-editorial-12",
