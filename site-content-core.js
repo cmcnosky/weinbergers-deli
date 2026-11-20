@@ -11,9 +11,10 @@
  function mediaURL(value,base){
   const safe=safeURL(value,base,true);if(!safe)return '';
   const target=new URL(safe);
-  // Keep previously published portrait URLs usable with an identical packaged
-  // copy, avoiding dependence on the remote image server at viewing time.
-  if(target.origin==='https://weinbergersdeli.com'&&target.pathname==='/pluto-images/funnel/images/21b39d33-3c5d-4b9f-8812-0cb19f54eb5b')return new URL('assets/dan-weinberger-original.png',base).href;
+  // Keep previously published media URLs usable with packaged copies from the
+  // same official sources, avoiding smaller remote renditions at viewing time.
+  if(target.origin==='https://weinbergersdeli.com'&&target.pathname==='/pluto-images/funnel/images/21b39d33-3c5d-4b9f-8812-0cb19f54eb5b')return new URL('assets/dan-weinberger-official-1440.png',base).href;
+  if(target.origin==='https://img.youtube.com'&&target.pathname==='/vi/PW00HmRJZfg/hqdefault.jpg')return new URL('assets/weinbergers-deli-film-pw00hmrjzfg-1280.jpg',base).href;
   return safe;
  }
  function videoID(value){try{const u=new URL(value);if(!['https:'].includes(u.protocol))return '';const host=u.hostname.toLowerCase(),id=host==='youtu.be'?u.pathname.slice(1):['youtube.com','www.youtube.com','www.youtube-nocookie.com'].includes(host)?(u.searchParams.get('v')||u.pathname.split('/').pop()):'';return /^[\w-]{11}$/.test(id||'')?id:'';}catch{return '';}}

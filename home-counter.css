@@ -22,3 +22,13 @@
   .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .guest-actions { grid-area: actions; margin-top: 14px; row-gap: 6px; }
   .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .home-search { grid-area: search; margin-top: 14px; }
 }
+
+
+/* Keep the counter photographs edge to edge inside their printed borders. */
+.hero-sandwich img[src^="assets/counter-photos/"],
+.signature-grid img[src^="assets/counter-photos/"] {
+  object-fit: cover;
+}
+.signature-grid img[data-cms-image="home-guest-section-6"][src^="assets/counter-photos/"] {
+  object-position: 50% 58%;
+}

@@ -78,7 +78,9 @@ dialog[data-view=compare]{width:1060px}
 .comparison-grid{display:grid;grid-template-columns:repeat(var(--compare-columns),minmax(0,1fr));gap:23px}
 .comparison-card{display:flex;flex-direction:column;border-top:9px solid var(--line);min-width:0}
 .comparison-image{position:relative;min-height:48px;margin-bottom:14px}
-.comparison-image img{height:155px;width:100%;object-fit:cover}
+.comparison-image img{height:155px;width:100%;object-fit:cover;object-position:center;background:#2b1118;border:3px solid var(--line);box-sizing:border-box}
+.comparison-image img[data-menu-kind="editorial"]{object-fit:contain}
+.comparison-image img[data-menu-media="medianoche-cubano-9TXt"]{object-position:72% 50%}
 .comparison-image>button{position:absolute;right:7px;top:7px;background:#fff;border:1px solid var(--line);min-width:36px;min-height:36px;font-size:23px}
 .comparison-card .eyebrow{font-size:9px;margin-bottom:7px}
 .comparison-card h3{font-size:32px;text-transform:uppercase;min-height:66px}

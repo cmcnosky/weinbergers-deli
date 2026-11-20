@@ -10,7 +10,22 @@
  const clean=v=>String(v||'').replace(/[ \t]+/g,' ').trim();
  const base=location.href;
  function url(value,media=false){const origin=value.startsWith('/api/site-assets/')&&root?new URL(root,location.href).origin:base;return media?core.mediaURL(value,origin):core.safeURL(value,origin);}
- function setImage(el,field){const source=url(field.value,true);if(!source)return;if(el.getAttribute('src')!==field.value&&el.src!==source){el.removeAttribute('srcset');el.removeAttribute('sizes');el.src=source;}if(field.alt!=null)el.alt=field.alt;}
+ const responsiveImages=new WeakMap();
+ function setImage(el,field){
+  const source=url(field.value,true);if(!source)return;
+  if(!responsiveImages.has(el)&&el.hasAttribute('srcset')){
+   responsiveImages.set(el,{url:el.src,src:el.getAttribute('src'),srcset:el.getAttribute('srcset'),sizes:el.getAttribute('sizes')});
+  }
+  const original=responsiveImages.get(el);
+  if(original&&source===original.url){
+   if(el.getAttribute('src')!==original.src)el.setAttribute('src',original.src);
+   if(el.getAttribute('srcset')!==original.srcset)el.setAttribute('srcset',original.srcset);
+   if(original.sizes!==null&&el.getAttribute('sizes')!==original.sizes)el.setAttribute('sizes',original.sizes);
+  }else if(el.getAttribute('src')!==field.value&&el.src!==source){
+   el.removeAttribute('srcset');el.removeAttribute('sizes');el.src=source;
+  }
+  if(field.alt!=null)el.alt=field.alt;
+ }
  function writeText(el,value){if(clean(el.innerText||el.textContent)!==clean(value)){el.textContent=value;el.style.whiteSpace='pre-line';}}
  function fields(section,element){
   const data=new Map(section.fields.map(f=>[f.id,f]));

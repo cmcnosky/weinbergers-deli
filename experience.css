@@ -1,7 +1,9 @@
 /* Legible controls and stable image boxes across the ordering journey. */
 :root{--focus:#134aa0}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-.product-main img{aspect-ratio:1/1;object-fit:cover}
+.product-main img.menu-image{aspect-ratio:4/5;object-fit:cover;object-position:center;border:3px solid var(--line);background:#2b1118;box-sizing:border-box}
+.product-main img[data-menu-media="weinberger-reuben-Rb4A"]{object-position:50% 38%}
+.product-main img[data-menu-media="medianoche-cubano-9TXt"]{object-position:72% 50%}
 .product p{font-size:14px;line-height:1.55}.product-index,.product .tag{font-size:11px}
 .search input{font-size:16px}.option-label{min-height:52px;gap:12px}.option-label span{font-size:15px}.option-label small{font-size:13px}
 .option-choice{flex:0 0 22px;width:22px;height:22px;min-height:22px;accent-color:var(--red)}
@@ -44,14 +46,15 @@ body:has(dialog[open]) .bottom-nav,body:has(dialog[open]) .mobile-bag,body:has(d
 .product-share .comparison-share{width:100%;margin-top:0}
 #toast:has(.toast-action){pointer-events:auto;display:flex;align-items:center;gap:14px}
 #toast .toast-action,.undo-removal{min-height:44px;padding:8px 14px;background:var(--yellow);color:var(--ink);border:2px solid var(--yellow);font-weight:800;text-decoration:underline;text-underline-offset:3px}
-.detail-image{height:auto;max-height:360px;object-fit:contain;background:var(--paper);width:100%}
+.detail-media{display:flex;align-items:center;justify-content:center;margin:0;max-height:460px;overflow:hidden;background:#2b1118;border-bottom:6px solid var(--line)}
+.detail-image{display:block;width:auto;max-width:100%;height:auto;max-height:454px;object-fit:contain;background:transparent}
 .detail-meta{font-size:14px}.detail-copy{font-size:16px;line-height:1.75}
 .option-group legend{font-size:14px}.category-grid .secondary{font-size:14px;min-height:48px}
 .bag-meta{font-size:12px}.cart-row p{font-size:14px;line-height:1.65}.empty-state p{line-height:1.7}
 .phone-features li{font-size:16px;line-height:1.65;align-items:baseline}.phone-features li>span{font-size:12px}
 .phone-page .demo-bar{font-size:12px;line-height:1.6;padding-block:10px}.phone-page .demo-bar nav a{font-size:13px;min-height:44px}
 @media(min-width:601px) and (max-width:1050px){.header{gap:15px}.desktop-nav{gap:15px}.desktop-nav .link{font-size:12px}.brand>span{display:none}}
-@media(max-width:600px){.menu-back{margin-left:5%;margin-top:4px}.menu-page .order-strip{font-size:11px}.menu-intro{font-size:14px;gap:6px}.menu-intro a{min-height:44px;display:flex;align-items:center}.detail-copy{font-size:15px}.detail-image{max-height:280px}.product-share{margin-bottom:16px}.phone-features li{font-size:15px}.phone-deck{font-size:17px}.modal-head{gap:12px}.modal-head h2{overflow-wrap:anywhere}.guest-footer{margin-bottom:10px}.embedded .guest-footer{display:none}}
+@media(max-width:600px){.menu-back{margin-left:5%;margin-top:4px}.menu-page .order-strip{font-size:11px}.menu-intro{font-size:14px;gap:6px}.menu-intro a{min-height:44px;display:flex;align-items:center}.detail-copy{font-size:15px}.detail-media{max-height:280px}.detail-image{max-height:274px}.product-share{margin-bottom:16px}.phone-features li{font-size:15px}.phone-deck{font-size:17px}.modal-head{gap:12px}.modal-head h2{overflow-wrap:anywhere}.guest-footer{margin-bottom:10px}.embedded .guest-footer{display:none}}
 
 .section-heading .menu-title{font-size:44px;color:var(--red)}
 @media(max-width:600px){.section-heading .menu-title{font-size:34px}}

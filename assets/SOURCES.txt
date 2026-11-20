@@ -197,3 +197,48 @@ its Grapevine deli in 2002. The 1928 Italian Beef recipe date is not a founding 
 The original logo and food photography remain unaltered. The three Chicago
 shortcuts reference canonical existing items: italian-beef-a3od,
 chicago-dog-JTAI, and maxwell-street-polish-dog-kxOH.
+
+
+NON-FOOD PHOTOGRAPHY — NOVEMBER 20, 2026
+
+Dan Weinberger portrait (official source, original response bytes)
+https://weinbergersdeli.com/pluto-images/funnel/images/21b39d33-3c5d-4b9f-8812-0cb19f54eb5b
+Retrieved 2026-11-20; 1440x1440 PNG; SHA256
+4e5ca953703172d11380b63cb06549c0e4276ece0fc7b4b9436c7cae37ec12c6
+Packaged as assets/dan-weinberger-official-1440.png. No retouching,
+reconstruction, cropping, or transcoding was applied.
+
+Weinberger's Deli film poster (official YouTube thumbnail response bytes)
+https://img.youtube.com/vi/PW00HmRJZfg/maxresdefault.jpg
+Retrieved 2026-11-20; 1280x720 JPEG; SHA256
+4bcbc24a81f00a65733f2d6b72ac73a07297352a23175afb8ae144d3d9c2c94a
+Packaged as assets/weinbergers-deli-film-pw00hmrjzfg-1280.jpg. The image is
+the film's official 16:9 maximum-resolution thumbnail and was not altered.
+
+Main Street storefront (user-supplied original)
+The selected source is IMG_2423.heic; original SHA256
+4647d20d5cbe53c59e6555ebdb14edec77331d8a9844dd2b0b5b859ec3530587.
+It was decoded and encoded without retouching as 800x600 and 1600x1200 WebP
+delivery files. The source-selection and processing record is retained in
+work/weinbergers-platform/design/storefront-photo-provenance.json.
+
+
+MENU PHOTOGRAPHY AND WEBSITE SHARE ARTWORK — NOVEMBER 20, 2026
+
+The 125 menu entries with imagery use the deli's published files. media.js
+records the item ID, original catalogue path, official source URL and each
+delivery size. The four assets in counter-photos use the following crops,
+in pixels from the top left of each unresized source.
+
+Gayle's Super Reuben: 1920 x 1440 original, crop (0,70), 1920 x 1350.
+Jaybird's Sandwich: 1440 x 1920 original, crop (0,320), 1440 x 1430.
+Italian Beef: 540 x 720 original, crop (0,158), 540 x 546.
+Weinberger Reuben: 960 x 960 deli clipping, crop (0,0), 960 x 720.
+The first three received small exposure and color adjustments. The clipping
+retains its original labels and title. All four use only original pixels.
+
+Website link image: weinbergers-main-street-gayles-super-reuben-20261120.png.
+The left image uses the IMG_2423 storefront photograph. The right image uses
+the deli's Gayle's Super Reuben photograph (food-03.jpg). The center uses
+the site's existing logo. The editable layout is design/social-card.html
+in the source package.
