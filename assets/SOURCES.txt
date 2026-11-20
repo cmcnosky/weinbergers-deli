@@ -237,11 +237,17 @@ Weinberger Reuben: 960 x 960 deli clipping, crop (0,0), 960 x 720.
 The first three received small exposure and color adjustments. The clipping
 retains its original labels and title. All four use only original pixels.
 
-Website link image: weinbergers-main-street-gayles-super-reuben-20261120.png.
-The left image uses the IMG_2423 storefront photograph. The right image uses
-the deli's Gayle's Super Reuben photograph (food-03.jpg). The center uses
-the site's existing logo. The editable layout is design/social-card.html
-in the source package.
+Website link image: weinbergers-sandwich-counter-ticket-20261120-r2.png.
+The photograph is the deli's published five-basket overhead spread described
+below. The ticket uses the existing smooth rendering of the original logo.
+The editable layout is design/social-card.html in the source package.
+
+iPhone link image: weinbergers-iphone-ordering-mark-cuban-20261120-r2.png.
+The phone contains a 390 by 844 capture of the final mobile ordering page;
+its cover uses the deli's published Mark Cuban sandwich photograph. The
+identity panel uses the same original logo rendering. The editable layout is
+design/iphone-social-card.html in the source package. No generated food or
+storefront imagery appears in either link image.
 
 
 PUBLIC HOMEPAGE — NOVEMBER 20, 2026
