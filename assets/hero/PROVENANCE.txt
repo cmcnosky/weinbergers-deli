@@ -1,11 +1,10 @@
 HOMEPAGE HERO — GAYLE'S SUPER REUBEN — PRESERVED CORRECTED EDIT
 
 Selected source:
-/Users/ChrisM/.codex/generated_images/01a199ce-0b94-78b1-8fe0-536d1f1c6aed/
 exec-f79a93ce-d93a-4d47-b270-ed6682eb96fd.png
 
-The user selected this exact already-saved corrected edit from an earlier project
-iteration on 2026-11-20. No new image was generated for this release. The selected
+The project recovered this saved, image-assisted photographic edit from its earlier
+November 20 iteration. The retained
 1448 by 1086 PNG is retained byte-for-byte as
 gayles-super-reuben-corrected-20261120-1448.png with SHA-256
 924d3e63a5ea9af6d72853ee6783bfda5c6573609471afe997ba8db7f01e7c09.

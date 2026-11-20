@@ -107,7 +107,7 @@ food-14.jpg
   Menu ID: italian-beef-a3od
   Item page: https://weinbergersdeli.com/menu?item=italian-beef-a3od
   Image: https://static-content.owner.com/funnel/images/08f9ec4c-75a8-4035-a0d0-c9b2ff26cd22.jpg?v=7218256136
-  Direct-source copy: counter-photos/italian-beef-original-540x720.jpg (540 × 720; used in the Dan proposal without upscaling)
+assets/counter-photos/italian-beef-original-540x720.jpg is the retained authentic 540×720 master.
 
 food-15.jpg
   Item: Wrigley Field
@@ -258,9 +258,9 @@ assets/optimized/weinbergers-main-street-20261105-1600-20261120-r1.webp,
 ef61e97bf05bea7f5ebb1c06ddc53d9a0d16bae975d36c285b28f1b5295e7e74
 
 
-MENU PHOTOGRAPHY AND WEBSITE SHARE ARTWORK — NOVEMBER 20, 2026
+ARCHIVED MENU PHOTOGRAPHY AND SHARE ARTWORK — EARLIER NOVEMBER 20 RELEASE
 
-The 125 menu entries with imagery use the deli's published files. media.js
+That release used the deli's published files for the 125 menu entries with imagery. media.js
 records the item ID, original catalogue path, official source URL and each
 delivery size. The four assets in counter-photos use the following crops,
 in pixels from the top left of each unresized source.
@@ -285,7 +285,7 @@ design/iphone-social-card.html in the source package. No generated food or
 storefront imagery appears in either link image.
 
 
-PUBLIC HOMEPAGE — NOVEMBER 20, 2026
+ARCHIVED HOMEPAGE — FIVE-BASKET DESIGN, NOVEMBER 20, 2026
 
 The overhead photograph in assets/main-street/sandwich-counter-* shows the
 deli's spread of five sandwich baskets. The daylight photograph in
@@ -298,7 +298,7 @@ https://weinbergersdeli.com/pluto-images/funnel/images/eaeb1b44-9bc6-48fc-857e-3
 Main Street entrance, 1440 by 1440:
 https://weinbergersdeli.com/pluto-images/funnel/images/584135f2-78df-4cee-8f3e-7083401a595c
 
-Photographic detail and menu counter, November 20, 2026
+Archived photographic detail and menu counter before the recovered edits, November 20, 2026
 
 The Italian Beef counter photograph comes from the deli's own Italian Beef
 listing. Its published camera image is 540 × 720. The horizontal version is a
@@ -314,3 +314,18 @@ photograph of that menu item. The Weinberger Reuben press clipping belongs
 with that item's ordering detail. The opening photograph and its original
 address are documented in assets/hero/PROVENANCE.txt.
 https://static-content.owner.com/funnel/images/7da1cd83-fbb0-4dcb-9c03-f24d03c1b30f.jpg
+
+
+CURRENT PUBLISHED PHOTOGRAPHY — NOVEMBER 20, 2026
+The menu contains 125 entries with pictures. Four use edits saved earlier in the
+project: Gayle’s Super Reuben, Italian Beef, Jaybird’s Sandwich and the Weinberger
+Reuben. The other item pictures use published restaurant imagery. The source and
+delivery variants for each are recorded in assets/menu-sharp-20261120/manifest.json.
+
+The homepage uses the saved Reuben edit recorded in assets/hero/PROVENANCE.txt.
+See assets/counter-edition/SOURCES.txt for the home and mobile cover images.
+Dan’s proposal displays assets/counter-edition/italian-beef-{320,640,1080}.webp
+from the recovered edit; the original 540×720 Italian Beef JPEG is preserved.
+The current website share artwork is weinbergers-gayles-reuben-corrected-20261120-r4.png.
+The separate iPhone share artwork is weinbergers-iphone-ordering-mark-cuban-20261120-r3.png
+and shows the mobile ordering page with the sharpened Mark Cuban photograph.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T21:21:52.119Z",
+  "generatedAt": "2026-11-20T21:27:33.668Z",
   "count": 125,
   "correctedIds": [
     "italian-beef-a3od",
@@ -11,8 +11,8 @@
   "items": [
     {
       "id": "jaybirds-sandwich-EZMW",
-      "sourceType": "approved-corrected-photo",
-      "provenance": "approved corrected Jaybird image",
+      "sourceType": "project-assisted-photo-edit",
+      "provenance": "Project-assisted photo edit matched to the exact jaybirds-sandwich-EZMW source item.",
       "original": {
         "width": 1448,
         "height": 1086
@@ -22,7 +22,7 @@
         "height": 1086
       },
       "profile": {
-        "group": "approved-correction",
+        "group": "project-assisted-photo-edit",
         "brightness": 1,
         "saturation": 1.015,
         "gains": [
@@ -72,7 +72,7 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "approved-corrected-photo:jaybirds-sandwich-EZMW:20261120"
+      "sourceReference": "project-assisted-photo-edit:jaybirds-sandwich-EZMW:20261120"
     },
     {
       "id": "dagwood-sub-5ozC",
@@ -174,16 +174,16 @@
       "edgeEnergyRatio": 1.771452955600526,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/slechtas-grinder-sub-sWXY-card-480.webp",
+          "src": "assets/menu-sharp-20261120/slechtas-grinder-sub-sWXY-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 68274
+          "bytes": 91408
         },
         {
-          "src": "assets/menu-sharp-20261120/slechtas-grinder-sub-sWXY-card-960.webp",
+          "src": "assets/menu-sharp-20261120/slechtas-grinder-sub-sWXY-frame3-card-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 287974
+          "bytes": 369064
         }
       ],
       "detailSources": [
@@ -202,7 +202,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/191ecd53-c614-4150-95c5-fab70750856d.jpg?v=2769395711"
+      "sourceReference": "https://static-content.owner.com/funnel/images/191ecd53-c614-4150-95c5-fab70750856d.jpg?v=2769395711",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/slechtas-grinder-sub-sWXY-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 68274
+        },
+        {
+          "src": "assets/menu-sharp-20261120/slechtas-grinder-sub-sWXY-card-960.webp",
+          "width": 960,
+          "height": 660,
+          "bytes": 287974
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.35,
+        "crop": {
+          "left": 0,
+          "top": 177,
+          "width": 1440,
+          "height": 990
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "dirty-dozen-sub-0hnc",
@@ -668,8 +694,8 @@
         "height": 390
       },
       "developed": {
-        "width": 520,
-        "height": 390
+        "width": 270,
+        "height": 320
       },
       "profile": {
         "group": "warm-counter-light-dim",
@@ -694,32 +720,31 @@
       "edgeEnergyRatio": 4.411178665763151,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/italian-sub-zaHb-card-480.webp",
-          "width": 480,
-          "height": 330,
-          "bytes": 74350
-        },
-        {
-          "src": "assets/menu-sharp-20261120/italian-sub-zaHb-card-520.webp",
-          "width": 520,
-          "height": 358,
-          "bytes": 79436
+          "src": "assets/menu-sharp-20261120/italian-sub-zaHb-frame2-card-270.webp",
+          "width": 270,
+          "height": 320,
+          "bytes": 47764
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/italian-sub-zaHb-detail-520.webp",
-          "width": 520,
-          "height": 390,
-          "bytes": 85294
+          "src": "assets/menu-sharp-20261120/italian-sub-zaHb-frame2-detail-270.webp",
+          "width": 270,
+          "height": 320,
+          "bytes": 47764
         }
       ],
       "optical": {
-        "width": 520,
-        "height": 390
+        "width": 270,
+        "height": 320
       },
       "editorialOriginal": "assets/editorial/italian-sub-zaHb-editorial-960.png",
-      "sourceReference": "official-editorial-crop:italian-sub-zaHb"
+      "sourceReference": "official-editorial-crop:italian-sub-zaHb",
+      "framing": {
+        "revision": 2,
+        "mode": "tight-contain",
+        "reason": "Removed all printed feature text from the ordering photo."
+      }
     },
     {
       "id": "beef-bacon-bleu-VJts",
@@ -853,8 +878,8 @@
     },
     {
       "id": "gayles-super-reuben-8U3W",
-      "sourceType": "approved-corrected-photo",
-      "provenance": "approved corrected Gayle’s Super Reuben image",
+      "sourceType": "project-assisted-photo-edit",
+      "provenance": "Project-assisted photo edit matched to the exact gayles-super-reuben-8U3W source item.",
       "original": {
         "width": 1448,
         "height": 1086
@@ -864,7 +889,7 @@
         "height": 1086
       },
       "profile": {
-        "group": "approved-correction",
+        "group": "project-assisted-photo-edit",
         "brightness": 1,
         "saturation": 1.015,
         "gains": [
@@ -914,7 +939,7 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "approved-corrected-photo:gayles-super-reuben-8U3W:20261120"
+      "sourceReference": "project-assisted-photo-edit:gayles-super-reuben-8U3W:20261120"
     },
     {
       "id": "joe-king-UpbB",
@@ -951,16 +976,16 @@
       "edgeEnergyRatio": 1.7587397095987103,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/joe-king-UpbB-card-480.webp",
+          "src": "assets/menu-sharp-20261120/joe-king-UpbB-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 65342
+          "bytes": 80822
         },
         {
-          "src": "assets/menu-sharp-20261120/joe-king-UpbB-card-960.webp",
+          "src": "assets/menu-sharp-20261120/joe-king-UpbB-frame3-card-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 248842
+          "bytes": 305658
         }
       ],
       "detailSources": [
@@ -979,7 +1004,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/7da1cd83-fbb0-4dcb-9c03-f24d03c1b30f.jpg?v=6044478459"
+      "sourceReference": "https://static-content.owner.com/funnel/images/7da1cd83-fbb0-4dcb-9c03-f24d03c1b30f.jpg?v=6044478459",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/joe-king-UpbB-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 65342
+        },
+        {
+          "src": "assets/menu-sharp-20261120/joe-king-UpbB-card-960.webp",
+          "width": 960,
+          "height": 660,
+          "bytes": 248842
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.34,
+        "crop": {
+          "left": 0,
+          "top": 158,
+          "width": 1440,
+          "height": 990
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "lustig-70Mu",
@@ -1243,8 +1294,8 @@
     },
     {
       "id": "weinberger-reuben-Rb4A",
-      "sourceType": "approved-corrected-photo",
-      "provenance": "approved corrected Weinberger Reuben image",
+      "sourceType": "project-assisted-photo-edit",
+      "provenance": "Project-assisted photo edit matched to the exact weinberger-reuben-Rb4A source item.",
       "original": {
         "width": 1448,
         "height": 1086
@@ -1254,7 +1305,7 @@
         "height": 1086
       },
       "profile": {
-        "group": "approved-correction",
+        "group": "project-assisted-photo-edit",
         "brightness": 1,
         "saturation": 1.015,
         "gains": [
@@ -1304,7 +1355,7 @@
       ],
       "optical": null,
       "editorialOriginal": "assets/editorial/weinberger-reuben-Rb4A-editorial-960.png",
-      "sourceReference": "approved-corrected-photo:weinberger-reuben-Rb4A:20261120"
+      "sourceReference": "project-assisted-photo-edit:weinberger-reuben-Rb4A:20261120"
     },
     {
       "id": "avery-sandwich-Wabr",
@@ -1536,16 +1587,16 @@
       "edgeEnergyRatio": 1.7133614729245294,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/father-dolan-sandwich-ulCB-card-480.webp",
+          "src": "assets/menu-sharp-20261120/father-dolan-sandwich-ulCB-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 72624
+          "bytes": 83326
         },
         {
-          "src": "assets/menu-sharp-20261120/father-dolan-sandwich-ulCB-card-960.webp",
+          "src": "assets/menu-sharp-20261120/father-dolan-sandwich-ulCB-frame3-card-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 302704
+          "bytes": 335302
         }
       ],
       "detailSources": [
@@ -1564,7 +1615,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/0842442b-a257-4c10-a462-6ac513fa99a6.jpg?v=6004357593"
+      "sourceReference": "https://static-content.owner.com/funnel/images/0842442b-a257-4c10-a462-6ac513fa99a6.jpg?v=6004357593",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/father-dolan-sandwich-ulCB-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 72624
+        },
+        {
+          "src": "assets/menu-sharp-20261120/father-dolan-sandwich-ulCB-card-960.webp",
+          "width": 960,
+          "height": 660,
+          "bytes": 302704
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.35,
+        "crop": {
+          "left": 0,
+          "top": 177,
+          "width": 1440,
+          "height": 990
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "jim-shoo-sandwich-E7gF",
@@ -2502,16 +2579,16 @@
       "edgeEnergyRatio": 1.7294344054861328,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/audrys-cheesesteak-YCDt-card-480.webp",
+          "src": "assets/menu-sharp-20261120/audrys-cheesesteak-YCDt-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 68262
+          "bytes": 80632
         },
         {
-          "src": "assets/menu-sharp-20261120/audrys-cheesesteak-YCDt-card-960.webp",
+          "src": "assets/menu-sharp-20261120/audrys-cheesesteak-YCDt-frame3-card-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 269344
+          "bytes": 304550
         }
       ],
       "detailSources": [
@@ -2530,7 +2607,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/d9477e04-4824-4a6d-bb92-6ad01b946eb7.jpg?v=6708247466"
+      "sourceReference": "https://static-content.owner.com/funnel/images/d9477e04-4824-4a6d-bb92-6ad01b946eb7.jpg?v=6708247466",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/audrys-cheesesteak-YCDt-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 68262
+        },
+        {
+          "src": "assets/menu-sharp-20261120/audrys-cheesesteak-YCDt-card-960.webp",
+          "width": 960,
+          "height": 660,
+          "bytes": 269344
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.37,
+        "crop": {
+          "left": 0,
+          "top": 215,
+          "width": 1440,
+          "height": 990
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "cheesesteak-NB0j",
@@ -3022,16 +3125,16 @@
       "edgeEnergyRatio": 1.7138389096625022,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/best-damn-buffalo-chicken-sandwich-ever-7dQ5-card-480.webp",
+          "src": "assets/menu-sharp-20261120/best-damn-buffalo-chicken-sandwich-ever-7dQ5-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 72506
+          "bytes": 87882
         },
         {
-          "src": "assets/menu-sharp-20261120/best-damn-buffalo-chicken-sandwich-ever-7dQ5-card-960.webp",
+          "src": "assets/menu-sharp-20261120/best-damn-buffalo-chicken-sandwich-ever-7dQ5-frame3-card-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 296768
+          "bytes": 343314
         }
       ],
       "detailSources": [
@@ -3050,7 +3153,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/b7eed73a-d8b0-4b13-bfa3-fe78b0087706.jpg?v=7726052375"
+      "sourceReference": "https://static-content.owner.com/funnel/images/b7eed73a-d8b0-4b13-bfa3-fe78b0087706.jpg?v=7726052375",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/best-damn-buffalo-chicken-sandwich-ever-7dQ5-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 72506
+        },
+        {
+          "src": "assets/menu-sharp-20261120/best-damn-buffalo-chicken-sandwich-ever-7dQ5-card-960.webp",
+          "width": 960,
+          "height": 660,
+          "bytes": 296768
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.4,
+        "crop": {
+          "left": 0,
+          "top": 273,
+          "width": 1440,
+          "height": 990
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "chopped-cheese-sandwich-VgG4",
@@ -4257,16 +4386,16 @@
       "edgeEnergyRatio": 1.808152235357104,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/medinah-8mSA-card-480.webp",
+          "src": "assets/menu-sharp-20261120/medinah-8mSA-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 70848
+          "bytes": 76040
         },
         {
-          "src": "assets/menu-sharp-20261120/medinah-8mSA-card-960.webp",
+          "src": "assets/menu-sharp-20261120/medinah-8mSA-frame3-card-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 282762
+          "bytes": 296036
         }
       ],
       "detailSources": [
@@ -4285,7 +4414,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/4e85bf6a-01d8-406d-8eca-4692d505a69d.jpg?v=0543085755"
+      "sourceReference": "https://static-content.owner.com/funnel/images/4e85bf6a-01d8-406d-8eca-4692d505a69d.jpg?v=0543085755",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/medinah-8mSA-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 70848
+        },
+        {
+          "src": "assets/menu-sharp-20261120/medinah-8mSA-card-960.webp",
+          "width": 960,
+          "height": 660,
+          "bytes": 282762
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.49,
+        "crop": {
+          "left": 0,
+          "top": 446,
+          "width": 1440,
+          "height": 990
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "morgans-turkey-JzVJ",
@@ -4803,8 +4958,8 @@
     },
     {
       "id": "italian-beef-a3od",
-      "sourceType": "approved-corrected-photo",
-      "provenance": "approved corrected Italian Beef image",
+      "sourceType": "project-assisted-photo-edit",
+      "provenance": "Project-assisted photo edit matched to the exact italian-beef-a3od source item.",
       "original": {
         "width": 1448,
         "height": 1086
@@ -4814,7 +4969,7 @@
         "height": 1086
       },
       "profile": {
-        "group": "approved-correction",
+        "group": "project-assisted-photo-edit",
         "brightness": 1,
         "saturation": 1.015,
         "gains": [
@@ -4864,7 +5019,7 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "approved-corrected-photo:italian-beef-a3od:20261120"
+      "sourceReference": "project-assisted-photo-edit:italian-beef-a3od:20261120"
     },
     {
       "id": "mustang-3oNc",
@@ -5220,16 +5375,16 @@
       "edgeEnergyRatio": 1.550741396411649,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-card-480.webp",
+          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 71368
+          "bytes": 64964
         },
         {
-          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-card-960.webp",
+          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-frame3-card-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 296828
+          "bytes": 269432
         }
       ],
       "detailSources": [
@@ -5248,7 +5403,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/6f352c0a-a663-4c07-9b29-a2c4c1f593df.jpg?v=8885667939"
+      "sourceReference": "https://static-content.owner.com/funnel/images/6f352c0a-a663-4c07-9b29-a2c4c1f593df.jpg?v=8885667939",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 71368
+        },
+        {
+          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-card-960.webp",
+          "width": 960,
+          "height": 660,
+          "bytes": 296828
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.6,
+        "crop": {
+          "left": 0,
+          "top": 492,
+          "width": 1920,
+          "height": 1320
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "heavy-hitter-club-t1A3",
@@ -6266,16 +6447,16 @@
       "edgeEnergyRatio": 1.761265640558967,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/don-and-wanda-meatloaf-gywe-card-480.webp",
+          "src": "assets/menu-sharp-20261120/don-and-wanda-meatloaf-gywe-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 68484
+          "bytes": 81284
         },
         {
-          "src": "assets/menu-sharp-20261120/don-and-wanda-meatloaf-gywe-card-960.webp",
+          "src": "assets/menu-sharp-20261120/don-and-wanda-meatloaf-gywe-frame3-card-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 247838
+          "bytes": 307090
         }
       ],
       "detailSources": [
@@ -6294,7 +6475,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/6c365a37-474e-4945-8b41-24c07c2cefe6.jpg?v=5847646956"
+      "sourceReference": "https://static-content.owner.com/funnel/images/6c365a37-474e-4945-8b41-24c07c2cefe6.jpg?v=5847646956",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/don-and-wanda-meatloaf-gywe-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 68484
+        },
+        {
+          "src": "assets/menu-sharp-20261120/don-and-wanda-meatloaf-gywe-card-960.webp",
+          "width": 960,
+          "height": 660,
+          "bytes": 247838
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.52,
+        "crop": {
+          "left": 0,
+          "top": 503,
+          "width": 1440,
+          "height": 990
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "earl-the-sandwich-meatloaf-VqAJ",
@@ -6464,16 +6671,16 @@
       "edgeEnergyRatio": 1.6578928690658195,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/john-leys-green-beret-veggie-EmoP-card-480.webp",
+          "src": "assets/menu-sharp-20261120/john-leys-green-beret-veggie-EmoP-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 50240
+          "bytes": 70008
         },
         {
-          "src": "assets/menu-sharp-20261120/john-leys-green-beret-veggie-EmoP-card-960.webp",
+          "src": "assets/menu-sharp-20261120/john-leys-green-beret-veggie-EmoP-frame3-card-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 208880
+          "bytes": 273992
         }
       ],
       "detailSources": [
@@ -6492,7 +6699,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/3b8bf8c6-9b3b-41b7-8bfc-56bdc47865df.jpg?v=3304390290"
+      "sourceReference": "https://static-content.owner.com/funnel/images/3b8bf8c6-9b3b-41b7-8bfc-56bdc47865df.jpg?v=3304390290",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/john-leys-green-beret-veggie-EmoP-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 50240
+        },
+        {
+          "src": "assets/menu-sharp-20261120/john-leys-green-beret-veggie-EmoP-card-960.webp",
+          "width": 960,
+          "height": 660,
+          "bytes": 208880
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.58,
+        "crop": {
+          "left": 0,
+          "top": 619,
+          "width": 1440,
+          "height": 990
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "liebers-lobster-roll-veggie-mr9v",
@@ -7602,8 +7835,8 @@
         "height": 1920
       },
       "developed": {
-        "width": 1440,
-        "height": 1920
+        "width": 1150,
+        "height": 1200
       },
       "profile": {
         "group": "balanced-normal",
@@ -7628,35 +7861,40 @@
       "edgeEnergyRatio": 1.4098337155329208,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/sweet-temptations-Xp2q-card-480.webp",
+          "src": "assets/menu-sharp-20261120/sweet-temptations-Xp2q-frame2-card-480.webp",
           "width": 480,
-          "height": 330,
-          "bytes": 39522
+          "height": 501,
+          "bytes": 91544
         },
         {
-          "src": "assets/menu-sharp-20261120/sweet-temptations-Xp2q-card-960.webp",
+          "src": "assets/menu-sharp-20261120/sweet-temptations-Xp2q-frame2-card-960.webp",
           "width": 960,
-          "height": 660,
-          "bytes": 170874
+          "height": 1002,
+          "bytes": 353214
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/sweet-temptations-Xp2q-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/sweet-temptations-Xp2q-frame2-detail-760.webp",
           "width": 760,
-          "height": 1013,
-          "bytes": 228598
+          "height": 793,
+          "bytes": 229530
         },
         {
-          "src": "assets/menu-sharp-20261120/sweet-temptations-Xp2q-detail-1440.webp",
-          "width": 1440,
-          "height": 1920,
-          "bytes": 603704
+          "src": "assets/menu-sharp-20261120/sweet-temptations-Xp2q-frame2-detail-1150.webp",
+          "width": 1150,
+          "height": 1200,
+          "bytes": 456676
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/cdf9221a-7be2-4974-a4de-b255f9ee290f.jpg?v=1164900196"
+      "sourceReference": "https://static-content.owner.com/funnel/images/cdf9221a-7be2-4974-a4de-b255f9ee290f.jpg?v=1164900196",
+      "framing": {
+        "revision": 2,
+        "mode": "tight-contain",
+        "reason": "Reduced unused white counter area while preserving the complete photographed product."
+      }
     },
     {
       "id": "baklava-jaF3",
@@ -7667,8 +7905,8 @@
         "height": 1920
       },
       "developed": {
-        "width": 1440,
-        "height": 1920
+        "width": 1240,
+        "height": 1100
       },
       "profile": {
         "group": "balanced-normal",
@@ -7693,35 +7931,40 @@
       "edgeEnergyRatio": 1.4250648037722655,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/baklava-jaF3-card-480.webp",
+          "src": "assets/menu-sharp-20261120/baklava-jaF3-frame2-card-480.webp",
           "width": 480,
-          "height": 330,
-          "bytes": 47188
+          "height": 426,
+          "bytes": 78988
         },
         {
-          "src": "assets/menu-sharp-20261120/baklava-jaF3-card-960.webp",
+          "src": "assets/menu-sharp-20261120/baklava-jaF3-frame2-card-960.webp",
           "width": 960,
-          "height": 660,
-          "bytes": 211916
+          "height": 852,
+          "bytes": 342204
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/baklava-jaF3-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/baklava-jaF3-frame2-detail-760.webp",
           "width": 760,
-          "height": 1013,
-          "bytes": 250216
+          "height": 674,
+          "bytes": 217116
         },
         {
-          "src": "assets/menu-sharp-20261120/baklava-jaF3-detail-1440.webp",
-          "width": 1440,
-          "height": 1920,
-          "bytes": 746696
+          "src": "assets/menu-sharp-20261120/baklava-jaF3-frame2-detail-1240.webp",
+          "width": 1240,
+          "height": 1100,
+          "bytes": 534632
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/a55e9103-33d6-4aea-9ac0-e0886af53133.jpg?v=5408156604"
+      "sourceReference": "https://static-content.owner.com/funnel/images/a55e9103-33d6-4aea-9ac0-e0886af53133.jpg?v=5408156604",
+      "framing": {
+        "revision": 2,
+        "mode": "tight-contain",
+        "reason": "Reduced unused white counter area while preserving the complete photographed product."
+      }
     },
     {
       "id": "reeses-peanut-butter-cookie-geTw",
@@ -7732,8 +7975,8 @@
         "height": 1920
       },
       "developed": {
-        "width": 1440,
-        "height": 1920
+        "width": 1300,
+        "height": 1220
       },
       "profile": {
         "group": "balanced-normal",
@@ -7758,35 +8001,40 @@
       "edgeEnergyRatio": 1.4558340834294965,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/reeses-peanut-butter-cookie-geTw-card-480.webp",
+          "src": "assets/menu-sharp-20261120/reeses-peanut-butter-cookie-geTw-frame2-card-480.webp",
           "width": 480,
-          "height": 330,
-          "bytes": 47884
+          "height": 450,
+          "bytes": 88976
         },
         {
-          "src": "assets/menu-sharp-20261120/reeses-peanut-butter-cookie-geTw-card-960.webp",
+          "src": "assets/menu-sharp-20261120/reeses-peanut-butter-cookie-geTw-frame2-card-960.webp",
           "width": 960,
-          "height": 660,
-          "bytes": 202442
+          "height": 901,
+          "bytes": 363402
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/reeses-peanut-butter-cookie-geTw-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/reeses-peanut-butter-cookie-geTw-frame2-detail-760.webp",
           "width": 760,
-          "height": 1013,
-          "bytes": 245618
+          "height": 713,
+          "bytes": 230988
         },
         {
-          "src": "assets/menu-sharp-20261120/reeses-peanut-butter-cookie-geTw-detail-1440.webp",
-          "width": 1440,
-          "height": 1920,
-          "bytes": 698108
+          "src": "assets/menu-sharp-20261120/reeses-peanut-butter-cookie-geTw-frame2-detail-1300.webp",
+          "width": 1300,
+          "height": 1220,
+          "bytes": 594804
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/11732293-552d-47ff-8110-e478c1f3e36a.jpg?v=5714506808"
+      "sourceReference": "https://static-content.owner.com/funnel/images/11732293-552d-47ff-8110-e478c1f3e36a.jpg?v=5714506808",
+      "framing": {
+        "revision": 2,
+        "mode": "tight-contain",
+        "reason": "Reduced unused white counter area while preserving the complete photographed product."
+      }
     },
     {
       "id": "kids-henrys-ham-cheese-ZAdy",
@@ -7888,16 +8136,16 @@
       "edgeEnergyRatio": 3.3870053365480417,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/kids-hot-dog-Oy7n-card-480.webp",
+          "src": "assets/menu-sharp-20261120/kids-hot-dog-Oy7n-frame3-card-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 52264
+          "bytes": 56676
         },
         {
-          "src": "assets/menu-sharp-20261120/kids-hot-dog-Oy7n-card-768.webp",
+          "src": "assets/menu-sharp-20261120/kids-hot-dog-Oy7n-frame3-card-768.webp",
           "width": 768,
           "height": 528,
-          "bytes": 109866
+          "bytes": 119890
         }
       ],
       "detailSources": [
@@ -7916,7 +8164,33 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/06843384-7a0a-4ed4-b22c-534f06301a2f?v=7051721413"
+      "sourceReference": "https://static-content.owner.com/funnel/images/06843384-7a0a-4ed4-b22c-534f06301a2f?v=7051721413",
+      "priorCardSources": [
+        {
+          "src": "assets/menu-sharp-20261120/kids-hot-dog-Oy7n-card-480.webp",
+          "width": 480,
+          "height": 330,
+          "bytes": 52264
+        },
+        {
+          "src": "assets/menu-sharp-20261120/kids-hot-dog-Oy7n-card-768.webp",
+          "width": 768,
+          "height": 528,
+          "bytes": 109866
+        }
+      ],
+      "cardFraming": {
+        "revision": 3,
+        "method": "manual-food-centered-window",
+        "focalY": 0.64,
+        "crop": {
+          "left": 0,
+          "top": 228,
+          "width": 768,
+          "height": 528
+        },
+        "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      }
     },
     {
       "id": "kids-toms-turkey-hERQ",
@@ -7992,8 +8266,8 @@
         "height": 640
       },
       "developed": {
-        "width": 640,
-        "height": 640
+        "width": 360,
+        "height": 500
       },
       "profile": {
         "group": "balanced-bright",
@@ -8018,29 +8292,31 @@
       "edgeEnergyRatio": 2.7981433732729935,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/soda-QLv9-card-480.webp",
-          "width": 480,
-          "height": 330,
-          "bytes": 18466
-        },
-        {
-          "src": "assets/menu-sharp-20261120/soda-QLv9-card-640.webp",
-          "width": 640,
-          "height": 440,
-          "bytes": 29462
+          "src": "assets/menu-sharp-20261120/soda-QLv9-frame2-card-360.webp",
+          "width": 360,
+          "height": 500,
+          "bytes": 28994
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/soda-QLv9-detail-640.webp",
-          "width": 640,
-          "height": 640,
-          "bytes": 31446
+          "src": "assets/menu-sharp-20261120/soda-QLv9-frame2-detail-360.webp",
+          "width": 360,
+          "height": 500,
+          "bytes": 28994
         }
       ],
-      "optical": null,
+      "optical": {
+        "width": 360,
+        "height": 500
+      },
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/ff773443-237f-4c93-85c2-1cc174a88506?v=2267549899"
+      "sourceReference": "https://static-content.owner.com/funnel/images/ff773443-237f-4c93-85c2-1cc174a88506?v=2267549899",
+      "framing": {
+        "revision": 2,
+        "mode": "tight-contain",
+        "reason": "Reduced unused white counter area while preserving the complete photographed product."
+      }
     },
     {
       "id": "gatorade-KbkH",
@@ -8107,5 +8383,6 @@
       "editorialOriginal": null,
       "sourceReference": "https://static-content.owner.com/01032562-947c-4023-a79a-1d2167cee8eb.jpg"
     }
-  ]
+  ],
+  "frameRevision": 3
 }
