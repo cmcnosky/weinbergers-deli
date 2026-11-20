@@ -118,6 +118,9 @@ function renderMenu(historyMode='replace'){
  const menuPage=DeliDiscovery.page(visible,visibleItemLimit,menuPageSize),displayed=menuPage.items;
  const noResultsState=query&&visible.length===0?JSON.stringify([query,discoveryFilters,category,savedOnly]):'';
  if(noResultsState&&noResultsState!==lastNoResultsState){lastNoResultsState=noResultsState;discoveryEvent('search_no_results')}else if(!noResultsState)lastNoResultsState='';
+ document.querySelectorAll('.desktop-nav button[data-view="menu"], .desktop-nav button[data-view="saved"]').forEach(button => {
+  button.setAttribute('aria-pressed', String(button.dataset.view === (savedOnly ? 'saved' : 'menu')));
+ });
  $('#section-title').textContent=savedOnly?'Saved items':'The menu';
  $('#catalogue-count').textContent=`${items.length} ITEMS / ${new Set(items.map(p=>p.category)).size} CATEGORIES`;
  $('#category-label').textContent=category==='All'?'All items':category==='Popular'?'Popular':category;

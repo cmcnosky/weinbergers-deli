@@ -12,9 +12,31 @@
   host.setAttribute('role', 'navigation');
   host.className = 'account-menu';
   host.setAttribute('aria-label', 'Site and account');
-  host.innerHTML = `<button class="account-menu__toggle" type="button" aria-label="More pages and account" aria-expanded="false" aria-controls="account-menu-panel"><span class="account-menu__icon" aria-hidden="true"></span><span class="account-menu__label">More</span></button><div class="account-menu__panel" id="account-menu-panel" hidden><strong class="account-menu__heading">Weinberger’s Deli</strong><a href="index.html">Home</a><div class="account-menu__destinations"><a href="menu.html">Menu &amp; order</a><a href="group.html">Group lunch</a><a href="catering.html">Catering</a><a href="visit.html">Visit &amp; hours</a><a href="story.html">Our story</a><a href="menu.html?saved=1">My usuals</a></div><a data-account-login href="login.html">Log in</a></div>`;
-  const header = document.querySelector('.guest-header');
-  (header || document.body).append(host);
+  host.innerHTML = `<button class="account-menu__toggle" type="button" aria-label="More pages and account" aria-expanded="false" aria-controls="account-menu-panel"><span class="account-menu__icon" aria-hidden="true"></span><span class="account-menu__label">More</span></button><div class="account-menu__panel" id="account-menu-panel" hidden><strong class="account-menu__heading">Weinberger’s Deli</strong><a href="index.html">Home</a><div class="account-menu__destinations"><a href="menu.html">Menu &amp; order</a><a href="group.html">Group lunch</a><a href="catering.html">Catering</a><a href="visit.html">Visit &amp; hours</a><a href="story.html">Our story</a><a href="menu.html?saved=1">Saved</a><a href="menu.html#orders">Orders</a></div><a data-account-login href="login.html">Log in</a></div>`;
+  const header = document.querySelector('.guest-header, .expansion-header, .menu-page .header, [data-cms-page="readable-menu"] .site-header');
+  if (header) {
+    header.append(host);
+  } else {
+    const masthead = document.querySelector('header, .demo-bar');
+    if (masthead) masthead.after(host);
+    else document.body.prepend(host);
+  }
+
+  function markCurrentPage() {
+    const here = new URL(location.href);
+    if (here.pathname.endsWith('/')) here.pathname += 'index.html';
+    const links = Array.from(host.querySelectorAll('a[href]'));
+    const exact = links.find(link => link.href === here.href);
+    const currentLink = exact || links.find(link => {
+      const url = new URL(link.href);
+      return url.origin === here.origin && url.pathname === here.pathname && !url.search && !url.hash;
+    });
+    for (const link of links) {
+      if (link === currentLink) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    }
+  }
+
   function syncDestinations(content) {
     if (!Array.isArray(content?.navigation) || !window.DeliContentCore) return;
     const links = document.createDocumentFragment();
@@ -27,7 +49,15 @@
       link.textContent = item.label;
       links.append(link);
     }
-    host.querySelector('.account-menu__destinations').replaceChildren(links);
+    const destinations = host.querySelector('.account-menu__destinations');
+    const current = Array.from(destinations.children);
+    const next = Array.from(links.children);
+    if (current.length === next.length && current.every((link, i) =>
+      link.href === next[i].href && link.textContent === next[i].textContent
+    )) return;
+    const focusedHref = destinations.contains(document.activeElement) ? document.activeElement.href : null;
+    destinations.replaceChildren(links);
+    if (focusedHref) (next.find(link => link.href === focusedHref) || host.querySelector('.account-menu__toggle')).focus();
   }
   syncDestinations(window.DeliContent?.current);
   window.addEventListener('weinbergers-content', event => syncDestinations(event.detail));
@@ -36,8 +66,12 @@
   const setOpen = open => {
     toggle.setAttribute('aria-expanded', String(open));
     panel.hidden = !open;
+    if (open) markCurrentPage();
   };
   toggle.addEventListener('click', () => setOpen(panel.hidden));
+  host.addEventListener('focusout', event => {
+    if (event.relatedTarget && !host.contains(event.relatedTarget)) setOpen(false);
+  });
   document.addEventListener('click', event => { if (!host.contains(event.target)) setOpen(false); });
   document.addEventListener('keydown', event => {
     if (event.key !== 'Escape' || panel.hidden) return;

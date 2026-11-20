@@ -116,9 +116,14 @@
 }
 
 .account-menu__panel a::after {
-  content: "→";
-  color: var(--account-maroon);
-  font-size: 20px;
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: none;
+  margin-inline: 12px 2px;
+  border-block-start: 2px solid currentColor;
+  border-inline-end: 2px solid currentColor;
+  transform: rotate(45deg);
 }
 
 .account-menu__panel a:hover,
@@ -126,6 +131,11 @@
 .account-menu__panel button:hover,
 .account-menu__panel button:focus-visible {
   background: var(--account-yellow);
+}
+
+.account-menu__panel a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .account-menu__panel > :last-child {
