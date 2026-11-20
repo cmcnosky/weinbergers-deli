@@ -23,20 +23,32 @@
   "navigation": [
     {
       "id": "menu",
-      "label": "The menu",
+      "label": "Menu & order",
       "url": "menu.html",
+      "visible": true
+    },
+    {
+      "id": "group",
+      "label": "Group lunch",
+      "url": "group.html",
+      "visible": true
+    },
+    {
+      "id": "catering",
+      "label": "Catering",
+      "url": "catering.html",
+      "visible": true
+    },
+    {
+      "id": "visit",
+      "label": "Visit & hours",
+      "url": "visit.html",
       "visible": true
     },
     {
       "id": "story",
       "label": "Our story",
       "url": "story.html",
-      "visible": true
-    },
-    {
-      "id": "visit",
-      "label": "Visit the deli",
-      "url": "visit.html",
       "visible": true
     },
     {
@@ -59,8 +71,8 @@
       "seo": {
         "title": "Weinberger’s Deli — Chicago deli. Grapevine, Texas.",
         "description": "Italian beef, Reubens and Chicago dogs on Main Street in Grapevine. Find a house sandwich, change the toppings or build your own.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-sandwich-counter-ticket-20261120-r2.png",
-        "image_alt": "Five Weinberger’s Deli sandwich baskets fill the counter above the original logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -99,13 +111,13 @@
               "id": "home-guest-header-9",
               "label": "Link · Choose your sandwich ↗",
               "type": "link",
-              "value": "menu.html"
+              "value": "menu.html?saved=1"
             },
             {
               "id": "home-guest-header-10",
               "label": "Choose your sandwich",
               "type": "text",
-              "value": "Choose your sandwich"
+              "value": "My usuals"
             }
           ]
         },
@@ -137,7 +149,7 @@
               "id": "home-guest-hero-4",
               "label": "Italian beef, Reubens and Chicago dogs. Start with a house sandwich or build your own.",
               "type": "multiline",
-              "value": "Italian beef, Reubens and Chicago dogs.\nStart with a house sandwich or build your own."
+              "value": "Italian beef, Reubens and Chicago dogs."
             },
             {
               "id": "home-guest-hero-5",
@@ -179,7 +191,7 @@
               "id": "home-guest-hero-11",
               "label": "Know what you came for?",
               "type": "text",
-              "value": "Know what you came for?"
+              "value": "Find a sandwich"
             },
             {
               "id": "home-guest-hero-12",
@@ -191,255 +203,38 @@
               "id": "home-guest-hero-13",
               "label": "Find it",
               "type": "text",
-              "value": "Find it"
+              "value": "Search"
             },
             {
               "id": "home-guest-hero-14",
-              "label": "Link · Image link",
+              "label": "Link · Gayle’s Super Reuben",
               "type": "link",
-              "value": "menu.html"
+              "value": "menu.html?item=gayles-super-reuben-8U3W"
             },
             {
               "id": "home-guest-hero-15",
-              "label": "Photo · Gayle’s Super Reuben with corned beef, pastrami and sauerkraut on gril",
+              "label": "Photo · Gayle’s Super Reuben",
               "type": "image",
-              "value": "assets/main-street/sandwich-counter-960.webp",
-              "alt": "Five baskets of sandwiches, chips and pickles on the counter at Weinberger’s Deli"
+              "value": "assets/hero/gayles-super-reuben-580.webp",
+              "alt": "Gayle’s Super Reuben with corned beef, pastrami and sauerkraut on grilled rye"
             },
             {
               "id": "home-guest-hero-16",
-              "label": "FROM THE COUNTER",
+              "label": "HOUSE CLASSIC",
               "type": "text",
-              "value": "FROM THE COUNTER"
+              "value": "HOUSE CLASSIC"
             },
             {
               "id": "home-guest-hero-17",
               "label": "Link · Gayle’s Super Reuben ↗",
               "type": "link",
-              "value": "menu.html"
+              "value": "menu.html?item=gayles-super-reuben-8U3W"
             },
             {
               "id": "home-guest-hero-18",
               "label": "Gayle’s Super Reuben",
               "type": "text",
-              "value": "Explore the sandwich menu"
-            }
-          ]
-        },
-        {
-          "id": "recognition-strip",
-          "title": "Selected awards",
-          "visible": true,
-          "layout": "default",
-          "fields": [
-            {
-              "id": "home-recognition-strip-1",
-              "label": "Link · Best Deli D Magazine Best of Big D · 2024 ↗",
-              "type": "link",
-              "value": "story.html#recognition"
-            },
-            {
-              "id": "home-recognition-strip-2",
-              "label": "Best Deli",
-              "type": "text",
-              "value": "Best Deli"
-            },
-            {
-              "id": "home-recognition-strip-3",
-              "label": "D Magazine Best of Big D · 2024 ↗",
-              "type": "multiline",
-              "value": "D Magazine\nBest of Big D · 2024 ↗"
-            },
-            {
-              "id": "home-recognition-strip-4",
-              "label": "Link · Readers’ Choice Living Magazine · Deli Northeast Tarrant County · 2026",
-              "type": "link",
-              "value": "story.html#recognition"
-            },
-            {
-              "id": "home-recognition-strip-5",
-              "label": "Readers’ Choice",
-              "type": "text",
-              "value": "Readers’ Choice"
-            },
-            {
-              "id": "home-recognition-strip-6",
-              "label": "Living Magazine · Deli Northeast Tarrant County · 2026 ↗",
-              "type": "multiline",
-              "value": "Living Magazine · Deli\nNortheast Tarrant County · 2026 ↗"
-            },
-            {
-              "id": "home-recognition-strip-7",
-              "label": "Link · Hall of Fame Vienna Beef Inducted 2023 ↗",
-              "type": "link",
-              "value": "story.html#recognition"
-            },
-            {
-              "id": "home-recognition-strip-8",
-              "label": "Hall of Fame",
-              "type": "text",
-              "value": "Hall of Fame"
-            },
-            {
-              "id": "home-recognition-strip-9",
-              "label": "Vienna Beef Inducted 2023 ↗",
-              "type": "multiline",
-              "value": "Vienna Beef\nInducted 2023 ↗"
-            }
-          ]
-        },
-        {
-          "id": "guest-essentials",
-          "title": "Visit shortcuts",
-          "visible": true,
-          "layout": "default",
-          "fields": [
-            {
-              "id": "home-guest-essentials-1",
-              "label": "Link · FIND US 601 S Main Street Directions & contact ↗",
-              "type": "link",
-              "value": "visit.html"
-            },
-            {
-              "id": "home-guest-essentials-2",
-              "label": "FIND US",
-              "type": "text",
-              "value": "FIND US"
-            },
-            {
-              "id": "home-guest-essentials-3",
-              "label": "601 S Main Street",
-              "type": "text",
-              "value": "601 S Main Street"
-            },
-            {
-              "id": "home-guest-essentials-4",
-              "label": "Directions & contact ↗",
-              "type": "text",
-              "value": "Directions & contact ↗"
-            },
-            {
-              "id": "home-guest-essentials-5",
-              "label": "Link · BEFORE YOU COME Check today’s hours Opening hours & pickup information",
-              "type": "link",
-              "value": "visit.html#hours"
-            },
-            {
-              "id": "home-guest-essentials-6",
-              "label": "BEFORE YOU COME",
-              "type": "text",
-              "value": "BEFORE YOU COME"
-            },
-            {
-              "id": "home-guest-essentials-7",
-              "label": "Check today’s hours",
-              "type": "text",
-              "value": "Check today’s hours"
-            },
-            {
-              "id": "home-guest-essentials-8",
-              "label": "Opening hours & pickup information ↗",
-              "type": "text",
-              "value": "Opening hours & pickup information ↗"
-            },
-            {
-              "id": "home-guest-essentials-9",
-              "label": "Link · FEEDING A FEW? Group orders Pickup, delivery & catering ↗",
-              "type": "link",
-              "value": "visit.html#groups"
-            },
-            {
-              "id": "home-guest-essentials-10",
-              "label": "FEEDING A FEW?",
-              "type": "text",
-              "value": "FEEDING A FEW?"
-            },
-            {
-              "id": "home-guest-essentials-11",
-              "label": "Group orders",
-              "type": "text",
-              "value": "Group orders"
-            },
-            {
-              "id": "home-guest-essentials-12",
-              "label": "Pickup, delivery & catering ↗",
-              "type": "text",
-              "value": "Pickup, delivery & catering ↗"
-            }
-          ]
-        },
-        {
-          "id": "film",
-          "title": "Featured deli film",
-          "visible": true,
-          "layout": "default",
-          "fields": [
-            {
-              "id": "home-film-1",
-              "label": "WEINBERGER’S ON FILM",
-              "type": "text",
-              "value": "WEINBERGER’S ON FILM"
-            },
-            {
-              "id": "home-film-2",
-              "label": "Heading · INSIDE WEINBERGER’S.",
-              "type": "multiline",
-              "value": "Inside Weinberger’s"
-            },
-            {
-              "id": "home-film-3",
-              "label": "The family’s short film takes you inside the deli on Main Street.",
-              "type": "text",
-              "value": "The family’s short film takes you inside the deli on Main Street."
-            },
-            {
-              "id": "home-film-4",
-              "label": "Link · Find your Italian beef ↗",
-              "type": "link",
-              "value": "menu.html?item=italian-beef-a3od"
-            },
-            {
-              "id": "home-film-5",
-              "label": "See the Italian beef ↗",
-              "type": "text",
-              "value": "See the Italian beef ↗"
-            },
-            {
-              "id": "home-film-6",
-              "label": "Photo · Deli photograph",
-              "type": "image",
-              "value": "assets/weinbergers-deli-film-pw00hmrjzfg-1280.jpg",
-              "alt": "Deli photograph"
-            },
-            {
-              "id": "home-film-7",
-              "label": "Watch the film",
-              "type": "text",
-              "value": "Watch the film"
-            },
-            {
-              "id": "home-film-8",
-              "label": "Weinberger’s Deli · About 3 minutes",
-              "type": "text",
-              "value": "Weinberger’s Deli · About 3 minutes"
-            },
-            {
-              "id": "home-film-9",
-              "label": "Link · Watch on YouTube ↗",
-              "type": "link",
-              "value": "https://www.youtube.com/watch?v=PW00HmRJZfg"
-            },
-            {
-              "id": "home-film-10",
-              "label": "Watch on YouTube ↗",
-              "type": "text",
-              "value": "Watch on YouTube ↗"
-            },
-            {
-              "id": "home-film-11",
-              "label": "Close video",
-              "type": "text",
-              "value": "Close video"
+              "value": "Gayle’s Super Reuben"
             }
           ]
         },
@@ -453,13 +248,13 @@
               "id": "home-guest-section-1",
               "label": "FIRST TIME HERE?",
               "type": "text",
-              "value": "FIRST TIME HERE?"
+              "value": "Sandwich counter"
             },
             {
               "id": "home-guest-section-2",
               "label": "Heading · WHAT SOUNDS GOOD?",
               "type": "text",
-              "value": "Three house sandwiches"
+              "value": "House sandwiches"
             },
             {
               "id": "home-guest-section-3",
@@ -471,7 +266,7 @@
               "id": "home-guest-section-4",
               "label": "All sandwiches, sides & more ↗",
               "type": "text",
-              "value": "All sandwiches, sides & more ↗"
+              "value": "Full menu ↗"
             },
             {
               "id": "home-guest-section-5",
@@ -483,8 +278,8 @@
               "id": "home-guest-section-6",
               "label": "Photo · Italian beef sandwich",
               "type": "image",
-              "value": "assets/counter-photos/italian-beef-a3od-540.webp",
-              "alt": "Italian beef sandwich"
+              "value": "assets/counter-photos/italian-beef-counter-384.webp",
+              "alt": "Italian beef with giardiniera on an Italian roll"
             },
             {
               "id": "home-guest-section-7",
@@ -502,7 +297,7 @@
               "id": "home-guest-section-9",
               "label": "The family recipe dates to 1928. Get the beef wet or dry and choose sweet, hot or mild pep",
               "type": "text",
-              "value": "The family recipe dates to 1928. Get the beef wet or dry and choose sweet, hot or mild peppers."
+              "value": "The family’s 1928 recipe. Wet or dry, with sweet, hot or mild peppers."
             },
             {
               "id": "home-guest-section-10",
@@ -520,44 +315,44 @@
               "id": "home-guest-section-12",
               "label": "Link · 02 / DELI COUNTER WEINBERGER REUBEN",
               "type": "link",
-              "value": "menu.html?item=weinberger-reuben-Rb4A"
+              "value": "menu.html?item=joe-king-UpbB"
             },
             {
               "id": "home-guest-section-13",
               "label": "Photo · Weinberger Reuben sandwich",
               "type": "image",
-              "value": "assets/counter-photos/weinberger-reuben-Rb4A-760.webp",
-              "alt": "Weinberger Reuben sandwich"
+              "value": "assets/optimized/joe-king-UpbB-760.webp",
+              "alt": "The Joe King, hot pastrami and Swiss on grilled marble rye"
             },
             {
               "id": "home-guest-section-14",
               "label": "GRILLED MARBLE RYE",
               "type": "text",
-              "value": "Grilled marble rye"
+              "value": "Hot pastrami"
             },
             {
               "id": "home-guest-section-15",
               "label": "Heading · WEINBERGER REUBEN",
               "type": "text",
-              "value": "Weinberger Reuben"
+              "value": "Joe King"
             },
             {
               "id": "home-guest-section-16",
               "label": "Corned beef and pastrami, Swiss, sauerkraut and Russian dressing on grilled marble rye.",
               "type": "text",
-              "value": "Corned beef and pastrami, Swiss, sauerkraut and Russian dressing on grilled marble rye."
+              "value": "Pastrami, Swiss, creamy slaw, red onion and Russian dressing on grilled marble rye."
             },
             {
               "id": "home-guest-section-17",
               "label": "Link · Take a closer look ↗",
               "type": "link",
-              "value": "menu.html?item=weinberger-reuben-Rb4A"
+              "value": "menu.html?item=joe-king-UpbB"
             },
             {
               "id": "home-guest-section-18",
               "label": "See the Reuben ↗",
               "type": "text",
-              "value": "See the Reuben ↗"
+              "value": "Order the Joe King ↗"
             },
             {
               "id": "home-guest-section-19",
@@ -601,6 +396,96 @@
               "label": "See Jaybird’s ↗",
               "type": "text",
               "value": "See Jaybird’s ↗"
+            },
+            {
+              "id": "home-counter-index-title",
+              "label": "Menu index heading",
+              "type": "text",
+              "value": "Menu by category"
+            },
+            {
+              "id": "home-counter-index-1-label",
+              "label": "Category 1 name",
+              "type": "text",
+              "value": "Deli classics"
+            },
+            {
+              "id": "home-counter-index-1-url",
+              "label": "Category 1 destination",
+              "type": "link",
+              "value": "menu.html?category=Deli"
+            },
+            {
+              "id": "home-counter-index-2-label",
+              "label": "Category 2 name",
+              "type": "text",
+              "value": "Subs"
+            },
+            {
+              "id": "home-counter-index-2-url",
+              "label": "Category 2 destination",
+              "type": "link",
+              "value": "menu.html?category=Subs"
+            },
+            {
+              "id": "home-counter-index-3-label",
+              "label": "Category 3 name",
+              "type": "text",
+              "value": "Italian beef & more"
+            },
+            {
+              "id": "home-counter-index-3-url",
+              "label": "Category 3 destination",
+              "type": "link",
+              "value": "menu.html?category=Beef"
+            },
+            {
+              "id": "home-counter-index-4-label",
+              "label": "Category 4 name",
+              "type": "text",
+              "value": "Cubanos"
+            },
+            {
+              "id": "home-counter-index-4-url",
+              "label": "Category 4 destination",
+              "type": "link",
+              "value": "menu.html?category=Cubanos"
+            },
+            {
+              "id": "home-counter-index-5-label",
+              "label": "Category 5 name",
+              "type": "text",
+              "value": "Cheesesteaks"
+            },
+            {
+              "id": "home-counter-index-5-url",
+              "label": "Category 5 destination",
+              "type": "link",
+              "value": "menu.html?category=Cheesesteak"
+            },
+            {
+              "id": "home-counter-index-6-label",
+              "label": "Category 6 name",
+              "type": "text",
+              "value": "Vegetarian"
+            },
+            {
+              "id": "home-counter-index-6-url",
+              "label": "Category 6 destination",
+              "type": "link",
+              "value": "menu.html?category=Veggie"
+            },
+            {
+              "id": "home-counter-index-7-label",
+              "label": "Category 7 name",
+              "type": "text",
+              "value": "Sides"
+            },
+            {
+              "id": "home-counter-index-7-url",
+              "label": "Category 7 destination",
+              "type": "link",
+              "value": "menu.html?category=Sides"
             }
           ]
         },
@@ -703,6 +588,81 @@
           ]
         },
         {
+          "id": "film",
+          "title": "Featured deli film",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-film-1",
+              "label": "WEINBERGER’S ON FILM",
+              "type": "text",
+              "value": "WEINBERGER’S ON FILM"
+            },
+            {
+              "id": "home-film-2",
+              "label": "Heading · INSIDE WEINBERGER’S.",
+              "type": "multiline",
+              "value": "Inside Weinberger’s"
+            },
+            {
+              "id": "home-film-3",
+              "label": "The family’s short film takes you inside the deli on Main Street.",
+              "type": "text",
+              "value": "The family’s short film takes you inside the deli on Main Street."
+            },
+            {
+              "id": "home-film-4",
+              "label": "Link · Find your Italian beef ↗",
+              "type": "link",
+              "value": "menu.html?item=italian-beef-a3od"
+            },
+            {
+              "id": "home-film-5",
+              "label": "See the Italian beef ↗",
+              "type": "text",
+              "value": "See the Italian beef ↗"
+            },
+            {
+              "id": "home-film-6",
+              "label": "Photo · Deli photograph",
+              "type": "image",
+              "value": "assets/weinbergers-deli-film-pw00hmrjzfg-1280.jpg",
+              "alt": "Deli photograph"
+            },
+            {
+              "id": "home-film-7",
+              "label": "Watch the film",
+              "type": "text",
+              "value": "Watch the film"
+            },
+            {
+              "id": "home-film-8",
+              "label": "Weinberger’s Deli · About 3 minutes",
+              "type": "text",
+              "value": "Weinberger’s Deli · About 3 minutes"
+            },
+            {
+              "id": "home-film-9",
+              "label": "Link · Watch on YouTube ↗",
+              "type": "link",
+              "value": "https://www.youtube.com/watch?v=PW00HmRJZfg"
+            },
+            {
+              "id": "home-film-10",
+              "label": "Watch on YouTube ↗",
+              "type": "text",
+              "value": "Watch on YouTube ↗"
+            },
+            {
+              "id": "home-film-11",
+              "label": "Close video",
+              "type": "text",
+              "value": "Close video"
+            }
+          ]
+        },
+        {
           "id": "guest-story",
           "title": "Chicago roots",
           "visible": true,
@@ -759,6 +719,68 @@
           ]
         },
         {
+          "id": "recognition-strip",
+          "title": "Selected awards",
+          "visible": true,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-recognition-strip-1",
+              "label": "Link · Best Deli D Magazine Best of Big D · 2024 ↗",
+              "type": "link",
+              "value": "story.html#recognition"
+            },
+            {
+              "id": "home-recognition-strip-2",
+              "label": "Best Deli",
+              "type": "text",
+              "value": "Best Deli"
+            },
+            {
+              "id": "home-recognition-strip-3",
+              "label": "D Magazine Best of Big D · 2024 ↗",
+              "type": "multiline",
+              "value": "D Magazine\nBest of Big D · 2024 ↗"
+            },
+            {
+              "id": "home-recognition-strip-4",
+              "label": "Link · Readers’ Choice Living Magazine · Deli Northeast Tarrant County · 2026",
+              "type": "link",
+              "value": "story.html#recognition"
+            },
+            {
+              "id": "home-recognition-strip-5",
+              "label": "Readers’ Choice",
+              "type": "text",
+              "value": "Readers’ Choice"
+            },
+            {
+              "id": "home-recognition-strip-6",
+              "label": "Living Magazine · Deli Northeast Tarrant County · 2026 ↗",
+              "type": "multiline",
+              "value": "Living Magazine · Deli\nNortheast Tarrant County · 2026 ↗"
+            },
+            {
+              "id": "home-recognition-strip-7",
+              "label": "Link · Hall of Fame Vienna Beef Inducted 2023 ↗",
+              "type": "link",
+              "value": "story.html#recognition"
+            },
+            {
+              "id": "home-recognition-strip-8",
+              "label": "Hall of Fame",
+              "type": "text",
+              "value": "Hall of Fame"
+            },
+            {
+              "id": "home-recognition-strip-9",
+              "label": "Vienna Beef Inducted 2023 ↗",
+              "type": "multiline",
+              "value": "Vienna Beef\nInducted 2023 ↗"
+            }
+          ]
+        },
+        {
           "id": "guest-section-guest-last-stop-has-storefront",
           "title": "Visit & storefront photograph",
           "visible": true,
@@ -806,6 +828,86 @@
               "type": "image",
               "value": "assets/main-street/front-door-880.webp",
               "alt": "The deli’s brick entrance and yellow Weinberger’s sign on Main Street in daylight"
+            }
+          ]
+        },
+        {
+          "id": "guest-essentials",
+          "title": "Visit shortcuts",
+          "visible": false,
+          "layout": "default",
+          "fields": [
+            {
+              "id": "home-guest-essentials-1",
+              "label": "Link · FIND US 601 S Main Street Directions & contact ↗",
+              "type": "link",
+              "value": "visit.html"
+            },
+            {
+              "id": "home-guest-essentials-2",
+              "label": "FIND US",
+              "type": "text",
+              "value": "FIND US"
+            },
+            {
+              "id": "home-guest-essentials-3",
+              "label": "601 S Main Street",
+              "type": "text",
+              "value": "601 S Main Street"
+            },
+            {
+              "id": "home-guest-essentials-4",
+              "label": "Directions & contact ↗",
+              "type": "text",
+              "value": "Directions & contact ↗"
+            },
+            {
+              "id": "home-guest-essentials-5",
+              "label": "Link · BEFORE YOU COME Check today’s hours Opening hours & pickup information",
+              "type": "link",
+              "value": "visit.html#hours"
+            },
+            {
+              "id": "home-guest-essentials-6",
+              "label": "BEFORE YOU COME",
+              "type": "text",
+              "value": "BEFORE YOU COME"
+            },
+            {
+              "id": "home-guest-essentials-7",
+              "label": "Check today’s hours",
+              "type": "text",
+              "value": "Check today’s hours"
+            },
+            {
+              "id": "home-guest-essentials-8",
+              "label": "Opening hours & pickup information ↗",
+              "type": "text",
+              "value": "Opening hours & pickup information ↗"
+            },
+            {
+              "id": "home-guest-essentials-9",
+              "label": "Link · FEEDING A FEW? Group orders Pickup, delivery & catering ↗",
+              "type": "link",
+              "value": "visit.html#groups"
+            },
+            {
+              "id": "home-guest-essentials-10",
+              "label": "FEEDING A FEW?",
+              "type": "text",
+              "value": "FEEDING A FEW?"
+            },
+            {
+              "id": "home-guest-essentials-11",
+              "label": "Group orders",
+              "type": "text",
+              "value": "Group orders"
+            },
+            {
+              "id": "home-guest-essentials-12",
+              "label": "Pickup, delivery & catering ↗",
+              "type": "text",
+              "value": "Pickup, delivery & catering ↗"
             }
           ]
         },
@@ -969,8 +1071,8 @@
       "seo": {
         "title": "Our story, awards & film | Weinberger’s Deli",
         "description": "Chicago roots since 1952. Weinberger’s Deli awards, Texas recognition, and the original deli film.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-sandwich-counter-ticket-20261120-r2.png",
-        "image_alt": "Five Weinberger’s Deli sandwich baskets fill the counter above the original logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -1009,13 +1111,13 @@
               "id": "story-guest-header-9",
               "label": "Link · Choose your sandwich ↗",
               "type": "link",
-              "value": "menu.html"
+              "value": "menu.html?saved=1"
             },
             {
               "id": "story-guest-header-10",
               "label": "Choose your sandwich",
               "type": "text",
-              "value": "Choose your sandwich"
+              "value": "My usuals"
             }
           ]
         },
@@ -1072,6 +1174,18 @@
               "label": "Watch the deli film",
               "type": "text",
               "value": "Watch the deli film"
+            },
+            {
+              "id": "story-awards-shortcut-label",
+              "type": "text",
+              "label": "Awards & recognition label",
+              "value": "Awards & recognition"
+            },
+            {
+              "id": "story-awards-shortcut-url",
+              "type": "link",
+              "label": "Awards & recognition url",
+              "value": "#recognition"
             }
           ]
         },
@@ -1661,8 +1775,8 @@
       "seo": {
         "title": "Visit the deli | Weinberger’s Deli",
         "description": "Directions, contact, current hours, group orders and practical information for Weinberger’s Deli at 601 S Main Street in Grapevine.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-sandwich-counter-ticket-20261120-r2.png",
-        "image_alt": "Five Weinberger’s Deli sandwich baskets fill the counter above the original logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -1701,13 +1815,13 @@
               "id": "visit-guest-header-9",
               "label": "Link · Choose your sandwich ↗",
               "type": "link",
-              "value": "menu.html"
+              "value": "menu.html?saved=1"
             },
             {
               "id": "visit-guest-header-10",
               "label": "Choose your sandwich",
               "type": "text",
-              "value": "Choose your sandwich"
+              "value": "My usuals"
             }
           ]
         },
@@ -1765,6 +1879,18 @@
               "label": "601 S MAIN STREET · GRAPEVINE",
               "type": "text",
               "value": "601 S MAIN STREET · GRAPEVINE"
+            },
+            {
+              "id": "visit-hours-shortcut-label",
+              "type": "text",
+              "label": "Today’s hours & pickup label",
+              "value": "Today’s hours & pickup"
+            },
+            {
+              "id": "visit-hours-shortcut-url",
+              "type": "link",
+              "label": "Today’s hours & pickup url",
+              "value": "https://weinbergersdeli.com/menu"
             }
           ]
         },
@@ -2198,8 +2324,8 @@
       "seo": {
         "title": "The menu | Weinberger’s Deli",
         "description": "Weinberger’s Deli in Grapevine, Texas. Italian beef, Chicago dogs, Reubens, and a full deli menu. Find your sandwich and make it yours.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-sandwich-counter-ticket-20261120-r2.png",
-        "image_alt": "Five Weinberger’s Deli sandwich baskets fill the counter above the original logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -2672,8 +2798,8 @@
       "seo": {
         "title": "Weinberger’s Deli — Chicago deli. Grapevine, Texas.",
         "description": "Weinberger’s Deli in Grapevine, Texas. Italian beef, Chicago dogs, Reubens, and a full deli menu. Find your sandwich and make it yours.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-sandwich-counter-ticket-20261120-r2.png",
-        "image_alt": "Five Weinberger’s Deli sandwich baskets fill the counter above the original logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -3205,8 +3331,8 @@
       "seo": {
         "title": "Group lunch | Weinberger’s Deli",
         "description": "Build one Weinberger’s group lunch without one person transcribing everyone’s sandwich.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-sandwich-counter-ticket-20261120-r2.png",
-        "image_alt": "Five Weinberger’s Deli sandwich baskets fill the counter above the original logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -3405,8 +3531,8 @@
       "seo": {
         "title": "Catering | Weinberger’s Deli",
         "description": "Tell Weinberger’s Deli what your group needs. The deli reviews the event, menu, timing, and price before asking for payment.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-sandwich-counter-ticket-20261120-r2.png",
-        "image_alt": "Five Weinberger’s Deli sandwich baskets fill the counter above the original logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -3777,8 +3903,8 @@
       "seo": {
         "title": "Weinberger’s Deli — Android",
         "description": "The Weinberger’s Deli Android ordering experience for the full menu, sandwich customization, comparison, favorites, and pickup status.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-sandwich-counter-ticket-20261120-r2.png",
-        "image_alt": "Five Weinberger’s Deli sandwich baskets fill the counter above the original logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {

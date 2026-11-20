@@ -65,7 +65,8 @@ body:has(dialog[open]) .bottom-nav,body:has(dialog[open]) .mobile-bag,body:has(d
 .products{display:grid;gap:12px;padding-top:12px}
 .products .product{border:3px solid var(--line);background:var(--paper);overflow:hidden}
 .products .product-main{grid-template-columns:218px minmax(0,1fr) 72px;gap:18px;padding:14px 14px 8px;align-items:start}
-.products .product-main img.menu-image{display:block;width:218px;height:150px;aspect-ratio:auto;object-fit:cover;object-position:center;border-width:3px;background:#32161c}
+.products .product-main .menu-photo-frame{display:flex;align-items:center;justify-content:center;width:218px;height:150px;overflow:hidden;border:3px solid var(--line);background:#32161c;box-sizing:border-box}
+.products .product-main img.menu-image{display:block;width:100%;height:100%;max-width:100%;max-height:100%;aspect-ratio:auto;object-fit:cover;object-position:center;border:0;background:#32161c;box-sizing:border-box}
 .products .product-main img.menu-image[data-menu-kind="editorial"]{object-fit:contain}
 .products .product-copy p{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:3}
 .products .product-tools{justify-content:flex-start;gap:24px;margin-left:250px;padding:0 14px 12px}
@@ -87,7 +88,7 @@ body:has(dialog[open]) .bottom-nav,body:has(dialog[open]) .mobile-bag,body:has(d
  .menu-cover-photo>span{padding:38px 12px 12px;font-size:19px;line-height:1.02}
  .products{gap:10px;padding-top:10px}
  .products .product-main{grid-template-columns:126px minmax(0,1fr);gap:12px;padding:10px 10px 8px}
- .products .product-main img.menu-image{width:126px;height:138px;grid-row:1/3}
+ .products .product-main .menu-photo-frame{width:126px;height:138px;grid-row:1/3}
  .products .product-copy p{-webkit-line-clamp:2;font-size:14px;line-height:1.5}
  .products .product h3{font-size:25px}
  .products .product .price{grid-column:2;justify-self:start;align-self:end;flex-direction:row;gap:13px;padding-top:5px;font-size:14px}
@@ -100,14 +101,14 @@ body:has(dialog[open]) .bottom-nav,body:has(dialog[open]) .mobile-bag,body:has(d
 }
 @media(min-width:601px) and (max-width:850px){
  .products .product-main{grid-template-columns:170px minmax(0,1fr) 60px;gap:15px;padding:12px 12px 7px}
- .products .product-main img.menu-image{width:170px;height:130px}
+ .products .product-main .menu-photo-frame{width:170px;height:130px}
  .products .product-tools{margin-left:197px;padding:0 12px 11px}
  .products .text-product .product-main{grid-template-columns:minmax(0,1fr) 60px}
  .products .text-product .product-tools{margin-left:0}
 }
 @media(min-width:851px) and (max-width:1100px){
  .products .product-main{grid-template-columns:180px minmax(0,1fr) 60px;gap:16px;padding:13px 13px 7px}
- .products .product-main img.menu-image{width:180px;height:135px}
+ .products .product-main .menu-photo-frame{width:180px;height:135px}
  .products .product-tools{margin-left:209px;padding:0 13px 11px}
  .products .text-product .product-main{grid-template-columns:minmax(0,1fr) 60px}
  .products .text-product .product-tools{margin-left:0}
@@ -116,7 +117,7 @@ body:has(dialog[open]) .bottom-nav,body:has(dialog[open]) .mobile-bag,body:has(d
  .cover-intro h1{font-size:39px}
  .menu-cover-photo{min-height:204px}
  .products .product-main{grid-template-columns:112px minmax(0,1fr);gap:10px;padding:9px}
- .products .product-main img.menu-image{width:112px;height:126px}
+ .products .product-main .menu-photo-frame{width:112px;height:126px}
  .products .product h3{font-size:22px}
  .products .product-copy p{font-size:13px}
 }
@@ -176,4 +177,38 @@ body.phone-page .phone-label{font-family:var(--sans);font-size:12px;font-weight:
  body.phone-page .phone-showcase{padding-top:34px}
  body.phone-page .phone-editorial h1{font-size:50px;line-height:1.04;margin-block:18px}
  body.phone-page .phone-deck{font-size:17px}
+}
+
+/* Keep every official photograph at a display size its real source pixels can
+   support. The maroon frame stays stable for scanning; genuinely small legacy
+   originals sit inside it instead of being enlarged into a soft image. */
+.comparison-image{display:flex;align-items:center;justify-content:center;height:112px;overflow:hidden;background:#32161c;border:3px solid var(--line);box-sizing:border-box}
+.comparison-image img.menu-image{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:cover;object-position:center;border:0;background:#32161c;box-sizing:border-box}
+.comparison-image img.menu-image[data-menu-kind="editorial"]{object-fit:contain}
+
+@media (min-resolution:1.5dppx),(-webkit-min-device-pixel-ratio:1.5){
+ .products .product-main .menu-photo-frame img.menu-image{max-width:min(100%,var(--menu-safe-2x-width,100%));max-height:min(100%,var(--menu-safe-2x-height,100%))}
+ .comparison-image img.menu-image{max-width:min(100%,var(--menu-safe-2x-width,100%));max-height:min(100%,var(--menu-safe-2x-height,100%))}
+ .detail-image{max-width:min(100%,var(--menu-safe-2x-width,100%));max-height:min(454px,var(--menu-safe-2x-height,454px))}
+}
+@media (min-resolution:2.5dppx),(-webkit-min-device-pixel-ratio:2.5){
+ .products .product-main .menu-photo-frame img.menu-image{max-width:min(100%,var(--menu-safe-3x-width,100%));max-height:min(100%,var(--menu-safe-3x-height,100%))}
+ .comparison-image img.menu-image{max-width:min(100%,var(--menu-safe-3x-width,100%));max-height:min(100%,var(--menu-safe-3x-height,100%))}
+ .detail-image{max-width:min(100%,var(--menu-safe-3x-width,100%));max-height:min(454px,var(--menu-safe-3x-height,454px))}
+}
+
+@media(max-width:600px){
+ /* One scannable shortcut rail replaces two wrapped rows. Build-your-own is
+    ordered first, while every ingredient shortcut remains reachable. */
+ .menu-page .menu-section,.embedded .menu-section{padding-top:14px}
+ .menu-page .section-heading,.embedded .section-heading{padding-bottom:14px}
+ .embedded .search,.menu-page .search{margin-top:10px}
+ .quick-ingredients{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:thin;padding-block:10px}
+ .quick-ingredients>span{flex:0 0 auto;width:auto;margin-right:2px}
+ .quick-ingredients>button{flex:0 0 auto}
+ .quick-ingredients>.build-own-shortcut{margin-left:0}
+ .detail-image{max-height:min(274px,var(--menu-safe-2x-height,274px))}
+}
+@media(max-width:600px) and (min-resolution:2.5dppx), (max-width:600px) and (-webkit-min-device-pixel-ratio:2.5){
+ .detail-image{max-height:min(274px,var(--menu-safe-3x-height,274px))}
 }

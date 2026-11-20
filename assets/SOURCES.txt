@@ -262,3 +262,20 @@ Sandwich counter, 2000 by 1250:
 https://weinbergersdeli.com/pluto-images/funnel/images/eaeb1b44-9bc6-48fc-857e-3832bcdda861
 Main Street entrance, 1440 by 1440:
 https://weinbergersdeli.com/pluto-images/funnel/images/584135f2-78df-4cee-8f3e-7083401a595c
+
+Photographic detail and menu counter, November 20, 2026
+
+The Italian Beef counter photograph comes from the deli's own Italian Beef
+listing. Its published camera image is 540 × 720. The horizontal version is a
+rotated crop of that photograph with a mild color and contrast correction
+and output sharpening. The crop removes most of the chip bag. Its largest
+export is 544 × 225 after rotating the original diagonal sandwich into frame.
+The product detail uses a separate crop from the same source. No new food,
+bread texture or fillings were generated.
+https://static-content.owner.com/funnel/images/08f9ec4c-75a8-4035-a0d0-c9b2ff26cd22.jpg
+
+The Joe King photograph in the house sandwich index is the deli's own
+photograph of that menu item. The Weinberger Reuben press clipping belongs
+with that item's ordering detail. The opening photograph and its original
+address are documented in assets/hero/PROVENANCE.txt.
+https://static-content.owner.com/funnel/images/7da1cd83-fbb0-4dcb-9c03-f24d03c1b30f.jpg

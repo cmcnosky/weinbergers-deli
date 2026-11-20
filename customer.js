@@ -31,11 +31,16 @@ function menuMedia(product){
  const direct=window.DELI_MEDIA?.[product?.image];if(direct)return direct;
  const known=window.DELI_MEDIA_BY_ITEM?.[product?.id];return known?.originals?.some(original=>sameOriginalMenuImage(product?.image,original))?known:null;
 }
-const menuImageSizes={card:'(max-width: 360px) 112px, (max-width: 600px) 126px, (max-width: 850px) 170px, (max-width: 1100px) 180px, 218px',compare:'(max-width: 600px) 82px, (max-width: 1100px) 28vw, 320px',detail:'(max-width: 600px) calc(100vw - 32px), 660px'};
+/* `sizes` describes the source pixels needed for the crop, not only the box width.
+   Phone cards and comparison tiles are taller than they are wide, so their prior
+   width-only values could make a Retina browser choose a 360px file and then
+   enlarge its short edge. */
+const menuImageSizes={card:'(max-width: 600px) 190px, (max-width: 850px) 170px, (max-width: 1100px) 180px, 218px',compare:'(max-width: 600px) 160px, (max-width: 1100px) 28vw, 320px',detail:'(max-width: 600px) calc(100vw - 32px), 660px'};
 function menuImageMarkup(product,usage='card',alt=''){
- const media=menuMedia(product),sources=(media?.sources||[]).map(source=>({...source,src:resolveMenuAsset(source.src)})).filter(source=>source.src),fallback=resolveMenuAsset(product?.image);if(!sources.length&&!fallback)return'';
- const chosen=usage==='card'?sources[0]:sources[sources.length-1],src=chosen?.src||fallback,srcset=sources.length>1?sources.map(source=>`${source.src} ${source.width}w`).join(', '):'',largest=sources[sources.length-1],kind=media?.kind||'owner-photo',classes=['menu-image',usage==='detail'?'detail-image':''].filter(Boolean).join(' ');
- return `<img class="${classes}" data-menu-media="${esc(product?.id||'owner-photo')}" data-menu-kind="${esc(kind)}" src="${esc(src)}"${srcset?` srcset="${esc(srcset)}" sizes="${esc(menuImageSizes[usage]||menuImageSizes.card)}"`:''} alt="${esc(alt)}" ${usage==='card'?'loading="lazy"':'loading="eager"'} decoding="async"${usage==='detail'?' fetchpriority="high"':''}${largest?` width="${largest.width}" height="${largest.height}"`:''}>`;
+ const media=menuMedia(product),sources=(media?.sources||[]).map(source=>({...source,src:resolveMenuAsset(source.src)})).filter(source=>source.src&&Number.isFinite(source.width)&&Number.isFinite(source.height)).sort((a,b)=>a.width-b.width),fallback=resolveMenuAsset(product?.image);if(!sources.length&&!fallback)return'';
+ const chosen=usage==='card'?sources[0]:sources[sources.length-1],src=chosen?.src||fallback,srcset=sources.length>1?sources.map(source=>`${source.src} ${source.width}w`).join(', '):'',largest=sources[sources.length-1],kind=media?.kind||'owner-photo',classes=['menu-image',usage==='detail'?'detail-image':''].filter(Boolean).join(' '),nativeSizing=largest?` data-menu-source-width="${largest.width}" data-menu-source-height="${largest.height}" style="--menu-safe-2x-width:${Math.floor(largest.width/2)}px;--menu-safe-2x-height:${Math.floor(largest.height/2)}px;--menu-safe-3x-width:${Math.floor(largest.width/3)}px;--menu-safe-3x-height:${Math.floor(largest.height/3)}px"`:'';
+ const image=`<img class="${classes}" data-menu-media="${esc(product?.id||'owner-photo')}" data-menu-kind="${esc(kind)}" src="${esc(src)}"${srcset?` srcset="${esc(srcset)}" sizes="${esc(menuImageSizes[usage]||menuImageSizes.card)}"`:''} alt="${esc(alt)}" ${usage==='card'?'loading="lazy"':'loading="eager"'} decoding="async"${usage==='detail'?' fetchpriority="high"':''}${largest?` width="${largest.width}" height="${largest.height}"`:''}${nativeSizing}>`;
+ return usage==='card'?`<span class="menu-photo-frame" aria-hidden="true">${image}</span>`:image;
 }
 const officialOrderURL='https://weinbergersdeli.com/menu';
 const discoveryParams=new URLSearchParams(location.search),initialState=DeliDiscovery.readURLState(location.search),checkoutReturnRequested=['checkout','payment','session_id'].some(key=>discoveryParams.has(key)),specificOrderRequested=discoveryParams.has('order'),requestedOrderValue=discoveryParams.get('order')||'',requestedOrderID=/^WD-[0-9A-F]{20}$/.test(requestedOrderValue)?requestedOrderValue:'';
@@ -94,7 +99,12 @@ function showMoreItems(){
 function renderMenu(historyMode='replace'){
  const focusState=captureMenuFocus();
  const builder=item('custom-build-your-own'),shortcuts=document.querySelector('.quick-ingredients');
- if(builder&&shortcuts&&!shortcuts.querySelector('[data-product="custom-build-your-own"]'))shortcuts.insertAdjacentHTML('beforeend','<button class="build-own-shortcut" data-product="custom-build-your-own">Build your own ↗</button>');
+ if(builder&&shortcuts&&!shortcuts.querySelector('[data-product="custom-build-your-own"]')){
+  const label=shortcuts.querySelector(':scope > span'),markup='<button class="build-own-shortcut" data-product="custom-build-your-own">Build your own ↗</button>';
+  if(label)label.insertAdjacentHTML('afterend',markup);else shortcuts.insertAdjacentHTML('afterbegin',markup);
+  /* Start the phone rail at its actual first choice after insertion. */
+  shortcuts.scrollLeft=0;requestAnimationFrame(()=>{shortcuts.scrollLeft=0});
+ }
  const filtersList=['All','Popular',...new Set(items.map(p=>p.category))];
  const categoryMatches=(p,c)=>c==='All'||(c==='Popular'?p.popular:p.category===c);
  $('#categories').innerHTML=filtersList.map(c=>`<button class="chip ${category===c&&!savedOnly?'active':''}" data-category="${esc(c)}" aria-pressed="${category===c&&!savedOnly}">${c==='All'?'All items':c==='Popular'?'Popular':esc(c)}<span>${items.filter(p=>categoryMatches(p,c)).length}</span></button>`).join('');

@@ -1,0 +1,20 @@
+HOMEPAGE HERO — GAYLE'S SUPER REUBEN
+
+Official restaurant source:
+https://static-content.owner.com/funnel/images/c18ffe53-7eab-4c82-8e47-b968f8eedf09.jpg?v=7006274770
+
+Retrieved 2026-11-20. The response is a 1920 by 1440 progressive JPEG with
+SHA-256 fec19ad159225de14489820406f66bdf48e90d116dd635f2db24e26ece3b073e.
+It is retained byte-for-byte as gayles-super-reuben-1920.jpg.
+
+The 580 and 1160 WebP files are proportional downscales made from that exact
+source with cwebp 1.6.0 at quality 90, method 6 and sharp YUV conversion. No
+pixels were generated, upscaled, retouched or composited. The browser applies
+only an object-fit crop. The default hero is capped at 580 by 330 CSS pixels on
+desktop and 430 by 200 CSS pixels on mobile, so the 1920 by 1440 source covers
+both displays at device-pixel ratio 3 without enlargement.
+
+The replaced five-basket photograph remains elsewhere in the release for the
+website share card. Its official homepage response is 2000 by 1250, and a
+4000-pixel CDN request adds no recoverable detail; it is an upscale of the
+visibly soft source rather than a sharper original.

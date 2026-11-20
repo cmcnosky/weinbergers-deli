@@ -34,7 +34,18 @@ function renderQueue(){
  const unresolved=manager()?Object.entries(refundAttempts):[],recovery=$('#refund-recovery');recovery.hidden=!unresolved.length;recovery.innerHTML=unresolved.map(([id,attempt])=>`<div><span><strong>Refund response not confirmed</strong> · ${esc(id)} · ${money(attempt.body.amount_cents)}</span><button class="secondary" data-refund-confirm="${esc(id)}">Retry safely</button></div>`).join('');
 }
 
-function renderStock(){const query=$('#stock-search').value.toLowerCase();const list=menu.filter(item=>(item.name+' '+item.category).toLowerCase().includes(query));$('#stock-list').innerHTML=list.length?list.map(item=>`<div class="stock-row">${item.image?`<img src="${esc(window.DELI_MEDIA?.[item.image]?.[320]||item.image)}" alt="" loading="lazy" decoding="async" width="80" height="80">`:'<span class="stock-thumb" aria-hidden="true">—</span>'}<div><h3>${esc(item.name)}</h3><p>${esc(item.category)} · ${esc(item.price_label)}</p></div><button class="${item.sold_out?'danger':'secondary'}" data-stock="${esc(item.id)}" ${menuFresh?'':'disabled'} aria-pressed="${item.sold_out}">${item.sold_out?'Unavailable · Make available':'Available · Mark unavailable'}</button></div>`).join(''):'<p class="staff-subtitle">No matching items. Try another name.</p>'}
+function stockImage(item) {
+ if (!item.image) return '<span class="stock-thumb" aria-hidden="true">—</span>';
+ const media = window.DELI_MEDIA?.[item.image];
+ const sources = media?.sources || [];
+ const first = sources[0];
+ const coverRatio = first ? Math.max(1, first.width / first.height) : 1;
+ const sizes = `(max-width: 640px) ${Math.ceil(54 * coverRatio)}px, ${Math.ceil(64 * coverRatio)}px`;
+ const srcset = sources.map(source => `${esc(source.src)} ${source.width}w`).join(', ');
+ return `<img src="${esc(first?.src || item.image)}" ${srcset ? `srcset="${srcset}" sizes="${sizes}"` : ''} alt="" loading="lazy" decoding="async" width="64" height="64">`;
+}
+
+function renderStock(){const query=$('#stock-search').value.toLowerCase();const list=menu.filter(item=>(item.name+' '+item.category).toLowerCase().includes(query));$('#stock-list').innerHTML=list.length?list.map(item=>`<div class="stock-row">${stockImage(item)}<div><h3>${esc(item.name)}</h3><p>${esc(item.category)} · ${esc(item.price_label)}</p></div><button class="${item.sold_out?'danger':'secondary'}" data-stock="${esc(item.id)}" ${menuFresh?'':'disabled'} aria-pressed="${item.sold_out}">${item.sold_out?'Unavailable · Make available':'Available · Mark unavailable'}</button></div>`).join(''):'<p class="staff-subtitle">No matching items. Try another name.</p>'}
 
 async function fetchQueue(){let list=[],cursor='';do{const response=await request('/staff/orders?status=new,preparing,ready&limit=200'+(cursor?'&cursor='+encodeURIComponent(cursor):''));list.push(...(response.orders||[]));const next=response.page?.has_more?response.page?.next_cursor:'';if(next&&next===cursor)throw new Error('The queue could not advance. Refresh again.');cursor=next||'';}while(cursor);return {orders:list}}
 

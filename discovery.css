@@ -130,7 +130,7 @@ footer button{font:10px var(--mono);text-decoration:underline}
 .checkout-customer{border-top:6px solid var(--line);margin-top:22px;padding-top:4px}.checkout-customer input{display:block;width:100%;min-height:46px;border:1px solid var(--line);border-radius:0;background:#fff;padding:10px 12px;margin-top:7px;font:14px var(--sans)}.checkout-contact{display:grid;grid-template-columns:1fr 1fr;gap:14px}.checkout-customer .field{margin-top:14px}@media(max-width:600px){.checkout-contact{grid-template-columns:1fr}}
 
 /* Complete customization stays compact until a customer opens a section. */
-.quick-ingredients .build-own-shortcut{margin-left:auto;background:var(--ink);border-color:var(--line);color:var(--yellow);font-weight:800}
+.quick-ingredients .build-own-shortcut{margin-left:0;background:var(--ink);border-color:var(--line);color:var(--yellow);font-weight:800}
 .quick-ingredients .build-own-shortcut:hover{background:var(--red);border-color:var(--red);color:#fff}
 .build-own-product{border:6px solid var(--line);background:var(--yellow);padding:0 14px;margin:10px -14px 18px}
 .build-own-product:hover{background:#f5c337}

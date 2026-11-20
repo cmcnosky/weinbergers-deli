@@ -672,6 +672,7 @@
 }
 
 .stock-row img {
+  object-fit: cover;
   width: 64px;
   height: 64px;
   border: 1px solid var(--line);

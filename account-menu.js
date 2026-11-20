@@ -8,11 +8,29 @@
   } catch {
     // Navigation also runs in browsers that disallow session storage.
   }
-  const host = document.createElement('nav');
+  const host = document.createElement('div');
+  host.setAttribute('role', 'navigation');
   host.className = 'account-menu';
   host.setAttribute('aria-label', 'Site and account');
-  host.innerHTML = `<button class="account-menu__toggle" type="button" aria-expanded="false" aria-controls="account-menu-panel"><span class="account-menu__icon" aria-hidden="true"></span><span class="account-menu__label">Menu</span></button><div class="account-menu__panel" id="account-menu-panel" hidden><strong class="account-menu__heading">Weinberger’s Deli</strong><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="visit.html">Visit</a><a data-account-login href="login.html">Log in</a></div>`;
-  document.body.append(host);
+  host.innerHTML = `<button class="account-menu__toggle" type="button" aria-label="More pages and account" aria-expanded="false" aria-controls="account-menu-panel"><span class="account-menu__icon" aria-hidden="true"></span><span class="account-menu__label">More</span></button><div class="account-menu__panel" id="account-menu-panel" hidden><strong class="account-menu__heading">Weinberger’s Deli</strong><a href="index.html">Home</a><div class="account-menu__destinations"><a href="menu.html">Menu &amp; order</a><a href="group.html">Group lunch</a><a href="catering.html">Catering</a><a href="visit.html">Visit &amp; hours</a><a href="story.html">Our story</a><a href="menu.html?saved=1">My usuals</a></div><a data-account-login href="login.html">Log in</a></div>`;
+  const header = document.querySelector('.guest-header');
+  (header || document.body).append(host);
+  function syncDestinations(content) {
+    if (!Array.isArray(content?.navigation) || !window.DeliContentCore) return;
+    const links = document.createDocumentFragment();
+    for (const item of content.navigation) {
+      if (!item.visible) continue;
+      const href = window.DeliContentCore.safeURL(item.url, location.href);
+      if (!href) continue;
+      const link = document.createElement('a');
+      link.href = href;
+      link.textContent = item.label;
+      links.append(link);
+    }
+    host.querySelector('.account-menu__destinations').replaceChildren(links);
+  }
+  syncDestinations(window.DeliContent?.current);
+  window.addEventListener('weinbergers-content', event => syncDestinations(event.detail));
   const toggle = host.querySelector('.account-menu__toggle');
   const panel = host.querySelector('.account-menu__panel');
   const setOpen = open => {
