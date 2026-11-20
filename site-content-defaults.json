@@ -627,7 +627,7 @@
               "id": "home-film-6",
               "label": "Photo · Deli photograph",
               "type": "image",
-              "value": "assets/weinbergers-deli-film-pw00hmrjzfg-1280.jpg",
+              "value": "assets/editorial/weinbergers-film-poster-1280-20261120-r1.jpg",
               "alt": "Deli photograph"
             },
             {
@@ -826,7 +826,7 @@
               "id": "home-guest-section-guest-last-stop-has-storefront-9",
               "label": "Photo · Weinberger’s yellow sign and lit storefront on Main Street",
               "type": "image",
-              "value": "assets/main-street/front-door-880.webp",
+              "value": "assets/main-street/front-door-880-20261120-r1.webp",
               "alt": "The deli’s brick entrance and yellow Weinberger’s sign on Main Street in daylight"
             }
           ]
@@ -1229,7 +1229,7 @@
               "id": "story-film-6",
               "label": "Photo · Deli photograph",
               "type": "image",
-              "value": "assets/weinbergers-deli-film-pw00hmrjzfg-1280.jpg",
+              "value": "assets/editorial/weinbergers-film-poster-1280-20261120-r1.jpg",
               "alt": "Deli photograph"
             },
             {
@@ -1274,7 +1274,7 @@
               "id": "story-deli-family-1",
               "label": "Photo · Dan Weinberger at the deli",
               "type": "image",
-              "value": "assets/dan-weinberger-official-1440.png",
+              "value": "assets/editorial/dan-weinberger-1440-20261120-r1.png",
               "alt": "Dan Weinberger at the deli"
             },
             {
@@ -1871,7 +1871,7 @@
               "id": "visit-visit-intro-9",
               "label": "Photo · Weinberger’s brick storefront at night, with its yellow family-traditi",
               "type": "image",
-              "value": "assets/optimized/weinbergers-main-street-20261105-1600.webp",
+              "value": "assets/optimized/weinbergers-main-street-20261105-1600-20261120-r1.webp",
               "alt": "Weinberger’s brick storefront at night, with its yellow family-tradition sign, lit deli windows and outdoor tables"
             },
             {
@@ -3785,7 +3785,7 @@
       "seo": {
         "title": "Weinberger’s Deli — iPhone",
         "description": "The Weinberger’s Deli iPhone ordering experience for the full menu, sandwich customization, comparison, favorites, and pickup status.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-iphone-ordering-mark-cuban-20261120-r2.png",
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-iphone-ordering-mark-cuban-20261120-r3.png",
         "image_alt": "Weinberger’s Deli iPhone ordering with the Mark Cuban sandwich shown in the mobile menu."
       },
       "sections": [
@@ -4285,7 +4285,7 @@
               "id": "poster",
               "label": "Film poster",
               "type": "image",
-              "value": "assets/weinbergers-deli-film-pw00hmrjzfg-1280.jpg",
+              "value": "assets/editorial/weinbergers-film-poster-1280-20261120-r1.jpg",
               "alt": "Weinberger's Deli film"
             }
           ]

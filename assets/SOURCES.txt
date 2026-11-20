@@ -223,6 +223,40 @@ It was decoded and encoded without retouching as 800x600 and 1600x1200 WebP
 delivery files. The source-selection and processing record is retained in
 work/weinbergers-platform/design/storefront-photo-provenance.json.
 
+Editorial delivery sharpening (reviewed 2026-11-20)
+The four authentic sources above and the published daylight storefront source
+were resized once to each delivery size. A thresholded unsharp mask was applied
+only to the Y luminance channel at final output size; color channels were left
+unchanged. The evening storefront additionally suppresses sharpening in black
+sky and clipped lights. No subject, sign, face, food, geometry, or background
+was synthesized, replaced, reconstructed, or selectively retouched.
+
+Dan portrait:
+assets/editorial/dan-weinberger-768-20261120-r1.png, 768x768, SHA256
+d83d489d09ad224bcbf612b33aeddfbbcf73e79349bfbc08976a62837af6c4e0
+assets/editorial/dan-weinberger-1440-20261120-r1.png, 1440x1440, SHA256
+93abed5161723b59bb540befcb0193eeafc04d21a88a3093b9c4dd6534e8b064
+
+Film poster:
+assets/editorial/weinbergers-film-poster-1280-20261120-r1.jpg, 1280x720,
+SHA256 f1a942820135f85577d730f90ea2996ca804b93fa3e8ae7c666294e5edffa5da
+
+Daylight storefront:
+assets/main-street/front-door-480-20261120-r1.webp, 480x480, SHA256
+a82ba6db617e1dc91bda044741680322d93dd595feaa125beb8b41a5887ab06f
+assets/main-street/front-door-880-20261120-r1.webp, 880x880, SHA256
+e3c3b007773cae748b2c9717124543976f74900206c5a5481bcfb47f96baa2f7
+assets/main-street/front-door-1440-20261120-r1.webp, 1440x1440, SHA256
+5c9a0f58033acfc05c24d046f9719ecf741a6e65b6b7463d6b033f8772e7b6fc
+
+Evening storefront:
+assets/optimized/weinbergers-main-street-20261105-800-20261120-r1.webp,
+800x600, SHA256
+75d72d7040fa2ef457e540c5acd16459ca8ef25aff2f34cb73c140c53eb11623
+assets/optimized/weinbergers-main-street-20261105-1600-20261120-r1.webp,
+1600x1200, SHA256
+ef61e97bf05bea7f5ebb1c06ddc53d9a0d16bae975d36c285b28f1b5295e7e74
+
 
 MENU PHOTOGRAPHY AND WEBSITE SHARE ARTWORK — NOVEMBER 20, 2026
 

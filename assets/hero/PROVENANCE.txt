@@ -1,20 +1,31 @@
-HOMEPAGE HERO — GAYLE'S SUPER REUBEN
+HOMEPAGE HERO — GAYLE'S SUPER REUBEN — PRESERVED CORRECTED EDIT
 
-Official restaurant source:
+Selected source:
+/Users/ChrisM/.codex/generated_images/01a199ce-0b94-78b1-8fe0-536d1f1c6aed/
+exec-f79a93ce-d93a-4d47-b270-ed6682eb96fd.png
+
+The user selected this exact already-saved corrected edit from an earlier project
+iteration on 2026-11-20. No new image was generated for this release. The selected
+1448 by 1086 PNG is retained byte-for-byte as
+gayles-super-reuben-corrected-20261120-1448.png with SHA-256
+924d3e63a5ea9af6d72853ee6783bfda5c6573609471afe997ba8db7f01e7c09.
+
+The 580 by 435 and 1160 by 870 WebP files are proportional downscales made from
+that selected PNG with cwebp 1.6.0 at quality 96, method 6 and sharp YUV
+conversion. Neither derivative is upscaled or recomposed. The responsive image
+set keeps the original PNG as its largest candidate.
+
+The hero links to Gayle's Super Reuben in the menu. The displayed name is
+supported by the project's current menu record: corned beef, pastrami and turkey
+pastrami with Swiss, sauerkraut and brown mustard on double-decker grilled marble
+rye. The public alt text stays visual rather than asserting that every ingredient
+is individually identifiable in the photograph.
+
+Replaced first-party source retained for history:
+gayles-super-reuben-1920.jpg
+Official restaurant URL:
 https://static-content.owner.com/funnel/images/c18ffe53-7eab-4c82-8e47-b968f8eedf09.jpg?v=7006274770
+SHA-256 fec19ad159225de14489820406f66bdf48e90d116dd635f2db24e26ece3b073e
 
-Retrieved 2026-11-20. The response is a 1920 by 1440 progressive JPEG with
-SHA-256 fec19ad159225de14489820406f66bdf48e90d116dd635f2db24e26ece3b073e.
-It is retained byte-for-byte as gayles-super-reuben-1920.jpg.
-
-The 580 and 1160 WebP files are proportional downscales made from that exact
-source with cwebp 1.6.0 at quality 90, method 6 and sharp YUV conversion. No
-pixels were generated, upscaled, retouched or composited. The browser applies
-only an object-fit crop. The default hero is capped at 580 by 330 CSS pixels on
-desktop and 430 by 200 CSS pixels on mobile, so the 1920 by 1440 source covers
-both displays at device-pixel ratio 3 without enlargement.
-
-The replaced five-basket photograph remains elsewhere in the release for the
-website share card. Its official homepage response is 2000 by 1250, and a
-4000-pixel CDN request adds no recoverable detail; it is an upscale of the
-visibly soft source rather than a sharper original.
+Its 580 and 1160 WebP derivatives remain in this folder as preserved previous
+release assets. They are no longer referenced by the homepage.

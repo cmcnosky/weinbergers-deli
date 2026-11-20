@@ -1,10 +1,10 @@
 'use strict';
 // Cache public browsing assets only. Payments, private order lookups, runtime
 // configuration prefers the network; staff operations never enter this cache.
-const CACHE='weinbergers-public-v20261120-47';
+const CACHE='weinbergers-public-v20261120-48';
 const ROOT=new URL('./',self.location).pathname;
 const PUBLIC_PAGES=['','index.html','menu.html','mobile.html','visit.html','readable-menu.html','story.html','group.html','catering.html'];
-const SHELL=['counter-layout.css?v=20261120-47','house-style.css?v=20261120-44','home-counter.css?v=20261120-44','site-content-core.js?v=20261120-43','site-content.js?v=20261120-43','site-content.css?v=20261117-41','account-menu.css?v=20261117-41','account-menu.js?v=20261120-45','readable-content.js?v=20261117-41','storefront.css?v=20261117-41','readability.css?v=20261117-41','boundaries.css?v=20261117-41','story.html','group.html','catering.html','story.css?v=20261117-41','story.js?v=20261117-41','expansion.css?v=20261117-41','customer-usuals.js?v=20261117-41','group-order.js?v=20261117-42','catering.js?v=20261117-42','guest.css?v=20261117-41','home.js?v=20261120-45','index.html','menu.html','mobile.html','visit.html','readable-menu.html','readable-menu.css?v=20261117-41','style.css?v=20261117-41','discovery.css?v=20261120-45','brand.css?v=20261117-41','experience.css?v=20261120-46','runtime-config.js?v=20261117-41','demo-menu.js?v=20261117-41','data.js?v=20261117-41','discovery.js?v=20261117-41','customer.js?v=20261120-46','media.js?v=20261120-46','offline.js?v=20261117-41','fonts.css','barlow.css','assets/weinbergers-logo-original.png','assets/weinbergers-logo-smooth.svg','assets/hero/gayles-super-reuben-corrected-20261120-580.webp','assets/hero/gayles-super-reuben-corrected-20261120-1160.webp','assets/hero/gayles-super-reuben-corrected-20261120-1448.png','assets/counter-edition/mark-cuban-760.webp','assets/dan-weinberger-original.png','assets/dan-weinberger-official-1440.png','assets/weinbergers-deli-film-pw00hmrjzfg-1280.jpg','assets/optimized/weinbergers-main-street-20261105-800.webp','assets/optimized/weinbergers-main-street-20261105-1600.webp'];
+const SHELL=['counter-layout.css?v=20261120-47','house-style.css?v=20261120-44','home-counter.css?v=20261120-44','site-content-core.js?v=20261120-48','site-content.js?v=20261120-43','site-content.css?v=20261117-41','account-menu.css?v=20261117-41','account-menu.js?v=20261120-45','readable-content.js?v=20261117-41','storefront.css?v=20261117-41','readability.css?v=20261117-41','boundaries.css?v=20261117-41','story.html','group.html','catering.html','story.css?v=20261117-41','story.js?v=20261117-41','expansion.css?v=20261117-41','customer-usuals.js?v=20261117-41','group-order.js?v=20261117-42','catering.js?v=20261117-42','guest.css?v=20261117-41','home.js?v=20261120-45','index.html','menu.html','mobile.html','visit.html','readable-menu.html','readable-menu.css?v=20261117-41','style.css?v=20261117-41','discovery.css?v=20261120-45','brand.css?v=20261117-41','experience.css?v=20261120-46','runtime-config.js?v=20261117-41','demo-menu.js?v=20261117-41','data.js?v=20261117-41','discovery.js?v=20261117-41','customer.js?v=20261120-46','media.js?v=20261120-48','offline.js?v=20261117-41','fonts.css','barlow.css','assets/weinbergers-logo-original.png','assets/weinbergers-logo-smooth.svg','assets/hero/gayles-super-reuben-corrected-20261120-580.webp','assets/hero/gayles-super-reuben-corrected-20261120-1160.webp','assets/hero/gayles-super-reuben-corrected-20261120-1448.png','assets/counter-edition/mark-cuban-760.webp','assets/editorial/dan-weinberger-768-20261120-r1.png','assets/editorial/dan-weinberger-1440-20261120-r1.png','assets/editorial/weinbergers-film-poster-1280-20261120-r1.jpg','assets/optimized/weinbergers-main-street-20261105-800-20261120-r1.webp','assets/optimized/weinbergers-main-street-20261105-1600-20261120-r1.webp'];
 async function cachePublicShell() {
  const cache = await caches.open(CACHE);
  // First-time visits should not request the entire offline menu and its assets at once.
@@ -32,5 +32,23 @@ self.addEventListener('fetch',event=>{
   }).catch(async () => await caches.match(canonical) || Response.error()));
   return;
  }
- if(path.startsWith('assets/')||/\.(?:css|js|woff2?)$/.test(path))event.respondWith(caches.open(CACHE).then(async cache=>{const cached=await cache.match(request);if(cached)return cached;const response=await fetch(request);if(response.ok){await cache.put(request,response.clone());const keys=await cache.keys();const photos=keys.filter(key=>new URL(key.url).pathname.includes('/assets/optimized/'));if(photos.length>160)await Promise.all(photos.slice(0,photos.length-160).map(key=>cache.delete(key)))}return response}));
+ if(path.startsWith('assets/') || /\.(?:css|js|woff2?)$/.test(path)) {
+  event.respondWith(caches.open(CACHE).then(async cache => {
+   const hit = await cache.match(request);
+   if (hit) return hit;
+   const response = await fetch(request);
+   if (!response.ok) return response;
+   const isMenuPhoto = value => /\/assets\/(?:optimized|menu-sharp-[^/]+)\//.test(value);
+   try {
+    if (isMenuPhoto(url.pathname)) {
+     const photos = (await cache.keys()).filter(key => isMenuPhoto(new URL(key.url).pathname));
+     if (photos.length >= 160) await Promise.all(photos.slice(0, photos.length - 159).map(key => cache.delete(key)));
+    }
+    await cache.put(request, response.clone());
+   } catch {
+    // A full device cache should still show a photograph just received from the network.
+   }
+   return response;
+  }));
+ }
 });
