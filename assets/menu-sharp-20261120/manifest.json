@@ -265,35 +265,43 @@
       "edgeEnergyRatio": 1.6873601193982428,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/dirty-dozen-sub-0hnc-card-480.webp",
+          "src": "assets/menu-sharp-20261120/dirty-dozen-sub-0hnc-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 62878
+          "bytes": 65410
         },
         {
-          "src": "assets/menu-sharp-20261120/dirty-dozen-sub-0hnc-card-960.webp",
+          "src": "assets/menu-sharp-20261120/dirty-dozen-sub-0hnc-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 260978
+          "bytes": 281402
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/dirty-dozen-sub-0hnc-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/dirty-dozen-sub-0hnc-detail-finish1-760.webp",
           "width": 760,
           "height": 1013,
-          "bytes": 344522
+          "bytes": 362174
         },
         {
-          "src": "assets/menu-sharp-20261120/dirty-dozen-sub-0hnc-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/dirty-dozen-sub-0hnc-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1920,
-          "bytes": 988118
+          "bytes": 1057796
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/477ab01d-dcbc-464e-9e54-75d5b4aa0dd0.jpg?v=4143664065"
+      "sourceReference": "https://static-content.owner.com/funnel/images/477ab01d-dcbc-464e-9e54-75d5b4aa0dd0.jpg?v=4143664065",
+      "finish": {
+        "filter": "brightness(.99) contrast(.98) saturate(.88)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "heros-hero-sub-VHdA",
@@ -720,18 +728,18 @@
       "edgeEnergyRatio": 4.411178665763151,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/italian-sub-zaHb-frame2-card-270.webp",
+          "src": "assets/menu-sharp-20261120/italian-sub-zaHb-frame2-card-finish1-270.webp",
           "width": 270,
           "height": 320,
-          "bytes": 47764
+          "bytes": 57860
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/italian-sub-zaHb-frame2-detail-270.webp",
+          "src": "assets/menu-sharp-20261120/italian-sub-zaHb-frame2-detail-finish1-270.webp",
           "width": 270,
           "height": 320,
-          "bytes": 47764
+          "bytes": 57860
         }
       ],
       "optical": {
@@ -744,6 +752,14 @@
         "revision": 2,
         "mode": "tight-contain",
         "reason": "Removed all printed feature text from the ordering photo."
+      },
+      "finish": {
+        "filter": "brightness(1.12) contrast(.82) saturate(.78)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
       }
     },
     {
@@ -846,35 +862,43 @@
       "edgeEnergyRatio": 1.705345060074746,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/california-pastrami-AAn4-card-480.webp",
+          "src": "assets/menu-sharp-20261120/california-pastrami-AAn4-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 60554
+          "bytes": 63144
         },
         {
-          "src": "assets/menu-sharp-20261120/california-pastrami-AAn4-card-960.webp",
+          "src": "assets/menu-sharp-20261120/california-pastrami-AAn4-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 222462
+          "bytes": 231520
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/california-pastrami-AAn4-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/california-pastrami-AAn4-detail-finish1-760.webp",
           "width": 760,
           "height": 1013,
-          "bytes": 292572
+          "bytes": 300944
         },
         {
-          "src": "assets/menu-sharp-20261120/california-pastrami-AAn4-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/california-pastrami-AAn4-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1920,
-          "bytes": 781620
+          "bytes": 836788
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/2284ca0a-1ef1-4856-9f8f-7985f298ba42.jpg?v=1900224526"
+      "sourceReference": "https://static-content.owner.com/funnel/images/2284ca0a-1ef1-4856-9f8f-7985f298ba42.jpg?v=1900224526",
+      "finish": {
+        "filter": "brightness(.92) saturate(.92) contrast(1.02)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "gayles-super-reuben-8U3W",
@@ -1067,16 +1091,16 @@
       "edgeEnergyRatio": 1.7627338111414843,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/lustig-70Mu-card-480.webp",
+          "src": "assets/menu-sharp-20261120/lustig-70Mu-card-focal1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 58578
+          "bytes": 67794
         },
         {
-          "src": "assets/menu-sharp-20261120/lustig-70Mu-card-960.webp",
+          "src": "assets/menu-sharp-20261120/lustig-70Mu-card-focal1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 229896
+          "bytes": 259280
         }
       ],
       "detailSources": [
@@ -1095,7 +1119,21 @@
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/2a203d5d-3429-4e49-8585-7b295f16a794.jpg?v=8461752269"
+      "sourceReference": "https://static-content.owner.com/funnel/images/2a203d5d-3429-4e49-8585-7b295f16a794.jpg?v=8461752269",
+      "cardCrop": {
+        "sourceWidth": 1440,
+        "sourceHeight": 1920,
+        "left": 0,
+        "top": 158,
+        "width": 1440,
+        "height": 990
+      },
+      "finish": {
+        "appliesTo": [
+          "card"
+        ],
+        "crop": "Move sandwich cross-section into view. The opened photograph retains the full frame."
+      }
     },
     {
       "id": "new-yorker-9nFc",
@@ -1262,35 +1300,51 @@
       "edgeEnergyRatio": 1.7211697083299844,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/wallstreeter-cuV8-card-480.webp",
+          "src": "assets/menu-sharp-20261120/wallstreeter-cuV8-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 74778
+          "bytes": 102514
         },
         {
-          "src": "assets/menu-sharp-20261120/wallstreeter-cuV8-card-960.webp",
+          "src": "assets/menu-sharp-20261120/wallstreeter-cuV8-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 315024
+          "bytes": 428170
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/wallstreeter-cuV8-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/wallstreeter-cuV8-detail-finish1-760.webp",
           "width": 760,
           "height": 1013,
-          "bytes": 404466
+          "bytes": 484674
         },
         {
-          "src": "assets/menu-sharp-20261120/wallstreeter-cuV8-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/wallstreeter-cuV8-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1920,
-          "bytes": 1229158
+          "bytes": 1515370
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/5ce51a7a-4492-46da-9aae-cb3b1753b464.jpg?v=4902733099"
+      "sourceReference": "https://static-content.owner.com/funnel/images/5ce51a7a-4492-46da-9aae-cb3b1753b464.jpg?v=4902733099",
+      "cardCrop": {
+        "sourceWidth": 1440,
+        "sourceHeight": 1920,
+        "left": 0,
+        "top": 119,
+        "width": 1440,
+        "height": 990
+      },
+      "finish": {
+        "filter": "brightness(1) contrast(.97) saturate(.90)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "weinberger-reuben-Rb4A",
@@ -1808,35 +1862,43 @@
       "edgeEnergyRatio": 1.8410210452894777,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/oscar-sandwich-jchZ-card-480.webp",
+          "src": "assets/menu-sharp-20261120/oscar-sandwich-jchZ-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 67440
+          "bytes": 71596
         },
         {
-          "src": "assets/menu-sharp-20261120/oscar-sandwich-jchZ-card-960.webp",
+          "src": "assets/menu-sharp-20261120/oscar-sandwich-jchZ-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 266386
+          "bytes": 289058
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/oscar-sandwich-jchZ-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/oscar-sandwich-jchZ-detail-finish1-760.webp",
           "width": 760,
           "height": 1013,
-          "bytes": 303804
+          "bytes": 330170
         },
         {
-          "src": "assets/menu-sharp-20261120/oscar-sandwich-jchZ-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/oscar-sandwich-jchZ-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1920,
-          "bytes": 815884
+          "bytes": 882584
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/ea289708-f76f-4384-ad26-1e45eab4cecd.jpg?v=6068489248"
+      "sourceReference": "https://static-content.owner.com/funnel/images/ea289708-f76f-4384-ad26-1e45eab4cecd.jpg?v=6068489248",
+      "finish": {
+        "filter": "saturate(.88) brightness(1.01) contrast(1.02)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "pacioni-bomb-sandwich-SytA",
@@ -1873,35 +1935,43 @@
       "edgeEnergyRatio": 1.6211384186723783,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/pacioni-bomb-sandwich-SytA-card-480.webp",
+          "src": "assets/menu-sharp-20261120/pacioni-bomb-sandwich-SytA-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 66344
+          "bytes": 70308
         },
         {
-          "src": "assets/menu-sharp-20261120/pacioni-bomb-sandwich-SytA-card-960.webp",
+          "src": "assets/menu-sharp-20261120/pacioni-bomb-sandwich-SytA-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 244638
+          "bytes": 261894
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/pacioni-bomb-sandwich-SytA-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/pacioni-bomb-sandwich-SytA-detail-finish1-760.webp",
           "width": 760,
           "height": 1013,
-          "bytes": 290162
+          "bytes": 307672
         },
         {
-          "src": "assets/menu-sharp-20261120/pacioni-bomb-sandwich-SytA-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/pacioni-bomb-sandwich-SytA-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1920,
-          "bytes": 727448
+          "bytes": 803582
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/a24ede53-4aba-4958-a4b5-f5b83186c446.jpg?v=4487754749"
+      "sourceReference": "https://static-content.owner.com/funnel/images/a24ede53-4aba-4958-a4b5-f5b83186c446.jpg?v=4487754749",
+      "finish": {
+        "filter": "brightness(1.02) contrast(.97) saturate(.88)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "golden-rose-sandwich-Ejsi",
@@ -1938,35 +2008,43 @@
       "edgeEnergyRatio": 1.4169355008998037,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/golden-rose-sandwich-Ejsi-card-480.webp",
+          "src": "assets/menu-sharp-20261120/golden-rose-sandwich-Ejsi-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 100714
+          "bytes": 114984
         },
         {
-          "src": "assets/menu-sharp-20261120/golden-rose-sandwich-Ejsi-card-960.webp",
+          "src": "assets/menu-sharp-20261120/golden-rose-sandwich-Ejsi-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 404818
+          "bytes": 469214
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/golden-rose-sandwich-Ejsi-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/golden-rose-sandwich-Ejsi-detail-finish1-760.webp",
           "width": 760,
           "height": 972,
-          "bytes": 444150
+          "bytes": 517444
         },
         {
-          "src": "assets/menu-sharp-20261120/golden-rose-sandwich-Ejsi-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/golden-rose-sandwich-Ejsi-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1842,
-          "bytes": 1505288
+          "bytes": 1775850
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/65ebfe06-123f-4df0-93b2-c2bec0cfb235.jpg?v=2400940943"
+      "sourceReference": "https://static-content.owner.com/funnel/images/65ebfe06-123f-4df0-93b2-c2bec0cfb235.jpg?v=2400940943",
+      "finish": {
+        "filter": "brightness(.93) saturate(.94) contrast(1.02)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "crave-dfw-sandwich-62Vz",
@@ -2458,35 +2536,43 @@
       "edgeEnergyRatio": 1.5872373582945238,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/the-big-ricky-cuban-1dOe-card-480.webp",
+          "src": "assets/menu-sharp-20261120/the-big-ricky-cuban-1dOe-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 68820
+          "bytes": 74396
         },
         {
-          "src": "assets/menu-sharp-20261120/the-big-ricky-cuban-1dOe-card-960.webp",
+          "src": "assets/menu-sharp-20261120/the-big-ricky-cuban-1dOe-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 217818
+          "bytes": 212148
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/the-big-ricky-cuban-1dOe-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/the-big-ricky-cuban-1dOe-detail-finish1-760.webp",
           "width": 760,
           "height": 1013,
-          "bytes": 308914
+          "bytes": 341526
         },
         {
-          "src": "assets/menu-sharp-20261120/the-big-ricky-cuban-1dOe-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/the-big-ricky-cuban-1dOe-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1920,
-          "bytes": 774266
+          "bytes": 764306
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/ec614a1d-9730-4b2c-bdc9-f9f89e736cbb.jpg?v=3492646901"
+      "sourceReference": "https://static-content.owner.com/funnel/images/ec614a1d-9730-4b2c-bdc9-f9f89e736cbb.jpg?v=3492646901",
+      "finish": {
+        "filter": "brightness(.93) contrast(.90) saturate(.76)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "medianoche-cubano-9TXt",
@@ -2670,35 +2756,43 @@
       "edgeEnergyRatio": 1.7858775848345925,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/cheesesteak-NB0j-card-480.webp",
+          "src": "assets/menu-sharp-20261120/cheesesteak-NB0j-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 59982
+          "bytes": 64238
         },
         {
-          "src": "assets/menu-sharp-20261120/cheesesteak-NB0j-card-960.webp",
+          "src": "assets/menu-sharp-20261120/cheesesteak-NB0j-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 208840
+          "bytes": 229308
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/cheesesteak-NB0j-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/cheesesteak-NB0j-detail-finish1-760.webp",
           "width": 760,
           "height": 1013,
-          "bytes": 284068
+          "bytes": 305776
         },
         {
-          "src": "assets/menu-sharp-20261120/cheesesteak-NB0j-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/cheesesteak-NB0j-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1920,
-          "bytes": 714862
+          "bytes": 792844
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/86e9b6ca-6b7d-431d-944d-319d5cd848fd.jpg?v=5114273003"
+      "sourceReference": "https://static-content.owner.com/funnel/images/86e9b6ca-6b7d-431d-944d-319d5cd848fd.jpg?v=5114273003",
+      "finish": {
+        "filter": "saturate(.80) brightness(1.02) contrast(1.01)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "cheesesteak-sub-8L1c",
@@ -3216,35 +3310,43 @@
       "edgeEnergyRatio": 3.455232469993333,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/chopped-cheese-sandwich-VgG4-card-480.webp",
+          "src": "assets/menu-sharp-20261120/chopped-cheese-sandwich-VgG4-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 72830
+          "bytes": 83594
         },
         {
-          "src": "assets/menu-sharp-20261120/chopped-cheese-sandwich-VgG4-card-768.webp",
+          "src": "assets/menu-sharp-20261120/chopped-cheese-sandwich-VgG4-card-finish1-768.webp",
           "width": 768,
           "height": 528,
-          "bytes": 151064
+          "bytes": 176116
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/chopped-cheese-sandwich-VgG4-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/chopped-cheese-sandwich-VgG4-detail-finish1-760.webp",
           "width": 760,
           "height": 760,
-          "bytes": 221264
+          "bytes": 259292
         },
         {
-          "src": "assets/menu-sharp-20261120/chopped-cheese-sandwich-VgG4-detail-768.webp",
+          "src": "assets/menu-sharp-20261120/chopped-cheese-sandwich-VgG4-detail-finish1-768.webp",
           "width": 768,
           "height": 768,
-          "bytes": 216644
+          "bytes": 255544
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/bc7be9c9-fc89-4673-b753-ffd739ec0eba?v=2049297358"
+      "sourceReference": "https://static-content.owner.com/funnel/images/bc7be9c9-fc89-4673-b753-ffd739ec0eba?v=2049297358",
+      "finish": {
+        "filter": "brightness(.98) contrast(.94) saturate(.82)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "cowboy-pot-roast-sandwich-HjEr",
@@ -3346,35 +3448,43 @@
       "edgeEnergyRatio": 2.1860633366375968,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/grape-escape-sandwich-8EwS-card-480.webp",
+          "src": "assets/menu-sharp-20261120/grape-escape-sandwich-8EwS-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 59346
+          "bytes": 63712
         },
         {
-          "src": "assets/menu-sharp-20261120/grape-escape-sandwich-8EwS-card-960.webp",
+          "src": "assets/menu-sharp-20261120/grape-escape-sandwich-8EwS-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 199798
+          "bytes": 215920
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/grape-escape-sandwich-8EwS-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/grape-escape-sandwich-8EwS-detail-finish1-760.webp",
           "width": 760,
           "height": 785,
-          "bytes": 179932
+          "bytes": 193412
         },
         {
-          "src": "assets/menu-sharp-20261120/grape-escape-sandwich-8EwS-detail-1065.webp",
+          "src": "assets/menu-sharp-20261120/grape-escape-sandwich-8EwS-detail-finish1-1065.webp",
           "width": 1065,
           "height": 1100,
-          "bytes": 269132
+          "bytes": 300540
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/3c67e78d-aa30-4259-867f-3a7c136b2ca9.jpg?v=9175031952"
+      "sourceReference": "https://static-content.owner.com/funnel/images/3c67e78d-aa30-4259-867f-3a7c136b2ca9.jpg?v=9175031952",
+      "finish": {
+        "filter": "brightness(1.04) contrast(.93) saturate(.86)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "maxs-pancetta-sandwich-5G1z",
@@ -4126,35 +4236,43 @@
       "edgeEnergyRatio": 3.543968188630566,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/vegyro-4u4B-card-480.webp",
+          "src": "assets/menu-sharp-20261120/vegyro-4u4B-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 87526
+          "bytes": 99882
         },
         {
-          "src": "assets/menu-sharp-20261120/vegyro-4u4B-card-768.webp",
+          "src": "assets/menu-sharp-20261120/vegyro-4u4B-card-finish1-768.webp",
           "width": 768,
           "height": 528,
-          "bytes": 191796
+          "bytes": 219852
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/vegyro-4u4B-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/vegyro-4u4B-detail-finish1-760.webp",
           "width": 760,
           "height": 760,
-          "bytes": 267494
+          "bytes": 307676
         },
         {
-          "src": "assets/menu-sharp-20261120/vegyro-4u4B-detail-768.webp",
+          "src": "assets/menu-sharp-20261120/vegyro-4u4B-detail-finish1-768.webp",
           "width": 768,
           "height": 768,
-          "bytes": 261558
+          "bytes": 301738
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/c919c70c-edd8-4146-a39a-a0829ba417fa?v=8990631380"
+      "sourceReference": "https://static-content.owner.com/funnel/images/c919c70c-edd8-4146-a39a-a0829ba417fa?v=8990631380",
+      "finish": {
+        "filter": "brightness(.98) contrast(.94) saturate(.84)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "california-club-fFJD",
@@ -4191,35 +4309,43 @@
       "edgeEnergyRatio": 1.4514486287778319,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/california-club-fFJD-card-480.webp",
+          "src": "assets/menu-sharp-20261120/california-club-fFJD-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 74622
+          "bytes": 87688
         },
         {
-          "src": "assets/menu-sharp-20261120/california-club-fFJD-card-960.webp",
+          "src": "assets/menu-sharp-20261120/california-club-fFJD-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 307436
+          "bytes": 317784
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/california-club-fFJD-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/california-club-fFJD-detail-finish1-760.webp",
           "width": 760,
           "height": 760,
-          "bytes": 230864
+          "bytes": 279628
         },
         {
-          "src": "assets/menu-sharp-20261120/california-club-fFJD-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/california-club-fFJD-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1440,
-          "bytes": 830536
+          "bytes": 1014636
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/1e8be9ea-e802-49bf-b2d5-a65f9408d835.jpg?v=4441139560"
+      "sourceReference": "https://static-content.owner.com/funnel/images/1e8be9ea-e802-49bf-b2d5-a65f9408d835.jpg?v=4441139560",
+      "finish": {
+        "filter": "contrast(.88) brightness(1.08)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "chicken-pesto-ykUC",
@@ -4607,35 +4733,43 @@
       "edgeEnergyRatio": 1.853545670364436,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/turkey-ciabatta-naTc-card-480.webp",
+          "src": "assets/menu-sharp-20261120/turkey-ciabatta-naTc-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 60012
+          "bytes": 65728
         },
         {
-          "src": "assets/menu-sharp-20261120/turkey-ciabatta-naTc-card-960.webp",
+          "src": "assets/menu-sharp-20261120/turkey-ciabatta-naTc-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 231462
+          "bytes": 257128
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/turkey-ciabatta-naTc-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/turkey-ciabatta-naTc-detail-finish1-760.webp",
           "width": 760,
           "height": 1013,
-          "bytes": 250128
+          "bytes": 279468
         },
         {
-          "src": "assets/menu-sharp-20261120/turkey-ciabatta-naTc-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/turkey-ciabatta-naTc-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1920,
-          "bytes": 617986
+          "bytes": 714474
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/1e1037e0-35cb-4360-9cb9-f5785a85f779.jpg?v=2752791749"
+      "sourceReference": "https://static-content.owner.com/funnel/images/1e1037e0-35cb-4360-9cb9-f5785a85f779.jpg?v=2752791749",
+      "finish": {
+        "filter": "brightness(.97) contrast(1.10) saturate(.98)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "garins-4-g-sandwich-OZvS",
@@ -5056,35 +5190,43 @@
       "edgeEnergyRatio": 3.5766872167171675,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/mustang-3oNc-card-480.webp",
+          "src": "assets/menu-sharp-20261120/mustang-3oNc-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 96684
+          "bytes": 107924
         },
         {
-          "src": "assets/menu-sharp-20261120/mustang-3oNc-card-768.webp",
+          "src": "assets/menu-sharp-20261120/mustang-3oNc-card-finish1-768.webp",
           "width": 768,
           "height": 528,
-          "bytes": 225808
+          "bytes": 256052
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/mustang-3oNc-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/mustang-3oNc-detail-finish1-760.webp",
           "width": 760,
           "height": 760,
-          "bytes": 303082
+          "bytes": 355064
         },
         {
-          "src": "assets/menu-sharp-20261120/mustang-3oNc-detail-768.webp",
+          "src": "assets/menu-sharp-20261120/mustang-3oNc-detail-finish1-768.webp",
           "width": 768,
           "height": 768,
-          "bytes": 305224
+          "bytes": 356668
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/040eb59f-de80-430a-baa5-b6d10745a28a?v=9222937154"
+      "sourceReference": "https://static-content.owner.com/funnel/images/040eb59f-de80-430a-baa5-b6d10745a28a?v=9222937154",
+      "finish": {
+        "filter": "saturate(.72) contrast(.94) brightness(.98)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "palhan-4CHG",
@@ -5375,30 +5517,30 @@
       "edgeEnergyRatio": 1.550741396411649,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-frame3-card-480.webp",
+          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-frame3-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 64964
+          "bytes": 67006
         },
         {
-          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-frame3-card-960.webp",
+          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-frame3-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 269432
+          "bytes": 277212
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-detail-finish1-760.webp",
           "width": 760,
           "height": 760,
-          "bytes": 229784
+          "bytes": 242212
         },
         {
-          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/ham-4-sharing-HFj8-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1440,
-          "bytes": 811894
+          "bytes": 858744
         }
       ],
       "optical": null,
@@ -5429,6 +5571,14 @@
           "height": 1320
         },
         "reason": "Keep the named menu item, rather than checked paper or packaging, dominant in the ordering card."
+      },
+      "finish": {
+        "filter": "brightness(1.06) saturate(.82) contrast(.94)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
       }
     },
     {
@@ -5921,30 +6071,30 @@
       "edgeEnergyRatio": 1.6495526953953503,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/wrigley-field-kokh-card-480.webp",
+          "src": "assets/menu-sharp-20261120/wrigley-field-kokh-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 62526
+          "bytes": 68870
         },
         {
-          "src": "assets/menu-sharp-20261120/wrigley-field-kokh-card-960.webp",
+          "src": "assets/menu-sharp-20261120/wrigley-field-kokh-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 262212
+          "bytes": 326148
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/wrigley-field-kokh-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/wrigley-field-kokh-detail-finish1-760.webp",
           "width": 760,
           "height": 570,
-          "bytes": 175718
+          "bytes": 217018
         },
         {
-          "src": "assets/menu-sharp-20261120/wrigley-field-kokh-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/wrigley-field-kokh-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1080,
-          "bytes": 623196
+          "bytes": 700800
         }
       ],
       "optical": {
@@ -5952,7 +6102,15 @@
         "height": 450
       },
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/ed7ab3b8-ba7d-4d4d-a327-c80dec26ab47.jpg?v=8413105993"
+      "sourceReference": "https://static-content.owner.com/funnel/images/ed7ab3b8-ba7d-4d4d-a327-c80dec26ab47.jpg?v=8413105993",
+      "finish": {
+        "filter": "saturate(.82) contrast(1.08) brightness(.98)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "chicago-dog-JTAI",
@@ -6538,30 +6696,30 @@
       "edgeEnergyRatio": 2.015748738470659,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/earl-the-sandwich-meatloaf-VqAJ-card-480.webp",
+          "src": "assets/menu-sharp-20261120/earl-the-sandwich-meatloaf-VqAJ-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 48750
+          "bytes": 52878
         },
         {
-          "src": "assets/menu-sharp-20261120/earl-the-sandwich-meatloaf-VqAJ-card-960.webp",
+          "src": "assets/menu-sharp-20261120/earl-the-sandwich-meatloaf-VqAJ-card-finish1-960.webp",
           "width": 960,
           "height": 660,
-          "bytes": 180066
+          "bytes": 197856
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/earl-the-sandwich-meatloaf-VqAJ-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/earl-the-sandwich-meatloaf-VqAJ-detail-finish1-760.webp",
           "width": 760,
           "height": 1013,
-          "bytes": 256026
+          "bytes": 275698
         },
         {
-          "src": "assets/menu-sharp-20261120/earl-the-sandwich-meatloaf-VqAJ-detail-1440.webp",
+          "src": "assets/menu-sharp-20261120/earl-the-sandwich-meatloaf-VqAJ-detail-finish1-1440.webp",
           "width": 1440,
           "height": 1920,
-          "bytes": 622878
+          "bytes": 697964
         }
       ],
       "optical": {
@@ -6569,7 +6727,20 @@
         "height": 480
       },
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/56bae7e5-ceab-409b-a21e-eb9f69d554f5.jpg?v=1335756558"
+      "sourceReference": "https://static-content.owner.com/funnel/images/56bae7e5-ceab-409b-a21e-eb9f69d554f5.jpg?v=1335756558",
+      "finish": {
+        "filter": "brightness(.97) contrast(1.06) saturate(.82)",
+        "gains": [
+          1.041,
+          0.974,
+          0.988
+        ],
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "thors-patty-melt-Zuhb",
@@ -7022,35 +7193,43 @@
       "edgeEnergyRatio": 3.3333695578561313,
       "cardSources": [
         {
-          "src": "assets/menu-sharp-20261120/veggie-cheesesteak-x7J2-card-480.webp",
+          "src": "assets/menu-sharp-20261120/veggie-cheesesteak-x7J2-card-finish1-480.webp",
           "width": 480,
           "height": 330,
-          "bytes": 79228
+          "bytes": 91182
         },
         {
-          "src": "assets/menu-sharp-20261120/veggie-cheesesteak-x7J2-card-768.webp",
+          "src": "assets/menu-sharp-20261120/veggie-cheesesteak-x7J2-card-finish1-768.webp",
           "width": 768,
           "height": 528,
-          "bytes": 168716
+          "bytes": 194522
         }
       ],
       "detailSources": [
         {
-          "src": "assets/menu-sharp-20261120/veggie-cheesesteak-x7J2-detail-760.webp",
+          "src": "assets/menu-sharp-20261120/veggie-cheesesteak-x7J2-detail-finish1-760.webp",
           "width": 760,
           "height": 760,
-          "bytes": 243378
+          "bytes": 281794
         },
         {
-          "src": "assets/menu-sharp-20261120/veggie-cheesesteak-x7J2-detail-768.webp",
+          "src": "assets/menu-sharp-20261120/veggie-cheesesteak-x7J2-detail-finish1-768.webp",
           "width": 768,
           "height": 768,
-          "bytes": 240780
+          "bytes": 276156
         }
       ],
       "optical": null,
       "editorialOriginal": null,
-      "sourceReference": "https://static-content.owner.com/funnel/images/0978977e-fce2-42a5-899f-4f5e5a25155b?v=3164650021"
+      "sourceReference": "https://static-content.owner.com/funnel/images/0978977e-fce2-42a5-899f-4f5e5a25155b?v=3164650021",
+      "finish": {
+        "filter": "saturate(.83) brightness(.94)",
+        "base": "sharpened November 20 menu photograph",
+        "appliesTo": [
+          "card",
+          "detail"
+        ]
+      }
     },
     {
       "id": "zucchini-sub-eQgA",
@@ -8384,5 +8563,6 @@
       "sourceReference": "https://static-content.owner.com/01032562-947c-4023-a79a-1d2167cee8eb.jpg"
     }
   ],
-  "frameRevision": 3
+  "frameRevision": 3,
+  "finishingRevision": "individually reviewed menu photographs, November 20"
 }

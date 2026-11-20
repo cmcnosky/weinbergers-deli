@@ -329,3 +329,8 @@ from the recovered edit; the original 540×720 Italian Beef JPEG is preserved.
 The current website share artwork is weinbergers-gayles-reuben-corrected-20261120-r4.png.
 The separate iPhone share artwork is weinbergers-iphone-ordering-mark-cuban-20261120-r3.png
 and shows the mobile ordering page with the sharpened Mark Cuban photograph.
+
+Individual finishes for menu cards and opened photographs use the existing
+photographic pixels. Each adjusted item records its settings in the menu
+manifest. New filenames distinguish the finished photographs from older
+cached versions. The approved feature photographs keep their earlier files.
