@@ -1,34 +1,105 @@
-/* Keep the owner's alternate section layouts intact. This composition is for the default opening. */
-@media (max-width: 700px) {
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) {
-    display: grid;
-    grid-template-columns: minmax(0, .92fr) minmax(0, 1fr);
-    grid-template-areas: 'date date' 'name sandwich' 'place sandwich' 'deck deck' 'actions actions' 'search search';
-    gap: 0 12px;
-    align-items: start;
-    padding: 18px 5% 22px;
-  }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) > .hero-copy { display: contents; }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-copy > .guest-kicker { grid-area: date; padding-bottom: 10px; margin: 0 0 16px; }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-copy h1 { grid-area: name; font-size: clamp(43px, 12.1vw, 84px); align-self: end; line-height: .9; overflow-wrap: anywhere; }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-place { grid-area: place; font-size: clamp(19px, 4.9vw, 27px); line-height: 1.05; margin: 10px 0 0; }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich { grid-area: sandwich; align-self: stretch; border: 4px solid var(--boundary-maroon); }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich > a { min-height: 94px; height: clamp(94px, 25vw, 170px); max-height: none; }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich img { width: 100%; height: 100%; object-fit: cover; }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich figcaption { padding: 7px 8px; gap: 2px; border-top: 3px solid var(--boundary-maroon); }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich figcaption > span { font-size: 12px; }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich figcaption > a { gap: 4px; font-size: clamp(22px,5.6vw,32px); }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-deck { grid-area: deck; max-width: none; margin: 17px 0 0; }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .guest-actions { grid-area: actions; margin-top: 14px; row-gap: 6px; }
-  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .home-search { grid-area: search; margin-top: 14px; }
+/* Respect alternate layouts from Site Studio. */
+.guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) {
+  grid-template-columns: minmax(0, 1.34fr) minmax(0, 1fr);
+  grid-template-areas: "photo copy";
+  align-items: stretch;
 }
-
-
-/* Keep the counter photographs edge to edge inside their printed borders. */
-.hero-sandwich img[src^="assets/counter-photos/"],
-.signature-grid img[src^="assets/counter-photos/"] {
+.guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) > .hero-copy {
+  grid-area: copy;
+  padding: clamp(24px, 3vw, 52px);
+}
+.guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-copy h1 {
+  font-size: clamp(74px, 7.9vw, 128px);
+}
+.guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich {
+  grid-area: photo;
+  border: 0;
+  border-right: var(--section-rule);
+}
+.guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich > a {
+  position: relative;
+  min-height: clamp(395px, 34vw, 610px);
+}
+.guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-height: none;
   object-fit: cover;
+  object-position: 50% 48%;
 }
-.signature-grid img[data-cms-image="home-guest-section-6"][src^="assets/counter-photos/"] {
-  object-position: 50% 58%;
+.guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich figcaption {
+  display: grid;
+  grid-template-columns: auto minmax(0,1fr);
+  align-items: center;
+  gap: clamp(12px, 2vw, 30px);
+  padding: 14px clamp(16px, 2.6vw, 42px);
+  border-top: 4px solid var(--yellow);
+  color: var(--paper);
 }
+.guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) figcaption > span {
+  max-width: 8ch;
+  font: 700 .83rem/1.3 var(--mono);
+  color: var(--yellow);
+}
+.guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) figcaption > a {
+  min-height:44px;
+  align-items:center;
+  font-size: clamp(25px, 2.8vw, 44px);
+}
+.signature-grid img[src^="assets/counter-photos/"] { object-fit:cover; }
+.signature-grid img[data-cms-image="home-guest-section-6"][src^="assets/counter-photos/"] { object-position:50% 58%; }
+.home-storefront img[src^="assets/main-street/front-door"] { aspect-ratio:4/3; object-fit:cover; object-position:50% 47%; }
+
+@media (max-width:760px) {
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+    grid-template-areas: "date date" "name place" "photo photo" "deck deck" "actions actions" "search search";
+    gap:0 10px;
+    padding: 16px 5% 25px;
+    align-items:center;
+  }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) > .hero-copy { display:contents; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-copy > .guest-kicker {
+    grid-area:date; border:0; padding:0; margin:0 0 9px;
+  }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-copy h1 {
+    grid-area:name; font-size:clamp(44px,11.5vw,78px); line-height:.85; margin:0;
+  }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-place {
+    grid-area:place; border-left:3px solid var(--red); padding-left:12px; margin:0;
+    font-size:clamp(19px,4.5vw,28px); line-height:1.07; max-width:14ch;
+  }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich {
+    margin:16px 0 0; border:4px solid var(--boundary-maroon); align-self:stretch;
+  }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich > a {
+    display:block; flex:none; min-height:0; height:auto; max-height:none; aspect-ratio:1.85;
+  }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-sandwich figcaption {
+    padding:4px 12px; border-top-width:3px; gap:10px;
+  }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) figcaption > span { font-size:.68rem; max-width:8ch; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) figcaption > a { font-size:clamp(21px,5.4vw,30px); gap:8px; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .hero-deck { grid-area:deck; margin:16px 0 0; max-width:none; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .guest-actions { grid-area:actions; margin-top:12px; }
+  .guest-hero:is(:not([data-cms-layout]), [data-cms-layout="default"]) .home-search { grid-area:search; margin-top:14px; }
+}
+
+/* The three house picks read as sandwich cards, with a single rule around the photograph. */
+.signature-grid article { padding:0 0 18px; overflow:hidden; }
+.signature-grid article > a:first-child { display:block; width:100%; }
+.signature-grid article > a:first-child > img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:4/3;
+  max-height:none;
+  border:0;
+  border-bottom:var(--panel-rule);
+  margin:0 0 16px;
+}
+.signature-grid article > a:first-child :is(.guest-kicker, h3),
+.signature-grid article > p,
+.signature-grid article > .guest-text-link { margin-inline:clamp(12px,1.4vw,22px); }

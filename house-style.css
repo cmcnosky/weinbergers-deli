@@ -1,0 +1,114 @@
+/* The yellow and maroon come from the deli sign. Broad reading areas use menu paper. */
+:root {
+  --display: Georgia, 'Times New Roman', serif;
+  --yellow: #e5b94c;
+  --house-paper: color-mix(in srgb, var(--yellow) 10%, #fffcf5);
+  --house-rule: 2px solid var(--line, #631723);
+}
+.guest-page :is(h1,h2,h3), .expansion-page :is(h1,h2,h3),
+.menu-page :is(h1,h2,h3), .embedded :is(h1,h2,h3), .phone-page :is(h1,h2,h3) {
+  font-family: var(--display);
+  font-weight: 500;
+  text-transform:none;
+  line-height:1.08;
+  letter-spacing:-.032em;
+}
+.guest-hero:is(:not([data-cms-layout]),[data-cms-layout="default"]) .hero-copy h1 {
+  font:500 clamp(64px,6.5vw,106px)/.99 var(--display);
+  letter-spacing:-.06em;
+}
+.guest-page .hero-place {
+  font:600 clamp(17px,1.6vw,24px)/1.32 var(--sans);
+  letter-spacing:0;
+}
+.guest-page .hero-deck { font-weight:450; }
+.guest-page .hero-sandwich figcaption { background:var(--red); }
+.guest-hero:is(:not([data-cms-layout]),[data-cms-layout="default"]) figcaption > a {
+  font:500 clamp(23px,2.3vw,36px)/1.12 var(--display); letter-spacing:-.025em;
+}
+.guest-page :is(.guest-section,.guest-essentials,.deli-film,.deli-family,.visit-sections,.visit-intro,.guest-questions),
+.expansion-page :is(.expansion-panel,.expansion-form), .menu-page .menu-section, .embedded .menu-section {
+  background-color:var(--house-paper);
+}
+.guest-page :is(.guest-story,.deli-craft,.recognition-strip), .guest-page .guest-footer {
+  outline:none;
+}
+.guest-page main > .recognition-strip {
+  background:var(--house-paper); color:var(--ink);
+  border-block:var(--section-rule);
+}
+.guest-page .recognition-strip > a { color:var(--red); border-right-color:var(--line); }
+html .guest-page .recognition-strip :is(strong,span) { color:var(--red); }
+.guest-page .recognition-strip strong, .guest-page .guest-essentials strong {
+  font:500 clamp(23px,2.25vw,34px)/1.15 var(--display);
+}
+.guest-page .recognition-strip > a, .guest-page .guest-essentials > a { padding-block:20px; }
+.guest-page .guest-essentials, .guest-page .deli-order-paths { background:var(--yellow); }
+.guest-page .guest-kicker, .guest-page .guest-essentials span,
+.guest-page .path-kicker, .expansion-page .expansion-kicker {
+  font-family:var(--sans); font-weight:700; letter-spacing:.045em;
+}
+.guest-page .guest-section-head { border-bottom:var(--house-rule); }
+.guest-page .signature-grid article { background:var(--house-paper); border:var(--house-rule); }
+.guest-page .signature-grid article h3 { font-size:clamp(25px,2.6vw,38px); line-height:1.12; }
+.guest-page .signature-grid p, .guest-page .deli-family p, .guest-page .guest-footer { font-weight:450; }
+.guest-page .guest-header nav, .guest-page .guest-actions { font-weight:650; }
+.guest-page .guest-film-link > span { border:0; }
+.guest-page :is(.guest-section,.story-opening,.deli-family,.deli-film,.visit-intro) h2,
+.expansion-page .expansion-panel h2 { font-weight:500; letter-spacing:-.04em; }
+.guest-page :is(.story-opening,.visit-intro) h1, .expansion-page .expansion-hero h1 {
+  font-size:clamp(48px,6.2vw,94px); max-width:18ch; line-height:1.02;
+}
+.phone-page .phone-editorial h1, .phone-page .phone-editorial h2 { font-family:var(--display); font-weight:500; }
+.login-card__heading h1 {font-family:var(--display);font-weight:500;letter-spacing:-.025em;}
+@media(max-width:760px){
+  .guest-hero:is(:not([data-cms-layout]),[data-cms-layout="default"]) .hero-copy h1 {
+    font-size:clamp(39px,10.3vw,67px); line-height:.98;
+  }
+  .guest-hero:is(:not([data-cms-layout]),[data-cms-layout="default"]) .hero-place {
+    font:650 clamp(16px,4.2vw,22px)/1.25 var(--sans); max-width:16ch;
+  }
+  .guest-hero:is(:not([data-cms-layout]),[data-cms-layout="default"]) figcaption > a { font-size:clamp(18px,4.8vw,27px); }
+  .guest-page :is(.story-opening,.visit-intro,.expansion-hero) h1 { font-size:clamp(42px,10.8vw,70px); }
+  .guest-page .recognition-strip > a { border-color:var(--line); }
+}
+
+.intro h1, .category-heading h2, .menu-item h3, .decision-hero h1, .decision-section h2 {
+  font-family:var(--display); font-weight:500; letter-spacing:-.035em;
+  line-height:1.1; text-transform:none;
+}
+.category-heading { grid-template-columns:minmax(0,1fr) auto; }
+.category-heading h2 { min-width:0; overflow-wrap:anywhere; }
+@media(max-width:760px){
+  .category-heading { grid-template-columns:minmax(0,1fr); }
+  .category-heading h2 { font-size:clamp(30px,8vw,46px); }
+  .guest-header { row-gap:4px; }
+  .guest-header nav { gap:0 12px; }
+  .guest-header nav > a { font-size:15px; min-height:35px; }
+  .guest-header .guest-brand img { width:clamp(92px,25vw,118px); }
+}
+.decision-lead h1, .decision-heading h2, .decision-details h2, .decision-next h2 {
+  font-family:var(--display); font-weight:500; letter-spacing:-.04em; line-height:1.04; text-transform:none;
+}
+.account-menu__toggle, .account-menu__panel, .expansion-page .expansion-panel,
+.compare-tray, .phone-page .phone-shell { box-shadow:none; }
+.account-menu__toggle {
+  border-width:2px; font-weight:650; font-size:15px; text-transform:none; letter-spacing:0;
+}
+.account-menu__icon, .account-menu__icon::before, .account-menu__icon::after { height:2px; }
+.journey-copy h3, .proposal-section h2, .proposal-section h3 {
+  text-transform:none; font-family:var(--display); font-weight:500; letter-spacing:-.035em;
+}
+@media(max-width:600px){
+  .guest-header {
+    display:grid; grid-template-columns:1fr; gap:4px;
+    padding:8px 5% 0 !important;
+  }
+  .guest-header .guest-brand { justify-self:start; }
+  .guest-header nav {
+    display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:4px; width:100%; border-top:1px solid var(--line);
+  }
+  .guest-header nav > a { display:flex; align-items:center; justify-content:center; min-height:44px; }
+  .guest-header nav > .guest-order { display:none; }
+}

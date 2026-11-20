@@ -59,3 +59,121 @@ body:has(dialog[open]) .bottom-nav,body:has(dialog[open]) .mobile-bag,body:has(d
 .section-heading .menu-title{font-size:44px;color:var(--red)}
 @media(max-width:600px){.section-heading .menu-title{font-size:34px}}
 #dialog-feedback .toast-action{padding:8px 14px;min-height:44px;background:var(--yellow);color:var(--ink);border:2px solid var(--line);font-weight:800;margin-left:10px}
+
+/* Photo-led ordering: authentic menu photography is large enough to choose from,
+   while the full name, price, customize target, comparison and save controls stay visible. */
+.products{display:grid;gap:12px;padding-top:12px}
+.products .product{border:3px solid var(--line);background:var(--paper);overflow:hidden}
+.products .product-main{grid-template-columns:218px minmax(0,1fr) 72px;gap:18px;padding:14px 14px 8px;align-items:start}
+.products .product-main img.menu-image{display:block;width:218px;height:150px;aspect-ratio:auto;object-fit:cover;object-position:center;border-width:3px;background:#32161c}
+.products .product-main img.menu-image[data-menu-kind="editorial"]{object-fit:contain}
+.products .product-copy p{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:3}
+.products .product-tools{justify-content:flex-start;gap:24px;margin-left:250px;padding:0 14px 12px}
+.products .product-tools button{min-height:44px;padding-inline:0}
+.products .product:hover{background:#f8edc7}
+.products .text-product .product-main{grid-template-columns:minmax(0,1fr) 72px}
+.products .text-product .product-tools{margin-left:0;padding-left:14px}
+.products .build-own-product{margin:0;border-width:6px}
+
+/* The phone ordering cover keeps the same owner-editable Gayle's photograph,
+   but gives the actual sandwich most of the frame instead of a narrow sliver. */
+@media(max-width:600px){
+ .embedded .menu-cover,.menu-cover{grid-template-columns:minmax(0,41%) minmax(0,59%)}
+ .cover-intro{padding:16px 12px 17px}
+ .cover-intro h1{font-size:43px;line-height:.84}
+ .cover-place{font-size:14px;line-height:1.05}
+ .menu-cover-photo{min-height:218px;border-left-width:3px}
+ .menu-cover-photo>img{object-position:51% center}
+ .menu-cover-photo>span{padding:38px 12px 12px;font-size:19px;line-height:1.02}
+ .products{gap:10px;padding-top:10px}
+ .products .product-main{grid-template-columns:126px minmax(0,1fr);gap:12px;padding:10px 10px 8px}
+ .products .product-main img.menu-image{width:126px;height:138px;grid-row:1/3}
+ .products .product-copy p{-webkit-line-clamp:2;font-size:14px;line-height:1.5}
+ .products .product h3{font-size:25px}
+ .products .product .price{grid-column:2;justify-self:start;align-self:end;flex-direction:row;gap:13px;padding-top:5px;font-size:14px}
+ .products .product-tools{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:0;padding:0;border-top:3px solid var(--line)}
+ .products .product-tools button{padding:8px 10px;min-height:44px;text-align:center}
+ .products .product-tools button+button{border-left:3px solid var(--line)}
+ .products .text-product .product-main{grid-template-columns:minmax(0,1fr)}
+ .products .text-product .product .price,.products .text-product .price{grid-column:1}
+ .products .build-own-product{margin:0;border-width:6px}
+}
+@media(min-width:601px) and (max-width:850px){
+ .products .product-main{grid-template-columns:170px minmax(0,1fr) 60px;gap:15px;padding:12px 12px 7px}
+ .products .product-main img.menu-image{width:170px;height:130px}
+ .products .product-tools{margin-left:197px;padding:0 12px 11px}
+ .products .text-product .product-main{grid-template-columns:minmax(0,1fr) 60px}
+ .products .text-product .product-tools{margin-left:0}
+}
+@media(min-width:851px) and (max-width:1100px){
+ .products .product-main{grid-template-columns:180px minmax(0,1fr) 60px;gap:16px;padding:13px 13px 7px}
+ .products .product-main img.menu-image{width:180px;height:135px}
+ .products .product-tools{margin-left:209px;padding:0 13px 11px}
+ .products .text-product .product-main{grid-template-columns:minmax(0,1fr) 60px}
+ .products .text-product .product-tools{margin-left:0}
+}
+@media(max-width:360px){
+ .cover-intro h1{font-size:39px}
+ .menu-cover-photo{min-height:204px}
+ .products .product-main{grid-template-columns:112px minmax(0,1fr);gap:10px;padding:9px}
+ .products .product-main img.menu-image{width:112px;height:126px}
+ .products .product h3{font-size:22px}
+ .products .product-copy p{font-size:13px}
+}
+
+/* Established deli typography and materials: readable serif menu names,
+   parchment work surfaces, mustard accents and maroon counter rules. */
+.menu-page,.embedded{background:var(--cream)}
+.menu-page .menu-section,.embedded .menu-section{background:var(--cream)}
+.menu-page .section-heading,.embedded .section-heading{border-bottom:4px solid var(--line)}
+.menu-page .section-heading .menu-title,.embedded .section-heading h2,
+.menu-cover .cover-intro h1,.products .product h3,.bag-top h2,.empty-bag strong,
+.modal-head h2,body.phone-page .phone-editorial h1{
+ font-family:"DM Serif Display",Georgia,serif;font-weight:400;text-transform:none;letter-spacing:-.015em
+}
+.menu-page .section-heading .menu-title,.embedded .section-heading h2{font-size:clamp(38px,4.4vw,60px);line-height:1.04;color:var(--red)}
+.menu-cover{background:var(--cream)}
+.menu-cover .cover-intro{background:var(--cream)}
+.menu-cover .cover-intro h1{font-size:clamp(54px,6.6vw,92px);line-height:.96;color:var(--red)}
+.menu-cover .cover-place{font-family:"DM Serif Display",Georgia,serif;font-weight:400;letter-spacing:0;text-transform:none}
+.menu-cover-photo>span{font-family:"DM Serif Display",Georgia,serif;font-weight:400;letter-spacing:0;text-transform:none}
+.menu-cover-photo small,.menu-cover-photo b{font-family:var(--sans);font-weight:700;letter-spacing:.04em;text-transform:none}
+.chicago-classics button>span,.chicago-classics>p,.chicago-classics>p strong{font-family:"DM Serif Display",Georgia,serif;font-weight:400;letter-spacing:0;text-transform:none}
+.products .product h3{font-size:31px;line-height:1.08;margin-bottom:7px}
+.products .product-index,.products .product .tag{text-transform:none;letter-spacing:.015em}
+.products .product .tag{background:transparent;border-bottom:2px solid var(--line);padding-bottom:2px}
+.products .product:hover{background:#f1e2b5}
+.products .product-main:focus-visible{outline-offset:-5px}
+.directory-help{font-family:"DM Serif Display",Georgia,serif;font-weight:400;text-transform:none}
+.results-line{border-bottom-width:2px;text-transform:none}
+.bag-panel{background:var(--paper);box-shadow:none;clip-path:none}
+.bag-top h2{font-size:30px}
+.empty-bag strong{font-size:24px;text-transform:none}
+.modal-head h2{line-height:1.08;text-transform:none}
+
+body.phone-page{background:var(--cream)}
+body.phone-page .demo-bar{background:var(--red);font-family:var(--sans);font-size:12px;letter-spacing:0}
+body.phone-page .phone-showcase{max-width:1180px;gap:52px;background:var(--cream)}
+body.phone-page .phone-editorial h1{font-size:clamp(50px,6.4vw,76px);line-height:1.02;margin:22px 0 20px;color:var(--ink)}
+body.phone-page .phone-editorial h1 span{color:var(--red)}
+body.phone-page .phone-editorial .eyebrow{font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.035em;text-transform:none}
+body.phone-page .phone-deck{font-size:19px;font-weight:500;line-height:1.55;max-width:540px}
+body.phone-page .phone-features{margin:24px 0 30px}
+body.phone-page .phone-features li{border-top:2px solid var(--line);padding:13px 0;font-size:16px;font-weight:600;line-height:1.5}
+body.phone-page .phone-features li:last-child{border-bottom:2px solid var(--line)}
+body.phone-page .phone-features li>span{font-family:var(--sans);font-size:13px;font-weight:700;color:var(--red)}
+body.phone-page .phone-editorial .primary{background:var(--red);color:var(--paper);font-size:15px}
+body.phone-page .phone-shell{background:var(--line);box-shadow:8px 8px 0 var(--yellow)}
+body.phone-page .phone-label{font-family:var(--sans);font-size:12px;font-weight:650;letter-spacing:0;text-transform:none}
+
+@media(max-width:600px){
+ .menu-cover .cover-intro h1{font-size:40px;line-height:.98}
+ .menu-cover .cover-place{font-size:15px}
+ .menu-cover-photo>span{font-size:18px}
+ .chicago-classics button>span{font-size:15px;line-height:1.15}
+ .menu-page .section-heading .menu-title,.embedded .section-heading h2{font-size:38px}
+ .products .product h3{font-size:24px;line-height:1.08}
+ body.phone-page .phone-showcase{padding-top:34px}
+ body.phone-page .phone-editorial h1{font-size:50px;line-height:1.04;margin-block:18px}
+ body.phone-page .phone-deck{font-size:17px}
+}

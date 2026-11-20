@@ -242,3 +242,17 @@ The left image uses the IMG_2423 storefront photograph. The right image uses
 the deli's Gayle's Super Reuben photograph (food-03.jpg). The center uses
 the site's existing logo. The editable layout is design/social-card.html
 in the source package.
+
+
+PUBLIC HOMEPAGE — NOVEMBER 20, 2026
+
+The overhead photograph in assets/main-street/sandwich-counter-* shows the
+deli's spread of five sandwich baskets. The daylight photograph in
+assets/main-street/front-door-* shows its Main Street entrance. The
+restaurant published both on its homepage. Delivery files are WebP
+resizings of those photographs, with their original composition preserved.
+
+Sandwich counter, 2000 by 1250:
+https://weinbergersdeli.com/pluto-images/funnel/images/eaeb1b44-9bc6-48fc-857e-3832bcdda861
+Main Street entrance, 1440 by 1440:
+https://weinbergersdeli.com/pluto-images/funnel/images/584135f2-78df-4cee-8f3e-7083401a595c
