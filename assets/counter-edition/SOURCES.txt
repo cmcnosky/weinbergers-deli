@@ -1,0 +1,13 @@
+Deli photography — November 20, 2026
+
+The recovered photographic edits of Italian Beef, Jaybird’s Sandwich and
+Gayle’s Super Reuben are the saved, image-assisted versions produced for this
+project on November 20. They are derived edits, not untouched camera originals.
+The earlier project files associated with these dishes are respectively
+041c0c9d-a173-47d5-aa57-36d0fc24b4e4, fe0c8112-6d82-4894-8484-52ab56911c8b,
+and f79a93ce-d93a-4d47-b270-ed6682eb96fd. Joe King (joe-king-UpbB) and
+The Mark Cuban (mark-cuban-BHDG) use the deli's published product photographs.
+
+The files here are proportionate Lanczos resizes with luminance-only sharpening
+at each final width, exported as WebP with sharp YUV conversion. The original
+saved edits and the original merchant photographs remain preserved separately.

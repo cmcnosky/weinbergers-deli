@@ -253,3 +253,23 @@
  .home-counter-page .deli-film + .guest-story + .recognition-strip strong {font-size:22px}
  .home-counter-page .deli-film + .guest-story + .recognition-strip span {font-size:15px;line-height:1.3}
 }
+
+/* Keep the four ordering and visit shortcuts on one line at tablet widths.
+   Saved sandwiches and the story are also available from the More menu. */
+@media (min-width:661px) and (max-width:1140px) {
+ .guest-page .guest-header nav {gap:clamp(8px,1.65vw,20px);flex-wrap:nowrap}
+ .guest-page .guest-header .guest-order {display:none}
+}
+@media (min-width:661px) and (max-width:880px) {
+ .guest-page .guest-header {display:flex;flex-wrap:nowrap;justify-content:flex-start;padding-inline:2%}
+ .guest-page .guest-header nav [data-cms-nav="story"] {display:none}
+}
+.home-counter-page .signature-grid article img[data-cms-image="home-guest-section-6"] {
+ height:auto;aspect-ratio:5/3;object-fit:cover;object-position:50% 55%;
+}
+@media (min-width:901px) and (min-resolution:2.5dppx) {
+ .home-counter-page .guest-hero:is(:not([data-cms-layout]),[data-cms-layout=default]) .hero-sandwich > a,
+ .home-counter-page .guest-hero:is(:not([data-cms-layout]),[data-cms-layout=default]) .hero-sandwich figcaption {
+  max-width:482px;
+ }
+}

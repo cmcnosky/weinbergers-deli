@@ -71,8 +71,8 @@
       "seo": {
         "title": "Weinberger’s Deli — Chicago deli. Grapevine, Texas.",
         "description": "Italian beef, Reubens and Chicago dogs on Main Street in Grapevine. Find a house sandwich, change the toppings or build your own.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
-        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-corrected-20261120-r4.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame behind the Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -215,8 +215,8 @@
               "id": "home-guest-hero-15",
               "label": "Photo · Gayle’s Super Reuben",
               "type": "image",
-              "value": "assets/hero/gayles-super-reuben-580.webp",
-              "alt": "Gayle’s Super Reuben with corned beef, pastrami and sauerkraut on grilled rye"
+              "value": "assets/hero/gayles-super-reuben-corrected-20261120-580.webp",
+              "alt": "Gayle’s Super Reuben, a double-decker sandwich on grilled marble rye"
             },
             {
               "id": "home-guest-hero-16",
@@ -278,7 +278,7 @@
               "id": "home-guest-section-6",
               "label": "Photo · Italian beef sandwich",
               "type": "image",
-              "value": "assets/counter-photos/italian-beef-counter-384.webp",
+              "value": "assets/counter-edition/italian-beef-640.webp",
               "alt": "Italian beef with giardiniera on an Italian roll"
             },
             {
@@ -321,7 +321,7 @@
               "id": "home-guest-section-13",
               "label": "Photo · Weinberger Reuben sandwich",
               "type": "image",
-              "value": "assets/optimized/joe-king-UpbB-760.webp",
+              "value": "assets/counter-edition/joe-king-640.webp",
               "alt": "The Joe King, hot pastrami and Swiss on grilled marble rye"
             },
             {
@@ -364,7 +364,7 @@
               "id": "home-guest-section-20",
               "label": "Photo · Jaybird’s Sandwich",
               "type": "image",
-              "value": "assets/counter-photos/jaybirds-sandwich-EZMW-760.webp",
+              "value": "assets/counter-edition/jaybird-640.webp",
               "alt": "Jaybird’s Sandwich"
             },
             {
@@ -1071,8 +1071,8 @@
       "seo": {
         "title": "Our story, awards & film | Weinberger’s Deli",
         "description": "Chicago roots since 1952. Weinberger’s Deli awards, Texas recognition, and the original deli film.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
-        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-corrected-20261120-r4.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame behind the Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -1775,8 +1775,8 @@
       "seo": {
         "title": "Visit the deli | Weinberger’s Deli",
         "description": "Directions, contact, current hours, group orders and practical information for Weinberger’s Deli at 601 S Main Street in Grapevine.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
-        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-corrected-20261120-r4.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame behind the Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -2324,8 +2324,8 @@
       "seo": {
         "title": "The menu | Weinberger’s Deli",
         "description": "Weinberger’s Deli in Grapevine, Texas. Italian beef, Chicago dogs, Reubens, and a full deli menu. Find your sandwich and make it yours.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
-        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-corrected-20261120-r4.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame behind the Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -2798,8 +2798,8 @@
       "seo": {
         "title": "Weinberger’s Deli — Chicago deli. Grapevine, Texas.",
         "description": "Weinberger’s Deli in Grapevine, Texas. Italian beef, Chicago dogs, Reubens, and a full deli menu. Find your sandwich and make it yours.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
-        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-corrected-20261120-r4.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame behind the Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -2904,7 +2904,7 @@
               "id": "mobile-menu-cover-7",
               "label": "Photo · Gayle’s Super Reuben, stacked with corned beef on rye",
               "type": "image",
-              "value": "assets/optimized/mark-cuban-BHDG-760.webp",
+              "value": "assets/counter-edition/mark-cuban-760.webp",
               "alt": "The Mark Cuban sandwich, halved on grilled bread"
             },
             {
@@ -3331,8 +3331,8 @@
       "seo": {
         "title": "Group lunch | Weinberger’s Deli",
         "description": "Build one Weinberger’s group lunch without one person transcribing everyone’s sandwich.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
-        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-corrected-20261120-r4.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame behind the Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -3531,8 +3531,8 @@
       "seo": {
         "title": "Catering | Weinberger’s Deli",
         "description": "Tell Weinberger’s Deli what your group needs. The deli reviews the event, menu, timing, and price before asking for payment.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
-        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-corrected-20261120-r4.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame behind the Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
@@ -3903,8 +3903,8 @@
       "seo": {
         "title": "Weinberger’s Deli — Android",
         "description": "The Weinberger’s Deli Android ordering experience for the full menu, sandwich customization, comparison, favorites, and pickup status.",
-        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-label-20261120-r3.png",
-        "image_alt": "Gayle’s Super Reuben fills the frame above the original Weinberger’s Deli logo and Grapevine address."
+        "image": "https://cmcnosky.github.io/weinbergers-deli/assets/weinbergers-gayles-reuben-corrected-20261120-r4.png",
+        "image_alt": "Gayle’s Super Reuben fills the frame behind the Weinberger’s Deli logo and Grapevine address."
       },
       "sections": [
         {
