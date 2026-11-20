@@ -189,6 +189,23 @@
  letter-spacing:-.02em;
 }
 
+@media (min-width:901px) and (min-resolution:2.5dppx) {
+ .guest-page .deli-film [data-deli-film],
+ .guest-page .deli-film .film-frame {
+  width:100%;
+  max-width:426px;
+ }
+ .guest-page:not(.home-counter-page) .deli-film {
+  grid-template-columns:minmax(280px,.8fr) minmax(0,426px);
+ }
+ .guest-page .visit-intro {
+  grid-template-columns:minmax(340px,.78fr) minmax(0,533px);
+ }
+ .guest-page .visit-intro > .deli-storefront {
+  max-width:533px;
+ }
+}
+
 .counter-index summary {display:flex;align-items:center;justify-content:space-between;min-height:44px;cursor:pointer;color:var(--red);font:600 22px/1.2 var(--display)}
 .counter-index summary::after {content:"+";font:500 1.3em/1 var(--sans)}
 .counter-index details[open] summary::after {content:"−"}

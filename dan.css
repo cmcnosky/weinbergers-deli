@@ -1631,3 +1631,86 @@ h1 {
 .expansion-proposal{margin-top:48px;border-top:3px solid var(--maroon,#631723);padding-top:36px}.expansion-proposal>h3{font:800 clamp(30px,4vw,48px)/1.1 "Barlow Condensed",sans-serif;margin:14px 0 25px}.expansion-proposal h4{font:800 25px/1.1 "Barlow Condensed",sans-serif;margin:0 0 16px}.expansion-proposal a{font-weight:700;text-underline-offset:4px}.expansion-proposal article p+p{margin-top:15px}
 
 .expansion-proposal>.eyebrow,.expansion-proposal>h3{margin-left:clamp(18px,4vw,64px);margin-right:clamp(18px,4vw,64px)}.expansion-proposal article p{font-size:15px;line-height:1.6}
+
+/* Keep the proposal's authentic, source-limited Italian-beef photo at a
+   display size its original pixels can support on a high-density screen. */
+@media (min-width: 1121px) {
+  .journey-grid {
+    grid-template-columns: 270px 270px repeat(2, minmax(0, 1fr));
+    max-width: 1280px;
+    margin-inline: auto;
+    border-inline: var(--rule);
+  }
+
+  .journey,
+  .journey:nth-child(odd),
+  .journey:nth-last-child(-n+2) {
+    min-height: 360px;
+    border-right: var(--rule);
+    border-bottom: 0;
+  }
+
+  .journey:last-child {
+    border-right: 0;
+  }
+
+  .journey-copy {
+    right: 20px;
+    bottom: 22px;
+    left: 20px;
+  }
+
+  .journey-copy h3 {
+    font-size: clamp(40px, 3.65vw, 54px);
+  }
+
+  .journey-photo img.journey-italian-beef {
+    object-position: 32% 56%;
+  }
+
+  .journey-type h3 {
+    font-size: clamp(34px, 2.9vw, 42px);
+    line-height: .94;
+    overflow-wrap: anywhere;
+  }
+
+  .journey-type {
+    padding: 68px 20px 22px;
+  }
+
+  .journey-type > div {
+    min-width: 0;
+  }
+
+  .journey-type .journey-arrow {
+    position: absolute;
+    right: 18px;
+    bottom: 17px;
+    font-size: 30px;
+  }
+
+  .journey-copy > span,
+  .journey-type div > span {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+}
+
+@media (max-width: 520px) {
+  .journey-type > div {
+    min-width: 0;
+  }
+
+  .journey-type h3 {
+    font-size: clamp(36px, 11.5vw, 45px);
+    line-height: .94;
+    overflow-wrap: anywhere;
+  }
+
+  .journey-type .journey-arrow {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 28px;
+  }
+}

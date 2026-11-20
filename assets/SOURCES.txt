@@ -107,6 +107,7 @@ food-14.jpg
   Menu ID: italian-beef-a3od
   Item page: https://weinbergersdeli.com/menu?item=italian-beef-a3od
   Image: https://static-content.owner.com/funnel/images/08f9ec4c-75a8-4035-a0d0-c9b2ff26cd22.jpg?v=7218256136
+  Direct-source copy: counter-photos/italian-beef-original-540x720.jpg (540 × 720; used in the Dan proposal without upscaling)
 
 food-15.jpg
   Item: Wrigley Field
