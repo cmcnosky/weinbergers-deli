@@ -11,6 +11,46 @@
  function validToken(value){return typeof value==='string'&&/^[A-Za-z0-9._-]{16,512}$/.test(value)}
  function validID(value){return typeof value==='string'&&/^[A-Za-z0-9_-]{4,80}$/.test(value)}
  function dateLabel(value){if(!value)return'';const date=new Date(value);return Number.isNaN(date.valueOf())?'':date.toLocaleString([],{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}
+ function briefFeedback(message,error=false){const target=$('#catering-brief-feedback');if(!target)return;target.textContent=message;target.classList.toggle('error',error);target.hidden=!message}
+ function briefDateLabel(date){const zone=Intl.DateTimeFormat().resolvedOptions().timeZone||'Local time',minutes=-date.getTimezoneOffset(),sign=minutes>=0?'+':'-',absolute=Math.abs(minutes),offset=`UTC${sign}${String(Math.floor(absolute/60)).padStart(2,'0')}:${String(absolute%60).padStart(2,'0')}`,local=date.toLocaleString([],{weekday:'short',year:'numeric',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});return`${local} — ${zone} (${offset})`}
+ function briefDate(value){if(!value)return{date:null,label:'Not set'};const date=new Date(value);return Number.isNaN(date.valueOf())?{date:null,label:'Needs review'}:{date,label:briefDateLabel(date)}}
+ function statedBudget(value){if(String(value??'').trim()==='')return'';const amount=Number(value);return Number.isFinite(amount)&&amount>=0?'$'+amount.toFixed(2)+' total (organizer-provided; not a quote)':'Needs review'}
+ function buildCateringBrief(form){
+  const data=Object.fromEntries(new FormData(form)),contact=String(data.contact_name||'').trim(),email=String(data.email||'').trim(),phone=String(data.phone||'').trim(),event=briefDate(data.event_at),headcount=String(data.headcount||'').trim(),budget=statedBudget(data.budget),delivery=data.fulfillment==='delivery',address=String(data.address||'').trim(),details=String(data.details||'').trim(),notes=String(data.dietary_notes||'').trim(),warnings=[];
+  if(data.event_at&&!event.date)warnings.push('Check the event date and time.');else if(event.date&&event.date<=new Date())warnings.push('The event date and time is not in the future.');
+  if(email&&!form.elements.email.validity.valid)warnings.push('Check the contact email.');
+  if(headcount&&!form.elements.headcount.validity.valid)warnings.push('Check the number of people.');
+  if(delivery&&!address)warnings.push('A delivery address has not been entered.');
+  const lines=['WEINBERGER’S CATERING BRIEF','Contact: '+(contact||'Not set'),'Email: '+(email||'Not set')];
+  if(phone)lines.push('Phone: '+phone);
+  lines.push('Event: '+event.label,'People: '+(headcount||'Not set'),'Fulfillment requested: '+(delivery?'Delivery (not confirmed)':'Pickup (not confirmed)'));
+  if(delivery)lines.push('Delivery address: '+(address||'Not set'));
+  if(budget)lines.push('Stated budget: '+budget);
+  lines.push('Food requested: '+(details||'Not set'));
+  if(notes)lines.push('Dietary/accessibility notes: '+notes);
+  if(warnings.length)lines.push('',...warnings.map(value=>'Check: '+value));
+  lines.push('','Planning brief only — copying or sharing this brief does not submit a request. It is not a quote or confirmation of the date, menu, pickup, or delivery.','Privacy: review contact details, addresses and dietary/accessibility notes before sharing outside your group.','Weinberger’s Deli · 601 S Main Street, Grapevine, TX 76051 · (817) 670-5729 · weinbergersdeli@aol.com');
+  return{text:lines.join('\n'),ready:Boolean(contact||email||phone||data.event_at||headcount||String(data.budget??'').trim()||delivery||address||details||notes)};
+ }
+ function updateCateringBrief(){
+  const form=$('#catering-form'),field=$('#catering-brief-text');if(!form||!field)return;const brief=buildCateringBrief(form);field.value=brief.text;
+  document.querySelectorAll('[data-catering-action="copy-brief"],[data-catering-action="share-brief"]').forEach(button=>{button.disabled=!brief.ready});briefFeedback('');
+ }
+ async function copyBrief(field){
+  try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(field.value);briefFeedback('Brief copied. Paste it into a call note, text or email. Copying did not submit anything to the deli.');return}}
+  catch{}
+  field.focus();field.select();field.setSelectionRange?.(0,field.value.length);
+  try{if(document.execCommand?.('copy')){briefFeedback('Brief copied. Paste it into a call note, text or email. Copying did not submit anything to the deli.');return}}catch{}
+  briefFeedback('The brief is selected. Copy it with your browser or keyboard. Selecting it did not submit anything.',true);
+ }
+ async function shareBrief(field){
+  if(typeof navigator.share!=='function')return copyBrief(field);
+  try{await navigator.share({title:'Weinberger’s catering brief',text:field.value});briefFeedback('Share choices closed. This page cannot confirm delivery.');}
+  catch(error){if(error?.name==='AbortError')briefFeedback('Sharing canceled. Nothing was sent by this page.');else briefFeedback('Could not open your share choices. Copy the brief instead.',true)}
+ }
+ function initCateringBrief(){
+  const form=$('#catering-form'),share=$('[data-catering-action="share-brief"]');if(!form)return;if(share)share.hidden=typeof navigator.share!=='function';form.addEventListener('input',updateCateringBrief);form.addEventListener('change',updateCateringBrief);updateCateringBrief();
+ }
  function requestID(value){return value?.id||value?.request_id}
  function parseAccessFragment(value){
   const raw=String(value||'').replace(/^#/,'');if(!raw)return null;const params=new URLSearchParams(raw);if(!params.has('request')&&!params.has('access'))return null;
@@ -74,6 +114,7 @@
  async function boot(){
   const linked=consumeAccessFragment();
   const draft=read(draftKey,{});for(const [name,value] of Object.entries(draft)){const field=$(`[name="${CSS.escape(name)}"]`);if(field)field.value=String(value)}
+  initCateringBrief();
   try{await Deli.init()}catch{}
   if(linked?.invalid){notice('This private catering status link is incomplete or invalid. Ask the person who sent it to copy the full link.',true);return}
   if(linked){const activated=activateLinkedAccess(preferredLinkedAccess(linked,access),Deli.connected);if(!activated.value){$('#connection-note').hidden=false;notice('This private status link can only be opened on the connected ordering address. Nothing from the link was saved on this device.',true);return}access=activated.value;const loaded=await refresh();if(loaded&&!activated.stored)notice('The request is open, but this browser could not save its private access. Keep this page open and copy the private status link before leaving.',true);return}
@@ -81,6 +122,6 @@
   if(!Deli.connected)$('#connection-note').hidden=false;
  }
  document.addEventListener('submit',event=>{if(event.target.id!=='catering-form')return;event.preventDefault();submit(event.target)});
- document.addEventListener('click',event=>{const button=event.target.closest('[data-catering-action]');if(!button)return;const action=button.dataset.cateringAction;if(action==='refresh')refresh();if(action==='accept')accept(button);if(action==='new')startNew();if(action==='copy-status'){const field=$('#catering-status-link');if(field)copyLink(field,copyFeedback,'Private status link copied.')}});
+ document.addEventListener('click',event=>{const button=event.target.closest('[data-catering-action]');if(!button)return;const action=button.dataset.cateringAction;if(action==='refresh')refresh();if(action==='accept')accept(button);if(action==='new')startNew();if(action==='copy-status'){const field=$('#catering-status-link');if(field)copyLink(field,copyFeedback,'Private status link copied.')}if(action==='copy-brief'){const field=$('#catering-brief-text');if(field)copyBrief(field)}if(action==='share-brief'){const field=$('#catering-brief-text');if(field)shareBrief(field)}});
  boot();
 })();

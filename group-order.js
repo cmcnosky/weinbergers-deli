@@ -13,6 +13,39 @@
  function validToken(value){return typeof value==='string'&&value.length>=16&&value.length<=512&&!/[\s?#&]/.test(value)}
  function validID(value){return typeof value==='string'&&/^[A-Za-z0-9_-]{4,80}$/.test(value)}
  function dateLabel(value){if(!value)return'';const date=new Date(value);return Number.isNaN(date.valueOf())?'':date.toLocaleString([],{weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}
+ function briefFeedback(message,error=false){const target=$('#group-brief-feedback');if(!target)return;target.textContent=message;target.classList.toggle('error',error);target.hidden=!message}
+ function briefDateLabel(date){const zone=Intl.DateTimeFormat().resolvedOptions().timeZone||'Local time',minutes=-date.getTimezoneOffset(),sign=minutes>=0?'+':'-',absolute=Math.abs(minutes),offset=`UTC${sign}${String(Math.floor(absolute/60)).padStart(2,'0')}:${String(absolute%60).padStart(2,'0')}`,local=date.toLocaleString([],{weekday:'short',year:'numeric',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});return`${local} — ${zone} (${offset})`}
+ function briefDate(value){if(!value)return{date:null,label:'Not set'};const date=new Date(value);return Number.isNaN(date.valueOf())?{date:null,label:'Needs review'}:{date,label:briefDateLabel(date)}}
+ function buildGroupBrief(form){
+  const data=Object.fromEntries(new FormData(form)),name=String(data.name||'').trim(),organizer=String(data.organizer_name||'').trim(),deadline=briefDate(data.deadline_at),pickup=briefDate(data.requested_pickup_at),warnings=[];
+  if(data.deadline_at&&!deadline.date)warnings.push('Check the contribution deadline.');
+  else if(deadline.date&&deadline.date<=new Date())warnings.push('The contribution deadline is not in the future.');
+  if(data.requested_pickup_at&&!pickup.date)warnings.push('Check the requested pickup time.');
+  else if(pickup.date&&deadline.date&&pickup.date<=deadline.date)warnings.push('Requested pickup is not after the contribution deadline.');
+  const lines=['WEINBERGER’S GROUP LUNCH','Group: '+(name||'Not set'),'Organizer: '+(organizer||'Not set'),'Contributions close: '+deadline.label,'Requested pickup: '+pickup.label+(pickup.date?' (requested, not confirmed)':'')];
+  if(warnings.length)lines.push('',...warnings.map(value=>'Check: '+value));
+  lines.push('','Planning brief only — copying or sharing this brief does not create an invitation or order or send anything to the deli.','Weinberger’s Deli · 601 S Main Street, Grapevine, TX 76051 · (817) 670-5729');
+  return{text:lines.join('\n'),ready:Boolean(name||organizer||data.deadline_at||data.requested_pickup_at)};
+ }
+ function updateGroupBrief(){
+  const form=$('#create-group-form'),field=$('#group-brief-text');if(!form||!field)return;const brief=buildGroupBrief(form);field.value=brief.text;
+  document.querySelectorAll('[data-group-action="copy-brief"],[data-group-action="share-brief"]').forEach(button=>{button.disabled=!brief.ready});briefFeedback('');
+ }
+ async function copyBrief(field){
+  try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(field.value);briefFeedback('Brief copied. Paste it into a text, email or notes app. Copying did not send anything to the deli.');return}}
+  catch{}
+  field.focus();field.select();field.setSelectionRange?.(0,field.value.length);
+  try{if(document.execCommand?.('copy')){briefFeedback('Brief copied. Paste it into a text, email or notes app. Copying did not send anything to the deli.');return}}catch{}
+  briefFeedback('The brief is selected. Copy it with your browser or keyboard. Selecting it did not send anything.',true);
+ }
+ async function shareBrief(field){
+  if(typeof navigator.share!=='function')return copyBrief(field);
+  try{await navigator.share({title:'Weinberger’s group lunch brief',text:field.value});briefFeedback('Share choices closed. This page cannot confirm delivery.');}
+  catch(error){if(error?.name==='AbortError')briefFeedback('Sharing canceled. Nothing was sent by this page.');else briefFeedback('Could not open your share choices. Copy the brief instead.',true)}
+ }
+ function initGroupBrief(){
+  const form=$('#create-group-form'),share=$('[data-group-action="share-brief"]');if(!form)return;if(share)share.hidden=typeof navigator.share!=='function';form.addEventListener('input',updateGroupBrief);form.addEventListener('change',updateGroupBrief);updateGroupBrief();
+ }
  function groupID(group){return group?.id||group?.group_id}
  function lineName(line){return line?.name||products.get(line?.menu_item_id)?.name||'Menu item'}
  function lineChoices(line){
@@ -39,7 +72,7 @@
   const history=read('wd-connected-orders-v1',[]),next=[entry,...(Array.isArray(history)?history:[]).filter(item=>item?.id!==entry.id)].slice(0,50);write('wd-connected-orders-v1',next);return true;
  }
  function saveDraft(form){
-  const data=Object.fromEntries(new FormData(form));if(write(draftKey,data))notice('Saved on this device. It has not been sent or made shareable. To place the order, call the deli or use its ordering site.');else notice('This browser could not save the plan. Nothing was sent. Use the current ordering site or call the deli for today’s order.',true);
+  const data=Object.fromEntries(new FormData(form));if(write(draftKey,data))notice('Saved on this device. It has not been sent or turned into an invitation. You can copy the lunch brief, call the deli, or use its ordering site.');else notice('This browser could not save the plan. Nothing was sent. Copy the lunch brief now, use the current ordering site, or call the deli.',true);
  }
 
  function showJoin(){
@@ -121,6 +154,7 @@
 
  async function boot(){
   consumeInvite();const draft=read(draftKey,{});for(const [name,value] of Object.entries(draft)){$(`[name="${CSS.escape(name)}"]`)?.setAttribute('value',String(value))}
+  initGroupBrief();
   try{await Deli.init()}catch{}
   if(invite)return showJoin();
   try{const menu=await Deli.menu();products=new Map((menu.items||[]).map(item=>[item.id,item]))}catch{}
@@ -130,6 +164,6 @@
  }
 
  document.addEventListener('submit',event=>{event.preventDefault();if(event.target.id==='create-group-form')createGroup(event.target);if(event.target.id==='join-group-form')joinGroup(event.target);if(event.target.id==='group-payment-form')payGroup(event.target)});
- document.addEventListener('click',event=>{const button=event.target.closest('[data-group-action]');if(!button)return;const action=button.dataset.groupAction;if(action==='refresh')refreshGroup();if(action==='quote')requestQuote(button);if(action==='copy'){const field=$('#group-share');if(field)copyLink(field,copyFeedback,'Invitation link copied.')}});
+ document.addEventListener('click',event=>{const button=event.target.closest('[data-group-action]');if(!button)return;const action=button.dataset.groupAction;if(action==='refresh')refreshGroup();if(action==='quote')requestQuote(button);if(action==='copy'){const field=$('#group-share');if(field)copyLink(field,copyFeedback,'Invitation link copied.')}if(action==='copy-brief'){const field=$('#group-brief-text');if(field)copyBrief(field)}if(action==='share-brief'){const field=$('#group-brief-text');if(field)shareBrief(field)}});
  boot();
 })();

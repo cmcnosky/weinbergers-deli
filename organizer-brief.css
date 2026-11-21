@@ -1,0 +1,116 @@
+.organizer-brief {
+  margin-top: 20px;
+  padding: clamp(16px, 2.5vw, 24px);
+  border: 3px solid var(--line);
+  background: var(--yellow);
+}
+
+.organizer-brief__header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+
+.organizer-brief__header h3 {
+  margin: 2px 0 0;
+  color: var(--red);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1;
+}
+
+.organizer-brief__header p,
+.organizer-brief__help,
+.organizer-brief__feedback {
+  font-size: .95rem;
+  line-height: 1.55;
+}
+
+.organizer-brief__header p {
+  max-width: 31ch;
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.organizer-brief textarea {
+  display: block;
+  width: 100%;
+  min-height: 225px;
+  padding: 14px;
+  resize: vertical;
+  border: 3px solid var(--line);
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.organizer-brief .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.organizer-brief__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.organizer-brief__actions .expansion-secondary {
+  min-width: 140px;
+}
+
+.organizer-brief__actions button:disabled {
+  cursor: not-allowed;
+  opacity: .48;
+}
+
+.organizer-brief__help {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.organizer-brief__feedback {
+  margin: 10px 0 0;
+  padding-left: 10px;
+  border-left: 4px solid var(--line);
+  font-weight: 800;
+}
+
+.organizer-brief__feedback.error {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+@media (max-width: 700px) {
+  .organizer-brief__header {
+    display: block;
+  }
+
+  .organizer-brief__header p {
+    margin-top: 8px;
+  }
+
+  .organizer-brief textarea {
+    min-height: 275px;
+  }
+
+  .organizer-brief__actions,
+  .organizer-brief__actions .expansion-secondary {
+    width: 100%;
+  }
+}

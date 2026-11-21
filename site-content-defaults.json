@@ -235,6 +235,30 @@
               "label": "Gayle’s Super Reuben",
               "type": "text",
               "value": "Gayle’s Super Reuben"
+            },
+            {
+              "id": "home-finder-title",
+              "label": "Sandwich finder · Heading",
+              "type": "text",
+              "value": "Help me choose a sandwich"
+            },
+            {
+              "id": "home-finder-filling-label",
+              "label": "Sandwich finder · Filling label",
+              "type": "text",
+              "value": "Filling"
+            },
+            {
+              "id": "home-finder-style-label",
+              "label": "Sandwich finder · Flavor or bread label",
+              "type": "text",
+              "value": "Flavor or bread"
+            },
+            {
+              "id": "home-finder-action",
+              "label": "Sandwich finder · Button",
+              "type": "text",
+              "value": "Show matches"
             }
           ]
         },
@@ -2623,6 +2647,30 @@
               "label": "Sort",
               "type": "text",
               "value": "Sort"
+            },
+            {
+              "id": "menu-finder-title",
+              "label": "Sandwich finder · Heading",
+              "type": "text",
+              "value": "Find your sandwich"
+            },
+            {
+              "id": "menu-finder-hint",
+              "label": "Sandwich finder · Supporting line",
+              "type": "text",
+              "value": "By filling and flavor"
+            },
+            {
+              "id": "menu-finder-filling-label",
+              "label": "Sandwich finder · Filling label",
+              "type": "text",
+              "value": "Filling"
+            },
+            {
+              "id": "menu-finder-style-label",
+              "label": "Sandwich finder · Flavor or bread label",
+              "type": "text",
+              "value": "Flavor or bread"
             }
           ]
         },
@@ -3156,6 +3204,30 @@
               "label": "Sort",
               "type": "text",
               "value": "Sort"
+            },
+            {
+              "id": "mobile-finder-title",
+              "label": "Sandwich finder · Heading",
+              "type": "text",
+              "value": "Find your sandwich"
+            },
+            {
+              "id": "mobile-finder-hint",
+              "label": "Sandwich finder · Supporting line",
+              "type": "text",
+              "value": "By filling and flavor"
+            },
+            {
+              "id": "mobile-finder-filling-label",
+              "label": "Sandwich finder · Filling label",
+              "type": "text",
+              "value": "Filling"
+            },
+            {
+              "id": "mobile-finder-style-label",
+              "label": "Sandwich finder · Flavor or bread label",
+              "type": "text",
+              "value": "Flavor or bread"
             }
           ]
         },
@@ -3500,6 +3572,42 @@
               "label": "Weinberger’s current ordering site ↗",
               "type": "text",
               "value": "Weinberger’s current ordering site ↗"
+            },
+            {
+              "id": "group-create-panel-brief-title",
+              "label": "Lunch brief heading",
+              "type": "text",
+              "value": "Lunch brief"
+            },
+            {
+              "id": "group-create-panel-brief-description",
+              "label": "Lunch brief introduction",
+              "type": "multiline",
+              "value": "Give colleagues the timing now. An invitation is created only after you start the group."
+            },
+            {
+              "id": "group-create-panel-brief-label",
+              "label": "Lunch brief accessible label",
+              "type": "text",
+              "value": "Shareable group lunch brief"
+            },
+            {
+              "id": "group-create-panel-brief-copy-label",
+              "label": "Copy brief button",
+              "type": "text",
+              "value": "Copy brief"
+            },
+            {
+              "id": "group-create-panel-brief-share-label",
+              "label": "Share brief button",
+              "type": "text",
+              "value": "Share brief"
+            },
+            {
+              "id": "group-create-panel-brief-help",
+              "label": "Lunch brief help",
+              "type": "multiline",
+              "value": "Copy this into a text or email, or use your device’s share choices. These buttons do not create an invitation or send an order."
             }
           ]
         },
@@ -3754,6 +3862,42 @@
               "label": "email the deli",
               "type": "text",
               "value": "email the deli"
+            },
+            {
+              "id": "catering-request-panel-brief-title",
+              "label": "Event brief heading",
+              "type": "text",
+              "value": "Event brief"
+            },
+            {
+              "id": "catering-request-panel-brief-description",
+              "label": "Event brief introduction",
+              "type": "multiline",
+              "value": "Keep the headcount, timing and food request together when you call the deli or ask colleagues."
+            },
+            {
+              "id": "catering-request-panel-brief-label",
+              "label": "Event brief accessible label",
+              "type": "text",
+              "value": "Shareable catering event brief"
+            },
+            {
+              "id": "catering-request-panel-brief-copy-label",
+              "label": "Copy brief button",
+              "type": "text",
+              "value": "Copy brief"
+            },
+            {
+              "id": "catering-request-panel-brief-share-label",
+              "label": "Share brief button",
+              "type": "text",
+              "value": "Share brief"
+            },
+            {
+              "id": "catering-request-panel-brief-help",
+              "label": "Event brief help",
+              "type": "multiline",
+              "value": "Copy this for a call, text or email, or use your device’s share choices. These buttons do not submit a request to the deli. Review contact details, addresses and notes before sharing outside your group."
             }
           ]
         },
