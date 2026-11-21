@@ -1,0 +1,37 @@
+{
+  "subject": "Evening entrance and outdoor tables, Weinberger’s Deli, Grapevine, Texas",
+  "source": "Project-supplied original camera photograph (IMG_2426), supplied November 2026",
+  "source_sha256": "7f80d16ae849c2aef1dab038720f762c9586c125ab0fa34bc86abc6885899ca7",
+  "source_width": 4032,
+  "source_height": 3024,
+  "crop": {
+    "left": 1440,
+    "top": 1160,
+    "width": 2430,
+    "height": 1620
+  },
+  "processing": "sRGB, shadow lift and mild highlight compression, restrained saturation, downsampling and final-size sharpening. Original scene retained.",
+  "outputs": [
+    {
+      "file": "main-street-patio-480-v53.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 59050,
+      "sha256": "26648a8c685325adac9074f18a35e7393539d8a480c51f512fb79f76fb34dc36"
+    },
+    {
+      "file": "main-street-patio-960-v53.webp",
+      "width": 960,
+      "height": 640,
+      "bytes": 184606,
+      "sha256": "9746c48eb7f15de3058089f6d762db03f08c22bdf39b2375f474864399cd8165"
+    },
+    {
+      "file": "main-street-patio-1440-v53.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 332134,
+      "sha256": "33f788e2e278956bf846bcb3f6320025663498935246e4689174c37ebd99e110"
+    }
+  ]
+}
