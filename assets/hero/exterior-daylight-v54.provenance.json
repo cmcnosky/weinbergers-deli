@@ -1,0 +1,57 @@
+{
+  "subject": "Main Street patio and storefront, Weinberger’s Deli, Grapevine, Texas",
+  "method": "Daylight simulations from two supplied evening photographs. Ambient light, foliage, sky and some fine details are reconstructed. The prior photo filenames identify the source views.",
+  "photographs": [
+    {
+      "original": "IMG_2426",
+      "prior": "assets/hero/main-street-patio-1440-v53.webp",
+      "prior_sha256": "33f788e2e278956bf846bcb3f6320025663498935246e4689174c37ebd99e110",
+      "outputs": [
+        {
+          "file": "main-street-patio-daylight-480-v54.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 58440,
+          "sha256": "a3e1d37a512c8426cc835802e1f1d7a07eb6ece4716fbfbc4e0eac43fb52d6d1"
+        },
+        {
+          "file": "main-street-patio-daylight-960-v54.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 213216,
+          "sha256": "b35a26a03559fa37e20df3845802a0c23f888aaddab20fb895801f4b5459fe99"
+        },
+        {
+          "file": "main-street-patio-daylight-1440-v54.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 415278,
+          "sha256": "7c34942e9847be194ec1bdbcbb87fd5510aab896a0e9e7e17e327f0a6c27529b"
+        }
+      ],
+      "processing": "The existing 3:2 patio crop was digitally relit to daylight. Source-camera detail was composited into the umbrellas, people and door notice."
+    },
+    {
+      "original": "IMG_2423",
+      "prior": "assets/optimized/weinbergers-main-street-20261105-1600-20261120-r1.webp",
+      "prior_sha256": "ef61e97bf05bea7f5ebb1c06ddc53d9a0d16bae975d36c285b28f1b5295e7e74",
+      "outputs": [
+        {
+          "file": "main-street-facade-daylight-768-v54.webp",
+          "width": 768,
+          "height": 576,
+          "bytes": 177664,
+          "sha256": "55f30820950cddb071af66fa620da317d7d6d1e804522a8c9017c1e8583f7b58"
+        },
+        {
+          "file": "main-street-facade-daylight-1536-v54.webp",
+          "width": 1536,
+          "height": 1152,
+          "bytes": 460014,
+          "sha256": "5c657f3d7733c78a4d46d61dd945c5cee27c69d42a133440d27d364a8d23d63d"
+        }
+      ],
+      "processing": "The existing 4:3 street-facing photograph was digitally relit to daylight. The original lettering was restored from the camera photograph."
+    }
+  ]
+}

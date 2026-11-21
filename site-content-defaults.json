@@ -240,8 +240,8 @@
               "id": "home-hero-storefront-image",
               "label": "Photo · Main Street storefront",
               "type": "image",
-              "value": "assets/hero/main-street-patio-960-v53.webp",
-              "alt": "The deli’s lit entrance and red-and-yellow umbrellas over the Main Street patio in the evening"
+              "value": "assets/hero/main-street-patio-daylight-960-v54.webp",
+              "alt": "Outdoor tables beneath red-and-yellow umbrellas at the deli’s Main Street entrance"
             },
             {
               "id": "home-hero-storefront-link",
@@ -869,8 +869,8 @@
               "id": "home-guest-section-guest-last-stop-has-storefront-9",
               "label": "Photo · Weinberger’s yellow sign and lit storefront on Main Street",
               "type": "image",
-              "value": "assets/optimized/weinbergers-main-street-20261105-1600-20261120-r1.webp",
-              "alt": "Weinberger’s brick storefront at night, with its yellow family-tradition sign, lit deli windows and outdoor tables"
+              "value": "assets/hero/main-street-facade-daylight-1536-v54.webp",
+              "alt": "The yellow Weinberger’s sign above the green storefront windows on Main Street"
             }
           ]
         },
@@ -1912,10 +1912,10 @@
             },
             {
               "id": "visit-visit-intro-9",
-              "label": "Photo · Weinberger’s brick storefront at night, with its yellow family-traditi",
+              "label": "Photo · Yellow sign and green Main Street storefront",
               "type": "image",
-              "value": "assets/optimized/weinbergers-main-street-20261105-1600-20261120-r1.webp",
-              "alt": "Weinberger’s brick storefront at night, with its yellow family-tradition sign, lit deli windows and outdoor tables"
+              "value": "assets/hero/main-street-facade-daylight-1536-v54.webp",
+              "alt": "The yellow Weinberger’s sign above the green storefront windows on Main Street"
             },
             {
               "id": "visit-visit-intro-10",
