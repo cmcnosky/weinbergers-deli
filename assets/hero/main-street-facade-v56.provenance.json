@@ -1,0 +1,36 @@
+{
+  "subject": "Street-facing yellow wall sign on the daylight Main Street storefront",
+  "prior": "assets/hero/main-street-facade-daylight-1536-v54.webp",
+  "prior_sha256": "5c657f3d7733c78a4d46d61dd945c5cee27c69d42a133440d27d364a8d23d63d",
+  "method": "Local reconstruction of the sign face. The published logo supplies the original mark. Printed motto letterforms are reconstructed from the camera reference, matched to perspective and daylight paint, then optically softened. The wider photo is the existing daylight edit; large derivatives retain its original scene detail.",
+  "outputs": [
+    {
+      "file": "main-street-facade-daylight-768-v56.webp",
+      "width": 768,
+      "height": 576,
+      "bytes": 177528,
+      "sha256": "2f19b19f665f2340a876911eae874ea81049f606967fec5964138cf334f61950"
+    },
+    {
+      "file": "main-street-facade-daylight-1536-v56.webp",
+      "width": 1536,
+      "height": 1152,
+      "bytes": 460800,
+      "sha256": "8fa7baa688d31d3b7847d0017756520df76567122bb3ff2c0c690686304b890d"
+    },
+    {
+      "file": "main-street-facade-daylight-3072-v56.webp",
+      "width": 3072,
+      "height": 2304,
+      "bytes": 1095190,
+      "sha256": "70bba653a4e06daca3c76e3cbe580f78874c84c53dd207f4857f429a76be7977"
+    },
+    {
+      "file": "main-street-facade-daylight-4608-v56.webp",
+      "width": 4608,
+      "height": 3456,
+      "bytes": 1659804,
+      "sha256": "1912f56ba900cb362e41bf0d2c8cf7182b3d4f90c120f10dc65e4238bebe5528"
+    }
+  ]
+}
