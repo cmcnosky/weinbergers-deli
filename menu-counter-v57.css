@@ -9,6 +9,14 @@
 .menu-page .section-heading .menu-title,.embedded .section-heading h2{font-size:clamp(36px,3.7vw,52px)}
 .menu-page .search,.embedded .search{width:min(430px,42vw);min-height:50px;border:3px solid var(--line);background:var(--paper)}
 .menu-page .search input,.embedded .search input{font-size:16px}
+/* The handoff is one sentence, including its inline link and punctuation. */
+.ordering-alert:not([hidden]) { display:block; }
+.ordering-alert:not([hidden]) a {
+  display:inline;
+  color:inherit;
+  text-decoration:underline;
+  text-underline-offset:.14em;
+}
 .menu-intro{align-items:center;margin-top:10px;font-size:16px;line-height:1.45}
 
 .menu-tools{margin-top:10px;border-block:4px solid var(--line);background:color-mix(in srgb,var(--yellow) 28%,var(--cream))}
