@@ -3051,6 +3051,18 @@
               "label": "Grilled onions. Yellow mustard.",
               "type": "text",
               "value": "Grilled onions. Yellow mustard."
+            },
+            {
+              "id": "mobile-featured-title",
+              "label": "Featured disclosure title",
+              "type": "text",
+              "value": "Featured sandwiches"
+            },
+            {
+              "id": "mobile-featured-subtitle",
+              "label": "Featured disclosure subtitle",
+              "type": "text",
+              "value": "Chicago classics"
             }
           ]
         },
