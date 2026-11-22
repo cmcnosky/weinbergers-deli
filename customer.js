@@ -53,6 +53,18 @@ let discoveryFilters={include:initialState.include,exclude:initialState.exclude,
 query=initialState.q;category=initialState.category;savedOnly=initialState.saved;
 let initialComparison=discoveryParams.has('compare'),initialItem=urlItem;
 const item=id=>items.find(p=>p.id===id);const dialog=$('#dialog');if(new URLSearchParams(location.search).has('embedded'))document.body.classList.add('embedded');
+const menuTools=$('.menu-tools'),filterPanel=$('#filter-panel'),finderPanel=$('#sandwich-finder'),narrowMenuTools=matchMedia('(max-width: 600px)');
+function syncMenuToolsDisclosure(resetForViewport=false){
+ const active=Boolean(discoveryFilters.include||discoveryFilters.exclude||discoveryFilters.max),finderTarget=location.hash==='#sandwich-finder';
+ if(!menuTools)return;
+ if(!narrowMenuTools.matches||active||finderTarget)menuTools.open=true;
+ else if(resetForViewport)menuTools.open=false;
+ if(active&&filterPanel)filterPanel.open=true;
+ if(finderTarget&&finderPanel)finderPanel.open=true;
+}
+syncMenuToolsDisclosure(true);
+narrowMenuTools.addEventListener?.('change',()=>syncMenuToolsDisclosure(true));
+window.addEventListener('hashchange',()=>syncMenuToolsDisclosure(false));
 let searchMetricTimer,lastSearchMetric='',lastNoResultsState='';
 function discoveryEvent(event){if(!Deli.connected)return;Deli.request('/events/discovery','POST',{event}).catch(()=>{})}
 function queueSearchEvent(){clearTimeout(searchMetricTimer);const committed=query.trim();if(committed.length<2)return;searchMetricTimer=setTimeout(()=>{if(committed===query.trim()&&committed!==lastSearchMetric){lastSearchMetric=committed;discoveryEvent('search')}},700)}
@@ -122,9 +134,9 @@ function renderMenu(historyMode='replace'){
   button.setAttribute('aria-pressed', String(button.dataset.view === (savedOnly ? 'saved' : 'menu')));
  });
  $('#section-title').textContent=savedOnly?'Saved items':'The menu';
- $('#catalogue-count').textContent=`${items.length} ITEMS / ${new Set(items.map(p=>p.category)).size} CATEGORIES`;
+ $('#catalogue-count').textContent=`FULL CATALOG: ${items.length} ITEMS / ${new Set(items.map(p=>p.category)).size} CATEGORIES`;
  $('#category-label').textContent=category==='All'?'All items':category==='Popular'?'Popular':category;
- const shownLabel=menuPage.remaining?`Showing ${menuPage.shown} of ${visible.length} items`:`${visible.length} ${visible.length===1?'item':'items'}`;
+ const shownLabel=menuPage.remaining?`${menuPage.shown} of ${visible.length}`:`${visible.length} ${visible.length===1?'item':'items'}`;
  $('#result-count').textContent=savedOnly?`${usuals.length} ${usuals.length===1?'usual':'usuals'} · ${shownLabel} saved`:`${shownLabel}`+(query?` · “${query}”`:` · ${category==='All'?'All items':category}`);
  $('#clear-search').hidden=!query;
  const active=[];
@@ -509,7 +521,7 @@ function publicComparisonURL(){return DeliDiscovery.publicURL(location.origin,pu
 function applyDiscoveryURL(){
  resetVisibleItems();
  const state=DeliDiscovery.readURLState(location.search);query=state.q;discoveryFilters={include:state.include,exclude:state.exclude,max:state.max};category=state.category;compared=state.compare;savedOnly=state.saved;sortMode=state.sort;urlItem=state.item;
- const validItem=urlItem&&item(urlItem);
+ const validItem=urlItem&&item(urlItem);syncMenuToolsDisclosure(false);
  $('#search').value=query;$('#include-ingredients').value=discoveryFilters.include;$('#exclude-ingredients').value=discoveryFilters.exclude;$('#max-price').value=discoveryFilters.max;$('#sort-menu').value=sortMode;
  document.querySelectorAll('.bottom-nav button').forEach(button=>button.classList.toggle('selected',button.dataset.view===(savedOnly?'saved':'menu')));
  if(!validItem&&dialog.open&&dialog.dataset.view==='product')close(true);
@@ -578,8 +590,14 @@ async function refresh(){
   window.DeliSandwichFinder?.update(items);
   const browsingOnly=!Deli.connected||Deli.config.checkout_enabled!==true,closed=Deli.connected&&settings.open_now===false,paused=Deli.connected&&Deli.config.checkout_enabled===true&&(settings.accepting_orders===false||settings.checkout_enabled!==true);
   $('#prep-label').textContent=browsingOnly?'Browse the menu':closed?'Online pickup closed':paused?'Orders paused':'About '+settings.prep_minutes+' minutes';
-  $('#ordering-alert').hidden=!response.connection_error&&!browsingOnly&&!closed&&!paused;
-  $('#ordering-alert').textContent=response.connection_error?'Live ordering is temporarily unavailable. Your bag is saved.':browsingOnly?'Browse and customize here. For current ordering, use Weinberger’s ordering site.':closed?'Online pickup is currently closed. Your bag stays saved.':'New checkouts are paused. Your bag stays saved, and any secure payment page you already opened remains available until it expires.';
+  const orderingAlert=$('#ordering-alert');
+  orderingAlert.hidden=!response.connection_error&&!browsingOnly&&!closed&&!paused;
+  const savedBag=cart.length>0;
+  orderingAlert.textContent=response.connection_error?'Live ordering is temporarily unavailable.'+(savedBag?' Your bag is saved.':''):closed?'Online pickup is currently closed.'+(savedBag?' Your bag stays saved.':''):paused?'New checkouts are paused.'+(savedBag?' Your bag stays saved.':'')+' Any secure payment page you already opened remains available until it expires.':'';
+  if(!response.connection_error&&browsingOnly){
+   orderingAlert.textContent='Browse and customize here. For current ordering, use ';
+   const link=document.createElement('a');link.href=officialOrderURL;link.target='_blank';link.rel='noopener';link.textContent='Weinberger’s ordering site';orderingAlert.append(link,'.');
+  }
   renderMenu();renderBag();if(initialItem){const id=initialItem;initialItem='';initialComparison=false;if(item(id))openProduct(id,null,'none');else{urlItem='';syncDiscoveryURL('replace')}}else if(initialComparison){initialComparison=false;showComparison()}
  }catch(e){toast(e.message)}finally{refreshingMenu=false}
 }

@@ -59,8 +59,18 @@
     destinations.replaceChildren(links);
     if (focusedHref) (next.find(link => link.href === focusedHref) || host.querySelector('.account-menu__toggle')).focus();
   }
-  syncDestinations(window.DeliContent?.current);
-  window.addEventListener('weinbergers-content', event => syncDestinations(event.detail));
+  function syncHeader(content) {
+    syncDestinations(content);
+    if (!header?.matches('.guest-header, .expansion-header')) return;
+    const destinations = new Set(Array.from(host.querySelectorAll('.account-menu__destinations a'), link => link.href));
+    const navLinks = header.querySelectorAll(':scope > nav > a');
+    for (const link of navLinks) {
+      const menu = link.dataset.cmsNav === 'menu' || (!link.dataset.cmsNav && link === navLinks[0]);
+      link.toggleAttribute('data-in-more', !menu && link.hasAttribute('href') && destinations.has(link.href));
+    }
+  }
+  syncHeader(window.DeliContent?.current);
+  window.addEventListener('weinbergers-content', event => syncHeader(event.detail));
   const toggle = host.querySelector('.account-menu__toggle');
   const panel = host.querySelector('.account-menu__panel');
   const setOpen = open => {

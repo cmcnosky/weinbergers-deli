@@ -135,9 +135,9 @@
             },
             {
               "id": "home-guest-hero-2",
-              "label": "Heading · CHICAGO DELI.",
+              "label": "Heading · Featured sandwich",
               "type": "multiline",
-              "value": "Chicago deli"
+              "value": "Gayle’s Super Reuben"
             },
             {
               "id": "home-guest-hero-3",
@@ -147,21 +147,21 @@
             },
             {
               "id": "home-guest-hero-4",
-              "label": "Italian beef, Reubens and Chicago dogs. Start with a house sandwich or build your own.",
+              "label": "Featured sandwich description",
               "type": "multiline",
-              "value": "Italian beef, Reubens and Chicago dogs."
+              "value": "Hot corned beef, pastrami and turkey pastrami with Swiss, sauerkraut and brown mustard."
             },
             {
               "id": "home-guest-hero-5",
-              "label": "Link · See the full menu ↗",
+              "label": "Link · Browse the full menu",
               "type": "link",
               "value": "menu.html"
             },
             {
               "id": "home-guest-hero-6",
-              "label": "See the full menu",
+              "label": "Browse the full menu",
               "type": "text",
-              "value": "See the full menu"
+              "value": "Browse the full menu"
             },
             {
               "id": "home-guest-hero-7",
@@ -220,21 +220,21 @@
             },
             {
               "id": "home-guest-hero-16",
-              "label": "HOUSE CLASSIC",
+              "label": "Featured sandwich detail",
               "type": "text",
-              "value": "HOUSE CLASSIC"
+              "value": "Double-decker, grilled on marble rye."
             },
             {
               "id": "home-guest-hero-17",
-              "label": "Link · Gayle’s Super Reuben ↗",
+              "label": "Link · Customize this sandwich",
               "type": "link",
               "value": "menu.html?item=gayles-super-reuben-8U3W"
             },
             {
               "id": "home-guest-hero-18",
-              "label": "Gayle’s Super Reuben",
+              "label": "Customize this sandwich",
               "type": "text",
-              "value": "Gayle’s Super Reuben"
+              "value": "Customize this sandwich"
             },
             {
               "id": "home-hero-storefront-image",
@@ -301,15 +301,15 @@
             },
             {
               "id": "home-guest-section-3",
-              "label": "Link · All sandwiches, sides & more ↗",
+              "label": "Link · All sandwiches ↗",
               "type": "link",
               "value": "menu.html"
             },
             {
               "id": "home-guest-section-4",
-              "label": "All sandwiches, sides & more ↗",
+              "label": "All sandwiches ↗",
               "type": "text",
-              "value": "Full menu ↗"
+              "value": "All sandwiches ↗"
             },
             {
               "id": "home-guest-section-5",
@@ -2668,6 +2668,18 @@
               "value": "Sort"
             },
             {
+              "id": "menu-menu-28",
+              "label": "Menu tools · Heading",
+              "type": "text",
+              "value": "Menu tools"
+            },
+            {
+              "id": "menu-menu-29",
+              "label": "Menu tools · Supporting line",
+              "type": "text",
+              "value": "Find, filter or start with an ingredient"
+            },
+            {
               "id": "menu-finder-title",
               "label": "Sandwich finder · Heading",
               "type": "text",
@@ -3223,6 +3235,18 @@
               "label": "Sort",
               "type": "text",
               "value": "Sort"
+            },
+            {
+              "id": "mobile-menu-25",
+              "label": "Menu tools · Heading",
+              "type": "text",
+              "value": "Menu tools"
+            },
+            {
+              "id": "mobile-menu-26",
+              "label": "Menu tools · Supporting line",
+              "type": "text",
+              "value": "Find, filter or start with an ingredient"
             },
             {
               "id": "mobile-finder-title",

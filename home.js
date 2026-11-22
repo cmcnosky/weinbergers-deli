@@ -12,13 +12,3 @@
     location.replace(target.href);
   }
 })();
-
-// Keep seven direct category links on desktop. Phone customers can unfold the same index in place.
-(() => {
-  const index = document.querySelector('.counter-index details');
-  if (!index) return;
-  const narrow = window.matchMedia('(max-width: 660px)');
-  const fit = () => { index.open = !narrow.matches; };
-  fit();
-  narrow.addEventListener('change', fit);
-})();
