@@ -23,7 +23,7 @@
   }
   :is(.guest-page .guest-header, .expansion-header) > a:first-child img {
     display: block;
-    width: clamp(99px, 9vw, 126px);
+    width: clamp(136px, 11.7vw, 162px);
     height: auto;
     object-fit: contain;
   }
@@ -121,7 +121,7 @@
     padding: 8px max(4%,calc((100% - 1420px) / 2)) !important;
   }
   .menu-page .header > .brand img,
-  .site-header > .brand img { width: clamp(92px,9vw,126px); height: auto; object-fit: contain; }
+  .site-header > .brand img { width: clamp(119px,11vw,148px); height: auto; object-fit: contain; }
   .menu-page .header .desktop-nav { flex: 1 1 auto; }
   .menu-page .header .bag-pill { flex: none; white-space: nowrap; }
   .site-header > nav { margin-left: auto; }
@@ -154,7 +154,7 @@
 
   @media (min-width: 761px) {
     .guest-page .guest-header > .guest-brand {
-      padding-inline-end: clamp(8px,1.6vw,24px);
+      padding-inline-end: clamp(7px,1vw,16px);
       border-inline-end: 1px solid color-mix(in srgb,var(--line) 60%,transparent);
     }
   }
@@ -188,7 +188,7 @@
 
   @media (min-width:761px) and (max-width:900px) {
     .guest-page .guest-header nav { --nav-column: calc((100% - 12px) / 3); }
-    .guest-page .guest-header > .guest-brand img { width: 88px; }
+    .guest-page .guest-header > .guest-brand img { width: 119px; }
     .guest-page .guest-header nav > a { padding-inline: 6px; font-size: calc(.86rem * var(--cms-font-scale,1)); }
     .guest-page .guest-header { column-gap: 8px; }
   }
@@ -251,7 +251,7 @@
     .menu-page .header, [data-cms-page="readable-menu"] .site-header { gap: 6px; }
   }
   @media (max-width: 360px) {
-    .menu-page .header > .brand img { width: 78px; }
+    .menu-page .header > .brand img { width: 94px; }
     .menu-page .header .bag-pill > [aria-hidden] { display: none; }
   }
 }
@@ -266,7 +266,7 @@
     padding-block: 5px !important;
   }
   :is(.guest-page .guest-header,.expansion-page .expansion-header):has(.account-menu) > a:first-child img {
-    width:clamp(72px,21vw,98px);
+    width:clamp(93px,26.5vw,123px);
   }
   :is(.guest-page .guest-header,.expansion-page .expansion-header):has(.account-menu) > nav {
     grid-area:links; display:flex; width:auto; flex-wrap:wrap;

@@ -39,38 +39,43 @@
 </script>
 <link href="site-content.css?v=20261117-41" rel="stylesheet"/>
 <link rel="stylesheet" href="account-menu.css?v=20261120-51">
-<script src="account-menu.js?v=20261121-57" defer>
+<script src="account-menu.js?v=20261122-61" defer>
 </script>
 <link rel="stylesheet" href="house-style.css?v=20261120-44"/>
+<link rel="stylesheet" href="phone-entry.css?v=20261122-61"/>
+<script defer src="offline.js?v=20261117-41"></script>
+<script defer src="phone-entry.js?v=20261122-61"></script>
 </head>
 <body class="phone-page" data-cms-page="iphone">
-<div class="demo-bar">
-<span>Weinberger’s Deli · Grapevine</span>
+<header class="phone-masthead">
+<a class="phone-brand" href="index.html" aria-label="Weinberger’s Deli home"><img data-cms-site="logo" src="assets/weinbergers-logo-smooth.svg" alt="Weinberger’s Deli" width="2048" height="1127"></a>
 <nav aria-label="Navigation">
-<a href="index.html">The deli</a>
 <a aria-current="page" href="iphone.html">iPhone</a>
 <a href="android.html">Android</a>
 </nav>
-</div>
+</header>
 <main class="phone-showcase" data-cms-container="true">
 <section class="phone-editorial" data-cms-section="phone-editorial">
 <p class="eyebrow" data-cms-field="iphone-phone-editorial-1">Chicago, 1952 / Grapevine, 2002</p>
-<h1 data-cms-text-nodes='[[0,"iphone-phone-editorial-2"]]'>Chicago deli.<br/>
-<span data-cms-field="iphone-phone-editorial-3">On your<br/>iPhone.</span>
+<h1 data-cms-text-nodes='[[0,"iphone-phone-editorial-2"]]'>Chicago deli. <span data-cms-field="iphone-phone-editorial-3">On your iPhone.</span>
 </h1>
 <p class="phone-deck" data-cms-field="iphone-phone-editorial-4">Search the full menu.<br/>Choose the bread, toppings, and whether you want it toasted.</p>
+<a class="primary" data-cms-field="iphone-phone-editorial-14" data-cms-link="iphone-phone-editorial-13" href="mobile.html">Open the menu ↗</a>
+<details class="phone-tools"><summary data-cms-field="iphone-phone-tools-label">Menu features</summary>
 <ol class="phone-features">
 <li data-cms-text-nodes='[[1,"iphone-phone-editorial-5"]]'><span data-cms-field="iphone-phone-editorial-6">01</span>Filter by ingredient or starting price.</li>
 <li data-cms-text-nodes='[[1,"iphone-phone-editorial-7"]]'><span data-cms-field="iphone-phone-editorial-8">02</span>Compare up to three sandwiches.</li>
 <li data-cms-text-nodes='[[1,"iphone-phone-editorial-9"]]'><span data-cms-field="iphone-phone-editorial-10">03</span>Customize bread, meat, cheese, toppings, and toast.</li>
 <li data-cms-text-nodes='[[1,"iphone-phone-editorial-11"]]'><span data-cms-field="iphone-phone-editorial-12">04</span>Save an exact sandwich as one of My Usuals.</li>
 </ol>
-<a class="primary" data-cms-field="iphone-phone-editorial-14" data-cms-link="iphone-phone-editorial-13" href="mobile.html">Open the menu ↗</a>
+</details>
+
 </section>
 <section aria-label="Mobile ordering" class="phone-display" data-cms-section="phone-display">
-<div class="phone-shell">
-<iframe src="mobile.html?v=20261117-41" title="Weinberger’s mobile ordering">
-</iframe>
+<img class="phone-cover-photo" data-cms-image="iphone-phone-photo" src="assets/counter-edition/mark-cuban-760.webp" alt="The Mark Cuban sandwich"/>
+<div class="phone-shell"><template>
+<iframe src="mobile.html" title="Weinberger’s mobile ordering">
+</iframe></template>
 </div>
 <p class="phone-label" data-cms-field="iphone-phone-display-1">Weinberger’s Deli · Grapevine, Texas</p>
 </section>

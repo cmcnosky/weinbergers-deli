@@ -4065,6 +4065,12 @@
               "label": "Open the menu ↗",
               "type": "text",
               "value": "Open the menu ↗"
+            },
+            {
+              "id": "iphone-phone-tools-label",
+              "label": "Menu features heading",
+              "type": "text",
+              "value": "Menu features"
             }
           ]
         },
@@ -4079,6 +4085,13 @@
               "label": "Weinberger’s Deli · Grapevine, Texas",
               "type": "text",
               "value": "Weinberger’s Deli · Grapevine, Texas"
+            },
+            {
+              "id": "iphone-phone-photo",
+              "label": "Photo on phones",
+              "type": "image",
+              "value": "assets/counter-edition/mark-cuban-760.webp",
+              "alt": "The Mark Cuban sandwich"
             }
           ]
         }
@@ -4183,6 +4196,12 @@
               "label": "Open the menu ↗",
               "type": "text",
               "value": "Open the menu ↗"
+            },
+            {
+              "id": "android-phone-tools-label",
+              "label": "Menu features heading",
+              "type": "text",
+              "value": "Menu features"
             }
           ]
         },
@@ -4197,6 +4216,13 @@
               "label": "Weinberger’s Deli · Grapevine, Texas",
               "type": "text",
               "value": "Weinberger’s Deli · Grapevine, Texas"
+            },
+            {
+              "id": "android-phone-photo",
+              "label": "Photo on phones",
+              "type": "image",
+              "value": "assets/hero/gayles-super-reuben-corrected-20261120-1160.webp",
+              "alt": "Gayle’s Super Reuben on grilled marble rye"
             }
           ]
         }

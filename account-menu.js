@@ -13,7 +13,7 @@
   host.className = 'account-menu';
   host.setAttribute('aria-label', 'Site and account');
   host.innerHTML = `<button class="account-menu__toggle" type="button" aria-label="More pages and account" aria-expanded="false" aria-controls="account-menu-panel"><span class="account-menu__icon" aria-hidden="true"></span><span class="account-menu__label">More</span></button><div class="account-menu__panel" id="account-menu-panel" hidden><strong class="account-menu__heading">Weinberger’s Deli</strong><a href="index.html">Home</a><div class="account-menu__destinations"><a href="menu.html">Menu &amp; order</a><a href="group.html">Group lunch</a><a href="catering.html">Catering</a><a href="visit.html">Visit &amp; hours</a><a href="story.html">Our story</a><a href="menu.html?saved=1">Saved</a><a href="menu.html#orders">Orders</a></div><a data-account-login href="login.html">Log in</a></div>`;
-  const header = document.querySelector('.guest-header, .expansion-header, .menu-page .header, [data-cms-page="readable-menu"] .site-header');
+  const header = document.querySelector('.guest-header, .expansion-header, .phone-masthead, .menu-page .header, [data-cms-page="readable-menu"] .site-header');
   if (header) {
     header.append(host);
   } else {
